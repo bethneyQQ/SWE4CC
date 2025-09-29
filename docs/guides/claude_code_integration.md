@@ -328,6 +328,283 @@ python -m swebench.harness.run_evaluation \
     --run_id claude_code_evaluation
 ```
 
+## Results Analysis
+
+### Comprehensive Statistics Extraction
+
+After running inference and evaluation, use the `analyze_predictions.py` script to extract detailed statistics from your results:
+
+```bash
+# Basic analysis (includes pass/fail + detailed metrics)
+python analyze_predictions.py results/predictions.jsonl
+
+# Include evaluation results for complete analysis
+python analyze_predictions.py results/predictions.jsonl -e evaluation_results.json
+
+# Save detailed report to JSON file
+python analyze_predictions.py results/predictions.jsonl -e evaluation.json -o detailed_report.json
+
+# Quiet mode (only save report, no console output)
+python analyze_predictions.py results/predictions.jsonl -q -o report.json
+```
+
+### Available Statistics and Metrics
+
+The analysis script provides comprehensive information beyond simple pass/fail:
+
+#### 📊 Basic Statistics
+- Total samples processed
+- Pass rate (resolved/submitted)
+- Completed vs incomplete instances
+- Error instances
+- Empty patch instances
+
+#### ⚡ Performance Metrics
+**Latency Analysis:**
+- Mean, median, min, max latency
+- Percentiles (P95, P99)
+- Standard deviation
+- Total execution time
+
+**Cost Analysis:**
+- Total cost across all instances
+- Mean/median cost per instance
+- Cost per successful resolution
+- Min/max cost range
+
+**Token Usage:**
+- Input tokens: total, mean, median, max
+- Output tokens: total, mean, median, max
+- Total tokens consumed
+- Cache usage: creation and read tokens
+- Token efficiency metrics
+
+#### 🤖 Model Information
+- Model names and versions used
+- Tools utilized by Claude Code
+- Service tiers
+- Model-specific configurations
+
+#### 📝 Patch Statistics
+- Number of patches generated
+- Empty patches count
+- Patch size distribution (mean, median, min, max)
+- Files modified frequency
+- Most commonly modified files
+
+#### 📋 Instance-Level Details
+For each instance:
+- Instance ID
+- Pass/fail status
+- Latency (ms)
+- Cost ($)
+- Token counts (input/output/cache)
+- Patch presence and size
+
+### Example Analysis Output
+
+```
+================================================================================
+SWE-BENCH PREDICTIONS ANALYSIS REPORT
+================================================================================
+
+📊 BASIC STATISTICS
+--------------------------------------------------------------------------------
+Total Samples: 2
+Submitted: 2
+Completed: 2
+Resolved: 2 (100.0%)
+Unresolved: 0
+Errors: 0
+Empty Patches: 0
+
+⚡ PERFORMANCE METRICS
+--------------------------------------------------------------------------------
+
+Latency:
+  Mean: 24713ms | Median: 24713ms
+  Min: 8186ms | Max: 41240ms
+  P95: 39587ms | P99: 40909ms
+  Total Time: 49.4s
+
+Cost:
+  Total: $0.1480
+  Mean: $0.0740 | Median: $0.0740
+  Min: $0.0516 | Max: $0.0963
+  Cost per Success: $0.0740
+
+Token Usage:
+  Input: 48 (mean: 24)
+  Output: 1,904 (mean: 952)
+  Total: 1,952 (mean: 976)
+  Cache Creation: 17,932
+  Cache Reads: 160,875
+
+🤖 MODEL INFORMATION
+--------------------------------------------------------------------------------
+Models: {'claude-3.5-sonnet': 2}
+Service Tiers: {'standard': 2}
+
+📝 PATCH STATISTICS
+--------------------------------------------------------------------------------
+Patches Generated: 2
+Empty Patches: 0
+Patch Size: mean=845, median=845, min=781, max=909
+
+Most Modified Files:
+  django/contrib/auth/validators.py: 2 times
+  django/core/checks/translation.py: 2 times
+
+📋 INSTANCE DETAILS
+--------------------------------------------------------------------------------
+Instance ID                              Pass   Latency    Cost       Tokens
+--------------------------------------------------------------------------------
+django__django-11099                     ✓          8186ms $  0.0516      498t
+django__django-12286                     ✓         41240ms $  0.0963    1,454t
+================================================================================
+```
+
+### Quick Data Extraction with jq
+
+For quick queries without running the full analysis script, use `jq` to extract specific fields:
+
+```bash
+# Count total predictions
+jq -s 'length' predictions.jsonl
+
+# Get all instance IDs
+jq -r '.instance_id' predictions.jsonl
+
+# Calculate average cost
+jq -s '[.[].cost] | add/length' predictions.jsonl
+
+# Get average latency
+jq -s '[.[].latency_ms] | add/length' predictions.jsonl
+
+# List instances with high latency (>30s)
+jq 'select(.latency_ms > 30000) | {id: .instance_id, latency: .latency_ms}' predictions.jsonl
+
+# Extract token usage statistics
+jq '.claude_code_meta.usage | {input: .input_tokens, output: .output_tokens, cache_read: .cache_read_input_tokens}' predictions.jsonl
+
+# Count instances by pass/fail (requires evaluation results)
+jq -r '.instance_id' predictions.jsonl | while read id; do
+  if jq -e --arg id "$id" '.resolved_ids | contains([$id])' evaluation.json > /dev/null; then
+    echo "$id: PASS"
+  else
+    echo "$id: FAIL"
+  fi
+done
+
+# Find most expensive instances
+jq -s 'sort_by(.cost) | reverse | .[:10] | map({id: .instance_id, cost: .cost})' predictions.jsonl
+```
+
+### Output Schema and Available Fields
+
+Each prediction in the JSONL file contains:
+
+**Core Fields:**
+- `instance_id`: Unique identifier (e.g., "django__django-11099")
+- `model_name_or_path`: Model used (e.g., "claude-3.5-sonnet")
+- `full_output`: Complete model response text
+- `model_patch`: Generated git diff/patch
+
+**Performance Fields:**
+- `latency_ms`: Request latency in milliseconds
+- `cost`: Estimated API cost in USD
+
+**Claude Code Metadata (`claude_code_meta`):**
+- `tools_used`: List of tools Claude Code utilized (array)
+- `usage`: Token usage details
+  - `input_tokens`: Tokens in prompt
+  - `output_tokens`: Tokens in response
+  - `cache_creation_input_tokens`: Tokens cached for first time
+  - `cache_read_input_tokens`: Tokens read from cache
+  - `service_tier`: API service tier (e.g., "standard")
+- `model_info`: Internal model identifier
+- `duration_api_ms`: API call duration
+- `session_id`: Claude Code session identifier
+
+**Evaluation Fields (from evaluation JSON):**
+- `resolved_ids`: List of instance IDs that passed all tests
+- `unresolved_ids`: List of instance IDs that failed
+- `error_ids`: List of instance IDs with errors
+- `empty_patch_ids`: List of instance IDs with empty patches
+
+### Analysis Report JSON Structure
+
+The detailed analysis report (`analyze_predictions.py --output report.json`) contains:
+
+```json
+{
+  "basic_stats": {
+    "total_samples": 2,
+    "submitted_instances": 2,
+    "resolved_instances": 2,
+    "pass_rate": 1.0,
+    "analysis_timestamp": "2025-09-29T..."
+  },
+  "performance_metrics": {
+    "latency": {"mean_ms": 24713, "median_ms": 24713, "p95_ms": 39587, ...},
+    "cost": {"total": 0.148, "mean": 0.074, "cost_per_success": 0.074, ...},
+    "tokens": {
+      "input": {"total": 48, "mean": 24, ...},
+      "output": {"total": 1904, "mean": 952, ...},
+      "cache": {"creation_total": 17932, "read_total": 160875, ...}
+    }
+  },
+  "model_info": {
+    "model_names": {"claude-3.5-sonnet": 2},
+    "tools_used": {},
+    "service_tiers": {"standard": 2}
+  },
+  "patch_stats": {
+    "has_patch": 2,
+    "empty_patch": 0,
+    "patch_size_stats": {"mean": 845, "median": 845, ...},
+    "files_modified": {"path/to/file.py": count, ...}
+  },
+  "instance_details": {
+    "instances": [
+      {
+        "instance_id": "django__django-11099",
+        "passed": true,
+        "latency_ms": 8186,
+        "cost": 0.0516,
+        "input_tokens": 4,
+        "output_tokens": 494,
+        ...
+      }
+    ]
+  }
+}
+```
+
+### Analysis Script Features
+
+The `analyze_predictions.py` script provides:
+
+1. **Comprehensive Metrics**: Beyond pass/fail, includes latency, cost, tokens, and patch statistics
+2. **Statistical Analysis**: Mean, median, percentiles, standard deviation for all metrics
+3. **Instance-Level Details**: Granular information for each processed instance
+4. **Cache Analysis**: Tracks prompt caching effectiveness
+5. **Cost Tracking**: Per-instance and aggregate cost analysis
+6. **Token Efficiency**: Input/output ratio and cache utilization
+7. **Patch Analysis**: Size distribution and file modification patterns
+8. **Export Options**: Human-readable console output + structured JSON reports
+9. **Integration with Evaluation**: Combines predictions with evaluation results
+
+### Best Practices for Analysis
+
+1. **Always save detailed reports**: Use `-o report.json` to preserve analysis results
+2. **Track costs over time**: Monitor `cost_per_success` across different runs
+3. **Optimize for cache hits**: High `cache_read_tokens` indicates good prompt caching
+4. **Monitor latency outliers**: Investigate instances with P95/P99 latency spikes
+5. **Analyze failure patterns**: Cross-reference unresolved instances with latency/cost
+6. **Compare models**: Run analysis on different models to identify best performers
+7. **Track token efficiency**: Compare `output_tokens` to patch quality
+
 ## Performance Optimization
 
 ### 1. Model Selection Strategy

@@ -1,0 +1,117 @@
+{
+  "basic_stats": {
+    "total_samples": 2,
+    "predictions_file": "results/claude-3.5-sonnet__SWE-bench_Lite_oracle__test.jsonl",
+    "analysis_timestamp": "2025-09-29T20:33:30.300514",
+    "total_instances": 300,
+    "submitted_instances": 2,
+    "completed_instances": 2,
+    "resolved_instances": 2,
+    "unresolved_instances": 0,
+    "empty_patch_instances": 0,
+    "error_instances": 0,
+    "pass_rate": 1.0
+  },
+  "performance_metrics": {
+    "latency": {
+      "min_ms": 8186,
+      "max_ms": 41240,
+      "mean_ms": 24713,
+      "median_ms": 24713.0,
+      "stdev_ms": 23372.70754534014,
+      "p95_ms": 39587.3,
+      "p99_ms": 40909.46,
+      "total_seconds": 49.426
+    },
+    "cost": {
+      "total": 0.14798429999999999,
+      "mean": 0.07399214999999999,
+      "median": 0.07399214999999999,
+      "min": 0.0516468,
+      "max": 0.09633749999999999,
+      "cost_per_success": 0.07399214999999999
+    },
+    "tokens": {
+      "input": {
+        "total": 48,
+        "mean": 24,
+        "median": 24.0,
+        "max": 44
+      },
+      "output": {
+        "total": 1904,
+        "mean": 952,
+        "median": 952.0,
+        "max": 1410
+      },
+      "total": {
+        "total": 1952,
+        "mean": 976
+      },
+      "cache": {
+        "creation_total": 17932,
+        "read_total": 160875,
+        "creation_mean": 8966,
+        "read_mean": 80437.5
+      }
+    }
+  },
+  "model_info": {
+    "model_names": {
+      "claude-3.5-sonnet": 2
+    },
+    "tools_used": {},
+    "service_tiers": {
+      "standard": 2
+    },
+    "model_versions": {
+      "sonnet": 2
+    }
+  },
+  "patch_stats": {
+    "has_patch": 2,
+    "empty_patch": 0,
+    "patch_sizes": [
+      781,
+      909
+    ],
+    "files_modified": {
+      "django/contrib/auth/validators.py": 2,
+      "django/core/checks/translation.py": 2
+    },
+    "patch_size_stats": {
+      "mean": 845,
+      "median": 845.0,
+      "min": 781,
+      "max": 909
+    }
+  },
+  "instance_details": {
+    "instances": [
+      {
+        "instance_id": "django__django-11099",
+        "model": "claude-3.5-sonnet",
+        "passed": true,
+        "latency_ms": 8186,
+        "cost": 0.0516468,
+        "has_patch": true,
+        "patch_size": 783,
+        "input_tokens": 4,
+        "output_tokens": 494,
+        "cache_read_tokens": 5291
+      },
+      {
+        "instance_id": "django__django-12286",
+        "model": "claude-3.5-sonnet",
+        "passed": true,
+        "latency_ms": 41240,
+        "cost": 0.09633749999999999,
+        "has_patch": true,
+        "patch_size": 913,
+        "input_tokens": 44,
+        "output_tokens": 1410,
+        "cache_read_tokens": 155584
+      }
+    ]
+  }
+}

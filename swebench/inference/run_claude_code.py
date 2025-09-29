@@ -216,24 +216,48 @@ def claude_code_inference(
             )
 
             if response_data:
-                # Extract content and generate patch
-                full_output = response_data.get("content", "")
+                # Extract content from Claude Code CLI response
+                # Claude Code CLI returns output in "result" field
+                full_output = response_data.get("result", "")
+                if not full_output and "content" in response_data:
+                    # Fallback to "content" field if exists
+                    full_output = response_data.get("content", "")
                 if not full_output and "choices" in response_data:
-                    # Handle different response formats
+                    # Handle API-style response format
                     full_output = response_data["choices"][0].get("message", {}).get("content", "")
 
                 model_patch = extract_diff(full_output)
 
-                # Prepare output dictionary
+                # Calculate cost from usage if not provided
+                usage = response_data.get("usage", {})
+                cost = response_data.get("total_cost_usd")
+                if cost is None and usage:
+                    # Rough cost estimation if not provided
+                    # Haiku: $0.25/1M input, $1.25/1M output
+                    # Sonnet: $3/1M input, $15/1M output
+                    input_tokens = usage.get("input_tokens", 0) + usage.get("cache_read_input_tokens", 0)
+                    output_tokens = usage.get("output_tokens", 0)
+                    if "haiku" in actual_model_name.lower():
+                        cost = (input_tokens * 0.25 + output_tokens * 1.25) / 1_000_000
+                    else:  # sonnet/opus
+                        cost = (input_tokens * 3 + output_tokens * 15) / 1_000_000
+
+                # Prepare output dictionary in standard SWE-bench format
                 output_dict = {
                     "instance_id": instance_id,
                     "model_name_or_path": model_name_or_path,
                     "full_output": full_output,
                     "model_patch": model_patch,
+                    # Standard SWE-bench metadata
+                    "latency_ms": response_data.get("duration_ms", 0),
+                    "cost": cost if cost is not None else 0.0,
+                    # Claude Code specific metadata
                     "claude_code_meta": {
                         "tools_used": response_data.get("tools_used", []),
-                        "usage": response_data.get("usage", {}),
-                        "model_info": response_data.get("model", model_name_or_path)
+                        "usage": usage,
+                        "model_info": response_data.get("model", actual_model_name),
+                        "duration_api_ms": response_data.get("duration_api_ms", 0),
+                        "session_id": response_data.get("session_id", "")
                     }
                 }
 
