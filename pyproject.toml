@@ -49,7 +49,7 @@ datasets = [
 ]
 inference = [
     "torch>=2.0.0",
-    "anthropic",
+    "anthropic>=0.21.0",
     "jedi",
     "openai",
     "peft",
@@ -60,6 +60,9 @@ inference = [
     "triton",
     "flash_attn>=2.0.0",
     "requests",
+]
+claude_code = [
+    "anthropic>=0.21.0",
 ]
 test = [
     "pytest",

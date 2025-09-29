@@ -114,8 +114,38 @@ If you're looking for non-local, cloud based evaluations, check out...
 Additionally, you can also:
 * [Train](https://github.com/swe-bench/SWE-bench/tree/main/swebench/inference/make_datasets) your own models on our pre-processed datasets. (🆕 Check out [SWE-smith](https://swesmith.com/), a dedicated toolkit for creating SWE training data.)
 * Run [inference](docs/reference/inference.md) on existing models (both local and API models). The inference step is where you give the model a repo + issue and have it generate a fix.
+* 🆕 **Use [Claude Code](docs/guides/claude_code_integration.md)** for enhanced AI-powered software engineering with Anthropic's specialized coding assistant
 *  Run SWE-bench's [data collection procedure](https://github.com/swe-bench/SWE-bench/blob/main/swebench/collect/) ([tutorial](docs/guides/collection.md)) on your own repositories, to make new SWE-Bench tasks.
     * ⚠️ We are temporarily pausing support for queries around creating SWE-bench instances. Please see the note in the tutorial.
+
+### 🤖 Claude Code Integration
+
+SWE-bench now supports [Claude Code](https://claude.com/claude-code), Anthropic's specialized CLI for software engineering tasks:
+
+```bash
+# Install Claude Code CLI
+npm install -g @anthropic-ai/claude-code
+
+# Set your API key
+export ANTHROPIC_API_KEY="your-key-here"
+
+# Run inference with Claude Code
+python -m swebench.inference.run_api \
+    --dataset_name_or_path princeton-nlp/SWE-bench_Lite \
+    --model_name_or_path claude-3.5-sonnet \
+    --output_dir ./results \
+    --model_args "max_instances=10"
+```
+
+**Supported Claude Code models:**
+- `claude-4` - Latest Claude model (when available)
+- `claude-code` - Specialized coding model
+- `claude-3.5-sonnet` - Balanced performance (recommended)
+- `claude-3-opus` - Highest capability
+- `claude-3-sonnet` - Good balance
+- `claude-3-haiku` - Fastest
+
+For detailed setup and usage instructions, see the [Claude Code Integration Guide](docs/guides/claude_code_integration.md).
 
 ## ⬇️ Downloads
 | Datasets | Models | RAG |

@@ -35,6 +35,13 @@ MODEL_LIMITS = {
     "claude-3-opus-20240229": 200_000,
     "claude-3-sonnet-20240229": 200_000,
     "claude-3-haiku-20240307": 200_000,
+    # Claude Code models
+    "claude-4": 200_000,
+    "claude-code": 200_000,
+    "claude-3.5-sonnet": 200_000,
+    "claude-3-opus": 200_000,
+    "claude-3-sonnet": 200_000,
+    "claude-3-haiku": 200_000,
     "gpt-3.5-turbo-16k-0613": 16_385,
     "gpt-3.5-turbo-0613": 4_097,
     "gpt-3.5-turbo-1106": 16_385,
@@ -499,7 +506,12 @@ def main(
         "existing_ids": existing_ids,
         "max_cost": max_cost,
     }
-    if model_name_or_path.startswith("claude"):
+    # Check for Claude Code models first (more specific match)
+    claude_code_models = ["claude-4", "claude-code", "claude-3.5-sonnet", "claude-3-opus", "claude-3-sonnet", "claude-3-haiku"]
+    if model_name_or_path in claude_code_models:
+        from swebench.inference.run_claude_code import claude_code_inference
+        claude_code_inference(**inference_args)
+    elif model_name_or_path.startswith("claude"):
         anthropic_inference(**inference_args)
     elif model_name_or_path.startswith("gpt"):
         openai_inference(**inference_args)
