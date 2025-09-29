@@ -2,15 +2,7 @@
   "basic_stats": {
     "total_samples": 2,
     "predictions_file": "results/claude-3.5-sonnet__SWE-bench_Lite_oracle__test.jsonl",
-    "analysis_timestamp": "2025-09-29T20:33:30.300514",
-    "total_instances": 300,
-    "submitted_instances": 2,
-    "completed_instances": 2,
-    "resolved_instances": 2,
-    "unresolved_instances": 0,
-    "empty_patch_instances": 0,
-    "error_instances": 0,
-    "pass_rate": 1.0
+    "analysis_timestamp": "2025-09-29T20:56:28.770512"
   },
   "performance_metrics": {
     "latency": {
@@ -91,7 +83,7 @@
       {
         "instance_id": "django__django-11099",
         "model": "claude-3.5-sonnet",
-        "passed": true,
+        "passed": false,
         "latency_ms": 8186,
         "cost": 0.0516468,
         "has_patch": true,
@@ -103,7 +95,7 @@
       {
         "instance_id": "django__django-12286",
         "model": "claude-3.5-sonnet",
-        "passed": true,
+        "passed": false,
         "latency_ms": 41240,
         "cost": 0.09633749999999999,
         "has_patch": true,

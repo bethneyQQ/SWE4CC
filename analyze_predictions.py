@@ -38,11 +38,26 @@ class PredictionAnalyzer:
         """Compute basic statistics"""
         n_samples = len(self.predictions)
 
+        # Extract timestamps
+        timestamps = []
+        for pred in self.predictions:
+            meta = pred.get("claude_code_meta") or pred.get("qwen_meta") or pred.get("deepseek_meta")
+            if meta and "created" in meta:
+                timestamps.append(meta["created"])
+
         stats = {
             "total_samples": n_samples,
             "predictions_file": str(self.predictions_path),
             "analysis_timestamp": datetime.now().isoformat()
         }
+
+        # Add time range if timestamps available
+        if timestamps:
+            stats["request_time_range"] = {
+                "earliest": datetime.fromtimestamp(min(timestamps)).isoformat(),
+                "latest": datetime.fromtimestamp(max(timestamps)).isoformat(),
+                "duration_seconds": max(timestamps) - min(timestamps)
+            }
 
         # Add evaluation stats if available
         if self.evaluation_data:
@@ -82,17 +97,31 @@ class PredictionAnalyzer:
             if "cost" in pred:
                 costs.append(pred["cost"])
 
-            # Token usage from claude_code_meta
+            # Token usage from claude_code_meta, qwen_meta, or deepseek_meta
+            usage = None
             if "claude_code_meta" in pred and "usage" in pred["claude_code_meta"]:
                 usage = pred["claude_code_meta"]["usage"]
+            elif "qwen_meta" in pred and "usage" in pred["qwen_meta"]:
+                usage = pred["qwen_meta"]["usage"]
+            elif "deepseek_meta" in pred and "usage" in pred["deepseek_meta"]:
+                usage = pred["deepseek_meta"]["usage"]
+
+            if usage:
                 if "input_tokens" in usage:
                     input_tokens.append(usage["input_tokens"])
                 if "output_tokens" in usage:
                     output_tokens.append(usage["output_tokens"])
-                if "cache_creation_input_tokens" in usage:
-                    cache_creation_tokens.append(usage["cache_creation_input_tokens"])
-                if "cache_read_input_tokens" in usage:
-                    cache_read_tokens.append(usage["cache_read_input_tokens"])
+
+                # Support multiple cache token naming conventions
+                # Claude Code: cache_creation_input_tokens, cache_read_input_tokens
+                # DeepSeek: prompt_cache_miss_tokens, prompt_cache_hit_tokens
+                cache_miss = usage.get("prompt_cache_miss_tokens") or usage.get("cache_creation_input_tokens")
+                if cache_miss:
+                    cache_creation_tokens.append(cache_miss)
+
+                cache_hit = usage.get("prompt_cache_hit_tokens") or usage.get("cache_read_input_tokens")
+                if cache_hit:
+                    cache_read_tokens.append(cache_hit)
 
                 total = usage.get("input_tokens", 0) + usage.get("output_tokens", 0)
                 if total > 0:
@@ -162,7 +191,11 @@ class PredictionAnalyzer:
         model_info = {
             "model_names": Counter(),
             "tools_used": Counter(),
-            "service_tiers": Counter()
+            "service_tiers": Counter(),
+            "providers": Counter(),
+            "finish_reasons": Counter(),
+            "system_fingerprints": Counter(),
+            "api_versions": Counter()
         }
 
         for pred in self.predictions:
@@ -170,9 +203,17 @@ class PredictionAnalyzer:
             if "model_name_or_path" in pred:
                 model_info["model_names"][pred["model_name_or_path"]] += 1
 
-            # Tools used
+            # Check for metadata from different providers
+            meta = None
             if "claude_code_meta" in pred:
                 meta = pred["claude_code_meta"]
+            elif "qwen_meta" in pred:
+                meta = pred["qwen_meta"]
+            elif "deepseek_meta" in pred:
+                meta = pred["deepseek_meta"]
+
+            if meta:
+                # Tools used
                 if "tools_used" in meta:
                     for tool in meta["tools_used"]:
                         model_info["tools_used"][tool] += 1
@@ -186,6 +227,22 @@ class PredictionAnalyzer:
                     if "model_versions" not in model_info:
                         model_info["model_versions"] = Counter()
                     model_info["model_versions"][meta["model_info"]] += 1
+
+                # Provider info
+                if "provider" in meta:
+                    model_info["providers"][meta["provider"]] += 1
+
+                # Finish reasons
+                if "finish_reason" in meta:
+                    model_info["finish_reasons"][meta["finish_reason"]] += 1
+
+                # System fingerprint
+                if "system_fingerprint" in meta and meta["system_fingerprint"]:
+                    model_info["system_fingerprints"][meta["system_fingerprint"]] += 1
+
+                # API version
+                if "api_version" in meta:
+                    model_info["api_versions"][meta["api_version"]] += 1
 
         return model_info
 
@@ -243,12 +300,45 @@ class PredictionAnalyzer:
                 "patch_size": len(pred.get("model_patch", "")),
             }
 
-            # Token info
-            if "claude_code_meta" in pred and "usage" in pred["claude_code_meta"]:
-                usage = pred["claude_code_meta"]["usage"]
-                instance["input_tokens"] = usage.get("input_tokens", 0)
-                instance["output_tokens"] = usage.get("output_tokens", 0)
-                instance["cache_read_tokens"] = usage.get("cache_read_input_tokens", 0)
+            # Extract metadata from any provider
+            meta = pred.get("claude_code_meta") or pred.get("qwen_meta") or pred.get("deepseek_meta")
+
+            if meta:
+                # Add timestamp
+                if "created" in meta:
+                    instance["timestamp"] = datetime.fromtimestamp(meta["created"]).isoformat()
+                    instance["timestamp_unix"] = meta["created"]
+
+                # Add response_id
+                if "response_id" in meta:
+                    instance["response_id"] = meta["response_id"]
+
+                # Add finish_reason
+                if "finish_reason" in meta:
+                    instance["finish_reason"] = meta["finish_reason"]
+
+                # Add provider
+                if "provider" in meta:
+                    instance["provider"] = meta["provider"]
+
+                # Add total_cost_accumulated for verification
+                if "total_cost_accumulated" in meta:
+                    instance["total_cost_accumulated"] = meta["total_cost_accumulated"]
+
+                # Token usage
+                usage = meta.get("usage", {})
+                if usage:
+                    instance["input_tokens"] = usage.get("input_tokens", 0)
+                    instance["output_tokens"] = usage.get("output_tokens", 0)
+
+                    # Cache tokens (support multiple naming conventions)
+                    cache_hit = usage.get("prompt_cache_hit_tokens") or usage.get("cache_read_input_tokens", 0)
+                    cache_miss = usage.get("prompt_cache_miss_tokens") or usage.get("cache_creation_input_tokens", 0)
+
+                    if cache_hit > 0:
+                        instance["cache_hit_tokens"] = cache_hit
+                    if cache_miss > 0:
+                        instance["cache_miss_tokens"] = cache_miss
 
             instances.append(instance)
 
@@ -291,6 +381,10 @@ class PredictionAnalyzer:
         print("-" * 80)
         basic = report["basic_stats"]
         print(f"Total Samples: {basic['total_samples']}")
+        if "request_time_range" in basic:
+            time_range = basic["request_time_range"]
+            print(f"Request Time Range: {time_range['earliest']} to {time_range['latest']}")
+            print(f"Time Span: {time_range['duration_seconds']:.1f}s")
         if "submitted_instances" in basic:
             print(f"Submitted: {basic['submitted_instances']}")
             print(f"Completed: {basic['completed_instances']}")
@@ -337,10 +431,20 @@ class PredictionAnalyzer:
             print("-" * 80)
             model = report["model_info"]
             print(f"Models: {dict(model['model_names'])}")
-            if model["tools_used"]:
+            if model.get("providers"):
+                print(f"Providers: {dict(model['providers'])}")
+            if model.get("finish_reasons"):
+                print(f"Finish Reasons: {dict(model['finish_reasons'])}")
+            if model.get("api_versions"):
+                print(f"API Versions: {dict(model['api_versions'])}")
+            if model.get("system_fingerprints"):
+                print(f"System Fingerprints: {dict(model['system_fingerprints'])}")
+            if model.get("tools_used"):
                 print(f"Tools Used: {dict(model['tools_used'])}")
-            if model["service_tiers"]:
+            if model.get("service_tiers"):
                 print(f"Service Tiers: {dict(model['service_tiers'])}")
+            if model.get("model_versions"):
+                print(f"Model Versions: {dict(model['model_versions'])}")
 
         # Patch stats
         if "patch_stats" in report:

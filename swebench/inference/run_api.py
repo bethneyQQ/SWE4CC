@@ -49,6 +49,22 @@ MODEL_LIMITS = {
     "gpt-4-0613": 8_192,
     "gpt-4-1106-preview": 128_000,
     "gpt-4-0125-preview": 128_000,
+    # Qwen models
+    "qwen-max": 30_000,
+    "qwen-max-0428": 30_000,
+    "qwen-plus": 30_000,
+    "qwen-turbo": 8_000,
+    "qwen-coder-plus": 30_000,
+    "qwen-coder-turbo": 8_000,
+    "qwen2.5-72b-instruct": 30_000,
+    "qwen2.5-coder-32b-instruct": 30_000,
+    # DeepSeek models
+    "deepseek-chat": 64_000,
+    "deepseek-coder": 64_000,
+    "deepseek-reasoner": 64_000,
+    "deepseek-v3": 64_000,
+    "deepseek-v2.5": 64_000,
+    "deepseek-coder-v2-instruct": 128_000,
 }
 
 # The cost per token for each model input.
@@ -68,6 +84,22 @@ MODEL_COST_PER_INPUT = {
     "gpt-4-32k": 0.00006,
     "gpt-4-1106-preview": 0.00001,
     "gpt-4-0125-preview": 0.00001,
+    # Qwen models (per 1M tokens in USD)
+    "qwen-max": 0.00004,
+    "qwen-max-0428": 0.00004,
+    "qwen-plus": 0.000002,
+    "qwen-turbo": 0.0000003,
+    "qwen-coder-plus": 0.000002,
+    "qwen-coder-turbo": 0.0000003,
+    "qwen2.5-72b-instruct": 0.000002,
+    "qwen2.5-coder-32b-instruct": 0.000001,
+    # DeepSeek models (per 1M tokens in USD)
+    "deepseek-chat": 0.00014,
+    "deepseek-coder": 0.00014,
+    "deepseek-reasoner": 0.00055,
+    "deepseek-v3": 0.00027,
+    "deepseek-v2.5": 0.00014,
+    "deepseek-coder-v2-instruct": 0.00014,
 }
 
 # The cost per token for each model output.
@@ -87,6 +119,22 @@ MODEL_COST_PER_OUTPUT = {
     "gpt-4-32k": 0.00012,
     "gpt-4-1106-preview": 0.00003,
     "gpt-4-0125-preview": 0.00003,
+    # Qwen models (per 1M tokens in USD)
+    "qwen-max": 0.00012,
+    "qwen-max-0428": 0.00012,
+    "qwen-plus": 0.000006,
+    "qwen-turbo": 0.0000006,
+    "qwen-coder-plus": 0.000006,
+    "qwen-coder-turbo": 0.0000006,
+    "qwen2.5-72b-instruct": 0.000006,
+    "qwen2.5-coder-32b-instruct": 0.000003,
+    # DeepSeek models (per 1M tokens in USD)
+    "deepseek-chat": 0.00028,
+    "deepseek-coder": 0.00028,
+    "deepseek-reasoner": 0.00219,
+    "deepseek-v3": 0.00110,
+    "deepseek-v2.5": 0.00028,
+    "deepseek-coder-v2-instruct": 0.00028,
 }
 
 # used for azure
@@ -515,6 +563,12 @@ def main(
         anthropic_inference(**inference_args)
     elif model_name_or_path.startswith("gpt"):
         openai_inference(**inference_args)
+    elif model_name_or_path.startswith("qwen"):
+        from swebench.inference.run_qwen import qwen_inference
+        qwen_inference(**inference_args)
+    elif model_name_or_path.startswith("deepseek"):
+        from swebench.inference.run_deepseek import deepseek_inference
+        deepseek_inference(**inference_args)
     else:
         raise ValueError(f"Invalid model name or path {model_name_or_path}")
     logger.info("Done!")

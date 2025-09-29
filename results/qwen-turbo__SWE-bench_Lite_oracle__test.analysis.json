@@ -1,0 +1,113 @@
+{
+  "basic_stats": {
+    "total_samples": 1,
+    "predictions_file": "results/qwen-turbo__SWE-bench_Lite_oracle__test.jsonl",
+    "analysis_timestamp": "2025-09-29T23:03:04.502582",
+    "request_time_range": {
+      "earliest": "2025-09-29T22:40:16",
+      "latest": "2025-09-29T22:40:16",
+      "duration_seconds": 0
+    }
+  },
+  "performance_metrics": {
+    "latency": {
+      "min_ms": 7039,
+      "max_ms": 7039,
+      "mean_ms": 7039,
+      "median_ms": 7039,
+      "stdev_ms": 0,
+      "p95_ms": 7039,
+      "p99_ms": 7039,
+      "total_seconds": 7.039
+    },
+    "cost": {
+      "total": 7.281e-07,
+      "mean": 7.281e-07,
+      "median": 7.281e-07,
+      "min": 7.281e-07,
+      "max": 7.281e-07,
+      "cost_per_success": 7.281e-07
+    },
+    "tokens": {
+      "input": {
+        "total": 1535,
+        "mean": 1535,
+        "median": 1535,
+        "max": 1535
+      },
+      "output": {
+        "total": 446,
+        "mean": 446,
+        "median": 446,
+        "max": 446
+      },
+      "total": {
+        "total": 1981,
+        "mean": 1981
+      },
+      "cache": {
+        "creation_total": 0,
+        "read_total": 0,
+        "creation_mean": 0,
+        "read_mean": 0
+      }
+    }
+  },
+  "model_info": {
+    "model_names": {
+      "qwen-turbo": 1
+    },
+    "tools_used": {},
+    "service_tiers": {},
+    "providers": {
+      "Qwen (DashScope)": 1
+    },
+    "finish_reasons": {
+      "stop": 1
+    },
+    "system_fingerprints": {},
+    "api_versions": {
+      "OpenAI-compatible": 1
+    },
+    "model_versions": {
+      "qwen-turbo": 1
+    }
+  },
+  "patch_stats": {
+    "has_patch": 1,
+    "empty_patch": 0,
+    "patch_sizes": [
+      774
+    ],
+    "files_modified": {
+      "django/contrib/auth/validators.py": 2
+    },
+    "patch_size_stats": {
+      "mean": 774,
+      "median": 774,
+      "min": 774,
+      "max": 774
+    }
+  },
+  "instance_details": {
+    "instances": [
+      {
+        "instance_id": "django__django-11099",
+        "model": "qwen-turbo",
+        "passed": false,
+        "latency_ms": 7039,
+        "cost": 7.281e-07,
+        "has_patch": true,
+        "patch_size": 776,
+        "timestamp": "2025-09-29T22:40:16",
+        "timestamp_unix": 1759185616,
+        "response_id": "chatcmpl-f407eac4-384b-4fb6-a697-e9e0689fa687",
+        "finish_reason": "stop",
+        "provider": "Qwen (DashScope)",
+        "total_cost_accumulated": 7.281e-07,
+        "input_tokens": 1535,
+        "output_tokens": 446
+      }
+    ]
+  }
+}

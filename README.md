@@ -118,34 +118,107 @@ Additionally, you can also:
 *  Run SWE-bench's [data collection procedure](https://github.com/swe-bench/SWE-bench/blob/main/swebench/collect/) ([tutorial](docs/guides/collection.md)) on your own repositories, to make new SWE-Bench tasks.
     * ⚠️ We are temporarily pausing support for queries around creating SWE-bench instances. Please see the note in the tutorial.
 
-### 🤖 Claude Code Integration
+### 🤖 Supported Model Integrations
 
-SWE-bench now supports [Claude Code](https://claude.com/claude-code), Anthropic's specialized CLI for software engineering tasks:
+SWE-bench supports multiple AI model providers:
+
+#### Claude Code Integration
+[Claude Code](https://claude.com/claude-code) - Anthropic's specialized CLI for software engineering:
 
 ```bash
 # Install Claude Code CLI
 npm install -g @anthropic-ai/claude-code
 
-# Set your API key
+# Set your API key and run
 export ANTHROPIC_API_KEY="your-key-here"
-
-# Run inference with Claude Code
 python -m swebench.inference.run_api \
-    --dataset_name_or_path princeton-nlp/SWE-bench_Lite \
+    --dataset_name_or_path princeton-nlp/SWE-bench_Lite_oracle \
     --model_name_or_path claude-3.5-sonnet \
     --output_dir ./results \
     --model_args "max_instances=10"
 ```
 
-**Supported Claude Code models:**
-- `claude-4` - Latest Claude model (when available)
-- `claude-code` - Specialized coding model
-- `claude-3.5-sonnet` - Balanced performance (recommended)
-- `claude-3-opus` - Highest capability
-- `claude-3-sonnet` - Good balance
-- `claude-3-haiku` - Fastest
+**Supported models:** `claude-4`, `claude-code`, `claude-3.5-sonnet`, `claude-3-opus`, `claude-3-sonnet`, `claude-3-haiku`
 
-For detailed setup and usage instructions, see the [Claude Code Integration Guide](docs/guides/claude_code_integration.md).
+📖 [Claude Code Integration Guide](docs/guides/claude_code_integration.md)
+
+#### Qwen Integration
+Qwen models via DashScope OpenAI-compatible API:
+
+```bash
+export DASHSCOPE_API_KEY="your-key-here"
+python -m swebench.inference.run_api \
+    --dataset_name_or_path princeton-nlp/SWE-bench_Lite_oracle \
+    --model_name_or_path qwen-coder-plus \
+    --output_dir ./results \
+    --model_args "max_instances=10"
+```
+
+**Supported models:** `qwen-max`, `qwen-plus`, `qwen-turbo`, `qwen-coder-plus`, `qwen-coder-turbo`, `qwen2.5-*`
+
+#### DeepSeek Integration
+DeepSeek models via OpenAI-compatible API:
+
+```bash
+export DEEPSEEK_API_KEY="your-key-here"
+python -m swebench.inference.run_api \
+    --dataset_name_or_path princeton-nlp/SWE-bench_Lite_oracle \
+    --model_name_or_path deepseek-coder \
+    --output_dir ./results \
+    --model_args "max_instances=10"
+```
+
+**Supported models:** `deepseek-chat`, `deepseek-coder`, `deepseek-reasoner`, `deepseek-v3`, `deepseek-coder-v2-instruct`
+
+📖 [Qwen & DeepSeek Integration Guide](docs/guides/qwen_deepseek_integration.md)
+
+### 📊 Results Analysis
+
+After running inference, analyze predictions with comprehensive metrics:
+
+```bash
+# Analyze predictions (auto-generates JSON report)
+python analyze_predictions.py results/your-model__SWE-bench_Lite_oracle__test.jsonl
+
+# With evaluation results
+python analyze_predictions.py results/predictions.jsonl \
+    --evaluation results/evaluation.json
+```
+
+**Analysis Features:**
+- ✅ **95%+ Metadata Coverage** - Captures all API-provided fields
+- 📈 Statistical analysis (mean, median, percentiles, stdev)
+- 💰 Cost tracking per instance and aggregated
+- ⏱️ Latency analysis with P95/P99 metrics
+- 🎯 Token usage with cache effectiveness
+- 📝 Patch statistics and file modification patterns
+- 🔍 Instance-level details with timestamps and response IDs
+- 🌐 Multi-provider support (Claude Code, Qwen, DeepSeek)
+
+**New in v2.0:**
+- Request timestamps and time ranges
+- API response IDs for traceability
+- Provider and API version tracking
+- System fingerprints for reproducibility
+- Fixed DeepSeek cache token extraction
+
+**Sample Output:**
+```
+📊 BASIC STATISTICS
+Total Samples: 2
+Request Time Range: 2025-09-29T22:48:23 to 2025-09-29T22:48:34
+
+⚡ PERFORMANCE METRICS
+Latency: Mean 11002ms | P95 11394ms
+Cost: Total $0.0019 | Mean $0.0010
+Tokens: Input 3,426 | Output 926
+
+🤖 MODEL INFORMATION
+Providers: {'DeepSeek': 2}
+API Versions: {'OpenAI-compatible': 2}
+```
+
+See [Claude Code Integration Guide](docs/guides/claude_code_integration.md#results-analysis) for full analysis documentation.
 
 ## ⬇️ Downloads
 | Datasets | Models | RAG |
