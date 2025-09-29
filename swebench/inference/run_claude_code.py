@@ -128,7 +128,8 @@ def call_claude_code(
                 return None
         else:
             logger.error(f"Claude Code call failed with code {result.returncode}")
-            logger.error(f"Error output: {result.stderr}")
+            logger.error(f"Error stderr: {result.stderr}")
+            logger.error(f"Error stdout: {result.stdout}")
             return None
 
     except subprocess.TimeoutExpired:
@@ -166,9 +167,22 @@ def claude_code_inference(
     if not api_key:
         raise ValueError("ANTHROPIC_API_KEY environment variable must be set")
 
+    # Map SWE-bench model names to Claude Code CLI model aliases/names
+    model_name_mapping = {
+        "claude-3-haiku": "haiku",
+        "claude-3-sonnet": "sonnet",
+        "claude-3-opus": "opus",
+        "claude-3.5-sonnet": "sonnet",
+        "claude-code": "sonnet",
+        "claude-4": "sonnet",
+    }
+    actual_model_name = model_name_mapping.get(model_name_or_path, model_name_or_path)
+
     # Extract model arguments
     timeout = model_args.pop("timeout", 300)
-    max_tokens = model_args.pop("max_tokens", 8192)
+    # Set max_tokens based on model (Haiku has 4096 limit, others 8192)
+    default_max_tokens = 4096 if "haiku" in actual_model_name.lower() else 8192
+    max_tokens = model_args.pop("max_tokens", default_max_tokens)
     temperature = model_args.pop("temperature", 0.1)
     max_instances = model_args.pop("max_instances", None)
 
@@ -191,10 +205,10 @@ def claude_code_inference(
             # Prepare prompt
             prompt = prepare_claude_code_prompt(datum)
 
-            # Call Claude Code
+            # Call Claude Code with actual model name
             response_data = call_claude_code(
                 prompt=prompt,
-                model_name=model_name_or_path,
+                model_name=actual_model_name,
                 timeout=timeout,
                 max_tokens=max_tokens,
                 temperature=temperature,

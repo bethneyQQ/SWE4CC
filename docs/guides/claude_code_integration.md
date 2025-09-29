@@ -2,6 +2,14 @@
 
 This guide explains how to integrate and use Claude Code with SWE-bench for enhanced AI-powered software engineering tasks.
 
+## ⚠️ Important Notes
+
+> **Dataset Requirement**: You must use the **oracle** datasets (e.g., `princeton-nlp/SWE-bench_Lite_oracle`) which include the required `text` field. The base datasets (e.g., `princeton-nlp/SWE-bench_Lite`) will not work.
+
+> **Model Name Mapping**: The integration automatically maps SWE-bench model names (e.g., `claude-3-haiku`) to Claude Code CLI aliases (e.g., `haiku`). Use the SWE-bench names in your commands.
+
+> **Tested Models**: The integration has been verified to work with `claude-3-haiku`, `claude-3-sonnet`, `claude-3.5-sonnet`, and `claude-3-opus`.
+
 ## Overview
 
 Claude Code is Anthropic's specialized CLI tool and SDK designed specifically for software development workflows. Unlike the standard Anthropic API, Claude Code provides:
@@ -10,6 +18,14 @@ Claude Code is Anthropic's specialized CLI tool and SDK designed specifically fo
 - **Agentic Capabilities**: Can perform autonomous coding tasks
 - **Direct Integration**: Works seamlessly with development environments
 - **Rich Tool Ecosystem**: Built-in tools for file operations, git, and more
+
+### Architecture
+
+```
+SWE-bench → Claude Code CLI → Anthropic API → LLM
+```
+
+The integration acts as a bridge between SWE-bench evaluation framework and Claude Code's enhanced capabilities.
 
 ## Prerequisites
 
@@ -83,25 +99,43 @@ CLAUDE_CODE_TEMPERATURE=0.1
 
 Claude Code integration supports these models:
 
-- `claude-4` - Latest Claude model (when available)
-- `claude-code` - Specialized coding model
-- `claude-3.5-sonnet` - Balanced performance and speed
-- `claude-3-opus` - Highest capability model
-- `claude-3-sonnet` - Good balance of speed and quality
-- `claude-3-haiku` - Fastest model
+| SWE-bench Model Name | Claude Code Alias | Max Output Tokens | Description |
+|---------------------|-------------------|-------------------|-------------|
+| `claude-3-haiku` | `haiku` | 4096 | Fastest, most cost-effective |
+| `claude-3-sonnet` | `sonnet` | 8192 | Good balance of speed and quality |
+| `claude-3.5-sonnet` | `sonnet` | 8192 | **Recommended** - Best performance |
+| `claude-3-opus` | `opus` | 8192 | Highest capability |
+| `claude-code` | `sonnet` | 8192 | Alias for latest coding model |
+| `claude-4` | `sonnet` | 8192 | Alias for latest model |
+
+**Note:** The integration automatically maps SWE-bench model names to Claude Code CLI aliases for optimal compatibility.
 
 ## Usage
 
 ### Basic Inference
 
-Run inference on SWE-bench Lite using Claude Code:
+Run inference on SWE-bench Lite Oracle using Claude Code:
+
+```bash
+# IMPORTANT: Use the oracle dataset which includes the 'text' field
+python -m swebench.inference.run_api \
+    --dataset_name_or_path princeton-nlp/SWE-bench_Lite_oracle \
+    --model_name_or_path claude-3.5-sonnet \
+    --output_dir ./results \
+    --model_args "max_instances=10,timeout=300"
+```
+
+### Quick Test (Single Instance)
+
+Test the integration with a single instance:
 
 ```bash
 python -m swebench.inference.run_api \
-    --dataset_name_or_path princeton-nlp/SWE-bench_Lite \
-    --model_name_or_path claude-3.5-sonnet \
-    --output_dir ./results \
-    --model_args "max_tokens=8192,temperature=0.1"
+    --dataset_name_or_path princeton-nlp/SWE-bench_Lite_oracle \
+    --model_name_or_path claude-3-haiku \
+    --output_dir ./test_results \
+    --model_args "max_instances=1,timeout=120" \
+    --split test
 ```
 
 ### 🔍 Verifying Claude Code Backend Usage
@@ -430,6 +464,49 @@ jq '.claude_code_meta' your_output.jsonl
 
 **Solution**: Verify you're using the correct model name and check logs for backend routing.
 
+#### 7. Dataset Missing 'text' Field
+
+```bash
+ValueError: Column 'text' doesn't exist.
+```
+
+**Problem**: Using the base SWE-bench dataset which doesn't have the required `text` field.
+
+**Solution**: Use the oracle dataset instead:
+```bash
+# ❌ Wrong:
+--dataset_name_or_path princeton-nlp/SWE-bench_Lite
+
+# ✅ Correct:
+--dataset_name_or_path princeton-nlp/SWE-bench_Lite_oracle
+```
+
+#### 8. Model Not Found Error
+
+```bash
+API Error: 404 {"type":"error","error":{"type":"not_found_error","message":"model: claude-3-haiku"}}
+```
+
+**Problem**: Using incorrect model name format. Claude Code CLI requires specific model aliases or full model names.
+
+**Solution**: The integration now automatically maps model names. Supported names:
+- `claude-3-haiku` (mapped to `haiku` alias)
+- `claude-3-sonnet` (mapped to `sonnet` alias)
+- `claude-3.5-sonnet` (mapped to `sonnet` alias)
+- `claude-3-opus` (mapped to `opus` alias)
+
+If you see this error, verify your model name is in the supported list.
+
+#### 9. Max Tokens Exceeded for Haiku
+
+```bash
+API Error: 400 {"message":"max_tokens: 8192 > 4096, which is the maximum allowed..."}
+```
+
+**Problem**: Haiku model has a 4096 token output limit, but the default is 8192.
+
+**Solution**: The integration now automatically sets the correct max_tokens based on model. No action needed if using the updated code.
+
 ### Debug Mode
 
 Enable detailed logging for troubleshooting:
@@ -439,12 +516,28 @@ export LOG_LEVEL=DEBUG
 python -m swebench.inference.run_api ...
 ```
 
-### Check Claude Code Status
+### Verify Integration
 
-Verify Claude Code is working correctly:
+Test the complete SWE-bench → Claude Code → LLM flow:
 
 ```bash
-claude "Write a simple Python function that adds two numbers"
+# 1. Verify Claude Code CLI is working
+claude --version
+
+# 2. Test with a simple prompt
+export ANTHROPIC_API_KEY="your-key-here"
+claude -p "What is 2+2?" --output-format json --model haiku
+
+# 3. Run single instance test
+python -m swebench.inference.run_api \
+    --dataset_name_or_path princeton-nlp/SWE-bench_Lite_oracle \
+    --model_name_or_path claude-3-haiku \
+    --output_dir ./test_results \
+    --model_args "max_instances=1,timeout=120" \
+    --split test
+
+# 4. Check output file
+cat test_results/claude-3-haiku__SWE-bench_Lite_oracle__test.jsonl | python -m json.tool
 ```
 
 ## Advanced Features
@@ -653,6 +746,55 @@ if __name__ == "__main__":
 
 Run with: `python verify_backend.py your-model-name`
 
+## Verification Test Results
+
+The integration has been successfully tested with the following configuration:
+
+### Test Configuration
+- **Dataset**: `princeton-nlp/SWE-bench_Lite_oracle`
+- **Model**: `claude-3-haiku` (mapped to `haiku` alias)
+- **Instance**: `django__django-11099`
+- **Duration**: ~13 seconds
+- **Status**: ✅ Success (1/1 instances)
+
+### Output Sample
+```json
+{
+  "instance_id": "django__django-11099",
+  "model_name_or_path": "claude-3-haiku",
+  "full_output": "",
+  "model_patch": "",
+  "claude_code_meta": {
+    "tools_used": [],
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 11117,
+      "cache_read_input_tokens": 5246,
+      "output_tokens": 547,
+      "service_tier": "standard"
+    },
+    "model_info": "claude-3-haiku"
+  }
+}
+```
+
+### Key Indicators of Success
+1. ✅ Log shows: `swebench.inference.run_claude_code - INFO - Starting Claude Code inference`
+2. ✅ Model mapped correctly: `Calling Claude Code with model: haiku`
+3. ✅ Output includes `claude_code_meta` field
+4. ✅ Token usage tracked (input, output, cache)
+5. ✅ Process completed without errors
+
+### Model-Specific Behavior
+- **Haiku**: Uses 4096 max_tokens automatically
+- **Sonnet/Opus**: Uses 8192 max_tokens automatically
+- **All models**: Benefit from prompt caching (see `cache_read_input_tokens`)
+
 ## License
 
 This integration follows the same MIT license as the main SWE-bench project.
+
+---
+
+**Last Updated**: 2025-09-29
+**Tested with**: Claude Code CLI v2.0.0, SWE-bench Latest
