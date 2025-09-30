@@ -65,6 +65,9 @@ MODEL_LIMITS = {
     "deepseek-v3": 64_000,
     "deepseek-v2.5": 64_000,
     "deepseek-coder-v2-instruct": 128_000,
+    # Loom Agent models
+    "loom-agent": 200_000,
+    "loom-agent-claude": 200_000,
 }
 
 # The cost per token for each model input.
@@ -100,6 +103,9 @@ MODEL_COST_PER_INPUT = {
     "deepseek-v3": 0.00027,
     "deepseek-v2.5": 0.00014,
     "deepseek-coder-v2-instruct": 0.00014,
+    # Loom Agent models (per 1M tokens in USD)
+    "loom-agent": 0.000003,
+    "loom-agent-claude": 0.000003,
 }
 
 # The cost per token for each model output.
@@ -135,6 +141,9 @@ MODEL_COST_PER_OUTPUT = {
     "deepseek-v3": 0.00110,
     "deepseek-v2.5": 0.00028,
     "deepseek-coder-v2-instruct": 0.00028,
+    # Loom Agent models (per 1M tokens in USD)
+    "loom-agent": 0.000015,
+    "loom-agent-claude": 0.000015,
 }
 
 # used for azure
@@ -569,6 +578,9 @@ def main(
     elif model_name_or_path.startswith("deepseek"):
         from swebench.inference.run_deepseek import deepseek_inference
         deepseek_inference(**inference_args)
+    elif model_name_or_path.startswith("loom-agent"):
+        from swebench.inference.run_loom_agent import loom_agent_inference
+        loom_agent_inference(**inference_args)
     else:
         raise ValueError(f"Invalid model name or path {model_name_or_path}")
     logger.info("Done!")
