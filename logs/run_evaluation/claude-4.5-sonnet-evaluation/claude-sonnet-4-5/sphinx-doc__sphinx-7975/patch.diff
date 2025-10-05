@@ -1,0 +1,17 @@
+--- a/sphinx/environment/adapters/indexentries.py
++++ b/sphinx/environment/adapters/indexentries.py
+@@ -108,8 +108,12 @@ class IndexEntries:
+             lckey = unicodedata.normalize('NFD', key.lower())
+             if lckey.startswith('\N{RIGHT-TO-LEFT MARK}'):
+                 lckey = lckey[1:]
+             if lckey[0:1].isalpha() or lckey.startswith('_'):
+                 lckey = chr(127) + lckey
++            else:
++                # ensure all non-alphanumeric characters are sorted before letters
++                # so that they appear in a single "Symbols" section
++                lckey = chr(0) + lckey
+             # ensure a determinstic order *within* letters by also sorting on
+             # the entry itself
+             return (lckey, entry[0])
+ 
+ 

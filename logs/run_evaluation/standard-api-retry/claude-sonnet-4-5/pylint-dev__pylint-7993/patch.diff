@@ -1,0 +1,34 @@
+--- a/pylint/reporters/text.py
++++ b/pylint/reporters/text.py
+@@ -180,7 +180,12 @@
+         self.linter = linter
+ 
+     def on_set_current_module(self, module: str, filepath: Optional[str]) -> None:
+-        """Set the format template to be used and check for unrecognized arguments."""
++        """Set the format template to be used and check for unrecognized arguments.
++        
++        Note: We need to handle escaped braces ({{ and }}) before checking for
++        template arguments, as they represent literal braces in the output.
++        """
+         template = str(self.linter.config.msg_template or self._template)
++        
+         # Return early if the template is the same as the previous one
+         if template == self._template:
+             return
+@@ -189,8 +194,13 @@
+         self._template = template
+         self._fixed_template = template
+ 
+-        # Check to see if all parameters in the template are attributes of the Message
+-        arguments = re.findall(r"\{(\w+?)(:.*)?\}", template)
++        # Check to see if all parameters in the template are attributes of the Message.
++        # We need to temporarily replace escaped braces {{ and }} to avoid treating them
++        # as template arguments.
++        template_for_parsing = template.replace("{{", "\x00").replace("}}", "\x01")
++        arguments = re.findall(r"\{(\w+?)(:.*)?\}", template_for_parsing)
++        # Restore escaped braces in the fixed template (they'll be handled by str.format)
++        # No change needed - str.format already handles {{ and }} correctly
+         for argument in arguments:
+             if argument[0] not in MESSAGE_FIELDS:
+                 warnings.warn(
+ ```

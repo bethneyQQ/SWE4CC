@@ -1,0 +1,18 @@
+--- a/django/http/response.py
++++ b/django/http/response.py
+@@ -228,6 +228,10 @@ class HttpResponseBase:
+ 
+         # Handle string types -- we can't rely on force_bytes here because:
+         # - Python attempts str conversion first
+         # - when self._charset != 'utf-8' it re-encodes the content
+         if isinstance(value, bytes):
+             return bytes(value)
+         if isinstance(value, str):
+             return bytes(value.encode(self.charset))
++        # Handle memoryview objects.
++        if isinstance(value, memoryview):
++            return bytes(value)
+         # Handle non-string types.
+         return str(value).encode(self.charset)
+ 
+ 

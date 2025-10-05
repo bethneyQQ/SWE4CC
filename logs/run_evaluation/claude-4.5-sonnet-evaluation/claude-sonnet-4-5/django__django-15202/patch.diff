@@ -1,0 +1,37 @@
+--- a/django/core/validators.py
++++ b/django/core/validators.py
+@@ -127,17 +127,22 @@
+                 raise
+         else:
+             # Now verify IPv6 in the netloc part
+-            host_match = re.search(r'^\[(.+)\](?::\d{1,5})?$', urlsplit(value).netloc)
+-            if host_match:
+-                potential_ip = host_match[1]
+-                try:
+-                    validate_ipv6_address(potential_ip)
+-                except ValidationError:
+-                    raise ValidationError(self.message, code=self.code, params={'value': value})
++            try:
++                host_match = re.search(r'^\[(.+)\](?::\d{1,5})?$', urlsplit(value).netloc)
++                if host_match:
++                    potential_ip = host_match[1]
++                    try:
++                        validate_ipv6_address(potential_ip)
++                    except ValidationError:
++                        raise ValidationError(self.message, code=self.code, params={'value': value})
++            except ValueError:  # for example, "Invalid IPv6 URL"
++                raise ValidationError(self.message, code=self.code, params={'value': value})
+ 
+         # The maximum length of a full host name is 253 characters per RFC 1034
+         # section 3.1. It's defined to be 255 bytes or less, but this includes
+         # one byte for the length of the name and one byte for the trailing dot
+         # that's used to indicate absolute names in DNS.
+-        if len(urlsplit(value).hostname) > 253:
+-            raise ValidationError(self.message, code=self.code, params={'value': value})
++        try:
++            if len(urlsplit(value).hostname) > 253:
++                raise ValidationError(self.message, code=self.code, params={'value': value})
++        except ValueError:  # for example, "Invalid IPv6 URL"
++            raise ValidationError(self.message, code=self.code, params={'value': value})
+ 
+ 

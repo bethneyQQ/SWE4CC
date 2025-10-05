@@ -1,0 +1,85 @@
+2025-10-03 22:12:28,810 - INFO - Creating container for pallets__flask-4992...
+2025-10-03 22:12:48,580 - INFO - Container for pallets__flask-4992 created: dd6d4023a2517cf5c5e5374e2c7ef9dc22b539aa520323b767a473f66431aede
+2025-10-03 22:12:48,692 - INFO - Container for pallets__flask-4992 started: dd6d4023a2517cf5c5e5374e2c7ef9dc22b539aa520323b767a473f66431aede
+2025-10-03 22:12:48,692 - INFO - Intermediate patch for pallets__flask-4992 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/pallets__flask-4992/patch.diff, now applying to container...
+2025-10-03 22:12:48,783 - INFO - >>>>> Applied Patch:
+Checking patch src/flask/config.py...
+Applied patch src/flask/config.py cleanly.
+
+2025-10-03 22:12:48,844 - INFO - Git diff before:
+diff --git a/src/flask/config.py b/src/flask/config.py
+index d4fc310f..cf6c9e14 100644
+--- a/src/flask/config.py
++++ b/src/flask/config.py
+@@ -234,6 +234,7 @@ class Config(dict):
+         filename: str,
+         load: t.Callable[[t.IO[t.Any]], t.Mapping],
+         silent: bool = False,
++        mode: str = "r",
+     ) -> bool:
+         """Update the values in the config from a file that is loaded
+         using the ``load`` parameter. The loaded data is passed to the
+@@ -247,6 +248,9 @@ class Config(dict):
+             import toml
+             app.config.from_file("config.toml", load=toml.load)
+ 
++            import tomllib
++            app.config.from_file("config.toml", load=tomllib.load, mode="rb")
++
+         :param filename: The path to the data file. This can be an
+             absolute path or relative to the config root path.
+         :param load: A callable that takes a file handle and returns a
+@@ -254,6 +258,9 @@ class Config(dict):
+         :type load: ``Callable[[Reader], Mapping]`` where ``Reader``
+             implements a ``read`` method.
+         :param silent: Ignore the file if it doesn't exist.
++        :param mode: The mode to open the file with. Defaults to ``"r"``
++            (text mode). Set to ``"rb"`` to open in binary mode for
++            loaders like ``tomllib.load()`` that require binary mode.
+         :return: ``True`` if the file was loaded successfully.
+ 
+         .. versionadded:: 2.0
+2025-10-03 22:12:48,844 - INFO - Eval script for pallets__flask-4992 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/pallets__flask-4992/eval.sh; copying to container...
+2025-10-03 22:12:52,260 - INFO - Test runtime: 3.37 seconds
+2025-10-03 22:12:52,260 - INFO - Test output for pallets__flask-4992 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/pallets__flask-4992/test_output.txt
+2025-10-03 22:12:52,300 - INFO - Git diff after:
+diff --git a/src/flask/config.py b/src/flask/config.py
+index d4fc310f..cf6c9e14 100644
+--- a/src/flask/config.py
++++ b/src/flask/config.py
+@@ -234,6 +234,7 @@ class Config(dict):
+         filename: str,
+         load: t.Callable[[t.IO[t.Any]], t.Mapping],
+         silent: bool = False,
++        mode: str = "r",
+     ) -> bool:
+         """Update the values in the config from a file that is loaded
+         using the ``load`` parameter. The loaded data is passed to the
+@@ -247,6 +248,9 @@ class Config(dict):
+             import toml
+             app.config.from_file("config.toml", load=toml.load)
+ 
++            import tomllib
++            app.config.from_file("config.toml", load=tomllib.load, mode="rb")
++
+         :param filename: The path to the data file. This can be an
+             absolute path or relative to the config root path.
+         :param load: A callable that takes a file handle and returns a
+@@ -254,6 +258,9 @@ class Config(dict):
+         :type load: ``Callable[[Reader], Mapping]`` where ``Reader``
+             implements a ``read`` method.
+         :param silent: Ignore the file if it doesn't exist.
++        :param mode: The mode to open the file with. Defaults to ``"r"``
++            (text mode). Set to ``"rb"`` to open in binary mode for
++            loaders like ``tomllib.load()`` that require binary mode.
+         :return: ``True`` if the file was loaded successfully.
+ 
+         .. versionadded:: 2.0
+2025-10-03 22:12:52,300 - INFO - Grading answer for pallets__flask-4992...
+2025-10-03 22:12:52,301 - INFO - report: {'pallets__flask-4992': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['tests/test_config.py::test_config_from_file_toml']}, 'PASS_TO_PASS': {'success': ['tests/test_config.py::test_config_from_pyfile', 'tests/test_config.py::test_config_from_object', 'tests/test_config.py::test_config_from_file_json', 'tests/test_config.py::test_from_prefixed_env', 'tests/test_config.py::test_from_prefixed_env_custom_prefix', 'tests/test_config.py::test_from_prefixed_env_nested', 'tests/test_config.py::test_config_from_mapping', 'tests/test_config.py::test_config_from_class', 'tests/test_config.py::test_config_from_envvar', 'tests/test_config.py::test_config_from_envvar_missing', 'tests/test_config.py::test_config_missing', 'tests/test_config.py::test_config_missing_file', 'tests/test_config.py::test_custom_config_class', 'tests/test_config.py::test_session_lifetime', 'tests/test_config.py::test_get_namespace', 'tests/test_config.py::test_from_pyfile_weird_encoding[utf-8]', 'tests/test_config.py::test_from_pyfile_weird_encoding[iso-8859-15]', 'tests/test_config.py::test_from_pyfile_weird_encoding[latin-1]'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for pallets__flask-4992: resolved: False
+2025-10-03 22:12:52,301 - INFO - Attempting to stop container sweb.eval.pallets__flask-4992.full_eval...
+2025-10-03 22:13:07,431 - INFO - Attempting to remove container sweb.eval.pallets__flask-4992.full_eval...
+2025-10-03 22:13:07,441 - INFO - Container sweb.eval.pallets__flask-4992.full_eval removed.
+2025-10-03 22:13:07,441 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest...
+2025-10-03 22:13:08,480 - INFO - Image swebench/sweb.eval.x86_64.pallets_1776_flask-4992:latest removed.

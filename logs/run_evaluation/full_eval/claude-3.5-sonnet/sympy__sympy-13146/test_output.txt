@@ -1,0 +1,1033 @@
++ source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /opt/miniconda3/bin/conda
+++++ dirname /opt/miniconda3/bin
++++ PATH=/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+++ /opt/miniconda3/bin/conda shell.posix activate testbed
++ ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_1=/opt/miniconda3
+++ CONDA_PREFIX_1=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ cd /testbed
++ git config --global --add safe.directory /testbed
++ cd /testbed
++ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   sympy/core/power.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	sympy/core/power.py.orig
+	sympy/core/power.py.rej
+
+no changes added to commit (use "git add" and/or "git commit -a")
++ git show
+commit b678d8103e48fdb1af335dbf0080b3d5366f2d17
+Merge: 851bb1c130 b19785ccc1
+Author: Francesco Bonazzi <franz.bonazzi@gmail.com>
+Date:   Thu Aug 17 23:56:53 2017 -0400
+
+    Merge pull request #13142 from asmeurer/si-lower
+    
+    Rename SI.py to si.py
+
++ git -c core.fileMode=false diff b678d8103e48fdb1af335dbf0080b3d5366f2d17
+diff --git a/sympy/core/power.py b/sympy/core/power.py
+index 82bc545f33..d802fda589 100644
+--- a/sympy/core/power.py
++++ b/sympy/core/power.py
+@@ -3,6 +3,7 @@
+ from math import log as _log
+ 
+ from .sympify import _sympify
++from .numbers import Float, Rational
+ from .cache import cacheit
+ from .singleton import S
+ from .expr import Expr
+@@ -236,6 +237,17 @@ def __new__(cls, b, e, evaluate=None):
+ 
+     @property
+     def base(self):
++        
++        # Normalize float exponents to rationals when possible
++        # This prevents issues where x**2.5 and x**(5/2) are treated as different
++        if isinstance(e, Float):
++            rational = nsimplify(e, rational=True)
++            if rational.is_Rational and abs(float(rational) - float(e)) < 1e-10:
++                e = rational
++        elif e.is_Number and not e.is_Rational and not e.is_Integer:
++            rational = nsimplify(e, rational=True)
++            if rational.is_Rational and abs(e - rational) < S(1)/10**10:
++                e = rational
+         return self._args[0]
+ 
+     @property
++ source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z x ']'
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1='(testbed) '
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=3
++++ CONDA_SHLVL=3
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_PREFIX_2=/opt/miniconda3/envs/testbed
++++ CONDA_PREFIX_2=/opt/miniconda3/envs/testbed
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+++ /opt/miniconda3/bin/conda shell.posix activate testbed
++ ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_3='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_3='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=4
+++ CONDA_SHLVL=4
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_3=/opt/miniconda3
+++ CONDA_PREFIX_3=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ python -m pip install -e .
+Obtaining file:///testbed
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: mpmath>=0.19 in /opt/miniconda3/envs/testbed/lib/python3.9/site-packages (from sympy==1.1.2.dev0) (1.3.0)
+Installing collected packages: sympy
+  Attempting uninstall: sympy
+    Found existing installation: sympy 1.1.2.dev0
+    Uninstalling sympy-1.1.2.dev0:
+      Successfully uninstalled sympy-1.1.2.dev0
+  DEPRECATION: Legacy editable install of sympy==1.1.2.dev0 from file:///testbed (setup.py develop) is deprecated. pip 25.0 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457
+  Running setup.py develop for sympy
+Successfully installed sympy
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ git checkout b678d8103e48fdb1af335dbf0080b3d5366f2d17 sympy/core/tests/test_evalf.py
+Updated 0 paths from f80f5d07a5
++ git apply -v -
+Checking patch sympy/core/tests/test_evalf.py...
+Applied patch sympy/core/tests/test_evalf.py cleanly.
++ : '>>>>> Start Test Output'
++ PYTHONWARNINGS=ignore::UserWarning,ignore::SyntaxWarning
++ bin/test -C --verbose sympy/core/tests/test_evalf.py
+/testbed/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/testbed/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+/testbed/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping, defaultdict
+/testbed/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Callable
+============================= test process starts ==============================
+executable:         /opt/miniconda3/envs/testbed/bin/python  (3.9.20-final-0) [CPython]
+architecture:       64-bit
+cache:              no
+ground types:       python 
+random seed:        78738871
+hash randomization: on (PYTHONHASHSEED=3271106920)
+
+sympy/core/tests/test_evalf.py[48] 
+test_evalf_helpers ok
+test_evalf_basic ok
+test_cancellation ok
+test_evalf_powers ok
+test_evalf_rump E
+test_evalf_complex E
+test_evalf_complex_bug f
+test_evalf_complex_powers ok
+test_evalf_complex_powers_bug f
+test_evalf_exponentiation E
+test_evalf_complex_cancellation ok
+test_evalf_logs E
+test_evalf_trig E
+test_evalf_near_integers E
+test_evalf_ramanujan E
+test_evalf_bugs E
+test_evalf_integer_parts E
+test_evalf_trig_zero_detection ok
+test_evalf_sum E
+test_evalf_divergent_series E
+test_evalf_product E
+test_evalf_py_methods ok
+test_evalf_power_subs_bugs ok
+test_evalf_arguments ok
+test_implemented_function_evalf ok
+test_evaluate_false ok
+test_evalf_relational ok
+test_issue_5486 E
+test_issue_5486_bug ok
+test_bugs E
+test_subs ok
+test_issue_4956_5204 E
+test_old_docstring ok
+test_issue_4806 E
+test_evalf_mul E
+test_scaled_zero ok
+test_chop_value ok
+test_infinities ok
+test_to_mpmath ok
+test_issue_6632_evalf E
+test_issue_4945 ok
+test_evalf_integral ok
+test_issue_8821_highprec_from_str ok
+test_issue_8853 ok
+test_issue_9326 ok
+test_issue_10323 E
+test_AssocOp_Function E
+test_issue_10395 ok                                                       [FAIL]
+
+
+________________________________________________________________________________
+________________ sympy/core/tests/test_evalf.py:test_evalf_rump ________________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 52, in test_evalf_rump
+    a = 1335*y**6/4 + x**2*(11*x**2*y**2 - y**6 - 121*y**4 - 2) + 11*y**8/2 + x/(2*y)
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/decorators.py", line 132, in binary_op_wrapper
+    return func(self, other)
+  File "/testbed/sympy/core/expr.py", line 140, in __mul__
+    return Mul(self, other)
+  File "/testbed/sympy/core/operations.py", line 41, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/testbed/sympy/core/mul.py", line 182, in flatten
+    if not a.is_zero and a.is_Rational:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/mul.py", line 1096, in _eval_is_zero
+    z = a.is_zero
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 403, in _eval_is_zero
+    if self.base.is_zero:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+______________ sympy/core/tests/test_evalf.py:test_evalf_complex _______________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 57, in test_evalf_complex
+    assert NS('2*sqrt(pi)*I', 10) == '3.544907702*I'
+  File "/testbed/sympy/core/tests/test_evalf.py", line 15, in NS
+    return sstr(sympify(e).evalf(n, **options), full_prec=True)
+  File "/testbed/sympy/core/sympify.py", line 354, in sympify
+    expr = parse_expr(a, local_dict=locals, transformations=transformations, evaluate=evaluate)
+  File "/testbed/sympy/parsing/sympy_parser.py", line 894, in parse_expr
+    return eval_expr(code, local_dict, global_dict)
+  File "/testbed/sympy/parsing/sympy_parser.py", line 806, in eval_expr
+    expr = eval(
+  File "<string>", line 1, in <module>
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/decorators.py", line 132, in binary_op_wrapper
+    return func(self, other)
+  File "/testbed/sympy/core/expr.py", line 140, in __mul__
+    return Mul(self, other)
+  File "/testbed/sympy/core/operations.py", line 41, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/testbed/sympy/core/mul.py", line 182, in flatten
+    if not a.is_zero and a.is_Rational:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/mul.py", line 1096, in _eval_is_zero
+    z = a.is_zero
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 403, in _eval_is_zero
+    if self.base.is_zero:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+___________ sympy/core/tests/test_evalf.py:test_evalf_exponentiation ___________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 93, in test_evalf_exponentiation
+    assert NS(sqrt(-pi)) == '1.77245385090552*I'
+  File "/testbed/sympy/functions/elementary/miscellaneous.py", line 115, in sqrt
+    return Pow(arg, S.Half)
+  File "/testbed/sympy/core/power.py", line 228, in __new__
+    obj = b._eval_power(e)
+  File "/testbed/sympy/core/mul.py", line 645, in _eval_power
+    return p._eval_expand_power_base()
+  File "/testbed/sympy/core/power.py", line 767, in _eval_expand_power_base
+    b = self.base
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+________________ sympy/core/tests/test_evalf.py:test_evalf_logs ________________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 131, in test_evalf_logs
+    assert NS('log(100, 10, evaluate=False)', 15) == '2.00000000000000'
+  File "/testbed/sympy/core/tests/test_evalf.py", line 15, in NS
+    return sstr(sympify(e).evalf(n, **options), full_prec=True)
+  File "/testbed/sympy/core/evalf.py", line 1396, in evalf
+    result = evalf(self, prec + 4, options)
+  File "/testbed/sympy/core/evalf.py", line 1288, in evalf
+    r = rf(x, prec, options)
+  File "/testbed/sympy/core/evalf.py", line 811, in evalf_log
+    expr = expr.doit()
+  File "/testbed/sympy/core/basic.py", line 1545, in doit
+    return self.func(*terms)
+  File "/testbed/sympy/core/function.py", line 439, in __new__
+    result = super(Function, cls).__new__(cls, *args, **options)
+  File "/testbed/sympy/core/function.py", line 250, in __new__
+    evaluated = cls.eval(*args)
+  File "/testbed/sympy/functions/elementary/exponential.py", line 504, in eval
+    return n + log(arg // den) / log(base)
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/numbers.py", line 1618, in __div__
+    return Number.__div__(self, other)
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/numbers.py", line 684, in __div__
+    return AtomicExpr.__div__(self, other)
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/decorators.py", line 132, in binary_op_wrapper
+    return func(self, other)
+  File "/testbed/sympy/core/expr.py", line 160, in __div__
+    return Mul(self, Pow(other, S.NegativeOne))
+  File "/testbed/sympy/core/operations.py", line 41, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/testbed/sympy/core/mul.py", line 591, in flatten
+    if any(c.is_finite == False for c in c_part):
+  File "/testbed/sympy/core/mul.py", line 591, in <genexpr>
+    if any(c.is_finite == False for c in c_part):
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 545, in _eval_is_finite
+    if self.base.is_zero:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+________________ sympy/core/tests/test_evalf.py:test_evalf_trig ________________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 142, in test_evalf_trig
+    assert NS(sin(exp(pi*sqrt(163))*pi), 15) == '-2.35596641936785e-12'
+  File "/testbed/sympy/core/function.py", line 439, in __new__
+    result = super(Function, cls).__new__(cls, *args, **options)
+  File "/testbed/sympy/core/function.py", line 250, in __new__
+    evaluated = cls.eval(*args)
+  File "/testbed/sympy/functions/elementary/exponential.py", line 279, in eval
+    elif term.is_comparable:
+  File "/testbed/sympy/core/basic.py", line 586, in is_comparable
+    is_real = self.is_real
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 439, in _eval_is_real
+    real_b = self.base.is_real
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+___________ sympy/core/tests/test_evalf.py:test_evalf_near_integers ____________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 154, in test_evalf_near_integers
+    assert NS(f(5000) - fibonacci(5000), 10, maxn=1500) == '5.156009964e-1046'
+  File "/testbed/sympy/core/tests/test_evalf.py", line 153, in <lambda>
+    f = lambda n: ((1 + sqrt(5))**n)/(2**n * sqrt(5))
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/decorators.py", line 132, in binary_op_wrapper
+    return func(self, other)
+  File "/testbed/sympy/core/expr.py", line 160, in __div__
+    return Mul(self, Pow(other, S.NegativeOne))
+  File "/testbed/sympy/core/power.py", line 228, in __new__
+    obj = b._eval_power(e)
+  File "/testbed/sympy/core/mul.py", line 626, in _eval_power
+    return Mul(*[Pow(b, e, evaluate=False) for b in cargs]) * \
+  File "/testbed/sympy/core/operations.py", line 41, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/testbed/sympy/core/mul.py", line 182, in flatten
+    if not a.is_zero and a.is_Rational:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 403, in _eval_is_zero
+    if self.base.is_zero:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+_____________ sympy/core/tests/test_evalf.py:test_evalf_ramanujan ______________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 164, in test_evalf_ramanujan
+    assert NS(exp(pi*sqrt(163)) - 640320**3 - 744, 10) == '-7.499274028e-13'
+  File "/testbed/sympy/core/function.py", line 439, in __new__
+    result = super(Function, cls).__new__(cls, *args, **options)
+  File "/testbed/sympy/core/function.py", line 250, in __new__
+    evaluated = cls.eval(*args)
+  File "/testbed/sympy/functions/elementary/exponential.py", line 279, in eval
+    elif term.is_comparable:
+  File "/testbed/sympy/core/basic.py", line 586, in is_comparable
+    is_real = self.is_real
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 439, in _eval_is_real
+    real_b = self.base.is_real
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+________________ sympy/core/tests/test_evalf.py:test_evalf_bugs ________________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 178, in test_evalf_bugs
+    assert NS('log(10**100,10)', 10) == '100.0000000'
+  File "/testbed/sympy/core/tests/test_evalf.py", line 15, in NS
+    return sstr(sympify(e).evalf(n, **options), full_prec=True)
+  File "/testbed/sympy/core/sympify.py", line 354, in sympify
+    expr = parse_expr(a, local_dict=locals, transformations=transformations, evaluate=evaluate)
+  File "/testbed/sympy/parsing/sympy_parser.py", line 894, in parse_expr
+    return eval_expr(code, local_dict, global_dict)
+  File "/testbed/sympy/parsing/sympy_parser.py", line 806, in eval_expr
+    expr = eval(
+  File "<string>", line 1, in <module>
+  File "/testbed/sympy/core/function.py", line 439, in __new__
+    result = super(Function, cls).__new__(cls, *args, **options)
+  File "/testbed/sympy/core/function.py", line 250, in __new__
+    evaluated = cls.eval(*args)
+  File "/testbed/sympy/functions/elementary/exponential.py", line 504, in eval
+    return n + log(arg // den) / log(base)
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/numbers.py", line 1618, in __div__
+    return Number.__div__(self, other)
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/numbers.py", line 684, in __div__
+    return AtomicExpr.__div__(self, other)
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/decorators.py", line 132, in binary_op_wrapper
+    return func(self, other)
+  File "/testbed/sympy/core/expr.py", line 160, in __div__
+    return Mul(self, Pow(other, S.NegativeOne))
+  File "/testbed/sympy/core/operations.py", line 41, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/testbed/sympy/core/mul.py", line 591, in flatten
+    if any(c.is_finite == False for c in c_part):
+  File "/testbed/sympy/core/mul.py", line 591, in <genexpr>
+    if any(c.is_finite == False for c in c_part):
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 545, in _eval_is_finite
+    if self.base.is_zero:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+___________ sympy/core/tests/test_evalf.py:test_evalf_integer_parts ____________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 240, in test_evalf_integer_parts
+    assert ceiling(10*(sin(1)**2 + cos(1)**2)) == 10
+  File "/testbed/sympy/core/function.py", line 439, in __new__
+    result = super(Function, cls).__new__(cls, *args, **options)
+  File "/testbed/sympy/core/function.py", line 250, in __new__
+    evaluated = cls.eval(*args)
+  File "/testbed/sympy/functions/elementary/integers.py", line 23, in eval
+    if arg.is_integer:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/add.py", line 486, in <lambda>
+    _eval_is_integer = lambda self: _fuzzy_group(
+  File "/testbed/sympy/core/logic.py", line 78, in _fuzzy_group
+    for a in args:
+  File "/testbed/sympy/core/add.py", line 487, in <genexpr>
+    (a.is_integer for a in self.args), quick_exit=True)
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/mul.py", line 1111, in _eval_is_integer
+    is_rational = self.is_rational
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/mul.py", line 1084, in _eval_is_rational
+    return self.is_zero
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/mul.py", line 1102, in _eval_is_zero
+    if not a.is_finite:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 549, in _eval_is_finite
+    c1 = self.base.is_finite
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+________________ sympy/core/tests/test_evalf.py:test_evalf_sum _________________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 272, in test_evalf_sum
+    assert Sum(1/n,(n,1,2)).evalf() == 1.5
+  File "/testbed/sympy/core/evalf.py", line 1396, in evalf
+    result = evalf(self, prec + 4, options)
+  File "/testbed/sympy/core/evalf.py", line 1288, in evalf
+    r = rf(x, prec, options)
+  File "/testbed/sympy/core/evalf.py", line 1185, in evalf_sum
+    s, err = expr.euler_maclaurin(m=m, n=n, eps=eps,
+  File "/testbed/sympy/concrete/summations.py", line 622, in euler_maclaurin
+    if not eps or f.is_polynomial(i):
+  File "/testbed/sympy/core/expr.py", line 2366, in is_polynomial
+    return self._eval_is_polynomial(syms)
+  File "/testbed/sympy/core/power.py", line 1096, in _eval_is_polynomial
+    if self.base.has(*syms):
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+__________ sympy/core/tests/test_evalf.py:test_evalf_divergent_series __________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 284, in test_evalf_divergent_series
+    raises(ValueError, lambda: Sum(1/n, (n, 1, oo)).evalf())
+  File "/testbed/sympy/utilities/pytest.py", line 78, in raises
+    code()
+  File "/testbed/sympy/core/tests/test_evalf.py", line 284, in <lambda>
+    raises(ValueError, lambda: Sum(1/n, (n, 1, oo)).evalf())
+  File "/testbed/sympy/core/evalf.py", line 1396, in evalf
+    result = evalf(self, prec + 4, options)
+  File "/testbed/sympy/core/evalf.py", line 1288, in evalf
+    r = rf(x, prec, options)
+  File "/testbed/sympy/core/evalf.py", line 1175, in evalf_sum
+    v = hypsum(func, n, int(a), prec2)
+  File "/testbed/sympy/core/evalf.py", line 1087, in hypsum
+    expr = expr.subs(n, n + start)
+  File "/testbed/sympy/core/basic.py", line 905, in subs
+    rv = rv._subs(old, new, **kwargs)
+  File "/testbed/sympy/core/basic.py", line 1017, in _subs
+    rv = self._eval_subs(old, new)
+  File "/testbed/sympy/core/power.py", line 635, in _eval_subs
+    if old == self.base:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+______________ sympy/core/tests/test_evalf.py:test_evalf_product _______________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 297, in test_evalf_product
+    assert Product(1 - S.Half**2/n**2, (n, 1, oo)).evalf(5)==0.63662
+  File "/testbed/sympy/core/evalf.py", line 1396, in evalf
+    result = evalf(self, prec + 4, options)
+  File "/testbed/sympy/core/evalf.py", line 1288, in evalf
+    r = rf(x, prec, options)
+  File "/testbed/sympy/core/evalf.py", line 1155, in evalf_prod
+    re, im, re_acc, im_acc = evalf(expr.rewrite(Sum), prec=prec, options=options)
+  File "/testbed/sympy/core/basic.py", line 1622, in rewrite
+    return self._eval_rewrite(None, rule, **hints)
+  File "/testbed/sympy/core/basic.py", line 1564, in _eval_rewrite
+    rewritten = getattr(self, rule)(*args)
+  File "/testbed/sympy/concrete/products.py", line 197, in _eval_rewrite_as_Sum
+    return exp(Sum(log(self.function), *self.limits))
+  File "/testbed/sympy/core/function.py", line 441, in __new__
+    pr2 = min(cls._should_evalf(a) for a in result.args)
+  File "/testbed/sympy/core/function.py", line 441, in <genexpr>
+    pr2 = min(cls._should_evalf(a) for a in result.args)
+  File "/testbed/sympy/core/function.py", line 466, in _should_evalf
+    m = arg.match(a + b*S.ImaginaryUnit)
+  File "/testbed/sympy/core/basic.py", line 1516, in match
+    return pattern.matches(self, old=old)
+  File "/testbed/sympy/core/add.py", line 393, in matches
+    return AssocOp._matches_commutative(self, expr, repl_dict, old)
+  File "/testbed/sympy/core/operations.py", line 216, in _matches_commutative
+    d1 = w.matches(last_op, repl_dict)
+  File "/testbed/sympy/core/mul.py", line 915, in matches
+    return AssocOp._matches_commutative(self, expr, repl_dict, old)
+  File "/testbed/sympy/core/operations.py", line 202, in _matches_commutative
+    newexpr = self._combine_inverse(expr, exact)
+  File "/testbed/sympy/core/mul.py", line 1024, in _combine_inverse
+    return lhs/rhs
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/decorators.py", line 132, in binary_op_wrapper
+    return func(self, other)
+  File "/testbed/sympy/core/expr.py", line 160, in __div__
+    return Mul(self, Pow(other, S.NegativeOne))
+  File "/testbed/sympy/core/operations.py", line 41, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/testbed/sympy/core/mul.py", line 182, in flatten
+    if not a.is_zero and a.is_Rational:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/mul.py", line 1096, in _eval_is_zero
+    z = a.is_zero
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 403, in _eval_is_zero
+    if self.base.is_zero:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+________________ sympy/core/tests/test_evalf.py:test_issue_5486 ________________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 348, in test_issue_5486
+    assert not cos(sqrt(0.5 + I)).n().is_Function
+  File "/testbed/sympy/core/function.py", line 439, in __new__
+    result = super(Function, cls).__new__(cls, *args, **options)
+  File "/testbed/sympy/core/function.py", line 250, in __new__
+    evaluated = cls.eval(*args)
+  File "/testbed/sympy/functions/elementary/trigonometric.py", line 537, in eval
+    if arg.could_extract_minus_sign():
+  File "/testbed/sympy/core/expr.py", line 2196, in could_extract_minus_sign
+    self_has_minus = (self.extract_multiplicatively(-1) is not None)
+  File "/testbed/sympy/core/expr.py", line 2066, in extract_multiplicatively
+    elif c == self.base:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+___________________ sympy/core/tests/test_evalf.py:test_bugs ___________________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 359, in test_bugs
+    assert abs(re((1 + I)**2)) < 1e-15
+  File "/testbed/sympy/core/function.py", line 439, in __new__
+    result = super(Function, cls).__new__(cls, *args, **options)
+  File "/testbed/sympy/core/function.py", line 250, in __new__
+    evaluated = cls.eval(*args)
+  File "/testbed/sympy/functions/elementary/complexes.py", line 57, in eval
+    elif arg.is_real:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 439, in _eval_is_real
+    real_b = self.base.is_real
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+_____________ sympy/core/tests/test_evalf.py:test_issue_4956_5204 ______________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 375, in test_issue_4956_5204
+    v = S('''(-27*12**(1/3)*sqrt(31)*I +
+  File "/testbed/sympy/core/sympify.py", line 354, in sympify
+    expr = parse_expr(a, local_dict=locals, transformations=transformations, evaluate=evaluate)
+  File "/testbed/sympy/parsing/sympy_parser.py", line 894, in parse_expr
+    return eval_expr(code, local_dict, global_dict)
+  File "/testbed/sympy/parsing/sympy_parser.py", line 806, in eval_expr
+    expr = eval(
+  File "<string>", line 1, in <module>
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/decorators.py", line 132, in binary_op_wrapper
+    return func(self, other)
+  File "/testbed/sympy/core/expr.py", line 140, in __mul__
+    return Mul(self, other)
+  File "/testbed/sympy/core/operations.py", line 41, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/testbed/sympy/core/mul.py", line 182, in flatten
+    if not a.is_zero and a.is_Rational:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/mul.py", line 1096, in _eval_is_zero
+    z = a.is_zero
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 403, in _eval_is_zero
+    if self.base.is_zero:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+________________ sympy/core/tests/test_evalf.py:test_issue_4806 ________________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 404, in test_issue_4806
+    assert integrate(atan(x)**2, (x, -1, 1)).evalf().round(1) == 0.5
+  File "/testbed/sympy/integrals/integrals.py", line 1294, in integrate
+    return integral.doit(deep=False, meijerg=meijerg, conds=conds,
+  File "/testbed/sympy/integrals/integrals.py", line 391, in doit
+    if self.is_zero:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/integrals/integrals.py", line 110, in _eval_is_zero
+    if self.function.is_zero:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 403, in _eval_is_zero
+    if self.base.is_zero:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+________________ sympy/core/tests/test_evalf.py:test_evalf_mul _________________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 411, in test_evalf_mul
+    assert NS(product(1 + sqrt(n)*I, (n, 1, 500)), 1) == '5.e+567 + 2.e+568*I'
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/decorators.py", line 132, in binary_op_wrapper
+    return func(self, other)
+  File "/testbed/sympy/core/expr.py", line 140, in __mul__
+    return Mul(self, other)
+  File "/testbed/sympy/core/operations.py", line 41, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/testbed/sympy/core/mul.py", line 182, in flatten
+    if not a.is_zero and a.is_Rational:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 403, in _eval_is_zero
+    if self.base.is_zero:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+_____________ sympy/core/tests/test_evalf.py:test_issue_6632_evalf _____________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 445, in test_issue_6632_evalf
+    assert (add*add).n() == 9.999999996e-21
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/decorators.py", line 132, in binary_op_wrapper
+    return func(self, other)
+  File "/testbed/sympy/core/expr.py", line 140, in __mul__
+    return Mul(self, other)
+  File "/testbed/sympy/core/operations.py", line 41, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/testbed/sympy/core/mul.py", line 182, in flatten
+    if not a.is_zero and a.is_Rational:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/add.py", line 528, in _eval_is_zero
+    if a.is_real:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/mul.py", line 1128, in _eval_is_real
+    return self._eval_real_imag(True)
+  File "/testbed/sympy/core/mul.py", line 1137, in _eval_real_imag
+    elif t.is_imaginary:  # I
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 498, in _eval_is_imaginary
+    if self.base.is_imaginary:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+_______________ sympy/core/tests/test_evalf.py:test_issue_10323 ________________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 490, in test_issue_10323
+    assert ceiling(sqrt(2**30 + 1)) == 2**15 + 1
+  File "/testbed/sympy/core/function.py", line 439, in __new__
+    result = super(Function, cls).__new__(cls, *args, **options)
+  File "/testbed/sympy/core/function.py", line 250, in __new__
+    evaluated = cls.eval(*args)
+  File "/testbed/sympy/functions/elementary/integers.py", line 23, in eval
+    if arg.is_integer:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/mul.py", line 1111, in _eval_is_integer
+    is_rational = self.is_rational
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/mul.py", line 1084, in _eval_is_rational
+    return self.is_zero
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/mul.py", line 1102, in _eval_is_zero
+    if not a.is_finite:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 549, in _eval_is_finite
+    c1 = self.base.is_finite
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+________________________________________________________________________________
+_____________ sympy/core/tests/test_evalf.py:test_AssocOp_Function _____________
+  File "/testbed/sympy/core/tests/test_evalf.py", line 494, in test_AssocOp_Function
+    e = S('''
+  File "/testbed/sympy/core/sympify.py", line 354, in sympify
+    expr = parse_expr(a, local_dict=locals, transformations=transformations, evaluate=evaluate)
+  File "/testbed/sympy/parsing/sympy_parser.py", line 894, in parse_expr
+    return eval_expr(code, local_dict, global_dict)
+  File "/testbed/sympy/parsing/sympy_parser.py", line 806, in eval_expr
+    expr = eval(
+  File "<string>", line 1, in <module>
+  File "/testbed/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/testbed/sympy/core/decorators.py", line 132, in binary_op_wrapper
+    return func(self, other)
+  File "/testbed/sympy/core/expr.py", line 140, in __mul__
+    return Mul(self, other)
+  File "/testbed/sympy/core/operations.py", line 41, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/testbed/sympy/core/mul.py", line 182, in flatten
+    if not a.is_zero and a.is_Rational:
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/mul.py", line 1096, in _eval_is_zero
+    z = a.is_zero
+  File "/testbed/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
+  File "/testbed/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/testbed/sympy/core/power.py", line 403, in _eval_is_zero
+    if self.base.is_zero:
+  File "/testbed/sympy/core/power.py", line 243, in base
+    if isinstance(e, Float):
+UnboundLocalError: local variable 'e' referenced before assignment
+
+ tests finished: 26 passed, 2 expected to fail, 20 exceptions, in 0.21 seconds =
+DO *NOT* COMMIT!
++ : '>>>>> End Test Output'
++ git checkout b678d8103e48fdb1af335dbf0080b3d5366f2d17 sympy/core/tests/test_evalf.py
+Updated 1 path from f80f5d07a5

@@ -1,0 +1,84 @@
+2025-10-04 00:00:24,502 - INFO - Creating container for sympy__sympy-13146...
+2025-10-04 00:00:43,954 - INFO - Container for sympy__sympy-13146 created: 2bbb881a62083c9ddb8af8f73093f9aee244dbac99424a5f0b34328929059a84
+2025-10-04 00:00:44,057 - INFO - Container for sympy__sympy-13146 started: 2bbb881a62083c9ddb8af8f73093f9aee244dbac99424a5f0b34328929059a84
+2025-10-04 00:00:44,057 - INFO - Intermediate patch for sympy__sympy-13146 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13146/patch.diff, now applying to container...
+2025-10-04 00:00:44,133 - INFO - Failed to apply patch to container: git apply --verbose
+2025-10-04 00:00:44,178 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-10-04 00:00:44,218 - INFO - >>>>> Applied Patch:
+patching file sympy/core/power.py
+Hunk #1 succeeded at 3 with fuzz 1 (offset 2 lines).
+Hunk #2 succeeded at 237 with fuzz 3 (offset 2 lines).
+
+2025-10-04 00:00:44,470 - INFO - Git diff before:
+diff --git a/sympy/core/power.py b/sympy/core/power.py
+index 82bc545f33..d802fda589 100644
+--- a/sympy/core/power.py
++++ b/sympy/core/power.py
+@@ -3,6 +3,7 @@
+ from math import log as _log
+ 
+ from .sympify import _sympify
++from .numbers import Float, Rational
+ from .cache import cacheit
+ from .singleton import S
+ from .expr import Expr
+@@ -236,6 +237,17 @@ def __new__(cls, b, e, evaluate=None):
+ 
+     @property
+     def base(self):
++        
++        # Normalize float exponents to rationals when possible
++        # This prevents issues where x**2.5 and x**(5/2) are treated as different
++        if isinstance(e, Float):
++            rational = nsimplify(e, rational=True)
++            if rational.is_Rational and abs(float(rational) - float(e)) < 1e-10:
++                e = rational
++        elif e.is_Number and not e.is_Rational and not e.is_Integer:
++            rational = nsimplify(e, rational=True)
++            if rational.is_Rational and abs(e - rational) < S(1)/10**10:
++                e = rational
+         return self._args[0]
+ 
+     @property
+2025-10-04 00:00:44,470 - INFO - Eval script for sympy__sympy-13146 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13146/eval.sh; copying to container...
+2025-10-04 00:00:47,383 - INFO - Test runtime: 2.86 seconds
+2025-10-04 00:00:47,383 - INFO - Test output for sympy__sympy-13146 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13146/test_output.txt
+2025-10-04 00:00:47,424 - INFO - Git diff after:
+diff --git a/sympy/core/power.py b/sympy/core/power.py
+index 82bc545f33..d802fda589 100644
+--- a/sympy/core/power.py
++++ b/sympy/core/power.py
+@@ -3,6 +3,7 @@
+ from math import log as _log
+ 
+ from .sympify import _sympify
++from .numbers import Float, Rational
+ from .cache import cacheit
+ from .singleton import S
+ from .expr import Expr
+@@ -236,6 +237,17 @@ def __new__(cls, b, e, evaluate=None):
+ 
+     @property
+     def base(self):
++        
++        # Normalize float exponents to rationals when possible
++        # This prevents issues where x**2.5 and x**(5/2) are treated as different
++        if isinstance(e, Float):
++            rational = nsimplify(e, rational=True)
++            if rational.is_Rational and abs(float(rational) - float(e)) < 1e-10:
++                e = rational
++        elif e.is_Number and not e.is_Rational and not e.is_Integer:
++            rational = nsimplify(e, rational=True)
++            if rational.is_Rational and abs(e - rational) < S(1)/10**10:
++                e = rational
+         return self._args[0]
+ 
+     @property
+2025-10-04 00:00:47,424 - INFO - Grading answer for sympy__sympy-13146...
+2025-10-04 00:00:47,427 - INFO - report: {'sympy__sympy-13146': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_evalf_bugs']}, 'PASS_TO_PASS': {'success': ['test_evalf_helpers', 'test_evalf_basic', 'test_cancellation', 'test_evalf_powers', 'test_evalf_complex_powers', 'test_evalf_complex_cancellation', 'test_evalf_trig_zero_detection', 'test_evalf_py_methods', 'test_evalf_power_subs_bugs', 'test_evalf_arguments', 'test_implemented_function_evalf', 'test_evaluate_false', 'test_evalf_relational', 'test_issue_5486_bug', 'test_subs', 'test_old_docstring', 'test_scaled_zero', 'test_chop_value', 'test_infinities', 'test_to_mpmath', 'test_issue_4945', 'test_evalf_integral', 'test_issue_8821_highprec_from_str', 'test_issue_8853', 'test_issue_9326'], 'failure': ['test_evalf_rump', 'test_evalf_complex', 'test_evalf_exponentiation', 'test_evalf_sum', 'test_evalf_divergent_series', 'test_evalf_product', 'test_issue_5486', 'test_bugs', 'test_issue_10323']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-13146: resolved: False
+2025-10-04 00:00:47,427 - INFO - Attempting to stop container sweb.eval.sympy__sympy-13146.full_eval...
+2025-10-04 00:01:02,570 - INFO - Attempting to remove container sweb.eval.sympy__sympy-13146.full_eval...
+2025-10-04 00:01:02,585 - INFO - Container sweb.eval.sympy__sympy-13146.full_eval removed.
+2025-10-04 00:01:02,585 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-13146:latest...
+2025-10-04 00:01:03,546 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-13146:latest removed.

@@ -1,0 +1,29 @@
+--- a/django/views/debug.py
++++ b/django/views/debug.py
+@@ -90,6 +90,7 @@
+ import functools
+ import re
+ import sys
++import collections.abc
+ from pathlib import Path
+ 
+ from django.conf import settings
+@@ -520,10 +521,16 @@
+             except TypeError:
+                 # If the key isn't regex-able, just skip it.
+                 pass
+-        if isinstance(value, dict):
++        if isinstance(value, list):
++            return [self.cleanse_setting(k, v) for v in value]
++        elif isinstance(value, tuple):
++            return tuple(self.cleanse_setting(k, v) for v in value)
++        elif isinstance(value, dict):
+             return {k: self.cleanse_setting(k, v) for k, v in value.items()}
++        
+         if cleansed:
+             return self.cleansed_substitute
++        
+         return value
+ 
+     def get_safe_request_meta(self, request):
+ ```

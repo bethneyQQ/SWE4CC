@@ -1,0 +1,23 @@
+
+--- a/seaborn/_stats/regression.py
++++ b/seaborn/_stats/regression.py
+@@ -22,13 +22,19 @@ class PolyFit(Stat):
+     def _fit_predict(self, data):
+ 
+         x = data["x"]
+         y = data["y"]
++        
++        # Remove missing data
++        mask = pd.notna(x) & pd.notna(y)
++        x = x[mask]
++        y = y[mask]
++        
+         if x.nunique() <= self.order:
+             # TODO warn?
+             xx = yy = []
+         else:
+             p = np.polyfit(x, y, self.order)
+             xx = np.linspace(x.min(), x.max(), self.gridsize)
+             yy = np.polyval(p, xx)
+ 
+         return pd.DataFrame(dict(x=xx, y=yy))

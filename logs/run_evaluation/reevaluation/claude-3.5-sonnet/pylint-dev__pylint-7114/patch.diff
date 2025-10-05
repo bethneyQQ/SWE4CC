@@ -1,0 +1,38 @@
+--- a/pylint/lint/expand_modules.py
++++ b/pylint/lint/expand_modules.py
+@@ -85,13 +85,23 @@
+         if os.path.exists(something):
+             # this is a file or a directory
+             try:
+-                modname = ".".join(
+-                    modutils.modpath_from_file(something, path=additional_search_path)
+-                )
++                if os.path.isdir(something):
++                    # For directories, check if __init__.py exists
++                    init_path = os.path.join(something, "__init__.py")
++                    if os.path.exists(init_path):
++                        filepath = init_path
++                    else:
++                        # It's a namespace package, use the directory itself
++                        filepath = something
++                    modname = ".".join(
++                        modutils.modpath_from_file(filepath, path=additional_search_path)
++                    )
++                else:
++                    filepath = something
++                    modname = ".".join(
++                        modutils.modpath_from_file(something, path=additional_search_path)
++                    )
+             except ImportError:
+                 modname = os.path.splitext(basename)[0]
+-            if os.path.isdir(something):
+-                filepath = os.path.join(something, "__init__.py")
+-            else:
+-                filepath = something
++                if os.path.isdir(something):
++                    filepath = os.path.join(something, "__init__.py")
++                else:
++                    filepath = something
+         else:
+ 
+ 

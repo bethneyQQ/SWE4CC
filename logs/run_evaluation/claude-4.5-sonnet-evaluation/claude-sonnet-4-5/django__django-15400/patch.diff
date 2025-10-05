@@ -1,0 +1,17 @@
+--- a/django/utils/functional.py
++++ b/django/utils/functional.py
+@@ -362,6 +362,10 @@ class LazyObject:
+     __eq__ = new_method_proxy(operator.eq)
+     __lt__ = new_method_proxy(operator.lt)
+     __gt__ = new_method_proxy(operator.gt)
+     __ne__ = new_method_proxy(operator.ne)
+     __hash__ = new_method_proxy(hash)
+ 
++    # Arithmetic operators
++    __add__ = new_method_proxy(operator.add)
++    __radd__ = new_method_proxy(lambda a, b: operator.add(b, a))
++
+     # List/Tuple/Dictionary methods support
+     __getitem__ = new_method_proxy(operator.getitem)
+ 
+ 

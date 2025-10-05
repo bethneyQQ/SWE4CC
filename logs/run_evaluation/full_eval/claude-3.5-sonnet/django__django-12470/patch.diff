@@ -1,0 +1,31 @@
+
+--- a/django/db/models/sql/compiler.py
++++ b/django/db/models/sql/compiler.py
+@@ -720,14 +720,19 @@ class SQLCompiler:
+             already_seen.add(join_tuple)
+ 
+             results = []
++            # When recursing into a related model's ordering, we should not
++            # override the order direction specified in that model's ordering.
++            # The descending flag from the parent field only applies if the
++            # related model's ordering items don't specify their own direction.
+             for item in opts.ordering:
+                 if hasattr(item, 'resolve_expression') and not isinstance(item, OrderBy):
+-                    item = item.desc() if descending else item.asc()
+-                if isinstance(item, OrderBy):
++                    # For expressions without OrderBy, apply parent's descending flag
++                    item = item.desc() if descending else item.asc()
++                    results.append((item, False))
++                elif isinstance(item, OrderBy):
++                    # OrderBy expressions already have direction, don't modify
+                     results.append((item, False))
+-                    continue
+-                results.extend(self.find_ordering_name(item, opts, alias,
+-                                                       order, already_seen))
++                else:
++                    # For string field names, use 'ASC' as default to preserve
++                    # any '-' prefix in the field name
++                    results.extend(self.find_ordering_name(item, opts, alias,
++                                                           'ASC', already_seen))
+             return results
+         targets, alias, _ = self.query.trim_joins(targets, joins, path)

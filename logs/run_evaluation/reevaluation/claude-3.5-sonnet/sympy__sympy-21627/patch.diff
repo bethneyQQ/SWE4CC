@@ -1,0 +1,36 @@
+--- a/sympy/functions/elementary/complexes.py
++++ b/sympy/functions/elementary/complexes.py
+@@ -125,8 +125,13 @@ class re(Function):
+         return self.args[0].is_algebraic
+ 
+     def _eval_is_zero(self):
+-        # is_imaginary implies nonzero
+-        return fuzzy_or([self.args[0].is_imaginary, self.args[0].is_zero])
++        # is_imaginary implies nonzero  
++        # Check is_imaginary first to avoid potential recursion
++        # when args[0] is a complex nested expression
++        if self.args[0].is_imaginary is True:
++            return True
++        if self.args[0].is_zero is not None:
++            return self.args[0].is_zero
+ 
+     def _eval_is_finite(self):
+         if self.args[0].is_finite:
+@@ -252,7 +257,14 @@ class im(Function):
+         return self.args[0].is_algebraic
+ 
+     def _eval_is_zero(self):
+-        return self.args[0].is_extended_real
++        # Check if argument is real, which means imaginary part is zero
++        # Return None instead of recursively checking to avoid
++        # infinite recursion with nested hyperbolic/trig functions
++        if self.args[0].is_extended_real is True:
++            return True
++        if self.args[0].is_extended_real is False:
++            return None
++        return None
+ 
+     def _eval_is_finite(self):
+         if self.args[0].is_finite:
+ 
+ 

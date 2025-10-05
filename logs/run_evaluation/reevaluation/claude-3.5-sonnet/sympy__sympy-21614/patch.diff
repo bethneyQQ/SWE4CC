@@ -1,0 +1,3 @@
+@property
+def kind(self):
+    return self.expr.kind

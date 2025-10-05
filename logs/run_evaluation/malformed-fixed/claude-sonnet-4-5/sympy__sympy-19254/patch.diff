@@ -1,0 +1,42 @@
+--- a/sympy/polys/factortools.py
++++ b/sympy/polys/factortools.py
+@@ -126,17 +126,27 @@ def dmp_trial_division(f, factors, u, K):
+ def dup_zz_mignotte_bound(f, K):
+-    """Mignotte bound for univariate polynomials in `K[x]`. """
+-    a = dup_max_norm(f, K)
+-    b = abs(dup_LC(f, K))
++    """Knuth-Cohen bound for univariate polynomials in `K[x]`. """
+     n = dup_degree(f)
+-
+-    return K.sqrt(K(n + 1))*2**n*a*b
++    
++    # Compute L2 norm (Euclidean norm) of coefficient vector
++    norm_squared = sum(c**2 for c in dup_abs(f, K))
++    
++    return 2**n * K.sqrt(norm_squared)
+ 
+ 
+ def dmp_zz_mignotte_bound(f, u, K):
+-    """Mignotte bound for multivariate polynomials in `K[X]`. """
+-    a = dmp_max_norm(f, u, K)
+-    b = abs(dmp_ground_LC(f, u, K))
++    """Knuth-Cohen bound for multivariate polynomials in `K[X]`. """
+     n = sum(dmp_degree_list(f, u))
+-
+-    return K.sqrt(K(n + 1))*2**n*a*b
++    
++    # Compute L2 norm (Euclidean norm) of coefficient vector
++    def _norm_squared(g, v):
++        if v == 0:
++            return sum(c**2 for c in dup_abs(g, K))
++        else:
++            return sum(_norm_squared(c, v - 1) for c in g)
++    
++    norm_squared = _norm_squared(f, u)
++    
++    return 2**n * K.sqrt(norm_squared)
+ 
+ 
+ 
+ 
+ 

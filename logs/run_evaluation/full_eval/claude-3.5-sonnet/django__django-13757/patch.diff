@@ -1,0 +1,35 @@
+
+--- a/django/db/models/fields/json.py
++++ b/django/db/models/fields/json.py
+@@ -366,14 +366,28 @@
+ class KeyTransformIsNull(lookups.IsNull):
+     # key__isnull=False is the same as has_key='key'
+     def as_oracle(self, compiler, connection):
+-        if not self.rhs:
++        # isnull=False: check if key exists
++        if not self.rhs:
+             return HasKey(self.lhs.lhs, self.lhs.key_name).as_oracle(compiler, connection)
+-        return super().as_sql(compiler, connection)
++        # isnull=True: check if key doesn't exist
++        sql, params = HasKey(self.lhs.lhs, self.lhs.key_name).as_oracle(compiler, connection)
++        return 'NOT %s' % sql, params
+ 
+     def as_sqlite(self, compiler, connection):
++        # isnull=False: check if key exists
+         if not self.rhs:
+             return HasKey(self.lhs.lhs, self.lhs.key_name).as_sqlite(compiler, connection)
+-        return super().as_sql(compiler, connection)
++        # isnull=True: check if key doesn't exist
++        sql, params = HasKey(self.lhs.lhs, self.lhs.key_name).as_sqlite(compiler, connection)
++        return 'NOT %s' % sql, params
++
++    def as_postgresql(self, compiler, connection):
++        # isnull=False: check if key exists
++        if not self.rhs:
++            return HasKey(self.lhs.lhs, self.lhs.key_name).as_postgresql(compiler, connection)
++        # isnull=True: check if key doesn't exist using NOT has_key
++        sql, params = HasKey(self.lhs.lhs, self.lhs.key_name).as_postgresql(compiler, connection)
++        return 'NOT %s' % sql, params
+ 
+ 
+ class KeyTransformIn(lookups.In):

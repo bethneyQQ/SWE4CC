@@ -1,0 +1,45 @@
+--- a/sympy/functions/elementary/hyperbolic.py
++++ b/sympy/functions/elementary/hyperbolic.py
+@@ -1,6 +1,7 @@
+ from sympy.core import S, sympify, cacheit
+ from sympy.core.function import Function, ArgumentIndexError
+ from sympy.core.logic import fuzzy_or, fuzzy_and
++from sympy.functions.elementary.piecewise import Piecewise
+ from sympy.functions.elementary.miscellaneous import sqrt
+ 
+ 
+@@ -150,6 +151,10 @@ class sinh(HyperbolicFunction):
+         return self.rewrite(exp)._eval_as_leading_term(x, logx=logx, cdir=cdir)
+ 
+     def _eval_rewrite_as_tractable(self, arg, limitvar=None, **kwargs):
++        # Don't try to rewrite if arg contains Piecewise, as this can lead
++        # to PolynomialError when polynomial operations are attempted
++        if arg.has(Piecewise):
++            return None
+         neg_exp, pos_exp = exp(-arg), exp(arg)
+         return (pos_exp - neg_exp)/(2)
+ 
+@@ -287,6 +292,10 @@ class cosh(HyperbolicFunction):
+         return self.rewrite(exp)._eval_as_leading_term(x, logx=logx, cdir=cdir)
+ 
+     def _eval_rewrite_as_tractable(self, arg, limitvar=None, **kwargs):
++        # Don't try to rewrite if arg contains Piecewise, as this can lead
++        # to PolynomialError when polynomial operations are attempted
++        if arg.has(Piecewise):
++            return None
+         neg_exp, pos_exp = exp(-arg), exp(arg)
+         return (pos_exp + neg_exp)/2
+ 
+@@ -397,6 +406,10 @@ class tanh(HyperbolicFunction):
+         return S.One/self.func(arg)
+ 
+     def _eval_rewrite_as_tractable(self, arg, limitvar=None, **kwargs):
++        # Don't try to rewrite if arg contains Piecewise, as this can lead
++        # to PolynomialError when polynomial operations are attempted
++        if arg.has(Piecewise):
++            return None
+         neg_exp, pos_exp = exp(-arg), exp(arg)
+         return (pos_exp - neg_exp)/(pos_exp + neg_exp)
+ 
+ 
+ 

@@ -1,0 +1,24 @@
+
+--- a/src/_pytest/tmpdir.py
++++ b/src/_pytest/tmpdir.py
+@@ -151,10 +151,17 @@ class TempdirFactory:
+ def get_user() -> Optional[str]:
+     """Return the current user name, or None if getuser() does not work
+     in the current environment (see #1010)."""
+     import getpass
+ 
+     try:
+-        return getpass.getuser()
++        user = getpass.getuser()
+     except (ImportError, KeyError):
+         return None
++    
++    # Sanitize username to remove characters that are illegal for directory names.
++    # For example, Windows domain users may have backslashes in their username (e.g., "domain\user").
++    user = re.sub(r"[\\/\s]", "_", user)
++    user = re.sub(r"[^\w.-]", "_", user)
++    
++    return user
+ 
+ 
+ def pytest_configure(config: Config) -> None:

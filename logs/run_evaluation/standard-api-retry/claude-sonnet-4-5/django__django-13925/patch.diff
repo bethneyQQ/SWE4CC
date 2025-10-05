@@ -1,0 +1,101 @@
+--- a/django/core/checks/model_checks.py
++++ b/django/core/checks/model_checks.py
+@@ -125,11 +125,18 @@
+ 
+ 
+ def _check_default_pk(app_configs, **kwargs):
+-    def _get_models_with_auto_created_pk(models):
+-        for model in models:
+-            if model._meta.auto_created:
+-                continue
+-            if not model._meta.pk.auto_created:
++    def _has_explicit_pk(model):
++        """Check if model or any of its parents has an explicit primary key."""
++        # Check all parent models in the MRO for an explicit primary key
++        for parent in model.__mro__:
++            if parent is models.Model or not issubclass(parent, models.Model):
++                continue
++            if hasattr(parent, '_meta') and parent._meta.pk and not parent._meta.pk.auto_created:
++                return True
++        return False
++
++    def _get_models_with_auto_created_pk(models_list):
++        for model in models_list:
++            if model._meta.auto_created or _has_explicit_pk(model):
+                 continue
+             if (
+                 model._meta.app_config
+ ```
+--- a/django/core/checks/model_checks.py
++++ b/django/core/checks/model_checks.py
+@@ -125,17 +125,24 @@
+ 
+ 
+ def _check_default_pk(app_configs, **kwargs):
+-    def _get_models_with_auto_created_pk(models):
+-        for model in models:
+-            if model._meta.auto_created:
+-                continue
+-            if not model._meta.pk.auto_created:
+-                continue
+-            if (
+-                model._meta.app_config
+-                and model._meta.app_config.default_auto_field
+-            ):
+-                continue
++    def _get_models_with_auto_created_pk(models_list):
++        for model in models_list:
++            # Skip auto-created models (like many-to-many through tables)
++            if model._meta.auto_created:
++                continue
++            
++            # Check if the primary key is explicitly defined (not auto-created)
++            # This includes checking parent models for inherited primary keys
++            pk_is_explicit = False
++            for parent in model.__mro__:
++                if parent is models.Model or not issubclass(parent, models.Model):
++                    continue
++                if hasattr(parent, '_meta') and parent._meta.pk and not parent._meta.pk.auto_created:
++                    pk_is_explicit = True
++                    break
++            
++            if pk_is_explicit:
++                continue
+             if (
+                 settings.DEFAULT_AUTO_FIELD
+                 and settings.DEFAULT_AUTO_FIELD != "django.db.models.AutoField"
+ ```
+--- a/django/core/checks/model_checks.py
++++ b/django/core/checks/model_checks.py
+@@ -125,11 +125,25 @@
+ 
+ 
+ def _check_default_pk(app_configs, **kwargs):
+-    def _get_models_with_auto_created_pk(models):
+-        for model in models:
+-            if model._meta.auto_created:
+-                continue
+-            if not model._meta.pk.auto_created:
++    def _get_models_with_auto_created_pk(models_list):
++        for model in models_list:
++            # Skip auto-created models (like many-to-many through tables)
++            if model._meta.auto_created:
++                continue
++            
++            # Check if primary key is auto-created
++            if not model._meta.pk.auto_created:
++                continue
++            
++            # Check if the primary key is inherited from a parent model
++            # If a parent model has an explicit (non-auto-created) primary key,
++            # the child inherits it and shouldn't trigger this warning
++            for parent in model._meta.get_parent_list():
++                if parent._meta.pk and not parent._meta.pk.auto_created:
++                    # Primary key is inherited from parent, skip this model
++                    break
++            else:
++                # No explicit primary key found in parents, continue with checks
+                 continue
+             if (
+                 model._meta.app_config
+ ```

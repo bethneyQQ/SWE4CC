@@ -1,0 +1,49 @@
+--- a/lib/matplotlib/widgets.py
++++ b/lib/matplotlib/widgets.py
+@@ -19,7 +19,7 @@ import matplotlib as mpl
+ from . import (_api, _docstring, backend_tools, cbook, colors, ticker,
+                transforms)
+ from .lines import Line2D
+-from .patches import Circle, Rectangle, Ellipse
++from .patches import Circle, Rectangle, Ellipse, Polygon
+ from .transforms import TransformedPatchPath, Affine2D
+ 
+ 
+@@ -709,7 +709,16 @@ class RangeSlider(SliderBase):
+                 facecolor=track_color
+             )
+             ax.add_patch(self.track)
+-            self.poly = ax.axhspan(valinit[0], valinit[1], 0, 1, **kwargs)
++            xy = [
++                [.25, valinit[0]],
++                [.25, valinit[1]],
++                [.75, valinit[1]],
++                [.75, valinit[0]],
++                [.25, valinit[0]],
++            ]
++            self.poly = Polygon(xy, **kwargs)
++            self.poly.set_transform(ax.transAxes)
++            ax.add_patch(self.poly)
+             handleXY_1 = [.5, valinit[0]]
+             handleXY_2 = [.5, valinit[1]]
+         else:
+@@ -719,7 +728,16 @@ class RangeSlider(SliderBase):
+                 facecolor=track_color
+             )
+             ax.add_patch(self.track)
+-            self.poly = ax.axvspan(valinit[0], valinit[1], 0, 1, **kwargs)
++            xy = [
++                [valinit[0], .25],
++                [valinit[0], .75],
++                [valinit[1], .75],
++                [valinit[1], .25],
++                [valinit[0], .25],
++            ]
++            self.poly = Polygon(xy, **kwargs)
++            self.poly.set_transform(ax.transAxes)
++            ax.add_patch(self.poly)
+             handleXY_1 = [valinit[0], .5]
+             handleXY_2 = [valinit[1], .5]
+         self._handles = [
+ 
+ 

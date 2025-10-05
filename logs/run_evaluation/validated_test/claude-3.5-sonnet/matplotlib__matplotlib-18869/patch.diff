@@ -1,0 +1,28 @@
+--- a/lib/matplotlib/__init__.py
++++ b/lib/matplotlib/__init__.py
+@@ -130,6 +130,23 @@ if _sys.version_info < (3, 8):
+     _sys.exit(1)
+ 
+ __version__ = "3.6.0.dev1234+g1234567890"
++
++# Parse version string into a comparable tuple
++import re
++_version_pattern = re.compile(r'^(\d+)\.(\d+)\.(\d+)(?:\.dev(\d+))?')
++_match = _version_pattern.match(__version__)
++if _match:
++    _major, _minor, _micro, _dev = _match.groups()
++    if _dev:
++        version_info = (int(_major), int(_minor), int(_micro), 'dev', int(_dev))
++    else:
++        version_info = (int(_major), int(_minor), int(_micro), 'final', 0)
++else:
++    # Fallback for unexpected version formats
++    version_info = (0, 0, 0, 'unknown', 0)
++
++del re, _version_pattern, _match, _major, _minor, _micro, _dev
++
+ __version_info__ = tuple(
+     int(part) if part.isdigit() else part
+     for part in __version__.split(".")[:3]
+ 
+ 

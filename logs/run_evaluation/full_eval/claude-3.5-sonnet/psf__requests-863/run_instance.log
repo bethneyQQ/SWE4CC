@@ -1,0 +1,4735 @@
+2025-10-03 22:34:23,158 - INFO - Creating container for psf__requests-863...
+2025-10-03 22:34:41,054 - INFO - Container for psf__requests-863 created: 3706934c298e65bb2a2a5111309f669823c833a8d0fac0e25556bb308bba8cc2
+2025-10-03 22:34:41,157 - INFO - Container for psf__requests-863 started: 3706934c298e65bb2a2a5111309f669823c833a8d0fac0e25556bb308bba8cc2
+2025-10-03 22:34:41,158 - INFO - Intermediate patch for psf__requests-863 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/patch.diff, now applying to container...
+2025-10-03 22:34:41,243 - INFO - Failed to apply patch to container: git apply --verbose
+2025-10-03 22:34:41,279 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-10-03 22:34:41,318 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-10-03 22:34:41,318 - INFO - >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+2025-10-03 22:34:41,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2025-10-03 22:34:41,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,338 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,338 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,338 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,338 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,338 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,338 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,338 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,338 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,338 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,338 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,339 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,339 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,339 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,339 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,339 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,339 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,339 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,339 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,339 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,339 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,339 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,340 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,340 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,340 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,340 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,340 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,340 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,340 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,340 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,340 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,340 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,341 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,341 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,341 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,341 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,341 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,341 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,341 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,341 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,341 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,342 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,342 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,342 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,342 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,342 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,342 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,342 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,342 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,342 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,342 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,342 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,343 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,343 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,343 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,343 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,343 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,343 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,343 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,343 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,343 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,343 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,344 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,344 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,344 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,344 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,344 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,344 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,344 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,344 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,344 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,344 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,344 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,345 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,345 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,345 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,345 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,345 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,345 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,345 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,345 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,345 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,345 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,345 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,346 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,346 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,346 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,346 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,346 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,346 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,346 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,346 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,346 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,346 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,347 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,347 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,347 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,347 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,347 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,347 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,347 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,347 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,347 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,347 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,348 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,348 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,348 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,348 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,348 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,348 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,348 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,348 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,348 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,348 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,348 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,349 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,349 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,349 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,349 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,349 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,349 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,349 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,349 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,349 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,349 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,350 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,350 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,350 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,350 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,350 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,350 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,350 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,350 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,350 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,350 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,351 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,351 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,351 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,351 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,351 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,351 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,351 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,351 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,351 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,351 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,351 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,352 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,352 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,352 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,352 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,352 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,352 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,352 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,352 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,352 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,352 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,353 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,353 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,353 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,353 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,353 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,353 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,353 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,353 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,353 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,353 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,354 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,354 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,354 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,354 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,354 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,354 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,354 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,354 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,354 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,354 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,354 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,355 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,355 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,372 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2025-10-03 22:34:41,372 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,372 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,372 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,372 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,373 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,373 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,373 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,373 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,373 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,373 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,373 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,373 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,373 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,373 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,374 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,374 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,374 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,374 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,374 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,374 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,374 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,374 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,374 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,374 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,374 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,375 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,375 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,375 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,375 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,375 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,375 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,375 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,375 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,375 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,375 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,376 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,376 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,376 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,376 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,376 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,376 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,376 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,376 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,376 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,376 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,376 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,377 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,377 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,377 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,377 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,377 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,377 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,377 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,377 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,377 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,377 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,378 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,378 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,378 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,378 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,378 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,378 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,378 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,378 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,378 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,378 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,378 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,379 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,379 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,379 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,379 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,379 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,379 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,379 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,379 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,379 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,379 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,380 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,380 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,380 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,380 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,380 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,380 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,380 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,380 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,380 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,380 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,381 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,381 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,381 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,381 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,381 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,381 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,381 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,381 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,381 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,381 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,381 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,382 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,382 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,382 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,382 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,382 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,382 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,382 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,382 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,382 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,382 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,383 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,383 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,383 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,383 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,383 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,383 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,383 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,383 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,383 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,383 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,383 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,384 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,384 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,384 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,384 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,384 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,384 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,384 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,384 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,384 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,384 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,384 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,385 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,385 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,385 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,385 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,385 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,385 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,385 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,385 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,385 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,385 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,386 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,386 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,386 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,386 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,386 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,386 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,386 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,386 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,386 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,386 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,387 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,387 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,387 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,387 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,387 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,387 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,387 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,387 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,387 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,387 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,388 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,388 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,388 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,388 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,388 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,388 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,388 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,388 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,388 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,388 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,388 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,389 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,389 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,389 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,389 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,389 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,389 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,389 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,389 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,389 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,389 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,390 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,390 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,390 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,390 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,390 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,390 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,390 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,390 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,390 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,390 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,391 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,391 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,391 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,391 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,391 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: psf__requests-863: >>>>> Patch Apply Failed:
+patching file requests/models.py
+patch: **** malformed patch at line 16:  
+
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/psf__requests-863/run_instance.log) for more information.
+
+2025-10-03 22:34:41,391 - INFO - Attempting to stop container sweb.eval.psf__requests-863.full_eval...
+2025-10-03 22:34:56,521 - INFO - Attempting to remove container sweb.eval.psf__requests-863.full_eval...
+2025-10-03 22:34:56,528 - INFO - Container sweb.eval.psf__requests-863.full_eval removed.
+2025-10-03 22:34:56,528 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.psf_1776_requests-863:latest...
+2025-10-03 22:34:57,437 - INFO - Image swebench/sweb.eval.x86_64.psf_1776_requests-863:latest removed.

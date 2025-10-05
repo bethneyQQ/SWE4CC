@@ -1,0 +1,17 @@
+--- a/sympy/simplify/trigsimp.py
++++ b/sympy/simplify/trigsimp.py
+@@ -1115,6 +1115,12 @@ def _futrig(e, **kwargs):
+         TR12)
+     from sympy.core.compatibility import _nodes
+ 
++    # Try to rewrite exponentials as trig functions first
++    if e.has(exp) and not e.has(TrigonometricFunction):
++        e_rewritten = e.rewrite(cos)
++        if e_rewritten.has(TrigonometricFunction):
++            e = e_rewritten
++
+     if not e.has(TrigonometricFunction):
+         return e
+ 
+ 
+ 

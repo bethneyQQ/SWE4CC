@@ -1,0 +1,17 @@
+
+--- a/src/_pytest/assertion/util.py
++++ b/src/_pytest/assertion/util.py
+@@ -82,11 +82,11 @@ def _format_lines(lines):
+ 
+ 
+ def issequence(x):
+-    return isinstance(x, Sequence) and not isinstance(x, str)
++    return isinstance(x, Sequence) and not isinstance(x, (str, bytes))
+ 
+ 
+ def istext(x):
+-    return isinstance(x, str)
++    return isinstance(x, (str, bytes))
+ 
+ 
+ def isdict(x):

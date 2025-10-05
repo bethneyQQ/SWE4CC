@@ -1,0 +1,47 @@
+2025-10-04 17:45:53,222 - INFO - Creating container for astropy__astropy-14365...
+2025-10-04 17:45:53,783 - INFO - Container for astropy__astropy-14365 created: 8eb36accd23e1fedca976bd79205146da70c3244fb4040d5716290e28c452670
+2025-10-04 17:45:53,905 - INFO - Container for astropy__astropy-14365 started: 8eb36accd23e1fedca976bd79205146da70c3244fb4040d5716290e28c452670
+2025-10-04 17:45:53,934 - INFO - Intermediate patch for astropy__astropy-14365 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/astropy__astropy-14365/patch.diff, now applying to container...
+2025-10-04 17:45:54,051 - INFO - >>>>> Applied Patch:
+Checking patch astropy/io/ascii/qdp.py...
+Applied patch astropy/io/ascii/qdp.py cleanly.
+
+2025-10-04 17:45:54,409 - INFO - Git diff before:
+diff --git a/astropy/io/ascii/qdp.py b/astropy/io/ascii/qdp.py
+index 83a4f004a..768beb0de 100644
+--- a/astropy/io/ascii/qdp.py
++++ b/astropy/io/ascii/qdp.py
+@@ -68,7 +68,7 @@ def _line_type(line, delimiter=None):
+     _new_re = rf"NO({sep}NO)+"
+     _data_re = rf"({_decimal_re}|NO|[-+]?nan)({sep}({_decimal_re}|NO|[-+]?nan))*)"
+     _type_re = rf"^\s*((?P<command>{_command_re})|(?P<new>{_new_re})|(?P<data>{_data_re})?\s*(\!(?P<comment>.*))?\s*$"
+-    _line_type_re = re.compile(_type_re)
++    _line_type_re = re.compile(_type_re, re.IGNORECASE)
+     line = line.strip()
+     if not line:
+         return "comment"
+2025-10-04 17:45:54,409 - INFO - Eval script for astropy__astropy-14365 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/astropy__astropy-14365/eval.sh; copying to container...
+2025-10-04 17:46:34,009 - INFO - Test runtime: 39.56 seconds
+2025-10-04 17:46:34,010 - INFO - Test output for astropy__astropy-14365 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/astropy__astropy-14365/test_output.txt
+2025-10-04 17:46:34,055 - INFO - Git diff after:
+diff --git a/astropy/io/ascii/qdp.py b/astropy/io/ascii/qdp.py
+index 83a4f004a..768beb0de 100644
+--- a/astropy/io/ascii/qdp.py
++++ b/astropy/io/ascii/qdp.py
+@@ -68,7 +68,7 @@ def _line_type(line, delimiter=None):
+     _new_re = rf"NO({sep}NO)+"
+     _data_re = rf"({_decimal_re}|NO|[-+]?nan)({sep}({_decimal_re}|NO|[-+]?nan))*)"
+     _type_re = rf"^\s*((?P<command>{_command_re})|(?P<new>{_new_re})|(?P<data>{_data_re})?\s*(\!(?P<comment>.*))?\s*$"
+-    _line_type_re = re.compile(_type_re)
++    _line_type_re = re.compile(_type_re, re.IGNORECASE)
+     line = line.strip()
+     if not line:
+         return "comment"
+2025-10-04 17:46:34,055 - INFO - Grading answer for astropy__astropy-14365...
+2025-10-04 17:46:34,058 - INFO - report: {'astropy__astropy-14365': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]']}, 'PASS_TO_PASS': {'success': ['astropy/io/ascii/tests/test_qdp.py::test_get_tables_from_qdp_file', 'astropy/io/ascii/tests/test_qdp.py::test_roundtrip[False]', 'astropy/io/ascii/tests/test_qdp.py::test_read_example', 'astropy/io/ascii/tests/test_qdp.py::test_roundtrip_example', 'astropy/io/ascii/tests/test_qdp.py::test_roundtrip_example_comma', 'astropy/io/ascii/tests/test_qdp.py::test_read_write_simple', 'astropy/io/ascii/tests/test_qdp.py::test_read_write_simple_specify_name', 'astropy/io/ascii/tests/test_qdp.py::test_get_lines_from_qdp'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for astropy__astropy-14365: resolved: False
+2025-10-04 17:46:34,058 - INFO - Attempting to stop container sweb.eval.astropy__astropy-14365.claude-4.5-sonnet-evaluation...
+2025-10-04 17:46:49,180 - INFO - Attempting to remove container sweb.eval.astropy__astropy-14365.claude-4.5-sonnet-evaluation...
+2025-10-04 17:46:49,193 - INFO - Container sweb.eval.astropy__astropy-14365.claude-4.5-sonnet-evaluation removed.
+2025-10-04 17:46:49,193 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.astropy_1776_astropy-14365:latest...
+2025-10-04 17:46:49,245 - INFO - Image swebench/sweb.eval.x86_64.astropy_1776_astropy-14365:latest removed.

@@ -1,0 +1,21 @@
+--- a/sympy/tensor/array/ndim_array.py
++++ b/sympy/tensor/array/ndim_array.py
+@@ -192,6 +192,10 @@
+     def _scan_iterable_shape(cls, iterable):
+         def f(pointer):
+             if not isinstance(pointer, Iterable):
+                 return [pointer], ()
+ 
++            # Handle empty iterable
++            result_list = list(pointer)
++            if len(result_list) == 0:
++                return [], (0,)
++
+             result = []
+-            elems, shapes = zip(*[f(i) for i in pointer])
++            elems, shapes = zip(*[f(i) for i in result_list])
+             if len(set(shapes)) != 1:
+                 raise ValueError("could not determine shape unambiguously")
+             for i in elems:
+ 
+ 

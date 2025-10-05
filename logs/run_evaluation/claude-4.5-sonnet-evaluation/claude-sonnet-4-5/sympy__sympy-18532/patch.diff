@@ -1,0 +1,20 @@
+--- a/sympy/core/basic.py
++++ b/sympy/core/basic.py
+@@ -502,11 +502,13 @@ class Basic(metaclass=ManagedProperties):
+         """
+         if types:
+             types = tuple(
+                 [t if isinstance(t, type) else type(t) for t in types])
+-        else:
+-            types = (Atom,)
+         result = set()
+         for expr in preorder_traversal(self):
+-            if isinstance(expr, types):
++            if types:
++                if isinstance(expr, types):
++                    result.add(expr)
++            elif not expr.args:
+                 result.add(expr)
+         return result
+ 
+ 

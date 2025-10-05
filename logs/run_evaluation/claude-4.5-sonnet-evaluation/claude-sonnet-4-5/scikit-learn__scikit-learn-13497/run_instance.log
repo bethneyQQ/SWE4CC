@@ -1,0 +1,47 @@
+2025-10-04 19:00:45,388 - INFO - Creating container for scikit-learn__scikit-learn-13497...
+2025-10-04 19:00:58,763 - INFO - Container for scikit-learn__scikit-learn-13497 created: eb224c8c5c36c215dd47aff6981e079a9e4b0032417f71dd657d8645f208baab
+2025-10-04 19:00:58,881 - INFO - Container for scikit-learn__scikit-learn-13497 started: eb224c8c5c36c215dd47aff6981e079a9e4b0032417f71dd657d8645f208baab
+2025-10-04 19:00:58,882 - INFO - Intermediate patch for scikit-learn__scikit-learn-13497 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/scikit-learn__scikit-learn-13497/patch.diff, now applying to container...
+2025-10-04 19:00:58,972 - INFO - >>>>> Applied Patch:
+Checking patch sklearn/feature_selection/mutual_info_.py...
+Applied patch sklearn/feature_selection/mutual_info_.py cleanly.
+
+2025-10-04 19:00:59,182 - INFO - Git diff before:
+diff --git a/sklearn/feature_selection/mutual_info_.py b/sklearn/feature_selection/mutual_info_.py
+index d5d1b7fb5..7a760d175 100644
+--- a/sklearn/feature_selection/mutual_info_.py
++++ b/sklearn/feature_selection/mutual_info_.py
+@@ -247,7 +247,7 @@ def _estimate_mi(X, y, discrete_features='auto', discrete_target=False,
+     X, y = check_X_y(X, y, accept_sparse='csc', y_numeric=not discrete_target)
+     n_samples, n_features = X.shape
+ 
+-    if discrete_features == 'auto':
++    if isinstance(discrete_features, str) and discrete_features == 'auto':
+         discrete_features = issparse(X)
+ 
+     if isinstance(discrete_features, bool):
+2025-10-04 19:00:59,182 - INFO - Eval script for scikit-learn__scikit-learn-13497 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/scikit-learn__scikit-learn-13497/eval.sh; copying to container...
+2025-10-04 19:01:02,341 - INFO - Test runtime: 3.12 seconds
+2025-10-04 19:01:02,341 - INFO - Test output for scikit-learn__scikit-learn-13497 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/scikit-learn__scikit-learn-13497/test_output.txt
+2025-10-04 19:01:02,383 - INFO - Git diff after:
+diff --git a/sklearn/feature_selection/mutual_info_.py b/sklearn/feature_selection/mutual_info_.py
+index d5d1b7fb5..7a760d175 100644
+--- a/sklearn/feature_selection/mutual_info_.py
++++ b/sklearn/feature_selection/mutual_info_.py
+@@ -247,7 +247,7 @@ def _estimate_mi(X, y, discrete_features='auto', discrete_target=False,
+     X, y = check_X_y(X, y, accept_sparse='csc', y_numeric=not discrete_target)
+     n_samples, n_features = X.shape
+ 
+-    if discrete_features == 'auto':
++    if isinstance(discrete_features, str) and discrete_features == 'auto':
+         discrete_features = issparse(X)
+ 
+     if isinstance(discrete_features, bool):
+2025-10-04 19:01:02,383 - INFO - Grading answer for scikit-learn__scikit-learn-13497...
+2025-10-04 19:01:02,384 - INFO - report: {'scikit-learn__scikit-learn-13497': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_options']}, 'PASS_TO_PASS': {'success': ['sklearn/feature_selection/tests/test_mutual_info.py::test_compute_mi_dd', 'sklearn/feature_selection/tests/test_mutual_info.py::test_compute_mi_cc', 'sklearn/feature_selection/tests/test_mutual_info.py::test_compute_mi_cd', 'sklearn/feature_selection/tests/test_mutual_info.py::test_compute_mi_cd_unique_label', 'sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_classif_discrete', 'sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_regression', 'sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_classif_mixed'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for scikit-learn__scikit-learn-13497: resolved: False
+2025-10-04 19:01:02,384 - INFO - Attempting to stop container sweb.eval.scikit-learn__scikit-learn-13497.claude-4.5-sonnet-evaluation...
+2025-10-04 19:01:22,610 - INFO - Attempting to remove container sweb.eval.scikit-learn__scikit-learn-13497.claude-4.5-sonnet-evaluation...
+2025-10-04 19:01:22,624 - INFO - Container sweb.eval.scikit-learn__scikit-learn-13497.claude-4.5-sonnet-evaluation removed.
+2025-10-04 19:01:22,624 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13497:latest...
+2025-10-04 19:01:23,511 - INFO - Image swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13497:latest removed.

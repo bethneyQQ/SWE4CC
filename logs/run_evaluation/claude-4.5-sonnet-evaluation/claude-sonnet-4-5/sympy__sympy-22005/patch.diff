@@ -1,0 +1,17 @@
+--- a/sympy/solvers/polysys.py
++++ b/sympy/solvers/polysys.py
+@@ -238,6 +238,11 @@ def solve_generic(polys, opt):
+             else:
+                 return None
+ 
++        if len(basis) < len(gens):
++            raise NotImplementedError(filldedent('''
++                only zero-dimensional systems supported
++                (finite number of solutions)
++                '''))
++
+         univariate = list(filter(_is_univariate, basis))
+ 
+         if len(univariate) == 1:
+ 
+ 

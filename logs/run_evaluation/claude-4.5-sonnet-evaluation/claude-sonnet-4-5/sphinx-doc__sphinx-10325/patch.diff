@@ -1,0 +1,32 @@
+--- a/sphinx/ext/autodoc/__init__.py
++++ b/sphinx/ext/autodoc/__init__.py
+@@ -112,8 +112,10 @@ def exclude_members_option(arg: Any) -> Union[object, Set[str]]:
+ def inherited_members_option(arg: Any) -> Union[object, Set[str]]:
+-    """Used to convert the :members: option to auto directives."""
++    """Used to convert the :inherited-members: option to auto directives."""
+     if arg in (None, True):
+-        return 'object'
+-    else:
++        return {'object'}
++    elif arg:
++        return {x.strip() for x in arg.split(',') if x.strip()}
++    else:  # empty string
+         return arg
+ 
+ 
+@@ -682,7 +684,12 @@ class Documenter:
+         def is_filtered_inherited_member(name: str, obj: Any) -> bool:
+             if inspect.isclass(self.object):
+                 for cls in self.object.__mro__:
+-                    if cls.__name__ == self.options.inherited_members and cls != self.object:
++                    inherited_members = self.options.inherited_members
++                    if isinstance(inherited_members, set):
++                        if cls.__name__ in inherited_members and cls != self.object:
++                            # given member is a member of specified *super class*
++                            return True
++                    elif cls.__name__ == inherited_members and cls != self.object:
+                         # given member is a member of specified *super class*
+                         return True
+                     elif name in cls.__dict__:
+ 
+ 

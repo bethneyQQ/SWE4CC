@@ -1,0 +1,30 @@
+--- a/sympy/utilities/lambdify.py
++++ b/sympy/utilities/lambdify.py
+@@ -708,7 +708,7 @@ class _EvaluatorPrinter(object):
+         Returns string form of args, and updated expr.
+         """
+         from sympy import Dummy, Symbol, Function, flatten
+-        from sympy.matrices import DeferredVector
++        from sympy.matrices import DeferredVector, MatrixSymbol
+ 
+         dummify = self._dummify
+ 
+@@ -737,6 +737,15 @@ class _EvaluatorPrinter(object):
+             elif isinstance(arg, Function):
+                 dummy = Dummy()
+                 argstrs.append(self._argrepr(dummy))
++                expr = self._subexpr(expr, {arg: dummy})
++            elif isinstance(arg, MatrixSymbol):
++                argrep = self._argrepr(arg)
++
++                if dummify or not self._is_safe_ident(argrep):
++                    dummy = Dummy()
++                    argstrs.append(self._argrepr(dummy))
++                    expr = self._subexpr(expr, {arg: dummy})
++                else:
++                    argstrs.append(argrep)
+             else:
+                 argstrs.append(str(arg))
+ 
+ 
+ 

@@ -1,0 +1,30 @@
+def _sorted_factors(factors, method):
+    """Sort a list of ``(expr, exp)`` pairs. """
+    if method == 'sqf':
+        # Group factors by their exponent (multiplicity)
+        from collections import defaultdict
+        grouped = defaultdict(list)
+        for poly, exp in factors:
+            grouped[exp].append(poly)
+        
+        # Multiply factors with the same exponent and create result list
+        result = []
+        for exp in sorted(grouped.keys()):
+            polys = grouped[exp]
+            if len(polys) == 1:
+                result.append((polys[0], exp))
+            else:
+                # Multiply all polynomials with the same exponent
+                combined = polys[0]
+                for poly in polys[1:]:
+                    combined = combined.mul(poly)
+                result.append((combined, exp))
+        
+        return result
+    else:
+        def key(obj):
+            poly, exp = obj
+            rep = poly.rep.rep
+            return (len(rep), len(poly.gens), exp, rep)
+        
+        return sorted(factors, key=key)

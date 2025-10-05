@@ -1,0 +1,21 @@
+--- a/sympy/printing/pretty/pretty.py
++++ b/sympy/printing/pretty/pretty.py
+@@ -917,10 +917,12 @@ class PrettyPrinter(Printer):
+                 else:
+                     #We always wrap the measure numbers in
+                     #parentheses
+-                    arg_str = self._print(
+-                        v).parens()[0]
+-
+-                    o1.append(arg_str + ' ' + k._pretty_form)
++                    pform = self._print(v)
++                    pform = prettyForm(*pform.parens())
++                    # Create prettyForm for vector and combine with proper baseline
++                    vect_pform = prettyForm(k._pretty_form)
++                    pform = prettyForm(*pform.right(' ', vect_pform))
++                    o1.append('\n'.join(pform.picture))
+                 vectstrs.append(k._pretty_form)
+ 
+         #outstr = u("").join(o1)
+ 
+ 

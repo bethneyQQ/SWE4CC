@@ -1,0 +1,25 @@
+--- a/lib/mpl_toolkits/mplot3d/art3d.py
++++ b/lib/mpl_toolkits/mplot3d/art3d.py
+@@ -867,10 +867,18 @@ class Poly3DCollection(PolyCollection):
+         self.stale = True
+ 
+     def get_facecolor(self):
+-        return self._facecolors2d
++        # Return 2d facecolors if they exist, otherwise return the 3d colors.
++        # The 2d colors are set during do_3d_projection() which is called
++        # during draw. If get_facecolor() is called before drawing, we need
++        # to return something valid.
++        return self._facecolors2d if hasattr(self, '_facecolors2d') else self._facecolor3d
+ 
+     def get_edgecolor(self):
+-        return self._edgecolors2d
++        # Return 2d edgecolors if they exist, otherwise return the 3d colors.
++        # The 2d colors are set during do_3d_projection() which is called
++        # during draw. If get_edgecolor() is called before drawing, we need
++        # to return something valid.
++        return self._edgecolors2d if hasattr(self, '_edgecolors2d') else self._edgecolor3d
+ 
+ 
+ def poly_collection_2d_to_3d(col, zs=0, zdir='z'):
+ 
+ 

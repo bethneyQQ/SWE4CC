@@ -1,0 +1,42 @@
+--- a/lib/matplotlib/legend.py
++++ b/lib/matplotlib/legend.py
+@@ -285,6 +285,14 @@
+ handler_map : dict or None
+     The custom dictionary mapping instances or types to a legend
+     handler. This *handler_map* updates the default handler map
+     found at `matplotlib.legend.Legend.get_legend_handler_map`.
++
++draggable : bool, default: False
++    Whether the legend can be dragged with the mouse.
++    See :meth:`set_draggable` for details.
+ """)
+ 
+ 
+@@ -339,6 +347,7 @@
+         bbox_transform=None,  # transform for the bbox
+         frameon=None,         # draw frame
+         handler_map=None,
+         title_fontproperties=None,  # properties for the legend title
+         alignment="center",       # control the alignment within the legend box
+         *,
+-        ncol=1  # synonym for ncols (backward compatibility)
++        ncol=1,  # synonym for ncols (backward compatibility)
++        draggable=False,  # whether the legend can be dragged with the mouse
+     ):
+         """
+         Parameters
+@@ -537,6 +548,11 @@
+             title_prop_fp.set_size(title_fontsize)
+ 
+         self.set_title(title, prop=title_prop_fp)
+         self._draggable = None
++
++        # set draggable
++        if draggable:
++            self.set_draggable(True)
+ 
+         # set the text color
+ 
+ 
+ 
+ 

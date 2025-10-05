@@ -1,0 +1,42 @@
+--- a/django/db/models/fields/related.py
++++ b/django/db/models/fields/related.py
+@@ -1210,6 +1210,7 @@ class ManyToManyField(RelatedField):
+     def check(self, **kwargs):
+         return [
+             *super().check(**kwargs),
++            *self._check_symmetrical_related_name(**kwargs),
+             *self._check_unique(**kwargs),
+             *self._check_relationship_model(**kwargs),
+             *self._check_ignored_options(**kwargs),
+@@ -1217,6 +1218,19 @@ class ManyToManyField(RelatedField):
+         ]
+ 
+     def _check_unique(self, **kwargs):
++        if self.unique:
++            return [
++                checks.Error(
++                    'ManyToManyFields cannot be unique.',
++                    obj=self,
++                    id='fields.E330',
++                )
++            ]
++        return []
++
++    def _check_symmetrical_related_name(self, **kwargs):
++        if self.remote_field.symmetrical and self._related_name is not None:
++            return [
++                checks.Error(
++                    'ManyToManyField cannot define a related_name when symmetrical=True.',
++                    hint='Set symmetrical=False if you want to use a related_name.',
++                    obj=self,
++                    id='fields.E332',
++                )
++            ]
++        return []
++
++    def _check_unique(self, **kwargs):
+         if self.unique:
+             return [
+                 checks.Error(
+ 
+ 

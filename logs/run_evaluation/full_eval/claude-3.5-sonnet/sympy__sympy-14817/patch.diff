@@ -1,0 +1,24 @@
+
+--- a/sympy/printing/pretty/pretty.py
++++ b/sympy/printing/pretty/pretty.py
+@@ -820,15 +820,17 @@ class PrettyPrinter(Printer):
+ 
+     def _print_MatAdd(self, expr):
+         s = None
+         for item in expr.args:
+             pform = self._print(item)
+             if s is None:
+                 s = pform     # First element
+             else:
+-                if S(item.args[0]).is_negative:
+-                    s = prettyForm(*stringPict.next(s, ' '))
+-                    pform = self._print(item)
++                if _coeff_isneg(item):
++                    # The term is negative, so no need to add a '+' sign
++                    # Just add a space before the term
++                    s = prettyForm(*stringPict.next(s, ' '))
+                 else:
++                    # The term is positive, so add a '+' sign
+                     s = prettyForm(*stringPict.next(s, ' + '))
+                 s = prettyForm(*stringPict.next(s, pform))
+ 

@@ -1,0 +1,40 @@
+
+--- a/sklearn/preprocessing/_encoders.py
++++ b/sklearn/preprocessing/_encoders.py
+@@ -91,6 +91,7 @@ class _BaseEncoder(BaseEstimator, TransformerMixin):
+     def _transform(self, X, handle_unknown='error'):
+         X = self._check_X(X)
+ 
++        n_samples, n_features = X.shape
+         _, n_features = X.shape
+         X_int = np.zeros_like(X, dtype=np.int)
+         X_mask = np.ones_like(X, dtype=np.bool)
+@@ -108,8 +109,24 @@ class _BaseEncoder(BaseEstimator, TransformerMixin):
+                 else:
+                     # Set the problematic rows to an acceptable value and
+                     # continue `The rows are marked `X_mask` and will be
+                     # removed later.
+                     X_mask[:, i] = valid_mask
+-                    Xi = Xi.copy()
+-                    Xi[~valid_mask] = self.categories_[i][0]
++                    # Make a copy of Xi
++                    Xi = Xi.copy()
++                    
++                    # For string dtypes, we need to check if the replacement
++                    # value fits in the current dtype. If not, we need to
++                    # cast to object dtype to avoid truncation
++                    if hasattr(Xi, 'dtype') and Xi.dtype.kind in ('U', 'S'):
++                        # Check the length of the replacement string
++                        replacement = self.categories_[i][0]
++                        if isinstance(replacement, (bytes, str)):
++                            # Get max itemsize in the current array
++                            Xi_itemsize = Xi.dtype.itemsize
++                            replacement_itemsize = len(replacement) * (4 if Xi.dtype.kind == 'U' else 1)
++                            if replacement_itemsize > Xi_itemsize:
++                                # Cast to object dtype to avoid truncation
++                                Xi = Xi.astype(object)
++                    
++                    Xi[~valid_mask] = self.categories_[i][0]
+             _, encoded = _encode(Xi, self.categories_[i], encode=True)
+             X_int[:, i] = encoded
+ 

@@ -1,0 +1,41 @@
+2025-10-01 05:30:31,087 - INFO - Building image sweb.env.py.x86_64.5d1fda9d55d65d8a4e5bdb:latest
+Using dockerfile:
+FROM --platform=linux/x86_64 sweb.base.py.x86_64:latest
+
+COPY ./setup_env.sh /root/
+RUN sed -i -e 's/\r$//' /root/setup_env.sh
+RUN chmod +x /root/setup_env.sh
+RUN /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"
+
+WORKDIR /testbed/
+
+# Automatically activate the testbed environment
+RUN echo "source /opt/miniconda3/etc/profile.d/conda.sh && conda activate testbed" > /root/.bashrc
+
+Adding (1) setup scripts to image build repo
+2025-10-01 05:30:31,091 - INFO - [SETUP SCRIPT] setup_env.sh:
+#!/bin/bash
+set -euxo pipefail
+source /opt/miniconda3/bin/activate
+conda create -n testbed python=3.9  -y
+conda activate testbed
+python -m pip install py==1.11.0 packaging==23.1 attrs==23.1.0 more-itertools==10.1.0 pluggy==0.13.1
+
+2025-10-01 05:30:31,097 - INFO - Building docker image sweb.env.py.x86_64.5d1fda9d55d65d8a4e5bdb:latest in logs/build_images/env/sweb.env.py.x86_64.5d1fda9d55d65d8a4e5bdb__latest with platform linux/x86_64
+2025-10-01 05:30:40,982 - INFO - Step 1/7 : FROM --platform=linux/x86_64 sweb.base.py.x86_64:latest
+2025-10-01 05:30:40,983 - INFO - 
+2025-10-01 05:30:40,983 - INFO - ---> 71e8b6b130a0
+2025-10-01 05:30:40,983 - INFO - Step 2/7 : COPY ./setup_env.sh /root/
+2025-10-01 05:30:40,983 - INFO - 
+2025-10-01 05:30:52,199 - INFO - ---> 69c944f9d082
+2025-10-01 05:30:52,199 - INFO - Step 3/7 : RUN sed -i -e 's/\r$//' /root/setup_env.sh
+2025-10-01 05:30:52,199 - INFO - 
+2025-10-01 05:30:52,941 - INFO - ---> Running in 0f94aa38bd33
+2025-10-01 05:31:39,587 - INFO - ---> Removed intermediate container 0f94aa38bd33
+2025-10-01 05:31:39,589 - INFO - ---> 27b24107ea51
+2025-10-01 05:31:39,589 - INFO - Step 4/7 : RUN chmod +x /root/setup_env.sh
+2025-10-01 05:31:39,590 - INFO - 
+2025-10-01 05:31:39,765 - INFO - ---> Running in 21ede47dbc5c
+2025-10-01 05:33:05,662 - INFO - ---> Removed intermediate container 21ede47dbc5c
+2025-10-01 05:33:05,706 - ERROR - Error: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: unable to apply cgroup configuration: unable to start unit "docker-21ede47dbc5c9dd51d59dd7ed7a37216995900dda9b0e2206a5afb235a01ebc7.scope" (properties [{Name:Description Value:"libcontainer container 21ede47dbc5c9dd51d59dd7ed7a37216995900dda9b0e2206a5afb235a01ebc7"} {Name:Slice Value:"system.slice"} {Name:Delegate Value:true} {Name:PIDs Value:@au [742818]} {Name:MemoryAccounting Value:true} {Name:CPUAccounting Value:true} {Name:IOAccounting Value:true} {Name:TasksAccounting Value:true} {Name:DefaultDependencies Value:false}]): Timeout waiting for systemd to create docker-21ede47dbc5c9dd51d59dd7ed7a37216995900dda9b0e2206a5afb235a01ebc7.scope: unknown
+2025-10-01 05:33:05,720 - ERROR - docker.errors.BuildError during sweb.env.py.x86_64.5d1fda9d55d65d8a4e5bdb:latest: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: unable to apply cgroup configuration: unable to start unit "docker-21ede47dbc5c9dd51d59dd7ed7a37216995900dda9b0e2206a5afb235a01ebc7.scope" (properties [{Name:Description Value:"libcontainer container 21ede47dbc5c9dd51d59dd7ed7a37216995900dda9b0e2206a5afb235a01ebc7"} {Name:Slice Value:"system.slice"} {Name:Delegate Value:true} {Name:PIDs Value:@au [742818]} {Name:MemoryAccounting Value:true} {Name:CPUAccounting Value:true} {Name:IOAccounting Value:true} {Name:TasksAccounting Value:true} {Name:DefaultDependencies Value:false}]): Timeout waiting for systemd to create docker-21ede47dbc5c9dd51d59dd7ed7a37216995900dda9b0e2206a5afb235a01ebc7.scope: unknown

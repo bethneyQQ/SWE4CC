@@ -1,0 +1,31 @@
+--- a/lib/matplotlib/cbook.py
++++ b/lib/matplotlib/cbook.py
+@@ -845,6 +845,23 @@ class Grouper:
+         self.clean()
+         siblings = self._mapping.get(weakref.ref(a), [weakref.ref(a)])
+         return [x() for x in siblings]
++
++    def __getstate__(self):
++        """Pickle support: convert weak references to strong references."""
++        # Convert the weakref mapping to strong references for pickling
++        return {
++            'mapping': [[ref() for ref in group] for group in
++                       {id(g): g for g in self._mapping.values()}.values()]
++        }
++
++    def __setstate__(self, state):
++        """Pickle support: restore weak references from strong references."""
++        # Reconstruct the weakref mapping from strong references
++        self._mapping = {}
++        for group in state['mapping']:
++            # Filter out None values (dead references)
++            group = [item for item in group if item is not None]
++            group_refs = [weakref.ref(item) for item in group]
++            for ref in group_refs:
++                self._mapping[ref] = group_refs
+ 
+ 
+ class GrouperView:
+ 
+ 
+ 

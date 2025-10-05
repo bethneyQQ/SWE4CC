@@ -1,0 +1,59 @@
+--- a/src/_pytest/assertion/rewrite.py
++++ b/src/_pytest/assertion/rewrite.py
+@@ -833,6 +833,46 @@
+                 lineno=assert_.lineno,
+             )
+ 
++        # Unroll all() and any() calls to provide better assertion messages
++        if isinstance(assert_.test, ast.Call):
++            call = assert_.test
++            if isinstance(call.func, ast.Name) and call.func.id in ("all", "any"):
++                if len(call.args) == 1:
++                    arg = call.args[0]
++                    is_any = call.func.id == "any"
++                    
++                    # Generate a new variable name for the iterator
++                    iter_name = "__pytest_all_any_iter_{}".format(next(self.variable_counter))
++                    
++                    # Create: __pytest_all_any_iter_X = iter(arg)
++                    iter_call = ast_Call(
++                        ast.Name("iter", ast.Load()), [arg], []
++                    )
++                    iter_assign = ast.Assign(
++                        [ast.Name(iter_name, ast.Store())], iter_call
++                    )
++                    
++                    # Generate variable for loop element
++                    item_name = "__pytest_all_any_item_{}".format(next(self.variable_counter))
++                    
++                    # Create the for loop body: assert item (for all) or assert not item (for any)
++                    if is_any:
++                        # For any(), we want: if item: break, else: assert False
++                        test_node = ast.Name(item_name, ast.Load())
++                    else:
++                        # For all(), we want: assert item
++                        test_node = ast.Name(item_name, ast.Load())
++                    
++                    # Create the new assert statement
++                    new_assert = ast.Assert(test=test_node, msg=assert_.msg)
++                    
++                    # Create for loop: for item in iterator: assert item
++                    for_loop = ast.For(
++                        target=ast.Name(item_name, ast.Store()),
++                        iter=ast.Name(iter_name, ast.Load()),
++                        body=[new_assert],
++                        orelse=[]
++                    )
++                    
++                    set_location(iter_assign, assert_.lineno, assert_.col_offset)
++                    set_location(for_loop, assert_.lineno, assert_.col_offset)
++                    
++                    # Return the unrolled version
++                    return [iter_assign, for_loop]
++
+         self.statements = []
+         self.variables = []
+         self.variable_counter = itertools.count()
+ 
+ 
+ 

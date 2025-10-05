@@ -1,0 +1,47 @@
+2025-10-04 18:11:44,107 - INFO - Creating container for django__django-15388...
+2025-10-04 18:11:46,059 - INFO - Container for django__django-15388 created: 5ff0dd66074cb2eaf53ffddc800eb1614b2a9738fe1a080874d98fe10fb4d428
+2025-10-04 18:11:46,199 - INFO - Container for django__django-15388 started: 5ff0dd66074cb2eaf53ffddc800eb1614b2a9738fe1a080874d98fe10fb4d428
+2025-10-04 18:11:46,199 - INFO - Intermediate patch for django__django-15388 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-15388/patch.diff, now applying to container...
+2025-10-04 18:11:46,300 - INFO - >>>>> Applied Patch:
+Checking patch django/template/autoreload.py...
+Applied patch django/template/autoreload.py cleanly.
+
+2025-10-04 18:11:46,887 - INFO - Git diff before:
+diff --git a/django/template/autoreload.py b/django/template/autoreload.py
+index cf1b20ba95..7242d68f2d 100644
+--- a/django/template/autoreload.py
++++ b/django/template/autoreload.py
+@@ -48,6 +48,8 @@ def watch_for_template_changes(sender, **kwargs):
+ 
+ @receiver(file_changed, dispatch_uid='template_loaders_file_changed')
+ def template_changed(sender, file_path, **kwargs):
++    if file_path.suffix == '.py':
++        return
+     for template_dir in get_template_directories():
+         if template_dir in file_path.parents:
+             reset_loaders()
+2025-10-04 18:11:46,888 - INFO - Eval script for django__django-15388 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-15388/eval.sh; copying to container...
+2025-10-04 18:11:53,702 - INFO - Test runtime: 6.77 seconds
+2025-10-04 18:11:53,702 - INFO - Test output for django__django-15388 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-15388/test_output.txt
+2025-10-04 18:11:53,755 - INFO - Git diff after:
+diff --git a/django/template/autoreload.py b/django/template/autoreload.py
+index cf1b20ba95..7242d68f2d 100644
+--- a/django/template/autoreload.py
++++ b/django/template/autoreload.py
+@@ -48,6 +48,8 @@ def watch_for_template_changes(sender, **kwargs):
+ 
+ @receiver(file_changed, dispatch_uid='template_loaders_file_changed')
+ def template_changed(sender, file_path, **kwargs):
++    if file_path.suffix == '.py':
++        return
+     for template_dir in get_template_directories():
+         if template_dir in file_path.parents:
+             reset_loaders()
+2025-10-04 18:11:53,755 - INFO - Grading answer for django__django-15388...
+2025-10-04 18:11:53,755 - INFO - report: {'django__django-15388': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_non_template_changed_in_template_directory (template_tests.test_autoreloader.TemplateReloadTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_get_template_directories (template_tests.test_autoreloader.Jinja2TemplateReloadTests)', 'test_reset_all_loaders (template_tests.test_autoreloader.Jinja2TemplateReloadTests)', 'test_watch_for_template_changes (template_tests.test_autoreloader.Jinja2TemplateReloadTests)', 'test_get_template_directories (template_tests.test_autoreloader.TemplateReloadTests)', 'test_non_template_changed (template_tests.test_autoreloader.TemplateReloadTests)', 'test_reset_all_loaders (template_tests.test_autoreloader.TemplateReloadTests)', 'test_template_changed (template_tests.test_autoreloader.TemplateReloadTests)', 'test_template_dirs_normalized_to_paths (template_tests.test_autoreloader.TemplateReloadTests)', 'test_watch_for_template_changes (template_tests.test_autoreloader.TemplateReloadTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-15388: resolved: True
+2025-10-04 18:11:53,756 - INFO - Attempting to stop container sweb.eval.django__django-15388.claude-4.5-sonnet-evaluation...
+2025-10-04 18:12:08,895 - INFO - Attempting to remove container sweb.eval.django__django-15388.claude-4.5-sonnet-evaluation...
+2025-10-04 18:12:08,911 - INFO - Container sweb.eval.django__django-15388.claude-4.5-sonnet-evaluation removed.
+2025-10-04 18:12:08,911 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-15388:latest...
+2025-10-04 18:12:09,089 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-15388:latest removed.

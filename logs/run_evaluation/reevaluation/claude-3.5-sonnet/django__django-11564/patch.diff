@@ -1,0 +1,209 @@
+--- a/django/contrib/staticfiles/storage.py
++++ b/django/contrib/staticfiles/storage.py
+@@ -15,6 +15,7 @@
+ from django.core.files.storage import FileSystemStorage
+ from django.utils.functional import LazyObject
+ from django.contrib.staticfiles.utils import check_settings, matches_patterns
++from django.utils.encoding import filepath_to_uri
+ 
+ 
+ class StaticFilesStorage(FileSystemStorage):
+@@ -31,10 +32,24 @@ class StaticFilesStorage(FileSystemStorage):
+         if not self.location:
+             raise ImproperlyConfigured("You're using the staticfiles app "
+                                        "without having set the STATIC_ROOT "
+                                        "setting to a filesystem path.")
+         super().__init__(*args, **kwargs)
++
++    def url(self, name, request=None):
++        """
++        Return the URL for the file. If request is provided and contains
++        SCRIPT_NAME, prepend it to the URL.
++        """
++        url = super().url(name)
++        if request is not None:
++            script_name = request.META.get('SCRIPT_NAME', '')
++            if script_name:
++                # Remove trailing slash from script_name and leading slash from url
++                script_name = script_name.rstrip('/')
++                if url.startswith('/'):
++                    url = script_name + url
++        return url
+ 
+     def path(self, name):
+         if not self.location:
+             raise ImproperlyConfigured("You're using the staticfiles app "
+                                        "without having set the STATIC_ROOT "
+--- a/django/core/files/storage.py
++++ b/django/core/files/storage.py
+@@ -116,11 +116,25 @@ class FileSystemStorage(Storage):
+         # file or opening the file for reading.
+         return os.path.join(self.location, name)
+ 
+-    def url(self, name):
++    def url(self, name, request=None):
++        """
++        Return the URL for the file. If request is provided and contains
++        SCRIPT_NAME, prepend it to the URL.
++        """
+         if self.base_url is None:
+             raise ValueError("This file is not accessible via a URL.")
+         url = filepath_to_uri(name)
+-        if url is not None:
++        if url is not None:
+             url = url.lstrip('/')
+-        return urljoin(self.base_url, url)
++        final_url = urljoin(self.base_url, url)
++        
++        # Prepend SCRIPT_NAME if available in request
++        if request is not None:
++            script_name = request.META.get('SCRIPT_NAME', '')
++            if script_name and final_url.startswith('/'):
++                script_name = script_name.rstrip('/')
++                final_url = script_name + final_url
++        
++        return final_url
+ 
+     def get_accessed_time(self, name):
+         return datetime.fromtimestamp(os.path.getatime(self.path(name)))
+--- a/django/templatetags/static.py
++++ b/django/templatetags/static.py
+@@ -86,16 +86,27 @@ class StaticNode(template.Node):
+         else:
+             self.varname = None
+ 
+     @classmethod
+     def handle_token(cls, parser, token):
+         """
+         Class method to parse prefix node and return a Node.
+         """
+         bits = token.split_contents()
+ 
+         if len(bits) < 2:
+             raise template.TemplateSyntaxError(
+                 "'%s' takes at least one argument (path to file)" % bits[0])
+ 
+         path = parser.compile_filter(bits[1])
+ 
+         if len(bits) >= 2 and bits[-2] == 'as':
+             varname = bits[3]
+         else:
+             varname = None
+ 
+         return cls(varname, path)
+ 
+     def url(self, context):
+         path = self.path.resolve(context)
+         return self.handle_simple(path)
+ 
+     def render(self, context):
+         url = self.url(context)
++        # Prepend SCRIPT_NAME if available in the request context
++        request = context.get('request')
++        if request is not None:
++            script_name = request.META.get('SCRIPT_NAME', '')
++            if script_name:
++                script_name = script_name.rstrip('/')
++                if url.startswith('/'):
++                    url = script_name + url
++        
+         if self.varname is None:
+             return url
+         context[self.varname] = url
+         return ''
+ 
+     @staticmethod
+     def handle_simple(path):
+         if apps.is_installed('django.contrib.staticfiles'):
+             from django.contrib.staticfiles.storage import staticfiles_storage
+             return staticfiles_storage.url(path)
+         else:
+             return urljoin(PrefixNode.handle_simple("STATIC_URL"), quote(path))
+ 
+ 
+ @register.tag('static')
+ def do_static(parser, token):
+     """
+     Join the given path with the STATIC_URL setting.
+ 
+     Usage::
+ 
+         {% static path [as varname] %}
+ 
+     Examples::
+ 
+         {% static "myapp/css/base.css" %}
+         {% static variable_with_path %}
+         {% static "myapp/css/base.css" as admin_base_css %}
+         {% static variable_with_path as varname %}
+     """
+     return StaticNode.handle_token(parser, token)
+ 
+ 
+ def static(path):
+     """
+     Given a relative path to a static asset, return the absolute path to the
+     asset.
+     """
+     return StaticNode.handle_simple(path)
+--- a/django/contrib/staticfiles/templatetags/staticfiles.py
++++ b/django/contrib/staticfiles/templatetags/staticfiles.py
+@@ -1,10 +1,11 @@
+ from django import template
+ from django.templatetags.static import StaticNode
++from django.apps import apps
+ 
+ register = template.Library()
+ 
+ 
+ class StaticFilesNode(StaticNode):
+     """
+     Overrides the default StaticNode to use the staticfiles storage backend.
+     """
+     def url(self, context):
+         path = self.path.resolve(context)
+         return self.handle_simple(path)
++
++    def render(self, context):
++        url = self.url(context)
++        # Prepend SCRIPT_NAME if available in the request context
++        request = context.get('request')
++        if request is not None:
++            script_name = request.META.get('SCRIPT_NAME', '')
++            if script_name:
++                script_name = script_name.rstrip('/')
++                if url.startswith('/'):
++                    url = script_name + url
++        
++        if self.varname is None:
++            return url
++        context[self.varname] = url
++        return ''
+ 
+     @staticmethod
+     def handle_simple(path):
+         from django.contrib.staticfiles.storage import staticfiles_storage
+         return staticfiles_storage.url(path)
+ 
+ 
+ @register.tag('static')
+ def do_static(parser, token):
+     """
+     A template tag that returns the URL to a file using staticfiles storage
+     backend. If staticfiles is not installed, falls back to default behavior.
+ 
+     Usage::
+ 
+         {% load staticfiles %}
+         {% static path [as varname] %}
+ 
+     Examples::
+ 
+         {% static "myapp/css/base.css" %}
+         {% static variable_with_path %}
+         {% static "myapp/css/base.css" as admin_base_css %}
+         {% static variable_with_path as varname %}
+     """
+     return StaticFilesNode.handle_token(parser, token)
+ 
+ 

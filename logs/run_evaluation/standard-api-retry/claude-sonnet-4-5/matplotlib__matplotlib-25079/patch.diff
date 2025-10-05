@@ -1,0 +1,73 @@
+--- a/lib/matplotlib/colorbar.py
++++ b/lib/matplotlib/colorbar.py
+@@ -456,6 +456,7 @@
+         self.mappable = mappable
+         self.ax = ax
+         self.ax._axes_locator = _ColorbarAxesLocator(self)
++        mappable.callbacksSM.connect('changed', self.update_normal)
+ 
+         if extend is None:
+             if (not isinstance(mappable, contour.ContourSet)
+@@ -619,7 +620,10 @@
+         Update solid patches, lines, etc.
+ 
+         This is meant to be called when the norm of the image or contour plot
+-        to which this colorbar belongs changes.
++        to which this colorbar belongs changes. 
++        
++        If the norm of the mappable has changed, we need to recalculate
++        the colorbar limits and locator.
+ 
+         If the norm on the mappable is different than before, this resets the
+         locator and formatter for the axis, so if these have been customized,
+@@ -628,6 +632,11 @@
+         self.draw_all()
+         if isinstance(self.mappable, contour.ContourSet):
+             CS = self.mappable
++        else:
++            # Update our norm to match the mappable's norm
++            self.norm = self.mappable.norm
++            # Recalculate vmin and vmax from the mappable
++            self.vmin, self.vmax = self.mappable.get_clim()
+         else:
+             self.vmin, self.vmax = self.mappable.get_clim()
+             self.norm = self.mappable.norm
+ ```
+--- a/lib/matplotlib/colorbar.py
++++ b/lib/matplotlib/colorbar.py
+@@ -625,10 +625,12 @@
+         If the norm on the mappable is different than before, this resets the
+         locator and formatter for the axis, so if these have been customized,
+         they will need to be customized again afterward.
+         """
+-        self.draw_all()
+         if isinstance(self.mappable, contour.ContourSet):
+             CS = self.mappable
+         else:
++            # Update vmin, vmax and norm from mappable before drawing
++            self.norm = self.mappable.norm
+             self.vmin, self.vmax = self.mappable.get_clim()
+-            self.norm = self.mappable.norm
++        self.draw_all()
+         if isinstance(self.mappable, contour.ContourSet):
+             CS = self.mappable
+ ```
+--- a/lib/matplotlib/colorbar.py
++++ b/lib/matplotlib/colorbar.py
+@@ -625,12 +625,13 @@
+         If the norm on the mappable is different than before, this resets the
+         locator and formatter for the axis, so if these have been customized,
+         they will need to be customized again afterward.
+         """
+-        self.draw_all()
+         if isinstance(self.mappable, contour.ContourSet):
+             CS = self.mappable
+         else:
+-            self.vmin, self.vmax = self.mappable.get_clim()
+             self.norm = self.mappable.norm
++            self.vmin, self.vmax = self.mappable.get_clim()
+             _log.debug('Setting norm for colorbar')
++        self.draw_all()
++        if isinstance(self.mappable, contour.ContourSet):
++            CS = self.mappable
+ ```

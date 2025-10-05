@@ -1,0 +1,21 @@
+
+--- a/sklearn/compose/_column_transformer.py
++++ b/sklearn/compose/_column_transformer.py
+@@ -862,11 +862,16 @@
+                 if not self.verbose_feature_names_out:
+                     return output
+ 
++                # Get transformer names and feature names, ensuring they match
++                # the actual outputs in Xs (excluding transformers with no features)
+                 transformer_names = [
+                     t[0] for t in self._iter(fitted=True, replace_strings=True)
+                 ]
+                 feature_names_outs = [X.columns for X in Xs]
+-                names_out = self._add_prefix_for_feature_names_out(
++                
++                # Only set column names if we have transformers with output
++                if transformer_names and feature_names_outs:
++                    names_out = self._add_prefix_for_feature_names_out(
+                     list(zip(transformer_names, feature_names_outs))
+                 )
+                 output.columns = names_out

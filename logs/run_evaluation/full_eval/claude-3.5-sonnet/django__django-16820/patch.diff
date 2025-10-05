@@ -1,0 +1,52 @@
+
+--- a/django/db/migrations/operations/models.py
++++ b/django/db/migrations/operations/models.py
+@@ -186,16 +186,36 @@
+         elif (
+             isinstance(operation, AlterTogetherOptionOperation)
+             and self.name_lower == operation.name_lower
+         ):
+-            return [
+-                CreateModel(
+-                    self.name,
+-                    fields=self.fields,
+-                    options={
+-                        **self.options,
+-                        **{operation.option_name: operation.option_value},
+-                    },
+-                    bases=self.bases,
+-                    managers=self.managers,
+-                ),
+-            ]
++            options = {**self.options, **{operation.option_name: operation.option_value}}
++            # If we're setting index_together and indexes already exist, or vice versa,
++            # convert index_together to indexes and remove index_together to avoid
++            # deprecation warnings.
++            if operation.option_name == "index_together" and operation.option_value:
++                if "indexes" in options:
++                    # Convert index_together to Index objects and add to indexes
++                    indexes = list(options.get("indexes", []))
++                    for fields in operation.option_value:
++                        indexes.append(models.Index(fields=fields, name=""))
++                    options["indexes"] = indexes
++                    options.pop("index_together", None)
++            elif "index_together" in options and "indexes" in options:
++                # If both exist after the merge, convert index_together to indexes
++                indexes = list(options.get("indexes", []))
++                for fields in options["index_together"]:
++                    indexes.append(models.Index(fields=fields, name=""))
++                options["indexes"] = indexes
++                options.pop("index_together", None)
++            
++            return [
++                CreateModel(
++                    self.name,
++                    fields=self.fields,
++                    options=options,
++                    bases=self.bases,
++                    managers=self.managers,
++                ),
++            ]
+         elif (
+             isinstance(operation, AlterOrderWithRespectTo)
+             and self.name_lower == operation.name_lower

@@ -1,0 +1,35 @@
+
+--- a/django/db/migrations/autodetector.py
++++ b/django/db/migrations/autodetector.py
+@@ -618,13 +618,29 @@
+                 for name in sorted(related_fields)
+             ]
+             related_dependencies.append((app_label, model_name, None, True))
++            # If order_with_respect_to is set, we need to ensure indexes
++            # that reference _order field depend on AlterOrderWithRespectTo.
++            order_with_respect_to_dependencies = []
++            if order_with_respect_to:
++                order_with_respect_to_dependencies = [
++                    (app_label, model_name, order_with_respect_to, True),
++                    (app_label, model_name, None, True),
++                ]
+             for index in indexes:
++                dependencies = related_dependencies[:]
++                # Check if this index references the _order field
++                if order_with_respect_to:
++                    index_fields = index.fields if hasattr(index, 'fields') else []
++                    index_expressions = index.expressions if hasattr(index, 'expressions') else []
++                    if '_order' in index_fields or any(
++                        hasattr(expr, 'name') and expr.name == '_order' for expr in index_expressions
++                    ):
++                        dependencies = order_with_respect_to_dependencies[:]
+                 self.add_operation(
+                     app_label,
+                     operations.AddIndex(
+                         model_name=model_name,
+                         index=index,
+                     ),
+-                    dependencies=related_dependencies,
++                    dependencies=dependencies,
+                 )
+             for constraint in constraints:

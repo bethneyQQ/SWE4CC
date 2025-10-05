@@ -1,0 +1,136 @@
+2025-10-01 05:59:05,262 - INFO - Building image sweb.env.py.x86_64.764c21123474adcba1e003:latest
+Using dockerfile:
+FROM --platform=linux/x86_64 sweb.base.py.x86_64:latest
+
+COPY ./setup_env.sh /root/
+RUN sed -i -e 's/\r$//' /root/setup_env.sh
+RUN chmod +x /root/setup_env.sh
+RUN /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"
+
+WORKDIR /testbed/
+
+# Automatically activate the testbed environment
+RUN echo "source /opt/miniconda3/etc/profile.d/conda.sh && conda activate testbed" > /root/.bashrc
+
+Adding (1) setup scripts to image build repo
+2025-10-01 05:59:05,267 - INFO - [SETUP SCRIPT] setup_env.sh:
+#!/bin/bash
+set -euxo pipefail
+source /opt/miniconda3/bin/activate
+conda create -n testbed python=3.9  -y
+conda activate testbed
+python -m pip install tox==4.16.0 tox-current-env==0.0.11 Jinja2==3.0.3
+
+2025-10-01 05:59:05,269 - INFO - Building docker image sweb.env.py.x86_64.764c21123474adcba1e003:latest in logs/build_images/env/sweb.env.py.x86_64.764c21123474adcba1e003__latest with platform linux/x86_64
+2025-10-01 05:59:06,490 - INFO - Step 1/7 : FROM --platform=linux/x86_64 sweb.base.py.x86_64:latest
+2025-10-01 05:59:06,491 - INFO - 
+2025-10-01 05:59:06,668 - INFO - ---> 71e8b6b130a0
+2025-10-01 05:59:06,679 - INFO - Step 2/7 : COPY ./setup_env.sh /root/
+2025-10-01 05:59:06,679 - INFO - 
+2025-10-01 05:59:09,498 - INFO - ---> 8cc8eab119bc
+2025-10-01 05:59:09,499 - INFO - Step 3/7 : RUN sed -i -e 's/\r$//' /root/setup_env.sh
+2025-10-01 05:59:09,499 - INFO - 
+2025-10-01 05:59:11,407 - INFO - ---> Running in f9d6e1ebd0e9
+2025-10-01 05:59:48,256 - INFO - ---> Removed intermediate container f9d6e1ebd0e9
+2025-10-01 05:59:48,256 - INFO - ---> 96cb4c0b6dac
+2025-10-01 05:59:48,257 - INFO - Step 4/7 : RUN chmod +x /root/setup_env.sh
+2025-10-01 05:59:48,257 - INFO - 
+2025-10-01 05:59:49,090 - INFO - ---> Running in 9a9c56800b3c
+2025-10-01 06:00:13,345 - INFO - ---> Removed intermediate container 9a9c56800b3c
+2025-10-01 06:00:13,345 - INFO - ---> 78418e4ac252
+2025-10-01 06:00:13,346 - INFO - Step 5/7 : RUN /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"
+2025-10-01 06:00:13,346 - INFO - 
+2025-10-01 06:00:14,439 - INFO - ---> Running in 957211a717cf
+2025-10-01 06:00:18,279 - INFO - + source /opt/miniconda3/bin/activate
+2025-10-01 06:00:18,280 - INFO - ++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
+2025-10-01 06:00:18,343 - INFO - +++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /opt/miniconda3/bin/conda
+2025-10-01 06:00:18,417 - INFO - ++++ dirname /opt/miniconda3/bin
+2025-10-01 06:00:18,425 - INFO - +++ PATH=/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2025-10-01 06:00:18,430 - INFO - +++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+2025-10-01 06:00:20,281 - INFO - ++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
+2025-10-01 06:00:20,281 - INFO - +++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda create -n testbed python=3.9 -y
++ local cmd=create
++ case "$cmd" in
++ __conda_exe create -n testbed python=3.9 -y
++ /opt/miniconda3/bin/conda create -n testbed python=3.9 -y
+2025-10-01 06:00:49,046 - INFO - Channels:
+ - defaults
+ - conda-forge
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working...
+2025-10-01 06:10:39,592 - INFO - failed
+2025-10-01 06:10:39,618 - INFO - CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://conda.anaconda.org/conda-forge/linux-64/repodata.json>
+Elapsed: -
+
+An HTTP error occurred when trying to retrieve this URL.
+HTTP errors are often intermittent, and a simple retry will get you on your way.
+'https//conda.anaconda.org/conda-forge/linux-64'
+2025-10-01 06:10:47,447 - INFO - ---> Removed intermediate container 957211a717cf
+2025-10-01 06:10:47,468 - ERROR - Error: The command '/bin/sh -c /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"' returned a non-zero code: 1
+2025-10-01 06:10:47,468 - ERROR - docker.errors.BuildError during sweb.env.py.x86_64.764c21123474adcba1e003:latest: The command '/bin/sh -c /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"' returned a non-zero code: 1

@@ -1,0 +1,22 @@
+
+--- a/django/db/models/sql/compiler.py
++++ b/django/db/models/sql/compiler.py
+@@ -1283,9 +1283,16 @@
+                 if cur_depth > 1:
+                     break
+                 if name in self.query._filtered_relations:
+                     fields_found.add(name)
+-                    final_field, _, join_opts, joins, _, _ = self.query.setup_joins(
++                    final_field, targets, join_opts, joins, path, _ = self.query.setup_joins(
+                         [name], opts, root_alias
+                     )
++                    # For FilteredRelation, we need to use the actual target field
++                    # that points to the model we're selecting, not necessarily
++                    # the final field in a multi-level chain.
++                    if targets:
++                        # Get the field from the target, which properly represents
++                        # the relationship to join_opts.model
++                        final_field = targets[0].field
+                     model = join_opts.model
+                     alias = joins[-1]
+                     from_parent = (

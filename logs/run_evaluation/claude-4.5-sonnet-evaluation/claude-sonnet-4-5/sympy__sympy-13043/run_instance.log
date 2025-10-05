@@ -1,0 +1,61 @@
+2025-10-04 19:13:08,532 - INFO - Creating container for sympy__sympy-13043...
+2025-10-04 19:13:09,345 - INFO - Container for sympy__sympy-13043 created: c2f2fb2cf9b12eee896e5ce96288a8b01a206b8efb7bd1faee728a8d80ee3c8b
+2025-10-04 19:13:09,451 - INFO - Container for sympy__sympy-13043 started: c2f2fb2cf9b12eee896e5ce96288a8b01a206b8efb7bd1faee728a8d80ee3c8b
+2025-10-04 19:13:09,451 - INFO - Intermediate patch for sympy__sympy-13043 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/sympy__sympy-13043/patch.diff, now applying to container...
+2025-10-04 19:13:09,540 - INFO - >>>>> Applied Patch:
+Checking patch sympy/integrals/intpoly.py...
+Applied patch sympy/integrals/intpoly.py cleanly.
+
+2025-10-04 19:13:09,788 - INFO - Git diff before:
+diff --git a/sympy/integrals/intpoly.py b/sympy/integrals/intpoly.py
+index fc72bd206f..7bb7d19856 100644
+--- a/sympy/integrals/intpoly.py
++++ b/sympy/integrals/intpoly.py
+@@ -569,7 +569,7 @@ def decompose(expr, separate=False):
+             degrees = [(sum(degree_list(monom, *symbols)), monom)
+                        for monom in expr.args]
+             if separate:
+-                return [monom[1] for monom in degrees]
++                return [monom[1] for monom in sorted(degrees)]
+             else:
+                 for monom in degrees:
+                     degree, term = monom
+@@ -593,7 +593,7 @@ def decompose(expr, separate=False):
+         poly_dict[0] = expr
+ 
+     if separate:
+-        return list(poly_dict.values())
++        return sorted(poly_dict.values(), key=lambda term: sum(degree_list(term, *term.atoms(Symbol))) if isinstance(term, Expr) and not term.is_number else 0)
+     return poly_dict
+2025-10-04 19:13:09,789 - INFO - Eval script for sympy__sympy-13043 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/sympy__sympy-13043/eval.sh; copying to container...
+2025-10-04 19:13:14,238 - INFO - Test runtime: 4.41 seconds
+2025-10-04 19:13:14,238 - INFO - Test output for sympy__sympy-13043 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/sympy__sympy-13043/test_output.txt
+2025-10-04 19:13:14,279 - INFO - Git diff after:
+diff --git a/sympy/integrals/intpoly.py b/sympy/integrals/intpoly.py
+index fc72bd206f..7bb7d19856 100644
+--- a/sympy/integrals/intpoly.py
++++ b/sympy/integrals/intpoly.py
+@@ -569,7 +569,7 @@ def decompose(expr, separate=False):
+             degrees = [(sum(degree_list(monom, *symbols)), monom)
+                        for monom in expr.args]
+             if separate:
+-                return [monom[1] for monom in degrees]
++                return [monom[1] for monom in sorted(degrees)]
+             else:
+                 for monom in degrees:
+                     degree, term = monom
+@@ -593,7 +593,7 @@ def decompose(expr, separate=False):
+         poly_dict[0] = expr
+ 
+     if separate:
+-        return list(poly_dict.values())
++        return sorted(poly_dict.values(), key=lambda term: sum(degree_list(term, *term.atoms(Symbol))) if isinstance(term, Expr) and not term.is_number else 0)
+     return poly_dict
+2025-10-04 19:13:14,279 - INFO - Grading answer for sympy__sympy-13043...
+2025-10-04 19:13:14,284 - INFO - report: {'sympy__sympy-13043': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_decompose']}, 'PASS_TO_PASS': {'success': ['test_best_origin'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-13043: resolved: False
+2025-10-04 19:13:14,284 - INFO - Attempting to stop container sweb.eval.sympy__sympy-13043.claude-4.5-sonnet-evaluation...
+2025-10-04 19:13:29,432 - INFO - Attempting to remove container sweb.eval.sympy__sympy-13043.claude-4.5-sonnet-evaluation...
+2025-10-04 19:13:29,447 - INFO - Container sweb.eval.sympy__sympy-13043.claude-4.5-sonnet-evaluation removed.
+2025-10-04 19:13:29,447 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-13043:latest...
+2025-10-04 19:13:29,506 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-13043:latest removed.

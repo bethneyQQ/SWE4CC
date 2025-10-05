@@ -1,0 +1,19 @@
+
+--- a/django/db/backends/sqlite3/creation.py
++++ b/django/db/backends/sqlite3/creation.py
+@@ -23,6 +23,15 @@ class DatabaseCreation(BaseDatabaseCreation):
+     def _create_test_db(self, verbosity, autoclobber, keepdb=False):
+         test_database_name = self._get_test_db_name()
+ 
++        # Set a higher timeout to avoid "database is locked" errors when using
++        # multiple persistent test databases. The default timeout (5 seconds)
++        # may not be sufficient during test setup when multiple databases are
++        # being accessed simultaneously.
++        if not self.is_in_memory_db(test_database_name):
++            test_db_params = self.connection.settings_dict.get('TEST', {})
++            if 'timeout' not in test_db_params:
++                self.connection.settings_dict.setdefault('TEST', {})['timeout'] = 30
++
+         if keepdb:
+             return test_database_name
+         if not self.is_in_memory_db(test_database_name):

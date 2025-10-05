@@ -1,0 +1,26 @@
+
+--- a/sklearn/utils/validation.py
++++ b/sklearn/utils/validation.py
+@@ -461,10 +461,19 @@ def check_array(array, accept_sparse=False, accept_large_sparse=True,
+     # store whether originally we wanted numeric dtype
+     dtype_numeric = isinstance(dtype, six.string_types) and dtype == "numeric"
+ 
+     dtype_orig = getattr(array, "dtype", None)
+     if not hasattr(dtype_orig, 'kind'):
+-        # not a data type (e.g. a column named dtype in a pandas DataFrame)
+-        dtype_orig = None
++        # not a data type (e.g. a column named dtype in a pandas DataFrame)
++        # For pandas DataFrames, we need to get the common dtype
++        dtype_orig = None
++        if hasattr(array, 'dtypes'):  # pandas DataFrame
++            # Get the common dtype if all columns have the same dtype
++            # otherwise get the dtype that would result from np.asarray conversion
++            import pandas as pd
++            if isinstance(array, pd.DataFrame):
++                # Convert to see what dtype we would get
++                dtype_orig = np.asarray(array.iloc[:0]).dtype
++                if dtype_orig.kind != 'O':  # if not object after empty conversion, try with data
++                    dtype_orig = np.asarray(array).dtype
+ 
+     if dtype_numeric:
+         if dtype_orig is not None and dtype_orig.kind == "O":

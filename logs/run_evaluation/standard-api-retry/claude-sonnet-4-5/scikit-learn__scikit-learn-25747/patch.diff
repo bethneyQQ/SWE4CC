@@ -1,0 +1,21 @@
+--- a/sklearn/utils/_set_output.py
++++ b/sklearn/utils/_set_output.py
+@@ -54,9 +54,15 @@
+     if isinstance(data_to_wrap, pd.DataFrame):
+         if columns is not None:
+             data_to_wrap.columns = columns
+-        if index is not None:
+-            data_to_wrap.index = index
+-        return data_to_wrap
++        if index is not None:
++            # Only set the index if the lengths match. If they don't match,
++            # it means the transformer has aggregated or sampled the data,
++            # so we should not try to preserve the original index.
++            if len(index) == len(data_to_wrap):
++                data_to_wrap.index = index
++            else:
++                data_to_wrap = data_to_wrap.reset_index(drop=True)
++        return data_to_wrap
+ 
+     return pd.DataFrame(data_to_wrap, index=index, columns=columns)
+ ```

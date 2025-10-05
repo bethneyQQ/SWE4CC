@@ -1,0 +1,144 @@
+2025-10-04 19:15:58,657 - INFO - Creating container for sympy__sympy-13773...
+2025-10-04 19:15:59,513 - INFO - Container for sympy__sympy-13773 created: c5d42c2a474043bf26fce1780014788583f860e3bfe5a1b6482fdc92bbe387f7
+2025-10-04 19:15:59,603 - INFO - Container for sympy__sympy-13773 started: c5d42c2a474043bf26fce1780014788583f860e3bfe5a1b6482fdc92bbe387f7
+2025-10-04 19:15:59,604 - INFO - Intermediate patch for sympy__sympy-13773 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/sympy__sympy-13773/patch.diff, now applying to container...
+2025-10-04 19:15:59,690 - INFO - >>>>> Applied Patch:
+/tmp/patch.diff:10: trailing whitespace.
+        if not (getattr(other, 'is_Matrix', False) or 
+/tmp/patch.diff:26: trailing whitespace.
+        if not (getattr(other, 'is_Matrix', False) or 
+Checking patch sympy/matrices/common.py...
+Checking patch sympy/matrices/expressions/matexpr.py...
+Applied patch sympy/matrices/common.py cleanly.
+Applied patch sympy/matrices/expressions/matexpr.py cleanly.
+warning: 2 lines add whitespace errors.
+
+2025-10-04 19:15:59,988 - INFO - Git diff before:
+diff --git a/sympy/matrices/common.py b/sympy/matrices/common.py
+index 379a2917aa..0d74275907 100644
+--- a/sympy/matrices/common.py
++++ b/sympy/matrices/common.py
+@@ -1973,6 +1973,13 @@ def __div__(self, other):
+ 
+     @call_highest_priority('__rmatmul__')
+     def __matmul__(self, other):
++        other = _matrixify(other)
++        # Matrix multiplication operator @ should only work with matrix-like objects
++        if not (getattr(other, 'is_Matrix', False) or 
++                getattr(other, 'is_MatrixLike', False) or
++                (hasattr(other, 'shape') and len(other.shape) == 2)):
++            return NotImplemented
++        # Delegate to __mul__ for actual matrix multiplication
+         return self.__mul__(other)
+ 
+     @call_highest_priority('__rmul__')
+@@ -2068,6 +2075,13 @@ def __radd__(self, other):
+ 
+     @call_highest_priority('__matmul__')
+     def __rmatmul__(self, other):
++        other = _matrixify(other)
++        # Matrix multiplication operator @ should only work with matrix-like objects
++        if not (getattr(other, 'is_Matrix', False) or 
++                getattr(other, 'is_MatrixLike', False) or
++                (hasattr(other, 'shape') and len(other.shape) == 2)):
++            return NotImplemented
++        # Delegate to __rmul__ for actual matrix multiplication
+         return self.__rmul__(other)
+ 
+     @call_highest_priority('__mul__')
+diff --git a/sympy/matrices/expressions/matexpr.py b/sympy/matrices/expressions/matexpr.py
+index 92627132e9..b140e548a1 100644
+--- a/sympy/matrices/expressions/matexpr.py
++++ b/sympy/matrices/expressions/matexpr.py
+@@ -112,6 +112,10 @@ def __mul__(self, other):
+     @_sympifyit('other', NotImplemented)
+     @call_highest_priority('__rmul__')
+     def __matmul__(self, other):
++        # Matrix multiplication operator @ should only work with matrix-like objects
++        if not isinstance(other, MatrixExpr):
++            return NotImplemented
++        # Delegate to MatMul for actual matrix multiplication
+         return MatMul(self, other).doit()
+ 
+     @_sympifyit('other', NotImplemented)
+@@ -122,6 +126,10 @@ def __rmul__(self, other):
+     @_sympifyit('other', NotImplemented)
+     @call_highest_priority('__mul__')
+     def __rmatmul__(self, other):
++        # Matrix multiplication operator @ should only work with matrix-like objects
++        if not isinstance(other, MatrixExpr):
++            return NotImplemented
++        # Delegate to MatMul for actual matrix multiplication
+         return MatMul(other, self).doit()
+ 
+     @_sympifyit('other', NotImplemented)
+2025-10-04 19:15:59,988 - INFO - Eval script for sympy__sympy-13773 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/sympy__sympy-13773/eval.sh; copying to container...
+2025-10-04 19:16:05,028 - INFO - Test runtime: 5.00 seconds
+2025-10-04 19:16:05,028 - INFO - Test output for sympy__sympy-13773 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/sympy__sympy-13773/test_output.txt
+2025-10-04 19:16:05,071 - INFO - Git diff after:
+diff --git a/sympy/matrices/common.py b/sympy/matrices/common.py
+index 379a2917aa..0d74275907 100644
+--- a/sympy/matrices/common.py
++++ b/sympy/matrices/common.py
+@@ -1973,6 +1973,13 @@ def __div__(self, other):
+ 
+     @call_highest_priority('__rmatmul__')
+     def __matmul__(self, other):
++        other = _matrixify(other)
++        # Matrix multiplication operator @ should only work with matrix-like objects
++        if not (getattr(other, 'is_Matrix', False) or 
++                getattr(other, 'is_MatrixLike', False) or
++                (hasattr(other, 'shape') and len(other.shape) == 2)):
++            return NotImplemented
++        # Delegate to __mul__ for actual matrix multiplication
+         return self.__mul__(other)
+ 
+     @call_highest_priority('__rmul__')
+@@ -2068,6 +2075,13 @@ def __radd__(self, other):
+ 
+     @call_highest_priority('__matmul__')
+     def __rmatmul__(self, other):
++        other = _matrixify(other)
++        # Matrix multiplication operator @ should only work with matrix-like objects
++        if not (getattr(other, 'is_Matrix', False) or 
++                getattr(other, 'is_MatrixLike', False) or
++                (hasattr(other, 'shape') and len(other.shape) == 2)):
++            return NotImplemented
++        # Delegate to __rmul__ for actual matrix multiplication
+         return self.__rmul__(other)
+ 
+     @call_highest_priority('__mul__')
+diff --git a/sympy/matrices/expressions/matexpr.py b/sympy/matrices/expressions/matexpr.py
+index 92627132e9..b140e548a1 100644
+--- a/sympy/matrices/expressions/matexpr.py
++++ b/sympy/matrices/expressions/matexpr.py
+@@ -112,6 +112,10 @@ def __mul__(self, other):
+     @_sympifyit('other', NotImplemented)
+     @call_highest_priority('__rmul__')
+     def __matmul__(self, other):
++        # Matrix multiplication operator @ should only work with matrix-like objects
++        if not isinstance(other, MatrixExpr):
++            return NotImplemented
++        # Delegate to MatMul for actual matrix multiplication
+         return MatMul(self, other).doit()
+ 
+     @_sympifyit('other', NotImplemented)
+@@ -122,6 +126,10 @@ def __rmul__(self, other):
+     @_sympifyit('other', NotImplemented)
+     @call_highest_priority('__mul__')
+     def __rmatmul__(self, other):
++        # Matrix multiplication operator @ should only work with matrix-like objects
++        if not isinstance(other, MatrixExpr):
++            return NotImplemented
++        # Delegate to MatMul for actual matrix multiplication
+         return MatMul(other, self).doit()
+ 
+     @_sympifyit('other', NotImplemented)
+2025-10-04 19:16:05,071 - INFO - Grading answer for sympy__sympy-13773...
+2025-10-04 19:16:05,073 - INFO - report: {'sympy__sympy-13773': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_matmul'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test__MinimalMatrix', 'test_vec', 'test_tolist', 'test_row_col_del', 'test_get_diag_blocks1', 'test_get_diag_blocks2', 'test_shape', 'test_reshape', 'test_row_col', 'test_row_join', 'test_col_join', 'test_row_insert', 'test_col_insert', 'test_extract', 'test_hstack', 'test_vstack', 'test_atoms', 'test_free_symbols', 'test_has', 'test_is_anti_symmetric', 'test_diagonal_symmetrical', 'test_is_hermitian', 'test_is_Identity', 'test_is_symbolic', 'test_is_upper', 'test_is_lower', 'test_is_square', 'test_is_symmetric', 'test_is_hessenberg', 'test_is_zero', 'test_values', 'test_adjoint', 'test_as_real_imag', 'test_conjugate', 'test_doit', 'test_evalf', 'test_expand', 'test_replace', 'test_replace_map', 'test_simplify', 'test_subs', 'test_trace', 'test_xreplace', 'test_permute', 'test_abs', 'test_add', 'test_power', 'test_neg', 'test_sub', 'test_det', 'test_adjugate', 'test_cofactor_and_minors', 'test_charpoly', 'test_row_op', 'test_col_op', 'test_is_echelon', 'test_echelon_form', 'test_rref', 'test_eye', 'test_ones', 'test_zeros', 'test_diag', 'test_jordan_block', 'test_columnspace', 'test_rowspace', 'test_nullspace', 'test_eigenvals', 'test_singular_values', 'test_integrate'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-13773: resolved: True
+2025-10-04 19:16:05,073 - INFO - Attempting to stop container sweb.eval.sympy__sympy-13773.claude-4.5-sonnet-evaluation...
+2025-10-04 19:16:20,183 - INFO - Attempting to remove container sweb.eval.sympy__sympy-13773.claude-4.5-sonnet-evaluation...
+2025-10-04 19:16:20,197 - INFO - Container sweb.eval.sympy__sympy-13773.claude-4.5-sonnet-evaluation removed.
+2025-10-04 19:16:20,197 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-13773:latest...
+2025-10-04 19:16:20,258 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-13773:latest removed.

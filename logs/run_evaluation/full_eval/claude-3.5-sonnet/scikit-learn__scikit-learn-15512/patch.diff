@@ -1,0 +1,44 @@
+
+--- a/sklearn/cluster/_affinity_propagation.py
++++ b/sklearn/cluster/_affinity_propagation.py
+@@ -150,6 +150,7 @@
+     # Execute parallel affinity propagation updates
+     e = np.zeros((n_samples, convergence_iter))
+ 
++    converged = False
+     ind = np.arange(n_samples)
+ 
+     for it in range(max_iter):
+@@ -193,12 +194,13 @@
+             se = np.sum(e, axis=1)
+             unconverged = (np.sum((se == convergence_iter) + (se == 0))
+                            != n_samples)
+-            if (not unconverged and (K > 0)) or (it == max_iter):
++            if not unconverged and (K > 0):
++                converged = True
+                 if verbose:
+                     print("Converged after %d iterations." % it)
+                 break
+     else:
+-        if verbose:
++        if verbose and not converged:
+             print("Did not converge")
+ 
+     I = np.flatnonzero(E)
+@@ -220,11 +222,14 @@
+         cluster_centers_indices = np.unique(labels)
+         labels = np.searchsorted(cluster_centers_indices, labels)
+     else:
++        converged = False
++        
++    if not converged:
+         warnings.warn("Affinity propagation did not converge, this model "
+                       "will not have any cluster centers.", ConvergenceWarning)
+         labels = np.array([-1] * n_samples)
+-        cluster_centers_indices = []
+-
++        cluster_centers_indices = np.array([])
++        
+     if return_n_iter:
+         return cluster_centers_indices, labels, it + 1
+     else:

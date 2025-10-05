@@ -1,0 +1,78 @@
+--- a/django/db/models/fields/__init__.py
++++ b/django/db/models/fields/__init__.py
+@@ -1,6 +1,7 @@
+ import collections.abc
+ import copy
+ import datetime
++import enum
+ import decimal
+ import operator
+ import uuid
+@@ -1013,6 +1014,9 @@
+         return value
+ 
+     def get_prep_value(self, value):
++        """Perform preliminary non-db specific value checks and conversions."""
++        if isinstance(value, enum.Enum):
++            value = value.value
+         value = super().get_prep_value(value)
+         return self.to_python(value)
+ 
+@@ -1773,6 +1777,8 @@
+         if isinstance(value, str) or value is None:
+             return value
+ 
++        if isinstance(value, enum.Enum):
++            return value.value
+         return str(value)
+ 
+     def formfield(self, **kwargs):
+@@ -1822,6 +1828,8 @@
+ 
+     def to_python(self, value):
+         if value is None:
++            return value
++        if isinstance(value, enum.Enum):
+             return value
+         try:
+             return int(value)
+ ```
+--- a/django/db/models/fields/__init__.py
++++ b/django/db/models/fields/__init__.py
+@@ -1,6 +1,7 @@
+ import collections.abc
+ import copy
+ import datetime
++import enum
+ import decimal
+ import operator
+ import uuid
+@@ -1013,6 +1014,9 @@
+         return value
+ 
+     def get_prep_value(self, value):
++        """Perform preliminary non-db specific value checks and conversions."""
++        if isinstance(value, enum.Enum):
++            value = value.value
+         value = super().get_prep_value(value)
+         return self.to_python(value)
+ 
+@@ -1773,6 +1777,8 @@
+         if isinstance(value, str) or value is None:
+             return value
+ 
++        if isinstance(value, enum.Enum):
++            return value.value
+         return str(value)
+ 
+     def formfield(self, **kwargs):
+@@ -1822,6 +1828,8 @@
+ 
+     def to_python(self, value):
+         if value is None:
+             return value
++        if isinstance(value, enum.Enum):
++            return value.value
+         try:
+             return int(value)
+ ```

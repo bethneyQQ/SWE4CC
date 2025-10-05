@@ -1,0 +1,116 @@
+2025-10-03 23:26:35,559 - INFO - Creating container for scikit-learn__scikit-learn-15512...
+2025-10-03 23:26:52,587 - INFO - Container for scikit-learn__scikit-learn-15512 created: 82c7e6d994cff30c21603ce8ccdde04623dd51304913592be66da275bdb37148
+2025-10-03 23:26:52,695 - INFO - Container for scikit-learn__scikit-learn-15512 started: 82c7e6d994cff30c21603ce8ccdde04623dd51304913592be66da275bdb37148
+2025-10-03 23:26:52,695 - INFO - Intermediate patch for scikit-learn__scikit-learn-15512 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/scikit-learn__scikit-learn-15512/patch.diff, now applying to container...
+2025-10-03 23:26:52,785 - INFO - >>>>> Applied Patch:
+/tmp/patch.diff:33: trailing whitespace.
+        
+/tmp/patch.diff:41: trailing whitespace.
+        
+Checking patch sklearn/cluster/_affinity_propagation.py...
+Applied patch sklearn/cluster/_affinity_propagation.py cleanly.
+warning: 2 lines add whitespace errors.
+
+2025-10-03 23:26:53,007 - INFO - Git diff before:
+diff --git a/sklearn/cluster/_affinity_propagation.py b/sklearn/cluster/_affinity_propagation.py
+index 4806afee9..86b07eda9 100644
+--- a/sklearn/cluster/_affinity_propagation.py
++++ b/sklearn/cluster/_affinity_propagation.py
+@@ -150,6 +150,7 @@ def affinity_propagation(S, preference=None, convergence_iter=15, max_iter=200,
+     # Execute parallel affinity propagation updates
+     e = np.zeros((n_samples, convergence_iter))
+ 
++    converged = False
+     ind = np.arange(n_samples)
+ 
+     for it in range(max_iter):
+@@ -193,12 +194,13 @@ def affinity_propagation(S, preference=None, convergence_iter=15, max_iter=200,
+             se = np.sum(e, axis=1)
+             unconverged = (np.sum((se == convergence_iter) + (se == 0))
+                            != n_samples)
+-            if (not unconverged and (K > 0)) or (it == max_iter):
++            if not unconverged and (K > 0):
++                converged = True
+                 if verbose:
+                     print("Converged after %d iterations." % it)
+                 break
+     else:
+-        if verbose:
++        if verbose and not converged:
+             print("Did not converge")
+ 
+     I = np.flatnonzero(E)
+@@ -220,11 +222,14 @@ def affinity_propagation(S, preference=None, convergence_iter=15, max_iter=200,
+         cluster_centers_indices = np.unique(labels)
+         labels = np.searchsorted(cluster_centers_indices, labels)
+     else:
++        converged = False
++        
++    if not converged:
+         warnings.warn("Affinity propagation did not converge, this model "
+                       "will not have any cluster centers.", ConvergenceWarning)
+         labels = np.array([-1] * n_samples)
+-        cluster_centers_indices = []
+-
++        cluster_centers_indices = np.array([])
++        
+     if return_n_iter:
+         return cluster_centers_indices, labels, it + 1
+     else:
+2025-10-03 23:26:53,008 - INFO - Eval script for scikit-learn__scikit-learn-15512 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/scikit-learn__scikit-learn-15512/eval.sh; copying to container...
+2025-10-03 23:26:56,579 - INFO - Test runtime: 3.53 seconds
+2025-10-03 23:26:56,579 - INFO - Test output for scikit-learn__scikit-learn-15512 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/scikit-learn__scikit-learn-15512/test_output.txt
+2025-10-03 23:26:56,619 - INFO - Git diff after:
+diff --git a/sklearn/cluster/_affinity_propagation.py b/sklearn/cluster/_affinity_propagation.py
+index 4806afee9..86b07eda9 100644
+--- a/sklearn/cluster/_affinity_propagation.py
++++ b/sklearn/cluster/_affinity_propagation.py
+@@ -150,6 +150,7 @@ def affinity_propagation(S, preference=None, convergence_iter=15, max_iter=200,
+     # Execute parallel affinity propagation updates
+     e = np.zeros((n_samples, convergence_iter))
+ 
++    converged = False
+     ind = np.arange(n_samples)
+ 
+     for it in range(max_iter):
+@@ -193,12 +194,13 @@ def affinity_propagation(S, preference=None, convergence_iter=15, max_iter=200,
+             se = np.sum(e, axis=1)
+             unconverged = (np.sum((se == convergence_iter) + (se == 0))
+                            != n_samples)
+-            if (not unconverged and (K > 0)) or (it == max_iter):
++            if not unconverged and (K > 0):
++                converged = True
+                 if verbose:
+                     print("Converged after %d iterations." % it)
+                 break
+     else:
+-        if verbose:
++        if verbose and not converged:
+             print("Did not converge")
+ 
+     I = np.flatnonzero(E)
+@@ -220,11 +222,14 @@ def affinity_propagation(S, preference=None, convergence_iter=15, max_iter=200,
+         cluster_centers_indices = np.unique(labels)
+         labels = np.searchsorted(cluster_centers_indices, labels)
+     else:
++        converged = False
++        
++    if not converged:
+         warnings.warn("Affinity propagation did not converge, this model "
+                       "will not have any cluster centers.", ConvergenceWarning)
+         labels = np.array([-1] * n_samples)
+-        cluster_centers_indices = []
+-
++        cluster_centers_indices = np.array([])
++        
+     if return_n_iter:
+         return cluster_centers_indices, labels, it + 1
+     else:
+2025-10-03 23:26:56,619 - INFO - Grading answer for scikit-learn__scikit-learn-15512...
+2025-10-03 23:26:56,621 - INFO - report: {'scikit-learn__scikit-learn-15512': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['sklearn/cluster/tests/test_affinity_propagation.py::test_affinity_propagation_non_convergence_regressiontest']}, 'PASS_TO_PASS': {'success': ['sklearn/cluster/tests/test_affinity_propagation.py::test_affinity_propagation', 'sklearn/cluster/tests/test_affinity_propagation.py::test_affinity_propagation_predict', 'sklearn/cluster/tests/test_affinity_propagation.py::test_affinity_propagation_predict_error', 'sklearn/cluster/tests/test_affinity_propagation.py::test_affinity_propagation_equal_mutual_similarities', 'sklearn/cluster/tests/test_affinity_propagation.py::test_equal_similarities_and_preferences', 'sklearn/cluster/tests/test_affinity_propagation.py::test_affinity_propagation_convergence_warning_dense_sparse[centers0]', 'sklearn/cluster/tests/test_affinity_propagation.py::test_affinity_propagation_convergence_warning_dense_sparse[centers1]'], 'failure': ['sklearn/cluster/tests/test_affinity_propagation.py::test_affinity_propagation_fit_non_convergence', 'sklearn/cluster/tests/test_affinity_propagation.py::test_affinity_propagation_predict_non_convergence']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for scikit-learn__scikit-learn-15512: resolved: False
+2025-10-03 23:26:56,621 - INFO - Attempting to stop container sweb.eval.scikit-learn__scikit-learn-15512.full_eval...
+2025-10-03 23:27:11,756 - INFO - Attempting to remove container sweb.eval.scikit-learn__scikit-learn-15512.full_eval...
+2025-10-03 23:27:11,768 - INFO - Container sweb.eval.scikit-learn__scikit-learn-15512.full_eval removed.
+2025-10-03 23:27:11,768 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-15512:latest...
+2025-10-03 23:27:13,118 - INFO - Image swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-15512:latest removed.

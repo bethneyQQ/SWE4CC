@@ -1,0 +1,14 @@
+--- a/django/forms/models.py
++++ b/django/forms/models.py
+@@ -1169,6 +1169,9 @@
+     def __eq__(self, other):
+         if isinstance(other, ModelChoiceIteratorValue):
+             other = other.value
+         return self.value == other
++
++    def __hash__(self):
++        return hash(self.value)
+ 
+ 
+ 
+ 

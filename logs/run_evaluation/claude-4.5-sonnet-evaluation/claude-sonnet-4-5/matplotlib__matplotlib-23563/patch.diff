@@ -1,0 +1,18 @@
+I see I need permissions to edit files. Let me provide you with a summary of what needs to be done to fix issue #23563:
+
+## Summary
+
+**Issue**: Drawing 3D lines fails when points come from numpy arrays with shape (N, 1) instead of shape (N,).
+
+**Root Cause**: In `lib/mpl_toolkits/mplot3d/art3d.py`, the `set_3d_properties` method in the `Line3D` class calls `np.broadcast_to(zs, len(xs))` without first converting `zs` to a proper 1D array. When `zs` has shape (N, 1), this causes issues.
+
+**Fix Required**:
+
+1. **File**: `lib/mpl_toolkits/mplot3d/art3d.py` (line 171-176)
+   - Add line after line 173: `zs = cbook._to_unmasked_float_array(zs).ravel()`
+   - This converts `zs` to a proper 1D float array before broadcasting
+
+2. **File**: `lib/mpl_toolkits/tests/test_mplot3d.py` (after line 1786)
+   - Add test function `test_draw_single_lines_from_Nx1()` to verify the fix works
+
+The fix uses `cbook._to_unmasked_float_array(zs).ravel()` to ensure that `zs` is converted to a 1D array regardless of its input shape, which prevents errors when plotting with (N, 1) shaped arrays.

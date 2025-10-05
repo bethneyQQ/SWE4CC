@@ -1,0 +1,168 @@
+{
+  "summary": {
+    "model": "claude-sonnet-4-5",
+    "dataset": "SWE-bench_Lite_oracle",
+    "total_instances": 1,
+    "resolved": 1,
+    "success_rate": "100.0%",
+    "avg_cost": "$0.0890",
+    "avg_latency": "22.3s",
+    "enhanced_features_enabled": true,
+    "cache_efficiency": "100.0%",
+    "analysis_timestamp": "2025-10-04T07:38:34.236182"
+  },
+  "prediction_analysis": {
+    "basic_info": {
+      "total_instances": 1,
+      "dataset": "SWE-bench_Lite_oracle",
+      "model": "claude-sonnet-4-5",
+      "analysis_timestamp": "2025-10-04T07:38:34.236182"
+    },
+    "field_inventory": {
+      "total_unique_fields": 13,
+      "fields_list": [
+        "claude_code_meta",
+        "claude_code_meta.attempts",
+        "claude_code_meta.enhanced",
+        "claude_code_meta.repo_path",
+        "claude_code_meta.response_data",
+        "claude_code_meta.tools_available",
+        "claude_code_meta.validation_errors",
+        "cost",
+        "full_output",
+        "instance_id",
+        "latency_ms",
+        "model_name_or_path",
+        "model_patch"
+      ]
+    },
+    "original_fields": {
+      "identification": [
+        "instance_id"
+      ],
+      "model_info": [
+        "model_name_or_path"
+      ],
+      "output": [
+        "model_patch",
+        "full_output"
+      ],
+      "performance": [
+        "latency_ms",
+        "cost"
+      ],
+      "enhanced_metadata": [
+        "claude_code_meta"
+      ]
+    },
+    "derived_metrics": {
+      "cost_analysis": {
+        "total_cost": 0.0890011,
+        "avg_cost": 0.0890011,
+        "min_cost": 0.0890011,
+        "max_cost": 0.0890011,
+        "median_cost": 0.0890011
+      },
+      "latency_analysis": {
+        "avg_latency_ms": 22322,
+        "min_latency_ms": 22322,
+        "max_latency_ms": 22322,
+        "median_latency_ms": 22322,
+        "p95_latency_ms": 22322
+      },
+      "patch_analysis": {
+        "avg_patch_size_bytes": 784,
+        "min_patch_size_bytes": 784,
+        "max_patch_size_bytes": 784,
+        "patches_generated": 1,
+        "empty_patches": 0
+      }
+    },
+    "agent_metrics": {
+      "retry_analysis": {
+        "avg_attempts": 1,
+        "max_attempts": 1,
+        "first_attempt_success": 1,
+        "required_retry": 0
+      },
+      "validation_analysis": {
+        "total_validation_errors": 0,
+        "instances_with_errors": 0,
+        "clean_validations": 1
+      },
+      "interaction_analysis": {
+        "avg_turns": 12,
+        "min_turns": 12,
+        "max_turns": 12,
+        "total_turns": 12
+      },
+      "enhanced_features": {
+        "using_enhanced_mode": 1,
+        "using_tools": 1,
+        "repo_access": 1
+      }
+    },
+    "quality_metrics": {
+      "token_usage": {
+        "total_cache_creation": 15668,
+        "total_cache_read": 54427,
+        "total_input": 26,
+        "total_output": 872,
+        "avg_cache_creation": 15668,
+        "avg_cache_read": 54427,
+        "avg_input": 26,
+        "avg_output": 872
+      },
+      "cache_efficiency": {
+        "cache_hit_rate": 0.9995225240115329,
+        "total_tokens_saved": 54427
+      }
+    },
+    "resource_metrics": {
+      "cost_efficiency": {
+        "cost_per_patch": 0.0890011,
+        "cost_per_turn": 0.007416758333333333
+      },
+      "time_efficiency": {
+        "latency_per_turn_ms": 1860.1666666666667,
+        "total_time_seconds": 22.322
+      }
+    },
+    "per_instance_details": [
+      {
+        "instance_id": "django__django-11099",
+        "cost": 0.0890011,
+        "latency_ms": 22322,
+        "patch_size": 784,
+        "has_patch": true,
+        "enhanced": true,
+        "attempts": 1,
+        "validation_errors": 0,
+        "num_turns": 12,
+        "repo_path": "/tmp/swebench_repos/django__django-11099"
+      }
+    ]
+  },
+  "evaluation_results": {
+    "total_instances": 300,
+    "submitted": 1,
+    "completed": 1,
+    "resolved": 1,
+    "unresolved": 0,
+    "empty_patches": 0,
+    "errors": 0,
+    "resolved_ids": [
+      "django__django-11099"
+    ],
+    "unresolved_ids": []
+  },
+  "combined_metrics": {
+    "success_rate": 100.0,
+    "completion_rate": 100.0,
+    "error_rate": 0.0,
+    "empty_patch_rate": 0.0,
+    "avg_cost_per_resolved": 0.0890011,
+    "avg_latency_per_resolved_ms": 22322,
+    "first_attempt_success_rate": 100.0
+  }
+}

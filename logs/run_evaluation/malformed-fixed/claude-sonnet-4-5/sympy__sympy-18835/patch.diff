@@ -1,0 +1,20 @@
+--- a/sympy/utilities/iterables.py
++++ b/sympy/utilities/iterables.py
+@@ -2108,8 +2108,13 @@ def uniq(seq, result=None):
+     """
+     try:
+         seen = set()
+         result = result or []
++        if hasattr(seq, '__len__'):
++            original_len = len(seq)
++        else:
++            original_len = None
+         for i, s in enumerate(seq):
++            if original_len is not None and len(seq) != original_len:
++                raise RuntimeError("sequence changed size during iteration")
+             if not (s in seen or seen.add(s)):
+                 yield s
+     except TypeError:
+ 
+ 
+ 

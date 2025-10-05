@@ -1,0 +1,55 @@
+--- a/django/db/models/sql/where.py
++++ b/django/db/models/sql/where.py
+@@ -85,11 +85,15 @@
+         if self.connector == AND:
+             full_needed, empty_needed = len(self.children), 1
+         else:
+             full_needed, empty_needed = 1, len(self.children)
+ 
+         if empty_needed == 0:
++            if self.negated:
++                # All children are empty and we're negated, so return TRUE
++                return '', []
+             # All children are empty, so return FALSE (0 = 0).
+             return '0 = 0', []
+         if full_needed == 0:
++            if self.negated:
++                # All children are full and we're negated, so return FALSE
++                return '0 = 0', []
+             # All children are full, so return TRUE (1 = 1).
+             return '', []
+         
+@@ -115,7 +119,11 @@
+                     result.append(sql)
+                     result_params.extend(params)
+             except EmptyResultSet:
+                 empty_needed -= 1
+                 if empty_needed == 0:
++                    if self.negated:
++                        # All children resulted in empty and we're negated, return TRUE
++                        return '', []
+                     # All children are empty, so return FALSE (0 = 0).
+                     return '0 = 0', []
+                 continue
+ ```
+--- a/django/db/models/sql/where.py
++++ b/django/db/models/sql/where.py
+@@ -85,10 +85,14 @@
+         if self.connector == AND:
+             full_needed, empty_needed = len(self.children), 1
+         else:
+             full_needed, empty_needed = 1, len(self.children)
+ 
+         if empty_needed == 0:
+-            # All children are empty, so return FALSE (0 = 0).
+-            return '0 = 0', []
++            if self.negated:
++                # All children are empty and negated, so return TRUE (1 = 1).
++                return '1 = 1', []
++            else:
++                # All children are empty, so return FALSE (0 = 0).
++                return '0 = 0', []
+         if full_needed == 0:
+             # All children are full, so return TRUE (1 = 1).
+             return '', []
+ ```

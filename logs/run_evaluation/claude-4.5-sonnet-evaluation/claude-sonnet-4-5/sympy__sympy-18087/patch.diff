@@ -1,0 +1,27 @@
+--- a/sympy/core/exprtools.py
++++ b/sympy/core/exprtools.py
+@@ -449,13 +449,17 @@
+         for factor, exp in self.factors.items():
+             if exp != 1:
+                 b, e = factor.as_base_exp()
+-                if isinstance(exp, int):
++                # Only flatten (a**e)**exp to a**(e*exp) when safe to do so
++                # For non-integer exponents with Pow factors, this is not valid
++                if e == 1:
++                    # factor is not a Pow, just apply the exponent
++                    args.append(factor**exp)
++                elif isinstance(exp, int):
+                     e = _keep_coeff(Integer(exp), e)
+-                elif isinstance(exp, Rational):
+-                    e = _keep_coeff(exp, e)
++                    args.append(b**e)
+                 else:
+-                    e *= exp
+-                args.append(b**e)
++                    # Don't flatten for non-integer exp with Pow factors
++                    args.append(factor**exp)
+             else:
+                 args.append(factor)
+         return Mul(*args)
+ 
+ 

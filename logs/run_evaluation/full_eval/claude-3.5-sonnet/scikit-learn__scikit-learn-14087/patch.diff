@@ -1,0 +1,11 @@
+
+--- a/sklearn/linear_model/logistic.py
++++ b/sklearn/linear_model/logistic.py
+@@ -2124,6 +2124,7 @@ class LogisticRegressionCV(LogisticRegression, BaseEstimator,
+                 coefs_paths = self.coefs_paths_[cls]
+             else:
+                 # For multinomial, all scores are the same across classes
++                coefs_paths = coefs_paths[0]
+                 scores = scores[0]
+                 # coefs_paths will keep its original shape because
+                 # logistic_regression_path expects it this way

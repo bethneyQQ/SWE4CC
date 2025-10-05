@@ -1,0 +1,15 @@
+--- a/sympy/core/numbers.py
++++ b/sympy/core/numbers.py
+@@ -2262,7 +2262,9 @@ class Integer(Rational):
+             exponent *= expt.p
+             # remove multiples of expt.q: (2**12)**(1/10) -> 2*(2**2)**(1/10)
+             div_e, div_m = divmod(exponent, expt.q)
+-            if div_e > 0:
++            # Keep -1 in the radical to maintain consistent branch cuts for
++            # negative bases (see issue #13895)
++            if div_e > 0 and prime != -1:
+                 out_int *= prime**div_e
+             if div_m > 0:
+                 # see if the reduced exponent shares a gcd with e.q
+ 
+ 

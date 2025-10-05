@@ -1,0 +1,59 @@
+
+--- a/sphinx/ext/napoleon/docstring.py
++++ b/sphinx/ext/napoleon/docstring.py
+@@ -578,7 +578,8 @@ class GoogleDocstring:
+     def _parse_attributes_section(self, section: str) -> List[str]:
+         lines = []
+         for _name, _type, _desc in self._consume_fields():
+-            if self._config.napoleon_use_ivar:
++            if not _name:
++                pass
++            elif self._config.napoleon_use_ivar:
+                 _name = self._qualify_name(_name, self._obj)
+                 field = ':ivar %s: ' % _name
+                 lines.extend(self._format_block(field, _desc))
+@@ -879,7 +880,7 @@ class NumpyDocstring(GoogleDocstring):
+                        ) -> Tuple[str, str, List[str]]:
+         line = next(self._line_iter)
+         if parse_type:
+             _name, _, _type = self._partition_field_on_colon(line)
+         else:
+             _name, _type = line, ''
+         _name, _type = _name.strip(), _type.strip()
+-        _name = self._escape_args_and_kwargs(_name)
+ 
+         if prefer_type and not _type:
+             _type, _name = _name, _type
+@@ -228,7 +228,10 @@ class GoogleDocstring:
+     def _consume_field(self, parse_type: bool = True, prefer_type: bool = False
+                        ) -> Tuple[str, str, List[str]]:
+         line = next(self._line_iter)
+ 
+         before, colon, after = self._partition_field_on_colon(line)
+         _name, _type, _desc = before, '', after
+ 
+         if parse_type:
+             match = _google_typed_arg_regex.match(before)
+             if match:
+                 _name = match.group(1)
+                 _type = match.group(2)
+ 
+-        _name = self._escape_args_and_kwargs(_name)
+-
+         if prefer_type and not _type:
+             _type, _name = _name, _type
+         indent = self._get_indent(line) + 1
+@@ -663,6 +663,7 @@ class GoogleDocstring:
+     def _parse_parameters_section(self, section: str) -> List[str]:
+         fields = self._consume_fields()
++        fields = [(_escape_args_and_kwargs(self, _name), _type, _desc) for _name, _type, _desc in fields]
+         if self._config.napoleon_use_param:
+             return self._format_docutils_params(fields)
+         else:
+@@ -635,6 +636,7 @@ class GoogleDocstring:
+     def _parse_keyword_arguments_section(self, section: str) -> List[str]:
+         fields = self._consume_fields()
++        fields = [(self._escape_args_and_kwargs(_name), _type, _desc) for _name, _type, _desc in fields]
+         if self._config.napoleon_use_keyword:
+             return self._format_docutils_params(
+                 fields,

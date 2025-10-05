@@ -1,0 +1,61 @@
+
+--- a/sympy/simplify/trigsimp.py
++++ b/sympy/simplify/trigsimp.py
+@@ -1,6 +1,7 @@
+ from __future__ import print_function, division
+ 
+ from collections import defaultdict
++from sympy.core.mul import Mul
+ 
+ from sympy.core import (sympify, Basic, S, Expr, expand_mul, factor_terms,
+     Mul, Dummy, igcd, FunctionClass, Add, symbols, Wild, expand)
+@@ -425,6 +426,37 @@ def trigsimp_old(expr, **opts):
+         return expr._eval_trigsimp(**opts)
+     return expr
+ 
++def _exp_to_trig(expr):
++    """
++    Convert exponential expressions to trigonometric functions.
++    Recognizes patterns like:
++    - (exp(I*x) - exp(-I*x))/(2*I) -> sin(x)
++    - (exp(I*x) + exp(-I*x))/2 -> cos(x)
++    - I/2 * (exp(-I*x) - exp(I*x)) -> sin(x)
++    """
++    from sympy import exp, sin, cos, I, Wild, Add, Mul
++    from sympy.core.exprtools import factor_terms
++    
++    expr = factor_terms(expr)
++    
++    # Pattern for sin(x): (-I*exp(I*x) + I*exp(-I*x))/2
++    x = Wild('x', exclude=[I])
++    c = Wild('c', exclude=[I, x])
++    
++    # Try to match: c * (-I*exp(I*x) + I*exp(-I*x)) * (1/2)
++    # This equals c * sin(x)
++    pattern1 = c * (I*exp(-I*x) - I*exp(I*x)) * S.Half
++    result = expr.match(pattern1)
++    if result:
++        return result[c] * sin(result[x])
++    
++    # Try to match: c * (exp(I*x) + exp(-I*x)) * (1/2) = c * cos(x)
++    pattern2 = c * (exp(I*x) + exp(-I*x)) * S.Half
++    result = expr.match(pattern2)
++    if result:
++        return result[c] * cos(result[x])
++    
++    return expr
+ 
+ #-------------------- the new trigsimp routines ---------------------
+ 
+@@ -511,6 +543,10 @@ def trigsimp(expr, **opts):
+     if not isinstance(expr, Basic):
+         return expr
+ 
++    # First try to convert exponentials to trig functions
++    from sympy import exp, I
++    if expr.has(exp) and expr.has(I):
++        expr = expr.replace(lambda e: e.is_Mul or e.is_Add, _exp_to_trig)
++    
+     if first:
+         if not expr.has(*_trigs):
+             return expr

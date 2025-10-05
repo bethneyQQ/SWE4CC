@@ -1,0 +1,15 @@
+--- a/lib/matplotlib/cm.py
++++ b/lib/matplotlib/cm.py
+@@ -615,6 +615,10 @@ class ScalarMappable:
+         self._norm = norm
+         self._id_norm = self.norm.callbacks.connect('changed',
+                                                     self.changed)
++        if not in_init and self._A is not None:
++            # Autoscale the new norm based on the existing data so that
++            # vmin/vmax are properly set before notifying observers
++            self.norm.autoscale_None(self._A)
+         if not in_init:
+             self.changed()
+ 
+ 
+ 

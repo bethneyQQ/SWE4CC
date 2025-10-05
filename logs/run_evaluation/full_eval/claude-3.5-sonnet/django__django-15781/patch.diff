@@ -1,0 +1,64 @@
+
+--- a/django/core/management/base.py
++++ b/django/core/management/base.py
+@@ -105,7 +105,7 @@ def no_translations(handle_func):
+ class DjangoHelpFormatter(HelpFormatter):
+     """
+     Customized formatter so that command-specific arguments appear in the
+-    --help output before arguments common to all commands.
++    --help output before arguments common to all commands.
+     """
+ 
+     show_last = {
+@@ -130,6 +130,21 @@ class DjangoHelpFormatter(HelpFormatter):
+     def add_arguments(self, actions):
+         super().add_arguments(self._reordered_actions(actions))
+ 
++
++class DjangoRawDescriptionHelpFormatter(DjangoHelpFormatter):
++    """
++    A formatter that preserves the formatting of the description text,
++    including newlines and indentation. This is useful for commands that
++    want to include formatted examples or multi-line help text.
++    """
++
++    def _fill_text(self, text, width, indent):
++        """
++        Preserves the original formatting of the description text instead of
++        collapsing whitespace.
++        """
++        return ''.join(indent + line for line in text.splitlines(keepends=True))
++
+ 
+ class OutputWrapper(TextIOBase):
+     """
+@@ -241,6 +256,11 @@ class BaseCommand:
+         A tuple of any options the command uses which aren't defined by the
+         argument parser.
+     """
++
++    # Metadata about this command.
++    help = ""
++
++    # Configuration shortcuts that alter various logic.
+     
+     # Metadata about this command.
+     help = ""
+@@ -257,6 +277,7 @@ class BaseCommand:
+     stealth_options = ()
+     suppressed_base_arguments = set()
+ 
++    formatter_class = DjangoHelpFormatter
++
+     def __init__(self, stdout=None, stderr=None, no_color=False, force_color=False):
+         self.stdout = OutputWrapper(stdout or sys.stdout)
+         self.stderr = OutputWrapper(stderr or sys.stderr)
+@@ -289,7 +310,7 @@ class BaseCommand:
+         parser = CommandParser(
+             prog="%s %s" % (os.path.basename(prog_name), subcommand),
+             description=self.help or None,
+-            formatter_class=DjangoHelpFormatter,
++            formatter_class=self.formatter_class,
+             missing_args_message=getattr(self, "missing_args_message", None),
+             called_from_command_line=getattr(self, "_called_from_command_line", None),
+             **kwargs,

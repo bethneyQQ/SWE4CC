@@ -1,0 +1,5 @@
+def draw(self, renderer):
+    if not self.get_visible():
+        return
+    self._unstale_viewLim()
+    # ... rest of the method

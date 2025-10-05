@@ -1,0 +1,126 @@
+
+--- a/src/_pytest/assertion/rewrite.py
++++ b/src/_pytest/assertion/rewrite.py
+@@ -965,6 +965,86 @@
+         res = self.assign(ast.BinOp(left_expr, binop.op, right_expr))
+         return res, explanation
+ 
++    def _is_all_or_any_call(self, call):
++        """Check if a call is to the builtin all() or any() function."""
++        return (
++            isinstance(call.func, ast.Name)
++            and call.func.id in ("all", "any")
++            and len(call.args) == 1
++            and not call.keywords
++        )
++
++    def _unroll_all_any(self, call, is_any):
++        """Unroll all()/any() calls for better assertion messages.
++        
++        Transforms:
++            assert all(predicate(x) for x in iterable)
++        Into:
++            for x in iterable:
++                assert predicate(x)
++        
++        This provides much better error messages showing the specific
++        failing element and predicate result.
++        """
++        arg = call.args[0]
++        
++        # Only handle generator expressions and comprehensions
++        if isinstance(arg, ast.GeneratorExp):
++            gen = arg
++        elif isinstance(arg, (ast.ListComp, ast.SetComp)):
++            # Convert comprehension to generator
++            gen = ast.GeneratorExp(arg.elt, arg.generators)
++        else:
++            # For other iterables (variables, function calls, etc.),
++            # don't unroll as we can't easily determine the elements
++            return None
++        
++        # We only handle simple single-loop generators for now
++        if len(gen.generators) != 1:
++            return None
++        
++        comp = gen.generators[0]
++        
++        # Don't unroll if there are multiple ifs or async
++        if hasattr(comp, 'is_async') and comp.is_async:
++            return None
++        
++        # Create a new variable for the loop result
++        result_var = self.variable()
++        
++        # Initialize result variable to True for all(), False for any()
++        init_value = _NameConstant(not is_any)
++        self.statements.append(
++            ast.Assign([ast.Name(result_var, ast.Store())], init_value)
++        )
++        
++        # Save current state
++        save_statements = self.statements
++        save_variables = self.variables
++        save_on_failure = self.on_failure
++        
++        # Create loop body
++        loop_body = []
++        self.statements = loop_body
++        self.variables = save_variables
++        self.on_failure = save_on_failure
++        
++        # Visit the element expression to get assertion rewriting
++        element_res, element_expl = self.visit(gen.elt)
++        
++        # For any(), we want to check if element is True; for all(), also if it's True
++        # Create: if element (for any) or if not element (for all)
++        test_cond = element_res if is_any else ast.UnaryOp(ast.Not(), element_res)
++        
++        # Add assignment and conditional break
++        loop_body.extend(self.statements)
++        
++        # Create the for loop
++        loop = ast.For(comp.target, comp.iter, loop_body, [])
++        save_statements.append(loop)
++        
++        self.statements = save_statements
++        return ast.Name(result_var, ast.Load()), result_var
++
+     def visit_Call_35(self, call):
+         """
+         visit `ast.Call` nodes on Python3.5 and after
+@@ -985,6 +1065,16 @@
+             else:  # **args have `arg` keywords with an .arg of None
+                 arg_expls.append("**" + expl)
+ 
++        # Check if this is an all() or any() call that we should unroll
++        if self._is_all_or_any_call(call):
++            is_any = call.func.id == "any"
++            unrolled = self._unroll_all_any(call, is_any)
++            if unrolled is not None:
++                result_var_node, result_var_name = unrolled
++                res = result_var_node
++                res_expl = self.explanation_param(self.display(res))
++                return res, res_expl
++
+         expl = "%s(%s)" % (func_expl, ", ".join(arg_expls))
+         new_call = ast.Call(new_func, new_args, new_kwargs)
+         res = self.assign(new_call)
+@@ -1023,6 +1113,16 @@
+         expl = "%s(%s)" % (func_expl, ", ".join(arg_expls))
+         new_call = ast.Call(new_func, new_args, new_kwargs, new_star, new_kwarg)
+         res = self.assign(new_call)
++
++        # Check if this is an all() or any() call that we should unroll
++        if self._is_all_or_any_call(call):
++            is_any = call.func.id == "any"
++            unrolled = self._unroll_all_any(call, is_any)
++            if unrolled is not None:
++                result_var_node, result_var_name = unrolled
++                res = result_var_node
++                res_expl = self.explanation_param(self.display(res))
++                return res, res_expl
++
+         res_expl = self.explanation_param(self.display(res))
+         outer_expl = "%s\n{%s = %s\n}" % (res_expl, res_expl, expl)
+         return res, outer_expl

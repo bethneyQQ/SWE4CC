@@ -1,0 +1,77 @@
+--- a/sympy/printing/numpy.py
++++ b/sympy/printing/numpy.py
+@@ -1,6 +1,7 @@
+ """
+ Numpy printer which handles vectorized piecewise functions,
+ logical operators, etc.
+ """
+ 
+ from .pycode import AbstractPythonCodePrinter, PythonCodePrinter
+@@ -158,6 +159,14 @@
+             return "%s(%s)" % (self._module_format(self._module + '.select'), self._exprrepr(expr.args))
+         return self._print_Function(expr)
+ 
++    def _print_Identity(self, expr):
++        # Identity matrix - convert to numpy.eye or numpy.identity
++        # eye is more commonly used and supports non-square matrices if needed
++        shape = expr.shape[0]
++        if hasattr(shape, '_print'):
++            shape_str = self._print(shape)
++        else:
++            shape_str = str(shape)
++        return "%s(%s)" % (self._module_format(self._module + '.eye'), shape_str)
+ 
+ _known_functions_numpy = {
+     "acos": "arccos",
+@@ -228,6 +237,14 @@
+     def _print_MatrixBase(self, expr):
+         return "%s(%s)" % (self._module_format(self._module + '.array'), self._print(expr.tolist()))
+ 
++    def _print_Identity(self, expr):
++        # Identity matrix - convert to scipy.sparse.eye
++        shape = expr.shape[0]
++        if hasattr(shape, '_print'):
++            shape_str = self._print(shape)
++        else:
++            shape_str = str(shape)
++        return "%s(%s)" % (self._module_format(self._module + '.eye'), shape_str)
++
+ 
+ for k in NumPyPrinter._kf:
+     setattr(SciPyPrinter, '_print_%s' % k, _print_known_function)
+ ```
+--- a/sympy/printing/numpy.py
++++ b/sympy/printing/numpy.py
+@@ -155,6 +155,15 @@
+             return "%s(%s)" % (self._module_format(self._module + '.select'), self._exprrepr(expr.args))
+         return self._print_Function(expr)
+ 
++    def _print_Identity(self, expr):
++        # Identity matrix - convert to numpy.eye
++        # Extract the dimension from the Identity matrix
++        shape = expr.shape[0]
++        if hasattr(shape, '_print'):
++            shape_str = self._print(shape)
++        else:
++            shape_str = str(shape)
++        return "%s(%s)" % (self._module_format(self._module + '.eye'), shape_str)
+ 
+ _known_functions_numpy = {
+     "acos": "arccos",
+@@ -225,6 +234,15 @@
+     def _print_MatrixBase(self, expr):
+         return "%s(%s)" % (self._module_format(self._module + '.array'), self._print(expr.tolist()))
+ 
++    def _print_Identity(self, expr):
++        # Identity matrix - convert to scipy.sparse.eye
++        # Extract the dimension from the Identity matrix
++        shape = expr.shape[0]
++        if hasattr(shape, '_print'):
++            shape_str = self._print(shape)
++        else:
++            shape_str = str(shape)
++        return "%s(%s)" % (self._module_format(self._module + '.eye'), shape_str)
+ 
+ for k in NumPyPrinter._kf:
+     setattr(SciPyPrinter, '_print_%s' % k, _print_known_function)
+ ```

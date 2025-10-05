@@ -1,0 +1,28 @@
+
+--- a/requests/adapters.py
++++ b/requests/adapters.py
+@@ -22,6 +22,8 @@
+ from .packages.urllib3.exceptions import ConnectTimeoutError
+ from .packages.urllib3.exceptions import HTTPError as _HTTPError
+ from .packages.urllib3.exceptions import MaxRetryError
++from .packages.urllib3.exceptions import DecodeError
++from .packages.urllib3.exceptions import TimeoutError as _TimeoutError
+ from .packages.urllib3.exceptions import ProxyError as _ProxyError
+ from .packages.urllib3.exceptions import ProtocolError
+ from .packages.urllib3.exceptions import ReadTimeoutError
+@@ -427,6 +429,12 @@
+         except (_SSLError, _HTTPError) as e:
+             if isinstance(e, _SSLError):
+                 raise SSLError(e, request=request)
+             elif isinstance(e, ReadTimeoutError):
+                 raise ReadTimeout(e, request=request)
+             else:
+                 raise
+ 
++        except _TimeoutError as e:
++            raise ReadTimeout(e, request=request)
++
++        except DecodeError as e:
++            raise ConnectionError(e, request=request)
++
+         return self.build_response(request, resp)

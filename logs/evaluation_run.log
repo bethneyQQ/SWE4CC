@@ -1,0 +1,49 @@
+<frozen runpy>:128: RuntimeWarning: 'swebench.harness.run_evaluation' found in sys.modules after import of package 'swebench.harness', but prior to execution of 'swebench.harness.run_evaluation'; this may result in unpredictable behaviour
+Traceback (most recent call last):
+  File "/home/shared/zqq/SWE4CC/swebench/harness/docker_build.py", line 148, in build_image
+    raise docker.errors.BuildError(
+        chunk["errorDetail"]["message"], buildlog
+    )
+docker.errors.BuildError: The command '/bin/sh -c /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"' returned a non-zero code: 137
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shared/zqq/SWE4CC/swebench/harness/utils.py", line 102, in run_threadpool
+    future.result()
+    ~~~~~~~~~~~~~^^
+  File "/home/shared/miniconda/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/home/shared/miniconda/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/shared/miniconda/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/shared/zqq/SWE4CC/swebench/harness/docker_build.py", line 154, in build_image
+    raise BuildImageError(image_name, str(e), logger) from e
+swebench.harness.docker_build.BuildImageError: Error building image sweb.env.py.x86_64.7d2281f8cd4608b2972430:latest: The command '/bin/sh -c /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"' returned a non-zero code: 137
+Check (logs/build_images/env/sweb.env.py.x86_64.7d2281f8cd4608b2972430__latest/build_image.log) for more information.
+Traceback (most recent call last):
+  File "/home/shared/zqq/SWE4CC/swebench/harness/docker_build.py", line 148, in build_image
+    raise docker.errors.BuildError(
+        chunk["errorDetail"]["message"], buildlog
+    )
+docker.errors.BuildError: The command '/bin/sh -c /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"' returned a non-zero code: 137
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shared/zqq/SWE4CC/swebench/harness/utils.py", line 102, in run_threadpool
+    future.result()
+    ~~~~~~~~~~~~~^^
+  File "/home/shared/miniconda/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/home/shared/miniconda/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/shared/miniconda/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/shared/zqq/SWE4CC/swebench/harness/docker_build.py", line 154, in build_image
+    raise BuildImageError(image_name, str(e), logger) from e
+swebench.harness.docker_build.BuildImageError: Error building image sweb.env.py.x86_64.2baaea72acc974f6c02079:latest: The command '/bin/sh -c /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"' returned a non-zero code: 137
+Check (logs/build_images/env/sweb.env.py.x86_64.2baaea72acc974f6c02079__latest/build_image.log) for more information.

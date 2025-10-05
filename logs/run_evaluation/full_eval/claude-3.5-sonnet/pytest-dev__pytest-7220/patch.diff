@@ -1,0 +1,21 @@
+
+--- a/src/_pytest/nodes.py
++++ b/src/_pytest/nodes.py
+@@ -362,9 +362,15 @@
+             truncate_locals = True
+ 
+         try:
+-            os.getcwd()
+-            abspath = False
++            cwd = os.getcwd()
++            # Check if the current working directory is the same as when pytest started.
++            # If a fixture changed the directory, we should use absolute paths to ensure
++            # file locations are displayed correctly relative to the original root.
++            if Path(cwd) == Path(str(self.config.rootdir)):
++                abspath = False
++            else:
++                abspath = True
+         except OSError:
+             abspath = True
+ 
+         return excinfo.getrepr(

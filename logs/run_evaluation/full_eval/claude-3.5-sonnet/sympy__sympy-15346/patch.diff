@@ -1,0 +1,51 @@
+
+--- a/sympy/simplify/trigsimp.py
++++ b/sympy/simplify/trigsimp.py
+@@ -269,9 +269,15 @@
+         gens = list(set(gens))
+ 
+         # all the functions we can do anything with
+         allfuncs = {sin, cos, tan, sinh, cosh, tanh}
+         # sin(3*x) -> ((3, x), sin)
+-        trigterms = [(g.args[0].as_coeff_mul(), g.func) for g in gens
+-                     if g.func in allfuncs]
++        trigterms = []
++        for g in gens:
++            if g.func in allfuncs:
++                coeff, mul = g.args[0].as_coeff_mul()
++                # If mul is empty (pure rational/number arg), treat the whole arg as the variable
++                if not mul:
++                    trigterms.append(((S.One, (g.args[0],)), g.func))
++                else:
++                    trigterms.append(((coeff, mul), g.func))
+         # Our list of new generators - start with anything that we cannot
+         # work with (i.e. is not a trigonometric term)
+         freegens = [g for g in gens if g.func not in allfuncs]
+@@ -302,7 +308,14 @@
+             fns = [x[1] for x in val]
+             val = [x[0] for x in val]
+             gcd = reduce(igcd, val)
+-            terms = [(fn, v/gcd) for (fn, v) in zip(fns, val)]
++            # Handle the case where gcd might be a non-integer (e.g., for pure rationals)
++            if gcd == 0:
++                # All coefficients were 1, and we have rational args
++                # Use the first value as reference
++                gcd = val[0] if val else S.One
++                terms = [(fn, S.One) for fn in fns]
++            else:
++                terms = [(fn, v/gcd) for (fn, v) in zip(fns, val)]
+             fs = set(funcs + fns)
+             for c, s, t in ([cos, sin, tan], [cosh, sinh, tanh]):
+                 if any(x in fs for x in (c, s, t)):
+@@ -325,7 +338,10 @@
+                     extra.append((tanh, v))
+             terms.extend(extra)
+             x = gcd*Mul(*key)
+-            r = build_ideal(x, terms)
++            # For rational number arguments, we need to use the actual argument values
++            if not key or (len(key) == 1 and key[0].is_Number):
++                x = Mul(*key) if key else S.One
++            r = build_ideal(x, terms)
+             res.extend(r)
+             newgens.extend(set(fn(v*x) for fn, v in terms))
+ 

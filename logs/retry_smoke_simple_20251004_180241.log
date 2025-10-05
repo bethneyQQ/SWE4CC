@@ -1,0 +1,31 @@
+======================================================================
+🧪 SMOKE TEST MODE
+======================================================================
+只测试第一个实例: django__django-11039
+
+加载原始数据集: princeton-nlp/SWE-bench_Lite
+Filter:   0%|          | 0/300 [00:00<?, ? examples/s]Filter: 100%|██████████| 300/300 [00:00<00:00, 19831.85 examples/s]
+原始数据集: 300 实例
+失败实例: 1 个
+匹配到: 1 实例
+Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 283.74 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 275.63 examples/s]
+2025-10-04 18:02:44,963 - __main__ - INFO - Will write to /home/zqq/SWE4CC/results/retry/claude-sonnet-4-5__swebench_retry_dataset__test.jsonl
+2025-10-04 18:02:44,963 - __main__ - INFO - Read 0 already completed ids from /home/zqq/SWE4CC/results/retry/claude-sonnet-4-5__swebench_retry_dataset__test.jsonl
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/zqq/SWE4CC/swebench/inference/run_api.py", line 643, in <module>
+    main(**vars(args))
+    ~~~~^^^^^^^^^^^^^^
+  File "/home/zqq/SWE4CC/swebench/inference/run_api.py", line 548, in main
+    raise ValueError(f"Invalid split {split} for dataset {dataset_name_or_path}")
+ValueError: Invalid split test for dataset /tmp/swebench_retry_dataset
+临时数据集已保存到: /tmp/swebench_retry_dataset
+
+======================================================================
+运行inference...
+======================================================================
+命令: python3 -m swebench.inference.run_api --dataset_name_or_path /tmp/swebench_retry_dataset --model_name_or_path claude-sonnet-4-5 --output_dir /home/zqq/SWE4CC/results/retry
+
+
+❌ 运行失败: Command '['python3', '-m', 'swebench.inference.run_api', '--dataset_name_or_path', '/tmp/swebench_retry_dataset', '--model_name_or_path', 'claude-sonnet-4-5', '--output_dir', '/home/zqq/SWE4CC/results/retry']' returned non-zero exit status 1.

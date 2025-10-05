@@ -1,0 +1,49 @@
+2025-10-03 20:51:14,055 - INFO - Creating container for django__django-15790...
+2025-10-03 20:51:30,211 - INFO - Container for django__django-15790 created: 4fdbda343a901f7adfff378c639eca382f626e2799f9600e2153b59cfb2fef6d
+2025-10-03 20:51:30,317 - INFO - Container for django__django-15790 started: 4fdbda343a901f7adfff378c639eca382f626e2799f9600e2153b59cfb2fef6d
+2025-10-03 20:51:30,317 - INFO - Intermediate patch for django__django-15790 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/django__django-15790/patch.diff, now applying to container...
+2025-10-03 20:51:30,422 - INFO - >>>>> Applied Patch:
+Checking patch django/core/checks/templates.py...
+Applied patch django/core/checks/templates.py cleanly.
+
+2025-10-03 20:51:30,986 - INFO - Git diff before:
+diff --git a/django/core/checks/templates.py b/django/core/checks/templates.py
+index 5214276987..d71570eb81 100644
+--- a/django/core/checks/templates.py
++++ b/django/core/checks/templates.py
+@@ -61,7 +61,8 @@ def check_for_template_tags_with_the_same_name(app_configs, **kwargs):
+         libraries[module_name].append(module_path)
+ 
+     for library_name, items in libraries.items():
+-        if len(items) > 1:
++        unique_items = set(items)
++        if len(unique_items) > 1:
+             errors.append(
+                 Error(
+                     E003.msg.format(
+2025-10-03 20:51:30,986 - INFO - Eval script for django__django-15790 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/django__django-15790/eval.sh; copying to container...
+2025-10-03 20:51:36,107 - INFO - Test runtime: 5.08 seconds
+2025-10-03 20:51:36,107 - INFO - Test output for django__django-15790 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/django__django-15790/test_output.txt
+2025-10-03 20:51:36,156 - INFO - Git diff after:
+diff --git a/django/core/checks/templates.py b/django/core/checks/templates.py
+index 5214276987..d71570eb81 100644
+--- a/django/core/checks/templates.py
++++ b/django/core/checks/templates.py
+@@ -61,7 +61,8 @@ def check_for_template_tags_with_the_same_name(app_configs, **kwargs):
+         libraries[module_name].append(module_path)
+ 
+     for library_name, items in libraries.items():
+-        if len(items) > 1:
++        unique_items = set(items)
++        if len(unique_items) > 1:
+             errors.append(
+                 Error(
+                     E003.msg.format(
+2025-10-03 20:51:36,156 - INFO - Grading answer for django__django-15790...
+2025-10-03 20:51:36,156 - INFO - report: {'django__django-15790': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_template_tags_same_library_in_installed_apps_libraries (check_framework.test_templates.CheckTemplateTagLibrariesWithSameName)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['Error if template loaders are specified and APP_DIRS is True.', 'test_app_dirs_removed (check_framework.test_templates.CheckTemplateSettingsAppDirsTest)', 'test_loaders_removed (check_framework.test_templates.CheckTemplateSettingsAppDirsTest)', 'test_string_if_invalid_both_are_strings (check_framework.test_templates.CheckTemplateStringIfInvalidTest)', 'test_string_if_invalid_first_is_string (check_framework.test_templates.CheckTemplateStringIfInvalidTest)', 'test_string_if_invalid_not_specified (check_framework.test_templates.CheckTemplateStringIfInvalidTest)', 'test_string_if_invalid_not_string (check_framework.test_templates.CheckTemplateStringIfInvalidTest)', 'test_template_tags_with_different_library_name (check_framework.test_templates.CheckTemplateTagLibrariesWithSameName)', 'test_template_tags_with_different_name (check_framework.test_templates.CheckTemplateTagLibrariesWithSameName)', 'test_template_tags_with_same_library_name (check_framework.test_templates.CheckTemplateTagLibrariesWithSameName)', 'test_template_tags_with_same_library_name_and_module_name (check_framework.test_templates.CheckTemplateTagLibrariesWithSameName)', 'test_template_tags_with_same_name (check_framework.test_templates.CheckTemplateTagLibrariesWithSameName)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-15790: resolved: True
+2025-10-03 20:51:36,156 - INFO - Attempting to stop container sweb.eval.django__django-15790.full_eval...
+2025-10-03 20:51:51,308 - INFO - Attempting to remove container sweb.eval.django__django-15790.full_eval...
+2025-10-03 20:51:51,324 - INFO - Container sweb.eval.django__django-15790.full_eval removed.
+2025-10-03 20:51:51,324 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-15790:latest...
+2025-10-03 20:51:52,490 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-15790:latest removed.

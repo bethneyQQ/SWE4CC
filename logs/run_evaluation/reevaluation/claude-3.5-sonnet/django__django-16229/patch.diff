@@ -1,0 +1,44 @@
+--- a/django/forms/boundfield.py
++++ b/django/forms/boundfield.py
+@@ -96,7 +96,10 @@
+             attrs.setdefault(
+                 "id", self.html_initial_id if only_initial else self.auto_id
+             )
+-        return widget.render(
++        value = self.value()
++        if only_initial:
++            value = self.initial
++        return widget.render(
+             name=self.html_initial_name if only_initial else self.html_name,
+             value=self.value(),
+             attrs=attrs,
+@@ -139,13 +142,24 @@
+     def _has_changed(self):
+         field = self.field
+         if field.show_hidden_initial:
++            initial_value = self.initial
+             hidden_widget = field.hidden_widget()
+-            initial_value = self.form._widget_data_value(
++            hidden_initial_value = self.form._widget_data_value(
+                 hidden_widget,
+                 self.html_initial_name,
+             )
+             try:
+-                initial_value = field.to_python(initial_value)
++                hidden_initial_value = field.to_python(hidden_initial_value)
++            except ValidationError:
++                # Always assume data has changed if validation fails.
++                return True
++            # Compare the hidden initial value with the current initial value
++            # to detect if the initial value is from a callable (e.g., default=list).
++            # If they differ, use the current initial value instead of the hidden one.
++            try:
++                if field.has_changed(initial_value, hidden_initial_value):
++                    initial_value = initial_value
++                else:
++                    initial_value = hidden_initial_value
+             except ValidationError:
+                 # Always assume data has changed if validation fails.
+                 return True
+ 
+ 

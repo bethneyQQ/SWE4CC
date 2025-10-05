@@ -1,0 +1,18 @@
+
+--- a/django/utils/decorators.py
++++ b/django/utils/decorators.py
+@@ -35,7 +35,12 @@
+     def _wrapper(self, *args, **kwargs):
+         # bound_method has the signature that 'decorator' expects i.e. no
+         # 'self' argument, but it's a closure over self so it can call
+-        # 'func'. Also, wrap method.__get__() in a function because new
++        # 'func'. Also, wrap method.__get__() in a partial and copy the
++        # attributes from the original method so that decorators expecting
++        # function attributes (like __name__, __module__, etc.) will work
++        # correctly. Use partial() rather than a plain function wrapper
++        # because new attributes can't be set on bound method objects, only
++        # on functions. Copy attributes to preserve the method's metadata.
+         # attributes can't be set on bound method objects, only on functions.
+         bound_method = partial(method.__get__(self, type(self)))
++        update_wrapper(bound_method, method)
+         for dec in decorators:

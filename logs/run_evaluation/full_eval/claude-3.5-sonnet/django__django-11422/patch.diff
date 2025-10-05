@@ -1,0 +1,26 @@
+
+--- a/django/utils/autoreload.py
++++ b/django/utils/autoreload.py
+@@ -108,7 +108,7 @@
+ 
+ @functools.lru_cache(maxsize=1)
+ def iter_modules_and_files(modules, extra_files):
+-    """Iterate through all modules needed to be watched."""
++    """Iterate through all modules and files needed to be watched."""
+     sys_file_paths = []
+     for module in modules:
+         # During debugging (with PyDev) the 'typing.io' and 'typing.re' objects
+@@ -123,7 +123,14 @@
+             origin = spec.loader.archive if isinstance(spec.loader, zipimporter) else spec.origin
+             sys_file_paths.append(origin)
+ 
++    # Ensure sys.argv[0] (the main script) is included in watched files.
++    # This is needed because the __main__ module's spec may not have has_location
++    # set properly, causing the main script (e.g., manage.py) to not be watched.
++    if sys.argv and sys.argv[0]:
++        sys_file_paths.append(sys.argv[0])
++
+     results = set()
+     for filename in itertools.chain(sys_file_paths, extra_files):
+         if not filename:
+             continue

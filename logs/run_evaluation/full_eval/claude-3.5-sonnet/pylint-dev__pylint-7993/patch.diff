@@ -1,0 +1,16 @@
+
+--- a/pylint/reporters/text.py
++++ b/pylint/reporters/text.py
+@@ -175,7 +175,11 @@
+         self._template = template
+ 
+         # Check to see if all parameters in the template are attributes of the Message
+-        arguments = re.findall(r"\{(.+?)(:.*)?\}", template)
++        # Use a regex that excludes escaped braces ({{ and }})
++        # We need to match {field} or {field:format} but not {{ or }}
++        # This is done by replacing escaped braces temporarily, finding arguments, then restoring
++        template_check = template.replace("{{", "\x00").replace("}}", "\x01")
++        arguments = re.findall(r"\{(.+?)(:.*)?\}", template_check)
+         for argument in arguments:
+             if argument[0] not in MESSAGE_FIELDS:
+                 warnings.warn(

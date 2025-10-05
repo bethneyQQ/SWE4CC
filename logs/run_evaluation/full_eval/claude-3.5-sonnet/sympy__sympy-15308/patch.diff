@@ -1,0 +1,13 @@
+
+--- a/sympy/printing/latex.py
++++ b/sympy/printing/latex.py
+@@ -2187,8 +2187,7 @@ class LatexPrinter(Printer):
+ 
+     def _print_Tr(self, p):
+         #Todo: Handle indices
+-        contents = self._print(p.args[0])
+-        return r'\mbox{Tr}\left(%s\right)' % (contents)
++        return r'\operatorname{Tr}\left(%s\right)' % self._print(p.args[0])
+ 
+     def _print_totient(self, expr, exp=None):
+         if exp is not None:

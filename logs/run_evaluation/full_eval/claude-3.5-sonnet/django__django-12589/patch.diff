@@ -1,0 +1,24 @@
+
+--- a/django/db/models/sql/query.py
++++ b/django/db/models/sql/query.py
+@@ -1930,7 +1930,7 @@
+         group_by = list(self.select)
+         if self.annotation_select:
+             for alias, annotation in self.annotation_select.items():
+-                signature = inspect.signature(annotation.get_group_by_cols)
++                signature = inspect.signature(annotation.get_group_by_cols) if hasattr(annotation, 'get_group_by_cols') else None
+                 if 'alias' not in signature.parameters:
+                     annotation_class = annotation.__class__
+                     msg = (
+@@ -1941,7 +1941,10 @@
+                     group_by_cols = annotation.get_group_by_cols()
+                 else:
+                     if not allow_aliases:
++                        # For subqueries, we need to use the full expression
++                        # in GROUP BY, not the alias, to avoid ambiguity.
+                         alias = None
++                    else:
++                        alias = alias
+                     group_by_cols = annotation.get_group_by_cols(alias=alias)
+                 group_by.extend(group_by_cols)
+         self.group_by = tuple(group_by)

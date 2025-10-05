@@ -1,0 +1,24 @@
+--- a/sklearn/preprocessing/_encoders.py
++++ b/sklearn/preprocessing/_encoders.py
+@@ -108,8 +108,18 @@ class _BaseEncoder(BaseEstimator, TransformerMixin):
+                 else:
+                     # Set the problematic rows to an acceptable value and
+                     # continue `The rows are marked `X_mask` and will be
+                     # removed later.
+                     X_mask[:, i] = valid_mask
++                    # Make a copy to avoid modifying the input
+                     Xi = Xi.copy()
++                    # Check if we need to upcast to object dtype to avoid
++                    # truncation of the replacement value
++                    if (Xi.dtype.kind in ('U', 'S') and 
++                        Xi.dtype.itemsize < 
++                        np.array(self.categories_[i][0]).dtype.itemsize):
++                        # Upcast to object dtype to prevent truncation
++                        Xi = Xi.astype(object)
++                        # Also update the column in X to maintain consistency
++                        X[:, i] = Xi
+                     Xi[~valid_mask] = self.categories_[i][0]
+             _, encoded = _encode(Xi, self.categories_[i], encode=True)
+             X_int[:, i] = encoded
+ 
+ 

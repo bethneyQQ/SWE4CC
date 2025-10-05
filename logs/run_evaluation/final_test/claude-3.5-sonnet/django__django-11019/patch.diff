@@ -1,0 +1,72 @@
+--- a/django/forms/widgets.py
++++ b/django/forms/widgets.py
+@@ -73,27 +73,56 @@ class Media:
+             if list_1[index] == list_2[0]:
+                 # If list_1[0] is the start of a subsequence in list_1 that matches
+                 # the entirety of list_2, then skip list_2 up to the end of that
+                 # subsequence.
+                 len_list_2 = len(list_2)
+                 if list_1[index:index + len_list_2] == list_2:
+                     return list_1
+                 return list_1[:index] + self.merge(list_1[index:], list_2)
+         return list_1 + list_2
+ 
+-    def merge(self, *lists):
+-        # Start with a copy of list_1, and merge in each subsequent list
+-        merged_list = []
+-        for list_ in lists:
+-            merged_list = self.merge_lists(merged_list, list_)
+-        return merged_list
++    def merge(self, *lists):
++        """
++        Merge multiple lists while respecting internal ordering constraints.
++        Uses a stable topological sort to avoid false ordering conflicts.
++        """
++        if len(lists) == 0:
++            return []
++        if len(lists) == 1:
++            return list(lists[0])
++        
++        # Build dependency graph
++        dependency_graph = {}
++        items_order = []  # Track first appearance order
++        
++        for list_ in lists:
++            for i, item in enumerate(list_):
++                if item not in dependency_graph:
++                    dependency_graph[item] = set()
++                    items_order.append(item)
++                # Add dependencies: items appearing before this one in the same list
++                for j in range(i):
++                    dependency_graph[item].add(list_[j])
++        
++        # Topological sort with stability (preserve first-appearance order)
++        result = []
++        remaining = set(items_order)
++        
++        while remaining:
++            # Find items with no unsatisfied dependencies
++            ready = [item for item in items_order 
++                     if item in remaining and 
++                     not (dependency_graph[item] & remaining)]
++            
++            if not ready:
++                # Cycle detected - fall back to original merge behavior
++                merged = []
++                for list_ in lists:
++                    merged = self.merge_lists(merged, list_)
++                return merged
++            
++            # Add first ready item (maintains stability)
++            next_item = ready[0]
++            result.append(next_item)
++            remaining.remove(next_item)
++        
++        return result
+ 
+     def __add__(self, other):
+         combined = Media()
+         combined._css_lists = self._css_lists + other._css_lists
+         combined._js_lists = self._js_lists + other._js_lists
+ 
+ 

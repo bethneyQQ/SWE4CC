@@ -1,0 +1,43 @@
+
+--- a/lib/matplotlib/legend.py
++++ b/lib/matplotlib/legend.py
+@@ -97,6 +97,11 @@
+ _docstring.interpd.update(_legend_kw_doc="""
+ loc : str or pair of floats, default: :rc:`legend.loc` ('best' for axes, \
+ 'upper right' for figures)
+     The location of the legend.
+ 
+     The strings
+@@ -285,6 +290,11 @@
+ handler_map : dict or None
+     The custom dictionary mapping instances or types to a legend
+     handler. This *handler_map* updates the default handler map
+     found at `matplotlib.legend.Legend.get_legend_handler_map`.
++
++draggable : bool, default: False
++    Whether the legend can be dragged with the mouse.
++    See :meth:`set_draggable` for details.
+ """)
+ 
+ 
+@@ -342,7 +352,8 @@
+         handler_map=None,
+         title_fontproperties=None,  # properties for the legend title
+         alignment="center",       # control the alignment within the legend box
+         *,
+-        ncol=1  # synonym for ncols (backward compatibility)
++        ncol=1,  # synonym for ncols (backward compatibility)
++        draggable=False  # whether the legend is draggable
+     ):
+         """
+         Parameters
+@@ -539,6 +550,9 @@
+         self.set_title(title, prop=title_prop_fp)
+         self._draggable = None
+ 
++        if draggable:
++            self.set_draggable(True, use_blit=False, update='loc')
++
+         # set the text color
+ 
+         color_getters = {  # getter function depends on line or patch

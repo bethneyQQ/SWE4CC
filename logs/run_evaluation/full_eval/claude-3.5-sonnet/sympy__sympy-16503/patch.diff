@@ -1,0 +1,32 @@
+
+--- a/sympy/printing/pretty/pretty.py
++++ b/sympy/printing/pretty/pretty.py
+@@ -580,6 +580,7 @@
+         f = expr.function
+ 
+         prettyF = self._print(f)
++        func_baseline = prettyF.baseline
+ 
+         if f.is_Add:  # add parens
+             prettyF = prettyForm(*prettyF.parens())
+@@ -618,8 +619,9 @@
+ 
+             if first:
+                 # change F baseline so it centers on the sign
+-                prettyF.baseline -= d - (prettyF.height()//2 -
+-                                         prettyF.baseline) - adjustment
++                prettyF.baseline = d + func_baseline - adjustment
++                # store the adjusted baseline for final positioning
++                func_adjusted_baseline = prettyF.baseline
+                 first = False
+ 
+             # put padding to the right
+@@ -629,7 +631,7 @@
+             # put the present prettyF to the right
+             prettyF = prettyForm(*prettySign.right(prettyF))
+ 
+-        prettyF.baseline = max_upper + sign_height//2
++        prettyF.baseline = max_upper + func_adjusted_baseline
+         prettyF.binding = prettyForm.MUL
+         return prettyF
+ 

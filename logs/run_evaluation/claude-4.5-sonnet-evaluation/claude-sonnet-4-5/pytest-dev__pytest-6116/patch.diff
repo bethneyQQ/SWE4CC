@@ -1,0 +1,12 @@
+--- a/src/_pytest/main.py
++++ b/src/_pytest/main.py
+@@ -108,6 +108,7 @@
+     group = parser.getgroup("collect", "collection")
+     group.addoption(
+         "--collectonly",
++        "--co",
+         "--collect-only",
+         action="store_true",
+         help="only collect tests, don't execute them.",
+ 
+ 

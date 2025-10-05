@@ -1,0 +1,20 @@
+
+--- a/django/urls/resolvers.py
++++ b/django/urls/resolvers.py
+@@ -1,6 +1,6 @@
+ import functools
+ import re
+-from importlib import import_module
++from importlib import import_module  
+ from urllib.parse import quote
+ 
+ from django.conf import settings
+@@ -361,7 +361,7 @@ class RoutePattern(CheckURLMixin):
+             try:
+                 kwargs[key] = converter.to_python(value)
+             except ValueError:
+-                return None
++                return None
+         return path[match.end():], (), kwargs
+ 
+     def check(self):

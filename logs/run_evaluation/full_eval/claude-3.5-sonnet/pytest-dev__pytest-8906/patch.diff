@@ -1,0 +1,74 @@
+
+--- a/src/_pytest/python.py
++++ b/src/_pytest/python.py
+@@ -607,10 +607,11 @@
+         except skip.Exception as e:
+             if e.allow_module_level:
+                 raise
+             raise self.CollectError(
+                 "Using pytest.skip outside of a test is not allowed. "
+                 "To decorate a test function, use the @pytest.mark.skip "
+                 "or @pytest.mark.skipif decorators instead, and to skip a "
+-                "module use `pytestmark = pytest.mark.{skip,skipif}."
++                "module use `pytestmark = pytest.mark.{skip,skipif}` or "
++                "`pytest.skip(msg=..., allow_module_level=True)`."
+             ) from e
+         self.config.pluginmanager.consider_module(mod)
+         return mod
+--- a/src/_pytest/outcomes.py
++++ b/src/_pytest/outcomes.py
+@@ -1,6 +1,7 @@
+ """Exception classes and constants handling test outcomes."""
+ import sys
+ from typing import Any
+ from typing import Callable
+ from typing import cast
+ from typing import Generic
+@@ -19,6 +20,7 @@
+ 
+ __all__ = [
+     "exit",
+     "fail",
+     "Failed",
+@@ -27,6 +29,7 @@
+     "Skipped",
+     "xfail",
+     "XFailed",
++    "skip_module",
+ ]
+ 
+ 
+@@ -149,12 +152,32 @@
+     """
+ 
+     __init__ = BaseException.__init__
+     __module__ = "builtins"  # For backward compatibility.
+ 
+     def __init__(
+         self,
+         msg: Optional[str] = None,
+         *,
+         allow_module_level: bool = False,
+         _ispytest: bool = False,
+     ) -> None:
+         check_ispytest(_ispytest)
+         super().__init__(msg)
+         self.allow_module_level = allow_module_level
++
++
++def skip_module(msg: str) -> "NoReturn":
++    """Skip an entire test module.
++
++    This function should be called at module level to skip all tests in the
++    module. It is equivalent to calling ``pytest.skip(msg=msg, allow_module_level=True)``.
++
++    :param str msg: The reason for skipping the module.
++
++    .. note::
++        It is important to note that calling this function at module level
++        will stop processing of the module at that point, so any imports
++        or test definitions after the skip_module call will not be processed.
++
++    .. versionadded:: 6.2
++    """
++    skip(msg=msg, allow_module_level=True)

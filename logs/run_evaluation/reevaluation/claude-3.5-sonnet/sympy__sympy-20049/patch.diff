@@ -1,0 +1,45 @@
+--- a/sympy/physics/vector/point.py
++++ b/sympy/physics/vector/point.py
+@@ -499,6 +499,7 @@ class Point(object):
+     def vel(self, frame):
+         """The velocity Vector of this Point in the ReferenceFrame.
+ 
++        If the velocity hasn't been defined, it will be calculated if possible.
+         Parameters
+         ==========
+ 
+@@ -519,8 +520,29 @@ class Point(object):
+ 
+         _check_frame(frame)
+         if not (frame in self._vel_dict):
+-            raise ValueError('Velocity of point ' + self.name + ' has not been'
+-                             ' defined in ReferenceFrame ' + frame.name)
++            # Try to calculate velocity from position
++            # Look for any point that has a position defined relative to this point
++            # and has a velocity defined in the desired frame
++            for other_point in self._pos_dict.keys():
++                if frame in other_point._vel_dict:
++                    # We have the position of self relative to other_point (in self._pos_dict[other_point])
++                    # Actually, self._pos_dict[other_point] gives position of other_point from self
++                    # We need position of self from other_point, which is the negative
++                    pos_vec = self.pos_from(other_point)
++                    vel_vec = pos_vec.dt(frame)
++                    other_vel = other_point._vel_dict[frame]
++                    self.set_vel(frame, other_vel + vel_vec)
++                    return self._vel_dict[frame]
++            
++            # If no other point with velocity found, try calculating from position alone
++            # Check if we have position defined relative to any point
++            if self._pos_dict:
++                # Get any point we have position relative to
++                other_point = list(self._pos_dict.keys())[0]
++                pos_vec = self.pos_from(other_point)
++                return pos_vec.dt(frame)
++            
++            raise ValueError('Velocity of point ' + self.name + ' has not been'
++                             ' defined in ReferenceFrame ' + frame.name)
+         return self._vel_dict[frame]
+ 
+     def partial_velocity(self, frame, *gen_speeds):
+ 
+ 

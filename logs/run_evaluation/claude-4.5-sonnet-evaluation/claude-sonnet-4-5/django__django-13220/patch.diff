@@ -1,0 +1,44 @@
+--- a/django/core/exceptions.py
++++ b/django/core/exceptions.py
+@@ -182,6 +182,38 @@ class ValidationError(Exception):
+     def __repr__(self):
+         return 'ValidationError(%s)' % self
+ 
++    def __eq__(self, other):
++        if not isinstance(other, ValidationError):
++            return NotImplemented
++        if hasattr(self, 'error_dict') and hasattr(other, 'error_dict'):
++            return self.error_dict == other.error_dict
++        if hasattr(self, 'error_dict') or hasattr(other, 'error_dict'):
++            return False
++        # Compare error_list for list-based errors
++        if len(self.error_list) != len(other.error_list):
++            return False
++        # For simple single errors (error_list = [self]), compare attributes
++        if (len(self.error_list) == 1 and self.error_list[0] is self and
++                len(other.error_list) == 1 and other.error_list[0] is other):
++            return (
++                self.message == other.message and
++                self.code == other.code and
++                self.params == other.params
++            )
++        # For lists of errors, compare each error in the list
++        return all(
++            err1.message == err2.message and
++            err1.code == err2.code and
++            err1.params == err2.params
++            for err1, err2 in zip(self.error_list, other.error_list)
++        )
++
++    def __hash__(self):
++        if hasattr(self, 'error_dict'):
++            return hash(tuple(sorted(self.error_dict.items())))
++        if hasattr(self, 'message'):
++            return hash((self.message, self.code, tuple(self.params.items()) if self.params else None))
++        return hash(tuple(self.error_list))
++
+ 
+ class EmptyResultSet(Exception):
+     """A database query predicate is impossible."""
+ 
+ 

@@ -1,0 +1,24 @@
+--- a/sympy/printing/latex.py
++++ b/sympy/printing/latex.py
+@@ -2158,7 +2158,7 @@
+             return r"\left\langle %s \right\rangle" % self._print(expr.args[0])
+         return r"{\langle %s \rangle}" % self._print(expr.args[0])
+ 
+-    def _print_SingularityFunction(self, expr):
++    def _print_SingularityFunction(self, expr, exp=None):
+         shift = self._print(expr.args[0] - expr.args[1])
+         power = self._print(expr.args[2])
+         tex = r"{\left\langle %s \right\rangle}^{%s}" % (shift, power)
+@@ -2166,7 +2166,10 @@
+             tex = r"{\left\langle %s \right\rangle}^{%s}" % (shift, power)
+         else:
+             tex = r"{\langle %s \rangle}^{%s}" % (shift, power)
+-        return tex
++        if exp is not None:
++            return r"\left(%s\right)^{%s}" % (tex, exp)
++        else:
++            return tex
+ 
+     def _print_Heaviside(self, expr, exp=None):
+         pargs = ', '.join(self._print(arg) for arg in expr.pargs)
+ ```

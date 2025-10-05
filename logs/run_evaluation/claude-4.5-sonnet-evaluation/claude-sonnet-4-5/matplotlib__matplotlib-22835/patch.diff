@@ -1,0 +1,39 @@
+--- a/lib/matplotlib/artist.py
++++ b/lib/matplotlib/artist.py
+@@ -11,6 +11,7 @@
+ import numpy as np
+ 
+ import matplotlib as mpl
+ from . import _api, cbook
++from .colors import BoundaryNorm
+ from .cm import ScalarMappable
+ from .path import Path
+ from .transforms import (Bbox, IdentityTransform, Transform, TransformedBbox,
+@@ -1303,9 +1304,23 @@ class Artist:
+                 return "[]"
+             normed = self.norm(data)
+             if np.isfinite(normed):
+-                # Midpoints of neighboring color intervals.
+-                neighbors = self.norm.inverse(
+-                    (int(self.norm(data) * n) + np.array([0, 1])) / n)
++                # Special handling for BoundaryNorm which is not invertible
++                if isinstance(self.norm, BoundaryNorm):
++                    # For BoundaryNorm, use the boundaries to find neighbors
++                    # Find the closest boundary to the data value
++                    boundaries = self.norm.boundaries
++                    idx = np.argmin(np.abs(boundaries - data))
++                    # Determine the two neighboring boundaries
++                    if idx + 1 < len(boundaries) and (idx == 0 or 
++                            abs(data - boundaries[idx]) >= abs(data - boundaries[idx + 1])):
++                        neighbors = boundaries[[idx, idx + 1]]
++                    else:
++                        neighbors = boundaries[[max(0, idx - 1), idx]]
++                else:
++                    # Midpoints of neighboring color intervals.
++                    neighbors = self.norm.inverse(
++                        (int(self.norm(data) * n) + np.array([0, 1])) / n)
+                 delta = abs(neighbors - data).max()
+                 g_sig_digits = cbook._g_sig_digits(data, delta)
+             else:
+ 
+ 

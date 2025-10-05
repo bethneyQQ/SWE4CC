@@ -1,0 +1,52 @@
+
+--- a/sympy/matrices/common.py
++++ b/sympy/matrices/common.py
+@@ -1973,8 +1973,22 @@ class MatrixArithmetic(MatrixRequired):
+ 
+     @call_highest_priority('__rmatmul__')
+     def __matmul__(self, other):
+-        return self.__mul__(other)
+-
++        """Matrix multiplication using the @ operator.
++        
++        This is different from __mul__ because it requires both operands
++        to be matrices and does not support scalar multiplication.
++        """
++        other = _matrixify(other)
++        # Unlike __mul__, matmul does not support scalar multiplication
++        if not (getattr(other, 'is_Matrix', False) or getattr(other, 'is_MatrixLike', False)):
++            raise ValueError("Scalar operands are not allowed, use '*' instead")
++        
++        if hasattr(other, 'shape') and len(other.shape) == 2:
++            if self.shape[1] != other.shape[0]:
++                raise ShapeError("Matrix size mismatch: %s @ %s." % (
++                    self.shape, other.shape))
++        
++        return self._eval_matrix_mul(other)
++    
+     @call_highest_priority('__rmul__')
+     def __mul__(self, other):
+         """Return self*other where other is either a scalar or a matrix
+@@ -2068,7 +2082,21 @@ class MatrixArithmetic(MatrixRequired):
+ 
+     @call_highest_priority('__matmul__')
+     def __rmatmul__(self, other):
+-        return self.__rmul__(other)
++        """Right matrix multiplication using the @ operator.
++        
++        This is different from __rmul__ because it requires both operands
++        to be matrices and does not support scalar multiplication.
++        """
++        other = _matrixify(other)
++        # Unlike __rmul__, rmatmul does not support scalar multiplication
++        if not (getattr(other, 'is_Matrix', False) or getattr(other, 'is_MatrixLike', False)):
++            raise ValueError("Scalar operands are not allowed, use '*' instead")
++        
++        if hasattr(other, 'shape') and len(other.shape) == 2:
++            if self.shape[0] != other.shape[1]:
++                raise ShapeError("Matrix size mismatch.")
++        
++        return other._eval_matrix_mul(self)
+ 
+     @call_highest_priority('__mul__')
+     def __rmul__(self, other):

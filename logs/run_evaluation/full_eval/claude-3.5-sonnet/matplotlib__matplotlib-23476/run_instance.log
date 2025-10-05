@@ -1,0 +1,3949 @@
+2025-10-03 21:26:30,268 - INFO - Creating container for matplotlib__matplotlib-23476...
+2025-10-03 21:26:49,770 - INFO - Container for matplotlib__matplotlib-23476 created: 64a82b7c34003aaff6b081bd376e4a3a79f3d51b488263a591d34b304052e00a
+2025-10-03 21:26:49,881 - INFO - Container for matplotlib__matplotlib-23476 started: 64a82b7c34003aaff6b081bd376e4a3a79f3d51b488263a591d34b304052e00a
+2025-10-03 21:26:49,881 - INFO - Intermediate patch for matplotlib__matplotlib-23476 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/patch.diff, now applying to container...
+2025-10-03 21:26:49,969 - INFO - Failed to apply patch to container: git apply --verbose
+2025-10-03 21:26:50,010 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-10-03 21:26:50,054 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-10-03 21:26:50,054 - INFO - >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+2025-10-03 21:26:50,071 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2025-10-03 21:26:50,072 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,072 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,072 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,072 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,072 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,072 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,072 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,072 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,072 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,073 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,073 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,073 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,073 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,073 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,073 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,073 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,073 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,073 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,073 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,073 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,074 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,074 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,074 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,074 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,074 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,074 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,074 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,074 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,074 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,074 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,075 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,075 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,075 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,075 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,075 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,075 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,075 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,075 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,075 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,075 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,076 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,076 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,076 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,076 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,076 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,076 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,076 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,076 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,076 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,076 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,077 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,077 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,077 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,077 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,077 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,077 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,077 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,077 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,077 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,077 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,078 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,078 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,078 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,078 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,078 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,078 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,078 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,078 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,078 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,078 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,078 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,079 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,079 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,079 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,079 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,079 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,079 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,079 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,079 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,079 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,079 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,080 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,080 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,080 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,080 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,080 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,080 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,080 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,080 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,080 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,080 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,081 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,081 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,081 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,081 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,081 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,081 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,081 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,081 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,081 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,081 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,081 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,082 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,082 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,082 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,082 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,082 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,082 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,082 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,082 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,082 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,082 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,082 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,083 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,083 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,083 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,083 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,083 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,083 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,083 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,083 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,083 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,084 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,084 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,084 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,084 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,084 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,084 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,084 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,084 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,084 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,084 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,084 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,085 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,085 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,085 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,085 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,085 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,085 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,085 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,085 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,085 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,085 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,086 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,086 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,086 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,086 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,086 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,086 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,086 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,086 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,086 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,086 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,087 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,087 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,087 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,087 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,087 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,087 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,087 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,087 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,087 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,087 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,087 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,088 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,088 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,088 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,088 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,088 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,088 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,088 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,088 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,088 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,088 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,088 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,089 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,089 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,089 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,089 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,089 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,089 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,089 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,089 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,089 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,089 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,090 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,090 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,090 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,090 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,090 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,090 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,090 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,090 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,090 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,090 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,091 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,108 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2025-10-03 21:26:50,108 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,108 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,108 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,109 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,109 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,109 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,109 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,109 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,109 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,109 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,109 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,109 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,109 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,110 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,110 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,110 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,110 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,110 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,110 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,110 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,110 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,110 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,110 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,110 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,111 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,111 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,111 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,111 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,111 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,111 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,111 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,111 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,111 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,111 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,111 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,112 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,112 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,112 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,112 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,112 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,112 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,112 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,112 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,112 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,112 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,113 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,113 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,113 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,113 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,113 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,113 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,113 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,113 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,113 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,113 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,114 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,114 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,114 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,114 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,114 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,114 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,114 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,114 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,114 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,114 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,115 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,115 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,115 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,115 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,115 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,115 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,115 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,115 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,115 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,115 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,123 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,123 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,123 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,123 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,123 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,123 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,123 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,123 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,123 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,123 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,124 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,124 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,124 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,124 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,124 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,124 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,124 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,124 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,124 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,124 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,126 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,126 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,126 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,126 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,126 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,126 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,126 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,126 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,126 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,126 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,127 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,127 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,127 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,127 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,127 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,127 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,127 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2025-10-03 21:26:50,127 - INFO - Attempting to stop container sweb.eval.matplotlib__matplotlib-23476.full_eval...
+2025-10-03 21:27:05,258 - INFO - Attempting to remove container sweb.eval.matplotlib__matplotlib-23476.full_eval...
+2025-10-03 21:27:05,267 - INFO - Container sweb.eval.matplotlib__matplotlib-23476.full_eval removed.
+2025-10-03 21:27:05,267 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-23476:latest...
+2025-10-03 21:27:08,672 - INFO - Image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-23476:latest removed.

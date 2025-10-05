@@ -1,0 +1,22 @@
+--- a/sklearn/utils/validation.py
++++ b/sklearn/utils/validation.py
+@@ -464,7 +464,14 @@
+     dtype_orig = getattr(array, "dtype", None)
+     if not hasattr(dtype_orig, 'kind'):
+         # not a data type (e.g. a column named dtype in a pandas DataFrame)
+-        dtype_orig = None
++        # For pandas DataFrames, try to get dtype from values
++        if hasattr(array, 'values'):
++            array_values_dtype = getattr(array.values, 'dtype', None)
++            if hasattr(array_values_dtype, 'kind'):
++                dtype_orig = array_values_dtype
++            else:
++                dtype_orig = None
++        else:
++            dtype_orig = None
+ 
+     if dtype_numeric:
+         if dtype_orig is not None and dtype_orig.kind == "O":
+ 
+ 
+ 

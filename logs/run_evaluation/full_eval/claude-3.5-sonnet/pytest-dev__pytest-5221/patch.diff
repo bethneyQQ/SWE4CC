@@ -1,0 +1,19 @@
+
+--- a/src/_pytest/python.py
++++ b/src/_pytest/python.py
+@@ -1343,10 +1343,10 @@
+         if currentmodule != module:
+             if not module.startswith("_pytest."):
+                 tw.line()
+                 tw.sep("-", "fixtures defined from %s" % (module,))
+                 currentmodule = module
+         if verbose <= 0 and argname[0] == "_":
+             continue
+         if verbose > 0:
+-            funcargspec = "%s -- %s" % (argname, bestrel)
++            funcargspec = "%s [%s scope] -- %s" % (argname, fixturedef.scope, bestrel)
+         else:
+-            funcargspec = argname
++            funcargspec = "%s [%s scope]" % (argname, fixturedef.scope)
+         tw.line(funcargspec, green=True)
+         loc = getlocation(fixturedef.func, curdir)

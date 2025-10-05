@@ -1,0 +1,16 @@
+--- a/django/db/migrations/operations/fields.py
++++ b/django/db/migrations/operations/fields.py
+@@ -248,6 +248,11 @@ class AlterField(FieldOperation):
+ 
+     def reduce(self, operation, app_label):
+         if isinstance(operation, RemoveField) and self.is_same_field_operation(
++            operation
++        ):
++            return [operation]
++        elif isinstance(operation, AlterField) and self.is_same_field_operation(
+             operation
+         ):
+             return [operation]
+ 
+ 
+ 

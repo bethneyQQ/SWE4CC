@@ -1,0 +1,28 @@
+
+--- a/lib/matplotlib/cbook.py
++++ b/lib/matplotlib/cbook.py
+@@ -788,6 +788,23 @@ class Grouper:
+     def __init__(self, init=()):
+         self._mapping = {weakref.ref(x): [weakref.ref(x)] for x in init}
+ 
++    def __getstate__(self):
++        """Convert weak references to strong references for pickling."""
++        return {
++            '_mapping': {
++                key(): [ref() for ref in refs]
++                for key, refs in self._mapping.items()
++                if key() is not None
++            }
++        }
++
++    def __setstate__(self, state):
++        """Convert strong references back to weak references after unpickling."""
++        mapping_objects = state['_mapping']
++        self._mapping = {
++            weakref.ref(key): [weakref.ref(obj) for obj in objs]
++            for key, objs in mapping_objects.items()
++        }
++
+     def __contains__(self, item):
+         return weakref.ref(item) in self._mapping
+ 

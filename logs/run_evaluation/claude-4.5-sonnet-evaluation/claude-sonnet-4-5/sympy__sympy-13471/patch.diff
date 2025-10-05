@@ -1,0 +1,18 @@
+--- a/sympy/core/numbers.py
++++ b/sympy/core/numbers.py
+@@ -1040,7 +1040,10 @@
+         elif isinstance(num, tuple) and len(num) in (3, 4):
+             if type(num[1]) is str:
+                 # it's a hexadecimal (coming from a pickled object)
+                 # assume that it is in standard form
+                 num = list(num)
+-                num[1] = long(num[1], 16)
++                # Strip trailing 'L' or 'l' for Python 2/3 compatibility
++                # (Python 2 long integers have 'L' suffix in hex format)
++                num_str = num[1].rstrip('Ll')
++                num[1] = long(num_str, 16)
+                 _mpf_ = tuple(num)
+             else:
+                 if len(num) == 4:
+ 
+ 

@@ -1,0 +1,14 @@
+--- a/lib/matplotlib/axis.py
++++ b/lib/matplotlib/axis.py
+@@ -2022,6 +2022,9 @@
+         ticks.
+         """
+         result = self._set_tick_locations(ticks, minor=minor)
++        if labels is None and kwargs:
++            raise TypeError("Keyword arguments are only valid when 'labels' "
++                            "is passed. Use 'tick_params' to modify tick properties.")
+         if labels is not None:
+             self.set_ticklabels(labels, minor=minor, **kwargs)
+         return result
+ 
+ 

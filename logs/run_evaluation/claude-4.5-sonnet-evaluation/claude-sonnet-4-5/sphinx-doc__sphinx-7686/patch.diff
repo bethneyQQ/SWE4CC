@@ -1,0 +1,25 @@
+--- a/sphinx/ext/autosummary/generate.py
++++ b/sphinx/ext/autosummary/generate.py
+@@ -246,7 +246,15 @@ def generate_autosummary_content(name: str, obj: Any, parent: Any,
+     ns.update(context)
+ 
+     if doc.objtype == 'module':
+-        ns['members'] = dir(obj)
++        members = dir(obj)
++        if not imported_members:
++            all_members = []
++            for member in members:
++                try:
++                    value = safe_getattr(obj, member)
++                    if getattr(value, '__module__', None) == obj.__name__:
++                        all_members.append(member)
++                except AttributeError:
++                    continue
++            ns['members'] = all_members
++        else:
++            ns['members'] = members
+         ns['functions'], ns['all_functions'] = \
+             get_members(obj, {'function'}, imported=imported_members)
+         ns['classes'], ns['all_classes'] = \
+ 
+ 

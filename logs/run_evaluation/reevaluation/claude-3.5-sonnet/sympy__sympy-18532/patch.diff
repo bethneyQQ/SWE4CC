@@ -1,0 +1,27 @@
+--- a/sympy/core/basic.py
++++ b/sympy/core/basic.py
+@@ -502,12 +502,16 @@
+         """
+         if types:
+             types = tuple(
+                 [t if isinstance(t, type) else type(t) for t in types])
+-        else:
+-            types = (Atom,)
+         result = set()
+-        for expr in preorder_traversal(self):
+-            if isinstance(expr, types):
+-                result.add(expr)
++        if types:
++            for expr in preorder_traversal(self):
++                if isinstance(expr, types):
++                    result.add(expr)
++        else:
++            # No types specified: return objects with no args (leaf nodes)
++            for expr in preorder_traversal(self):
++                if isinstance(expr, Basic) and not expr.args:
++                    result.add(expr)
+         return result
+ 
+     @property
+ 
+ 

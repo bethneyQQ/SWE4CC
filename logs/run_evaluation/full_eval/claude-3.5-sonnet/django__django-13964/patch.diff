@@ -1,0 +1,21 @@
+
+--- a/django/db/models/base.py
++++ b/django/db/models/base.py
+@@ -933,10 +933,14 @@
+                         "related object '%s'." % (operation_name, field.name)
+                     )
+                 elif getattr(self, field.attname) is None:
+-                    # Use pk from related object if it has been saved after
+-                    # an assignment.
++                    # Use pk from related object if it has been saved after an assignment.
+                     setattr(self, field.attname, obj.pk)
+-                # If the relationship's pk/to_field was changed, clear the
++                elif getattr(self, field.attname) != obj.pk:
++                    # If the related object's pk was not set at assignment time but has
++                    # since been set, update the foreign key field to reflect the new pk.
++                    # This handles non-auto primary keys that get set after assignment.
++                    setattr(self, field.attname, obj.pk)
++                # If the relationship's pk/to_field was changed, clear the
+                 # cached relationship.
+                 if getattr(obj, field.target_field.attname) != getattr(self, field.attname):
+                     field.delete_cached_value(self)

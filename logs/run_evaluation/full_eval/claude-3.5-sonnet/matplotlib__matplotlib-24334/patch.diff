@@ -1,0 +1,37 @@
+
+--- a/lib/matplotlib/axis.py
++++ b/lib/matplotlib/axis.py
+@@ -1989,6 +1989,9 @@
+             return self.get_major_ticks(len(ticks))
+ 
+     def set_ticks(self, ticks, labels=None, *, minor=False, **kwargs):
+         """
+         Set this Axis' tick locations and optionally labels.
+ 
+@@ -2022,8 +2025,24 @@
+         choice to prevent the surprise of a non-visible tick. If you need
+         other limits, you should set the limits explicitly after setting the
+         ticks.
+         """
++        # Validate kwargs are valid Text properties
++        if kwargs:
++            # Check that kwargs are valid Text properties by testing them
++            # against a Text object
++            from matplotlib.text import Text
++            dummy_text = Text()
++            for key in kwargs:
++                if not hasattr(dummy_text, f'set_{key}'):
++                    # Check if it's a valid property name
++                    try:
++                        dummy_text.update({key: kwargs[key]})
++                    except AttributeError:
++                        raise AttributeError(
++                            f"'{key}' is not a valid Text property")
++            if labels is None:
++                raise ValueError(
++                    "Passing text properties without labels is not supported. "
++                    "Use tick_params() to modify tick label appearance instead.")
++        
+         result = self._set_tick_locations(ticks, minor=minor)
+         if labels is not None:
+             self.set_ticklabels(labels, minor=minor, **kwargs)

@@ -1,0 +1,30 @@
+
+--- a/seaborn/axisgrid.py
++++ b/seaborn/axisgrid.py
+@@ -1663,10 +1663,19 @@
+ 
+     def _find_numeric_cols(self, data):
+         """Find which variables in a DataFrame are numeric."""
++        # For MultiIndex columns, we need to preserve the tuple structure
++        # rather than converting to strings
+         numeric_cols = []
+         for col in data:
+             if variable_type(data[col]) == "numeric":
+-                numeric_cols.append(col)
++                # Preserve the original column label format
++                # For MultiIndex, col will be a tuple; for regular Index, it will be a string
++                numeric_cols.append(col)
+         return numeric_cols
+ 
++    def _add_axis_labels(self):
++        """Add labels to the left and bottom Axes."""
++        for ax, label in zip(self.axes[-1, :], self.x_vars):
++            ax.set_xlabel(str(label))
++        for ax, label in zip(self.axes[:, 0], self.y_vars):
++            ax.set_ylabel(str(label))
+-    def _add_axis_labels(self):
+-        """Add labels to the left and bottom Axes."""
+-        for ax, label in zip(self.axes[-1, :], self.x_vars):
+-            ax.set_xlabel(label)
+-        for ax, label in zip(self.axes[:, 0], self.y_vars):
+-            ax.set_ylabel(label)

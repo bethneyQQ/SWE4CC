@@ -1,0 +1,30 @@
+--- a/sympy/physics/units/prefixes.py
++++ b/sympy/physics/units/prefixes.py
+@@ -81,9 +81,13 @@
+     def __mul__(self, other):
+         from sympy.physics.units import Quantity
+         if not isinstance(other, (Quantity, Prefix)):
+-            return super().__mul__(other)
++            # If other is not a Quantity or Prefix, multiply by scale_factor
++            return self.scale_factor * other
+ 
+-        fact = self.scale_factor * other.scale_factor
++        if isinstance(other, Prefix):
++            fact = self.scale_factor * other.scale_factor
++        else:
++            # other is a Quantity
++            return self.scale_factor * other
+ 
+         if fact == 1:
+             return 1
+@@ -94,8 +98,6 @@
+                     return PREFIXES[p]
+             return fact
+ 
+-        return self.scale_factor * other
+-
+     def __truediv__(self, other):
+         if not hasattr(other, "scale_factor"):
+             return super().__truediv__(other)
+ 
+ 

@@ -1,0 +1,44 @@
+
+--- a/django/core/exceptions.py
++++ b/django/core/exceptions.py
+@@ -182,6 +182,40 @@
+     def __repr__(self):
+         return 'ValidationError(%s)' % self
+ 
++    def __eq__(self, other):
++        if not isinstance(other, ValidationError):
++            return NotImplemented
++        
++        # Both have error_dict
++        if hasattr(self, 'error_dict') and hasattr(other, 'error_dict'):
++            if self.error_dict.keys() != other.error_dict.keys():
++                return False
++            # Compare each field's error list (order-independent)
++            for field in self.error_dict:
++                self_messages = list(ValidationError(self.error_dict[field]))
++                other_messages = list(ValidationError(other.error_dict[field]))
++                if sorted(self_messages) != sorted(other_messages):
++                    return False
++            return True
++        
++        # Both have error_list (but not error_dict)
++        if hasattr(self, 'error_list') and hasattr(other, 'error_list'):
++            if hasattr(self, 'error_dict') or hasattr(other, 'error_dict'):
++                return False
++            # Compare error lists (order-independent)
++            self_messages = list(self)
++            other_messages = list(other)
++            return sorted(self_messages) == sorted(other_messages)
++        
++        # Both are single errors (neither has error_dict)
++        if not hasattr(self, 'error_dict') and not hasattr(other, 'error_dict'):
++            return (
++                self.message == other.message and
++                self.code == other.code and
++                self.params == other.params
++            )
++        
++        return False
+ 
+ class EmptyResultSet(Exception):
+     """A database query predicate is impossible."""

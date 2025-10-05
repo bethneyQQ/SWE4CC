@@ -1,0 +1,64 @@
+--- a/sphinx/domains/std.py
++++ b/sphinx/domains/std.py
+@@ -745,10 +745,13 @@
+                 if figtype != 'number':
+                     continue
+ 
+-                if target not in numbers:
++                # Assign number if not already assigned
++                if target not in numbers and docname in self.env.toc_secnumbers:
++                    numbers[target] = self.env.toc_secnumbers[docname].get(target, ())
++                
++                if target not in numbers or not numbers[target]:
+                     logger.warning(__("no number is assigned for %s: %s") %
+                                    (domain.label, target),
+                                    location=node)
+                     continue
+ 
+                 try:
+ ```
+--- a/sphinx/domains/std.py
++++ b/sphinx/domains/std.py
+@@ -1095,7 +1095,10 @@
+         fignumber = toctree_fignumber.get(figtype, {})
+         
+         for docname, entries in node_entries.items():
+-            secnum = toctree_secnumber.get(docname, ())
++            if docname in toctree_secnumber:
++                secnum = toctree_secnumber[docname]
++            else:
++                secnum = ()
+             for entrynode in entries:
+                 entrynode['secnumber'] = secnum
+                 if figtype == 'section':
+@@ -1105,7 +1108,7 @@
+                     entrynode['number'] = fignumber.get(entrynode['ids'][0], ())
+                 else:
+                     for id in entrynode['ids']:
+-                        if id in fignumber:
++                        if id in fignumber and fignumber[id]:
+                             entrynode['number'] = fignumber[id]
+                             break
+                     else:
+ ```
+--- a/sphinx/domains/std.py
++++ b/sphinx/domains/std.py
+@@ -738,11 +738,14 @@
+             for node in doctree.traverse(addnodes.number_reference):
+                 target = node['reftarget']
+                 figtype = node['reftype']
+                 if figtype == 'number':
+                     continue
+ 
+-                if target not in numbers:
++                # Skip warning for merged documents in singlehtml/latex builders
++                # where numbering may not be available yet
++                if (target not in numbers and 
++                    docname in self.env.toc_secnumbers and
++                    target not in self.env.toc_secnumbers.get(docname, {})):
+                     logger.warning(__("no number is assigned for %s: %s") %
+                                    (domain.label, target),
+                                    location=node)
+                     continue
+ 
+ ```

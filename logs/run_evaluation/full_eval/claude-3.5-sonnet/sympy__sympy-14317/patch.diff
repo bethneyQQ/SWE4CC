@@ -1,0 +1,17 @@
+
+--- a/sympy/printing/latex.py
++++ b/sympy/printing/latex.py
+@@ -1854,7 +1854,12 @@ class LatexPrinter(Printer):
+ 
+     def _print_Poly(self, poly):
+         cls = poly.__class__.__name__
+-        expr = self._print(poly.as_expr())
++        # Use the polynomial's native ordering by temporarily setting order to None
++        # and printing with the ordered terms directly
++        from sympy import Add
++        expr_obj = poly.as_expr()
++        # Ensure terms are printed in the polynomial's natural order
++        expr = self._print(Add(*expr_obj.as_ordered_terms(), evaluate=False) if expr_obj.is_Add else expr_obj)
+         gens = list(map(self._print, poly.gens))
+         domain = "domain=%s" % self._print(poly.get_domain())
+ 

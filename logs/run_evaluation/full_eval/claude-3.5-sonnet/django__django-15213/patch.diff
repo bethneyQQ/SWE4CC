@@ -1,0 +1,32 @@
+
+--- a/django/db/models/sql/where.py
++++ b/django/db/models/sql/where.py
+@@ -85,6 +85,14 @@
+             sql_string = 'NOT (%s)' % sql_string
+         return sql_string, result_params
+ 
++    def as_sql(self, compiler, connection):
++        result = super().as_sql(compiler, connection)
++        # Handle the case where negation of an empty condition results in empty SQL
++        if result == ('', []) and self.negated:
++            # An empty condition negated should be TRUE
++            return ('1', [])
++        return result
++
+ 
+ class NothingNode:
+     """A node that matches nothing."""
+--- a/django/db/models/expressions.py
++++ b/django/db/models/expressions.py
+@@ -1078,7 +1078,13 @@
+ 
+     def as_sql(self, compiler, connection):
+         return compiler.compile(self.expression)
++
++    def resolve_expression(self, query=None, allow_joins=True, reuse=None, summarize=False, for_save=False):
++        expression = self.expression.resolve_expression(query, allow_joins, reuse, summarize, for_save)
++        # Handle Q objects that compile to empty conditions
++        return self.__class__(expression, self.output_field)
+ 
+     def __repr__(self):
+         return "{}({})".format(self.__class__.__name__, self.expression)

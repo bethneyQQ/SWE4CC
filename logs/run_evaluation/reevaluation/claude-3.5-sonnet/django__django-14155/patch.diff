@@ -1,0 +1,36 @@
+--- a/django/urls/resolvers.py
++++ b/django/urls/resolvers.py
+@@ -32,7 +32,16 @@
+ class ResolverMatch:
+     def __init__(self, func, args, kwargs, url_name=None, app_names=None, namespaces=None, route=None, tried=None):
+         self.func = func
+-        self.args = args
++        
++        # Unwrap functools.partial to access the underlying function and arguments
++        if isinstance(func, functools.partial):
++            self._func_for_repr = func.func
++            self._partial_args = func.args
++            self._partial_kwargs = func.keywords
++        else:
++            self._func_for_repr = func
++            self._partial_args = ()
++            self._partial_kwargs = {}
++        self.args = self._partial_args + args
+         self.kwargs = kwargs
+         self.url_name = url_name
+         self.route = route
+@@ -45,9 +54,9 @@
+         self.namespaces = [x for x in namespaces if x] if namespaces else []
+         self.namespace = ':'.join(self.namespaces)
+ 
+-        if not hasattr(func, '__name__'):
++        if not hasattr(self._func_for_repr, '__name__'):
+             # A class-based view
+-            self._func_path = func.__class__.__module__ + '.' + func.__class__.__name__
++            self._func_path = self._func_for_repr.__class__.__module__ + '.' + self._func_for_repr.__class__.__name__
+         else:
+             # A function-based view
+-            self._func_path = func.__module__ + '.' + func.__name__
++            self._func_path = self._func_for_repr.__module__ + '.' + self._func_for_repr.__name__
+ 
+ 

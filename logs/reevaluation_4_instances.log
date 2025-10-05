@@ -1,0 +1,45 @@
+<frozen runpy>:128: RuntimeWarning: 'swebench.harness.run_evaluation' found in sys.modules after import of package 'swebench.harness', but prior to execution of 'swebench.harness.run_evaluation'; this may result in unpredictable behaviour
+Found 4 existing instance images. Will reuse them.
+Running 4 instances...
+Evaluation:   0%|          | 0/4 [00:00<?, ?it/s, error=0, ✓=0, ✖=0]Evaluation:   0%|          | 0/4 [00:15<?, ?it/s, ✓=0, ✖=0, error=1]Evaluation:  25%|██▌       | 1/4 [00:15<00:47, 15.84s/it, ✓=0, ✖=0, error=1]Evaluation:  25%|██▌       | 1/4 [00:15<00:47, 15.84s/it, ✓=0, ✖=0, error=2]Evaluation:  50%|█████     | 2/4 [00:15<00:31, 15.84s/it, ✓=0, ✖=0, error=3]Evaluation:  75%|███████▌  | 3/4 [00:15<00:04,  4.14s/it, ✓=0, ✖=0, error=3]Evaluation:  75%|███████▌  | 3/4 [00:15<00:04,  4.14s/it, ✓=0, ✖=0, error=4]Evaluation: 100%|██████████| 4/4 [00:15<00:00,  3.99s/it, ✓=0, ✖=0, error=4]
+django__django-13933: >>>>> Patch Apply Failed:
+patching file django/forms/models.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 25:  
+
+
+Check (logs/run_evaluation/patched_v2_test/claude-3.5-sonnet/django__django-13933/run_instance.log) for more information.
+django__django-13551: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/tokens.py
+patch: **** malformed patch at line 25: -        return str(user.pk) + user.password + str(login_timestamp) + str(timestamp)
+
+
+Check (logs/run_evaluation/patched_v2_test/claude-3.5-sonnet/django__django-13551/run_instance.log) for more information.
+django__django-14016: >>>>> Patch Apply Failed:
+patching file django/db/models/query_utils.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 24:  
+
+
+Check (logs/run_evaluation/patched_v2_test/claude-3.5-sonnet/django__django-14016/run_instance.log) for more information.
+django__django-13925: >>>>> Patch Apply Failed:
+patching file django/db/models/base.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 24:  
+
+
+Check (logs/run_evaluation/patched_v2_test/claude-3.5-sonnet/django__django-13925/run_instance.log) for more information.
+All instances run.
+Cleaning cached images...
+Removed 0 images.
+Total instances: 4
+Instances submitted: 4
+Instances completed: 0
+Instances incomplete: 0
+Instances resolved: 0
+Instances unresolved: 0
+Instances with empty patches: 0
+Instances with errors: 4
+Unstopped containers: 0
+Unremoved images: 4
+Report written to claude-3.5-sonnet.patched_v2_test.json

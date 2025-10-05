@@ -1,0 +1,19 @@
+--- a/sympy/geometry/point.py
++++ b/sympy/geometry/point.py
+@@ -279,6 +279,14 @@ class Point(GeometryEntity):
+         coords = [simplify(x*factor) for x in self.args]
+         return Point(coords, evaluate=False)
+ 
++    def __rmul__(self, factor):
++        """Multiply point's coordinates by a factor.
++        
++        This handles the case when a Point is on the right side of 
++        the multiplication operator.
++        """
++        return self.__mul__(factor)
++
+     def __neg__(self):
+         """Negate the point."""
+         coords = [-x for x in self.args]
+ 
+ 

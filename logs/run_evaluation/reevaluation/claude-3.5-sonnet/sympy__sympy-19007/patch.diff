@@ -1,0 +1,34 @@
+--- a/sympy/matrices/expressions/blockmatrix.py
++++ b/sympy/matrices/expressions/blockmatrix.py
+@@ -234,14 +234,23 @@
+ 
+     def _entry(self, i, j, **kwargs):
+         # Find row entry
++        orig_i, orig_j = i, j
+         for row_block, numrows in enumerate(self.rowblocksizes):
+-            if (i < numrows) != False:
+-                break
++            cmp = i < numrows
++            if cmp == True:
++                break
++            elif cmp == False:
++                i -= numrows
+             else:
+-                i -= numrows
++                # symbolic index - cannot determine which block
++                return None
+         for col_block, numcols in enumerate(self.colblocksizes):
+-            if (j < numcols) != False:
+-                break
++            cmp = j < numcols
++            if cmp == True:
++                break
++            elif cmp == False:
++                j -= numcols
+             else:
+-                j -= numcols
++                # symbolic index - cannot determine which block
++                return None
+         return self.blocks[row_block, col_block][i, j]
+ 
+ 

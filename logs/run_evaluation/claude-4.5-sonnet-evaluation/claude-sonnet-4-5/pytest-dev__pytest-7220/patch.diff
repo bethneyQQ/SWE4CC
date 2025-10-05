@@ -1,0 +1,16 @@
+--- a/src/_pytest/main.py
++++ b/src/_pytest/main.py
+@@ -360,7 +360,10 @@ class _bestrelpath_cache(dict):
+     path = attr.ib(type=py.path.local)
+ 
+     def __missing__(self, path: py.path.local) -> str:
+-        r = self.path.bestrelpath(path)  # type: str
++        r = path.relto(self.path)
++        if r is None:
++            r = self.path.bestrelpath(path)  # type: str
++        assert r is not None
+         self[path] = r
+         return r
+ 
+ 
+ 

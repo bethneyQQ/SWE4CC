@@ -1,0 +1,58 @@
+--- a/xarray/core/dataarray.py
++++ b/xarray/core/dataarray.py
+@@ -2180,7 +2180,7 @@
+         # Handle single-variable case
+         if len(self[dim]) == 1:
+             idx = self.indexes[dim][0]
+-            return Dataset({idx: self.sel({dim: idx}, drop=True)})
++            return Dataset({idx: self.sel({dim: idx}, drop=True).drop_vars(dim, errors='ignore')})
+ 
+         # Handle multi-variable case
+         variables = {}
+@@ -2188,10 +2188,13 @@
+         for i, idx in enumerate(self.indexes[dim]):
+             variables[idx] = self.isel({dim: i}, drop=True)
+             for k, v in self.coords.items():
+-                if k != dim and dim not in v.dims:
++                if k != dim and k not in variables and dim not in v.dims:
+                     coords[k] = v
+ 
+-        return Dataset(variables, coords=coords)
++        ds = Dataset(variables, coords=coords)
++        # Drop the stacking dimension if it exists as a variable
++        ds = ds.drop_vars(dim, errors='ignore')
++        return ds
+ 
+     def transpose(self, *dims: Hashable, transpose_coords: bool = True) -> "DataArray":
+         """Return a new DataArray object with transposed dimensions.
+ ```
+--- a/xarray/core/dataarray.py
++++ b/xarray/core/dataarray.py
+@@ -2172,17 +2172,20 @@
+         -------
+         unstacked : Dataset
+         """
+-        idx = self.indexes[dim]
++        from .dataset import Dataset
++        
++        idx = self.indexes[dim]
+         variables = {}
+         for i in range(idx.size):
+-            variables[idx[i]] = self.isel({dim: i}, drop=True)
+-
+-        # Preserve other coordinates
++            # Use drop=True to remove the stacking dimension
++            variables[idx[i]] = self.isel({dim: i}, drop=True).drop_vars(dim, errors='ignore')
++        
++        # Preserve coordinates that don't include the stacking dimension
+         coords = {}
+         for k, v in self.coords.items():
+             if k != dim and dim not in v.dims:
+                 coords[k] = v
+-
+-        from .dataset import Dataset
+-        return Dataset(variables, coords=coords)
++        
++        ds = Dataset(variables, coords=coords)
++        return ds
+ ```

@@ -1,0 +1,89 @@
+--- a/sympy/polys/factortools.py
++++ b/sympy/polys/factortools.py
+@@ -124,21 +124,42 @@ def dmp_trial_division(f, factors, u, K):
+ 
+ 
+ def dup_zz_mignotte_bound(f, K):
+-    """Mignotte bound for univariate polynomials in `K[x]`. """
+-    a = dup_max_norm(f, K)
+-    b = abs(dup_LC(f, K))
++    """Knuth-Cohen bound for univariate polynomials in `K[x]`.
++    
++    This bound is used to determine the maximum size of coefficients
++    in factors of a polynomial. The Knuth-Cohen bound is generally
++    tighter and more efficient than the classical Mignotte bound.
++    
++    References
++    ==========
++    
++    .. [1] Knuth, D. E. (1981). The Art of Computer Programming, Vol. 2:
++           Seminumerical Algorithms (2nd ed.). Addison-Wesley.
++    
++    """
+     n = dup_degree(f)
++    
++    # Compute the L2 norm (Euclidean norm) of the coefficient vector
++    norm_squared = K.zero
++    for coeff in f:
++        norm_squared += coeff**2
++    
++    l2_norm = K.sqrt(norm_squared)
++    
++    # Knuth-Cohen bound: 2^n * ||f||_2
++    return 2**n * l2_norm
+ 
+-    return K.sqrt(K(n + 1))*2**n*a*b
+ 
+-
+ def dmp_zz_mignotte_bound(f, u, K):
+-    """Mignotte bound for multivariate polynomials in `K[X]`. """
+-    a = dmp_max_norm(f, u, K)
+-    b = abs(dmp_ground_LC(f, u, K))
+-    n = sum(dmp_degree_list(f, u))
+-
+-    return K.sqrt(K(n + 1))*2**n*a*b
++    """Knuth-Cohen bound for multivariate polynomials in `K[X]`.
++    
++    This bound is computed by treating the multivariate polynomial
++    as having a coefficient vector and computing its L2 norm.
++    
++    """
++    from sympy.polys.densebasic import dmp_to_dict
++    
++    # Flatten the polynomial to get all coefficients
++    def _compute_l2_norm(g, v):
++        if v < 0:
++            # Base case: we have a ground element
+@@ -146,6 +167,32 @@ def dmp_zz_mignotte_bound(f, u, K):
++            return abs(g)**2
++        else:
++            # Recursive case: sum over all terms
++            norm_squared = K.zero
++            for coeff in g:
++                if v == 0:
++                    norm_squared += coeff**2
++                else:
++                    norm_squared += _compute_l2_norm(coeff, v - 1)
++            return norm_squared
++    
++    if u == 0:
++        # Univariate case
++        norm_squared = K.zero
++        for coeff in f:
++            norm_squared += coeff**2
++    else:
++        # Multivariate case
++        norm_squared = _compute_l2_norm(f, u)
++    
++    l2_norm = K.sqrt(norm_squared)
++    
++    # For multivariate, use total degree
++    n = sum(dmp_degree_list(f, u))
++    
++    # Knuth-Cohen bound: 2^n * ||f||_2
++    return 2**n * l2_norm
+ 
+ 
+ def dup_zz_hensel_step(m, f, g, h, s, t, K):
+ 
+ 

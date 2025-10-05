@@ -34,8 +34,15 @@ CLAUDE_CODE_MODELS = {
 def check_claude_code_availability():
     """Check if Claude Code CLI is installed and available."""
     try:
+        # Try to find claude in PATH first
+        import shutil
+        claude_path = shutil.which("claude")
+        if not claude_path:
+            # Fallback to common locations
+            claude_path = "/home/zqq/.nvm/versions/node/v22.20.0/bin/claude"
+
         result = subprocess.run(
-            ["claude", "--version"],
+            [claude_path, "--version"],
             capture_output=True,
             text=True,
             timeout=10
@@ -54,23 +61,55 @@ def prepare_claude_code_prompt(datum: Dict) -> str:
     """
     Prepare the prompt for Claude Code, optimizing for code generation tasks.
 
+    Based on SWE-bench best practices:
+    - Explicit planning increases pass rate by 4%
+    - Clear tool descriptions and step-by-step instructions
+    - Unified diff format with complete context blocks
+    - GPT-4.1 agentic harness achieves 55% on SWE-bench Verified
+
     Args:
         datum: The dataset instance containing the problem text
 
     Returns:
         str: Formatted prompt for Claude Code
     """
-    base_prompt = datum.get("text", "")
+    # SWE-bench uses "problem_statement" field, not "text"
+    base_prompt = datum.get("problem_statement", datum.get("text", ""))
 
-    # Add specific instructions for patch generation
+    # Enhanced prompt - concise but effective version
     enhanced_prompt = f"""{base_prompt}
 
-Please provide a complete patch to fix this issue. Your response should include:
-1. A clear explanation of the problem
-2. The solution approach
-3. A properly formatted diff/patch
+---
 
-Format your patch using standard diff format with proper file paths."""
+**IMPORTANT: Patch Format Requirements**
+
+Generate a patch in unified diff format that follows these CRITICAL rules:
+
+1. **Context lines MUST start with a SPACE** ` ` (not nothing!)
+2. Deleted lines start with `-`
+3. Added lines start with `+`
+4. Include 3+ lines of context before/after changes
+5. Show complete code blocks (full functions preferred)
+
+**Correct Format Example:**
+```diff
+--- a/file.py
++++ b/file.py
+@@ -10,7 +10,8 @@
+ def function(value):
+     # Context line (note the leading space!)
+     if value is None:
+-        return False
++        return None
++    if not value:
++        return False
+     return True
+```
+
+**Common Error:** Forgetting the leading space on context lines → malformed patch!
+
+Provide: 1) Brief analysis, 2) Your patch in ```diff``` block.
+The patch will be automatically tested - format errors = instant failure."""
 
     return enhanced_prompt
 
@@ -96,24 +135,35 @@ def call_claude_code(
     Returns:
         Dict containing response data or None if failed
     """
-    # Build Claude Code command
-    cmd = [
-        "claude",
-        "-p", prompt,
-        "--output-format", "json",
-        "--model", model_name
-    ]
+    # Build Claude Code command with absolute path
+    import shutil
+    claude_path = shutil.which("claude")
+    if not claude_path:
+        claude_path = "/home/zqq/.nvm/versions/node/v22.20.0/bin/claude"
 
-    # Note: Claude Code CLI doesn't directly support max_tokens and temperature parameters
-    # These may be configured through Claude Code settings or system prompts
+    # Use temporary file for prompt to avoid "Argument list too long" error
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as prompt_file:
+        prompt_file.write(prompt)
+        prompt_file_path = prompt_file.name
 
     try:
+        cmd = [
+            claude_path,
+            "-p", f"@{prompt_file_path}",
+            "--output-format", "json",
+            "--model", model_name
+        ]
+
+        # Note: Claude Code CLI doesn't directly support max_tokens and temperature parameters
+        # These may be configured through Claude Code settings or system prompts
+
         logger.info(f"Calling Claude Code with model: {model_name}")
         result = subprocess.run(
             cmd,
             capture_output=True,
             text=True,
             timeout=timeout,
+            stdin=subprocess.DEVNULL,  # Explicitly close stdin to avoid CLI trying to read from it
             env={**os.environ, "ANTHROPIC_API_KEY": os.environ.get("ANTHROPIC_API_KEY", "")}
         )
 
@@ -138,6 +188,10 @@ def call_claude_code(
     except Exception as e:
         logger.error(f"Unexpected error calling Claude Code: {e}")
         return None
+    finally:
+        # Clean up temporary file
+        if os.path.exists(prompt_file_path):
+            os.unlink(prompt_file_path)
 
 def claude_code_inference(
     test_dataset,
@@ -148,7 +202,14 @@ def claude_code_inference(
     max_cost: Optional[float] = None,
 ):
     """
-    Run inference on a dataset using Claude Code.
+    Run inference on a dataset using Claude Code with ENHANCED features.
+
+    Enhanced features:
+    - Repo access at base_commit
+    - Repo cache for performance
+    - Enhanced prompts guiding tool usage
+    - 3-layer patch validation
+    - Intelligent retry with error feedback
 
     Args:
         test_dataset: The dataset to run inference on
@@ -175,6 +236,9 @@ def claude_code_inference(
         "claude-3.5-sonnet": "sonnet",
         "claude-code": "sonnet",
         "claude-4": "sonnet",
+        "claude-4.5-sonnet": "sonnet",
+        "claude-sonnet-4-5": "sonnet",
+        "claude-sonnet-4-5-20250929": "sonnet",
     }
     actual_model_name = model_name_mapping.get(model_name_or_path, model_name_or_path)
 
@@ -186,8 +250,38 @@ def claude_code_inference(
     temperature = model_args.pop("temperature", 0.1)
     max_instances = model_args.pop("max_instances", None)
 
+    # Enhanced features configuration
+    use_enhanced = model_args.pop("enhanced", True)  # Default: use enhanced
+    use_cache = model_args.pop("use_cache", True)     # Default: use cache
+    validate_hunks = model_args.pop("validate_hunks", True)  # Default: validate
+    max_retries = model_args.pop("max_retries", 2)    # Default: 2 retries
+    cleanup = model_args.pop("cleanup", False)        # Default: keep repos
+
     logger.info(f"Starting Claude Code inference with model: {model_name_or_path}")
     logger.info(f"Configuration: timeout={timeout}s, max_tokens={max_tokens}, temperature={temperature}")
+
+    # Enhanced features configuration
+    if use_enhanced:
+        logger.info("🚀 ENHANCED MODE: Using all optimizations")
+        logger.info(f"  - Repo access: ✅")
+        logger.info(f"  - Repo cache: {'✅' if use_cache else '❌'}")
+        logger.info(f"  - Patch validation: {'✅' if validate_hunks else '❌'}")
+        logger.info(f"  - Max retries: {max_retries}")
+
+        # Import enhanced modules
+        from swebench.inference.repo_manager import RepoManager
+        from swebench.inference.enhanced_prompts import prepare_enhanced_claude_code_prompt
+        from swebench.inference.patch_validator import validate_patch_format, verify_hunk_line_numbers
+        from swebench.inference.retry_handler import prepare_retry_prompt
+
+        # Setup repo manager
+        repo_manager = RepoManager(use_cache=use_cache)
+        logger.info(f"📁 Repo manager initialized: {repo_manager.base_dir}")
+        if use_cache:
+            logger.info(f"📦 Cache directory: {repo_manager.cache_dir}")
+    else:
+        logger.info("⚠️  BASIC MODE: No repo access or validation")
+        repo_manager = None
 
     total_processed = 0
     total_successful = 0
@@ -202,72 +296,134 @@ def claude_code_inference(
 
             logger.info(f"Processing instance: {instance_id}")
 
-            # Prepare prompt
-            prompt = prepare_claude_code_prompt(datum)
+            # Enhanced: Setup repo and change directory
+            original_cwd = os.getcwd()
+            repo_path = None
 
-            # Call Claude Code with actual model name
-            response_data = call_claude_code(
-                prompt=prompt,
-                model_name=actual_model_name,
-                timeout=timeout,
-                max_tokens=max_tokens,
-                temperature=temperature,
-                **model_args
-            )
+            if use_enhanced:
+                try:
+                    # Setup repo at base_commit
+                    repo_path = repo_manager.setup_repo(datum)
+                    logger.info(f"  Repo setup at: {repo_path}")
 
+                    # Change to repo directory so Claude Code can access files
+                    os.chdir(repo_path)
+
+                    # Prepare enhanced prompt
+                    prompt = prepare_enhanced_claude_code_prompt(datum, repo_path)
+                except Exception as e:
+                    logger.error(f"  Failed to setup repo for {instance_id}: {e}")
+                    # Fallback to basic prompt
+                    prompt = prepare_claude_code_prompt(datum)
+                    os.chdir(original_cwd)
+            else:
+                # Basic prompt without repo access
+                prompt = prepare_claude_code_prompt(datum)
+
+            # Try with retries
+            response_data = None
+            validation_errors = []
+
+            for attempt in range(max_retries + 1):
+                if attempt > 0:
+                    logger.info(f"  Retry attempt {attempt}/{max_retries}")
+                    # Prepare retry prompt with error feedback
+                    if use_enhanced and validation_errors:
+                        prompt = prepare_retry_prompt(
+                            original_prompt=prompt,
+                            error_message="; ".join(validation_errors),
+                            attempt=attempt
+                        )
+
+                # Call Claude Code with actual model name
+                response_data = call_claude_code(
+                    prompt=prompt,
+                    model_name=actual_model_name,
+                    timeout=timeout,
+                    max_tokens=max_tokens,
+                    temperature=temperature,
+                    **model_args
+                )
+
+                if response_data:
+                    # Extract content from Claude Code CLI response
+                    full_output = response_data.get("result", "")
+                    if not full_output and "content" in response_data:
+                        full_output = response_data.get("content", "")
+
+                    model_patch = extract_diff(full_output)
+
+                    # Enhanced: Validate patch
+                    validation_errors = []
+                    patch_valid = True
+
+                    if use_enhanced and model_patch and (validate_hunks or attempt > 0):
+                        # Layer 1: Format validation
+                        is_valid, error_msg = validate_patch_format(model_patch)
+                        if not is_valid:
+                            validation_errors.append(f"Format error: {error_msg}")
+                            patch_valid = False
+                            logger.warning(f"  Validation failed: {error_msg}")
+
+                        # Layer 2: Line number validation
+                        if patch_valid and validate_hunks and repo_path:
+                            is_valid, error_msg = verify_hunk_line_numbers(model_patch, repo_path)
+                            if not is_valid:
+                                validation_errors.append(f"Line number error: {error_msg}")
+                                patch_valid = False
+                                logger.warning(f"  Line number validation failed: {error_msg}")
+
+                    # If validation passed or no validation, break retry loop
+                    if patch_valid or not use_enhanced:
+                        logger.info(f"  ✅ Patch validation passed")
+                        break
+                    elif attempt < max_retries:
+                        logger.info(f"  ❌ Patch validation failed, will retry...")
+                        continue
+
+            # Restore working directory
+            if use_enhanced and repo_path:
+                os.chdir(original_cwd)
+
+            # Prepare output
             if response_data:
-                # Extract content from Claude Code CLI response
-                # Claude Code CLI returns output in "result" field
-                full_output = response_data.get("result", "")
-                if not full_output and "content" in response_data:
-                    # Fallback to "content" field if exists
-                    full_output = response_data.get("content", "")
-                if not full_output and "choices" in response_data:
-                    # Handle API-style response format
-                    full_output = response_data["choices"][0].get("message", {}).get("content", "")
-
-                model_patch = extract_diff(full_output)
-
-                # Calculate cost from usage if not provided
                 usage = response_data.get("usage", {})
                 cost = response_data.get("total_cost_usd")
                 if cost is None and usage:
-                    # Rough cost estimation if not provided
-                    # Haiku: $0.25/1M input, $1.25/1M output
-                    # Sonnet: $3/1M input, $15/1M output
                     input_tokens = usage.get("input_tokens", 0) + usage.get("cache_read_input_tokens", 0)
                     output_tokens = usage.get("output_tokens", 0)
                     if "haiku" in actual_model_name.lower():
                         cost = (input_tokens * 0.25 + output_tokens * 1.25) / 1_000_000
-                    else:  # sonnet/opus
+                    else:
                         cost = (input_tokens * 3 + output_tokens * 15) / 1_000_000
 
-                # Prepare output dictionary in standard SWE-bench format
                 output_dict = {
                     "instance_id": instance_id,
                     "model_name_or_path": model_name_or_path,
-                    "full_output": full_output,
-                    "model_patch": model_patch,
-                    # Standard SWE-bench metadata
+                    "full_output": full_output if response_data else "",
+                    "model_patch": model_patch if response_data else "",
                     "latency_ms": response_data.get("duration_ms", 0),
                     "cost": cost if cost is not None else 0.0,
-                    # Claude Code specific metadata
                     "claude_code_meta": {
-                        "tools_used": response_data.get("tools_used", []),
-                        "usage": usage,
-                        "model_info": response_data.get("model", actual_model_name),
-                        "duration_api_ms": response_data.get("duration_api_ms", 0),
-                        "session_id": response_data.get("session_id", "")
+                        "enhanced": use_enhanced,
+                        "tools_available": use_enhanced,
+                        "repo_path": repo_path if use_enhanced else None,
+                        "validation_errors": validation_errors if use_enhanced else [],
+                        "attempts": attempt + 1 if response_data else 0,
+                        "response_data": response_data if response_data else {},
                     }
                 }
 
-                # Write to output file
                 print(json.dumps(output_dict), file=f, flush=True)
                 total_successful += 1
-                logger.info(f"Successfully processed {instance_id}")
+                logger.info(f"✅ Successfully processed {instance_id}")
 
             else:
-                logger.warning(f"Failed to process {instance_id} - Claude Code call failed")
+                logger.warning(f"❌ Failed to process {instance_id} - Claude Code call failed")
+
+            # Cleanup repo if requested
+            if use_enhanced and cleanup and repo_path:
+                repo_manager.cleanup_repo(instance_id)
 
             total_processed += 1
 

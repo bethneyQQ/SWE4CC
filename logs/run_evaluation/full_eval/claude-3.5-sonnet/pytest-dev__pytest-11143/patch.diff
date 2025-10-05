@@ -1,0 +1,24 @@
+
+--- a/src/_pytest/assertion/rewrite.py
++++ b/src/_pytest/assertion/rewrite.py
+@@ -677,8 +677,9 @@
+                 and isinstance(item, ast.Expr)
+                 and isinstance(item.value, ast.Constant)
+             ):
+-                doc = item.value.value
+-                if self.is_rewrite_disabled(doc):
++                doc_value = item.value.value
++                # Only treat string constants as docstrings
++                if isinstance(doc_value, str) and self.is_rewrite_disabled(doc_value):
+                     return
+                 expect_docstring = False
+             elif (
+@@ -743,7 +744,7 @@
+ 
+     @staticmethod
+     def is_rewrite_disabled(docstring: str) -> bool:
+-        return "PYTEST_DONT_REWRITE" in docstring
++        return isinstance(docstring, str) and "PYTEST_DONT_REWRITE" in docstring
+ 
+     def visit_variable(self) -> str:
+         """Get a new variable."""

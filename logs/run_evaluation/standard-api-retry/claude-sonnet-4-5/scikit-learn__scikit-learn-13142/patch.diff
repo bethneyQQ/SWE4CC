@@ -1,0 +1,12 @@
+--- a/sklearn/mixture/base.py
++++ b/sklearn/mixture/base.py
+@@ -175,7 +175,7 @@
+         y : array, shape (n_samples,)
+             Component labels.
+         """
+-        return self._fit(X, y).argmax(axis=1)
++        return self.fit(X, y).predict(X)
+ 
+     def _fit(self, X, y=None):
+         """Estimate model parameters with the EM algorithm.
+ ```

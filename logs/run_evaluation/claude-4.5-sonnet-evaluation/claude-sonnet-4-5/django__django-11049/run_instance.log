@@ -1,0 +1,60 @@
+2025-10-04 17:48:44,655 - INFO - Creating container for django__django-11049...
+2025-10-04 17:48:45,022 - INFO - Container for django__django-11049 created: 4771120bdeb8e667d170019391359629bc92de1be4a149cacfc0a0cd23a79f47
+2025-10-04 17:48:45,139 - INFO - Container for django__django-11049 started: 4771120bdeb8e667d170019391359629bc92de1be4a149cacfc0a0cd23a79f47
+2025-10-04 17:48:45,139 - INFO - Intermediate patch for django__django-11049 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-11049/patch.diff, now applying to container...
+2025-10-04 17:48:45,243 - INFO - >>>>> Applied Patch:
+Checking patch django/db/models/fields/__init__.py...
+Checking patch tests/model_fields/test_durationfield.py...
+Applied patch django/db/models/fields/__init__.py cleanly.
+Applied patch tests/model_fields/test_durationfield.py cleanly.
+
+2025-10-04 17:48:45,927 - INFO - Git diff before:
+diff --git a/django/db/models/fields/__init__.py b/django/db/models/fields/__init__.py
+index f32ce64629..71005490f3 100644
+--- a/django/db/models/fields/__init__.py
++++ b/django/db/models/fields/__init__.py
+@@ -1587,7 +1587,7 @@ class DurationField(Field):
+     empty_strings_allowed = False
+     default_error_messages = {
+         'invalid': _("'%(value)s' value has an invalid format. It must be in "
+-                     "[DD] [HH:[MM:]]ss[.uuuuuu] format.")
++                     "[DD] [[HH:]MM:]ss[.uuuuuu] format.")
+     }
+     description = _("Duration")
+ 
+diff --git a/tests/model_fields/test_durationfield.py b/tests/model_fields/test_durationfield.py
+index b73994f86a..f1c82ab8bd 100644
+--- a/tests/model_fields/test_durationfield.py
++++ b/tests/model_fields/test_durationfield.py
+@@ -75,7 +75,7 @@ class TestValidation(SimpleTestCase):
+         self.assertEqual(
+             cm.exception.message % cm.exception.params,
+             "'not a datetime' value has an invalid format. "
+-            "It must be in [DD] [HH:[MM:]]ss[.uuuuuu] format."
++            "It must be in [DD] [[HH:]MM:]ss[.uuuuuu] format."
+         )
+2025-10-04 17:48:45,927 - INFO - Eval script for django__django-11049 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-11049/eval.sh; copying to container...
+2025-10-04 17:48:54,116 - INFO - Test runtime: 8.14 seconds
+2025-10-04 17:48:54,116 - INFO - Test output for django__django-11049 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-11049/test_output.txt
+2025-10-04 17:48:54,162 - INFO - Git diff after:
+diff --git a/django/db/models/fields/__init__.py b/django/db/models/fields/__init__.py
+index f32ce64629..71005490f3 100644
+--- a/django/db/models/fields/__init__.py
++++ b/django/db/models/fields/__init__.py
+@@ -1587,7 +1587,7 @@ class DurationField(Field):
+     empty_strings_allowed = False
+     default_error_messages = {
+         'invalid': _("'%(value)s' value has an invalid format. It must be in "
+-                     "[DD] [HH:[MM:]]ss[.uuuuuu] format.")
++                     "[DD] [[HH:]MM:]ss[.uuuuuu] format.")
+     }
+     description = _("Duration")
+2025-10-04 17:48:54,162 - INFO - Git diff changed after running eval script
+2025-10-04 17:48:54,162 - INFO - Grading answer for django__django-11049...
+2025-10-04 17:48:54,163 - INFO - report: {'django__django-11049': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_invalid_string (model_fields.test_durationfield.TestValidation)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_dumping (model_fields.test_durationfield.TestSerialization)', 'test_loading (model_fields.test_durationfield.TestSerialization)', 'test_formfield (model_fields.test_durationfield.TestFormField)', 'test_exact (model_fields.test_durationfield.TestQuerying)', 'test_gt (model_fields.test_durationfield.TestQuerying)', 'test_create_empty (model_fields.test_durationfield.TestSaveLoad)', 'test_fractional_seconds (model_fields.test_durationfield.TestSaveLoad)', 'test_simple_roundtrip (model_fields.test_durationfield.TestSaveLoad)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-11049: resolved: True
+2025-10-04 17:48:54,163 - INFO - Attempting to stop container sweb.eval.django__django-11049.claude-4.5-sonnet-evaluation...
+2025-10-04 17:49:09,330 - INFO - Attempting to remove container sweb.eval.django__django-11049.claude-4.5-sonnet-evaluation...
+2025-10-04 17:49:09,346 - INFO - Container sweb.eval.django__django-11049.claude-4.5-sonnet-evaluation removed.
+2025-10-04 17:49:09,346 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-11049:latest...
+2025-10-04 17:49:09,505 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-11049:latest removed.

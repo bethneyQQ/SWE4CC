@@ -1,0 +1,37 @@
+--- a/sklearn/model_selection/_split.py
++++ b/sklearn/model_selection/_split.py
+@@ -1162,6 +1162,9 @@ class _RepeatedSplits(metaclass=ABCMeta):
+         cv = self.cv(random_state=rng, shuffle=True,
+                      **self.cvargs)
+         return cv.get_n_splits(X, y, groups) * self.n_repeats
++
++    def __repr__(self):
++        return _build_repr(self)
+ 
+ 
+ class RepeatedKFold(_RepeatedSplits):
+@@ -2150,6 +2153,11 @@ def _build_repr(self):
+     class_name = self.__class__.__name__
+     params = dict()
+     for key in args:
++        # Handle cvargs for _RepeatedSplits classes
++        if key == 'cvargs':
++            # Skip cvargs itself, as we'll add its contents separately
++            continue
++        
+         # We need deprecation warnings to always be on in order to
+         # catch deprecated param values.
+         # This is set in utils/__init__.py but it gets overwritten
+@@ -2164,6 +2172,11 @@ def _build_repr(self):
+         finally:
+             warnings.filters.pop(0)
+         params[key] = value
++
++    # If the object has cvargs, add its contents to params
++    if hasattr(self, 'cvargs'):
++        for key, value in self.cvargs.items():
++            params[key] = value
+ 
+     return '%s(%s)' % (class_name, _pprint(params, offset=len(class_name)))
+ 
+ 

@@ -1,0 +1,33 @@
+--- a/django/db/models/sql/compiler.py
++++ b/django/db/models/sql/compiler.py
+@@ -724,13 +724,24 @@
+         pieces = name.split(LOOKUP_SEP)
+         field, targets, alias, joins, path, opts, transform_function = self._setup_joins(pieces, opts, alias)
+ 
+-        # If we get to this point and the field is a relation to another model,
+-        # append the default ordering for that model unless it is the pk
+-        # shortcut or the attribute name of the field that is specified.
+-        if field.is_relation and opts.ordering and getattr(field, 'attname', None) != name and name != 'pk':
++        # Check if we're ordering by a foreign key's _id field directly.
++        # If the original name ends with the field's attname (e.g., "root_id" for a field named "root"),
++        # treat it as a direct column reference, not a relation traversal.
++        is_direct_fk_id = False
++        if field.is_relation and len(pieces) > 0:
++            # Check if the last piece matches the attname of the foreign key field
++            last_piece = pieces[-1]
++            if hasattr(field, 'attname') and last_piece == field.attname.split('_id')[0] + '_id':
++                is_direct_fk_id = True
++            elif hasattr(field, 'attname') and last_piece + '_id' == field.attname:
++                is_direct_fk_id = True
++
++        # If we get to this point and the field is a relation to another model,
++        # append the default ordering for that model unless:
++        # - it is the pk shortcut or the attribute name of the field that is specified, or
++        # - we're directly referencing the foreign key _id column
++        if field.is_relation and opts.ordering and getattr(field, 'attname', None) != pieces[-1] and pieces[-1] != 'pk' and not is_direct_fk_id:
+             # Firstly, avoid infinite loops.
+             already_seen = already_seen or set()
+             join_tuple = tuple(getattr(self.query.alias_map[j], 'join_cols', None) for j in joins)
+             if join_tuple in already_seen:
+ 
+ 

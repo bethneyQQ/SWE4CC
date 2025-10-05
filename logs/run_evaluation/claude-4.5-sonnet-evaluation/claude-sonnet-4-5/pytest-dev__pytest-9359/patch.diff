@@ -1,0 +1,35 @@
+--- a/src/_pytest/_code/source.py
++++ b/src/_pytest/_code/source.py
+@@ -146,6 +146,7 @@ def deindent(lines: Iterable[str]) -> List[str]:
+ def get_statement_startend2(lineno: int, node: ast.AST) -> Tuple[int, Optional[int]]:
+     # Flatten all statements and except handlers into one lineno-list.
+     # AST's line numbers start indexing at 1.
+     values: List[int] = []
+     for x in ast.walk(node):
+         if isinstance(x, (ast.stmt, ast.ExceptHandler)):
+@@ -158,6 +159,18 @@ def get_statement_startend2(lineno: int, node: ast.AST) -> Tuple[int, Optional[
+     values.sort()
+     insert_index = bisect_right(values, lineno)
+     start = values[insert_index - 1]
+     if insert_index >= len(values):
+         end = None
+     else:
+         end = values[insert_index]
++
++    # In Python 3.8+, use end_lineno to determine the actual end of the statement
++    # at the given lineno. This prevents including subsequent decorated functions
++    # or other statements that may start before the current statement ends.
++    for x in ast.walk(node):
++        if isinstance(x, (ast.stmt, ast.ExceptHandler)):
++            if x.lineno - 1 == start and hasattr(x, 'end_lineno') and x.end_lineno is not None:
++                # Found the statement node matching our start line
++                stmt_end = x.end_lineno
++                # If the calculated end is beyond the statement's actual end_lineno,
++                # use the actual end_lineno instead
++                if end is None or end > stmt_end:
++                    end = stmt_end
++                break
++
+     return start, end
+ 
+ 

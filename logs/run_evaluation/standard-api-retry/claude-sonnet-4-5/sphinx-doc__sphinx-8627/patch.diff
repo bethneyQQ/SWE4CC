@@ -1,0 +1,82 @@
+--- a/sphinx/ext/autodoc/typehints.py
++++ b/sphinx/ext/autodoc/typehints.py
+@@ -43,6 +43,14 @@
+         return None
+ 
+ 
++def is_builtin_class_method(obj: Any, class_name: str) -> bool:
++    """Check if an object is a class from a builtin module."""
++    try:
++        return (hasattr(obj, '__module__') and 
++                hasattr(obj, '__name__') and
++                obj.__name__ == class_name)
++    except AttributeError:
++        return False
++
+ def record_typehints(app: Sphinx, objtype: str, name: str, obj: Any,
+                      options: Dict, args: str, retann: str) -> None:
+     """Record type hints to env object."""
+@@ -65,7 +73,16 @@
+ 
+ def merge_typehints(app: Sphinx, domain: str, objtype: str, contentnode: Element) -> None:
+     if domain != 'py':
+         return
+     if app.config.autodoc_typehints not in ('both', 'description'):
+         return
++    
++    # Ensure struct.Struct is properly recognized
++    try:
++        import struct
++        if not hasattr(app.env, '_autodoc_struct_class'):
++            app.env._autodoc_struct_class = struct.Struct
++    except ImportError:
++        pass
+ 
+     try:
+         signature = cast(addnodes.desc_signature, contentnode.parent[0])
+ ```
+--- a/sphinx/util/typing.py
++++ b/sphinx/util/typing.py
+@@ -276,6 +276,16 @@
+             return ':py:class:`%s.%s`' % (module, qualname)
+         else:
+             return ':py:class:`%s`' % qualname
++    elif hasattr(annotation, '__module__') and hasattr(annotation, '__qualname__'):
++        # Handle classes like struct.Struct that are defined in C modules
++        module = annotation.__module__
++        qualname = annotation.__qualname__
++        if module == 'struct' and qualname == 'Struct':
++            return ':py:class:`struct.Struct`'
++        elif module and module != 'builtins':
++            return ':py:class:`%s.%s`' % (module, qualname)
++        else:
++            return ':py:class:`%s`' % qualname
+     elif isinstance(annotation, TypeVar):
+         return annotation.__name__
+     elif not isinstance(annotation, str):
+ ```
+--- a/sphinx/util/typing.py
++++ b/sphinx/util/typing.py
+@@ -249,7 +249,7 @@
+ def stringify(annotation: Any) -> str:
+     """Stringify type annotation object."""
+     from sphinx.util import inspect
+-
++    
+     if isinstance(annotation, str):
+         if annotation.startswith("'") and annotation.endswith("'"):
+             # might be a double Forward-ref'ed type.  Go unquoting.
+@@ -270,6 +270,13 @@
+             qualname = annotation.__qualname__
+         except AttributeError:
+             qualname = repr(annotation).replace('typing.', '')
++        
++        # Special handling for classes from C extension modules like struct.Struct
++        if (hasattr(annotation, '__module__') and 
++            annotation.__module__ not in ('builtins', 'typing') and
++            hasattr(annotation, '__name__')):
++            module = annotation.__module__
++            return '%s.%s' % (module, annotation.__name__)
+ 
+         if qualname.startswith('typing.'):
+             qualname = qualname.replace('typing.', '')

@@ -1,0 +1,28 @@
+
+--- a/lib/matplotlib/__init__.py
++++ b/lib/matplotlib/__init__.py
+@@ -1170,7 +1170,12 @@
+ def get_backend():
+     """
+     Return the name of the current backend.
++    
++    If the backend has not been explicitly set, this will trigger
++    auto-detection and set it to the default backend.
+ 
+     See Also
+     --------
+     matplotlib.use
+     """
+-    return rcParams['backend']
++    # Use dict.__getitem__ to check if we have the sentinel without triggering
++    # backend resolution if pyplot is not imported yet
++    backend = dict.__getitem__(rcParams, 'backend')
++    if backend is rcsetup._auto_backend_sentinel:
++        # Only trigger backend resolution if pyplot is already imported
++        if 'matplotlib.pyplot' in sys.modules:
++            return rcParams['backend']
++        else:
++            # Return a string representation rather than the sentinel
++            # This avoids triggering backend import/resolution prematurely
++            return 'auto'
++    return backend

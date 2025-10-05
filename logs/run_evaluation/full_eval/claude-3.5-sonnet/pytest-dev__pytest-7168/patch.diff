@@ -1,0 +1,30 @@
+
+--- a/src/_pytest/_io/saferepr.py
++++ b/src/_pytest/_io/saferepr.py
+@@ -14,11 +14,18 @@ def _try_repr_or_str(obj):
+ 
+ def _format_repr_exception(exc: BaseException, obj: Any) -> str:
+     try:
+         exc_info = _try_repr_or_str(exc)
+     except (KeyboardInterrupt, SystemExit):
+         raise
+     except BaseException as exc:
+         exc_info = "unpresentable exception ({})".format(_try_repr_or_str(exc))
+-    return "<[{} raised in repr()] {} object at 0x{:x}>".format(
+-        exc_info, obj.__class__.__name__, id(obj)
+-    )
++    try:
++        obj_name = type(obj).__name__
++    except (KeyboardInterrupt, SystemExit):
++        raise
++    except BaseException:
++        obj_name = "unknown"
++    try:
++        obj_id = id(obj)
++    except (KeyboardInterrupt, SystemExit):
++        raise
++    except BaseException:
++        obj_id = 0
++    return "<[{} raised in repr()] {} object at 0x{:x}>".format(
++        exc_info, obj_name, obj_id
++    )

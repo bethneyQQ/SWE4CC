@@ -1,0 +1,55 @@
+2025-10-04 04:12:54,292 - INFO - Creating container for sympy__sympy-20212...
+2025-10-04 04:12:55,406 - INFO - Container for sympy__sympy-20212 created: 1496457bb35d543705a6037f21a44127db8381bf85164f02b72d28a79fcac612
+2025-10-04 04:12:55,492 - INFO - Container for sympy__sympy-20212 started: 1496457bb35d543705a6037f21a44127db8381bf85164f02b72d28a79fcac612
+2025-10-04 04:12:55,493 - INFO - Intermediate patch for sympy__sympy-20212 written to logs/run_evaluation/reevaluation/claude-3.5-sonnet/sympy__sympy-20212/patch.diff, now applying to container...
+2025-10-04 04:12:55,577 - INFO - >>>>> Applied Patch:
+Checking patch sympy/core/power.py...
+Applied patch sympy/core/power.py cleanly.
+
+2025-10-04 04:12:55,926 - INFO - Git diff before:
+diff --git a/sympy/core/power.py b/sympy/core/power.py
+index 984398c760..16e98233e9 100644
+--- a/sympy/core/power.py
++++ b/sympy/core/power.py
+@@ -299,6 +299,12 @@ def __new__(cls, b, e, evaluate=None):
+                 return b
+             elif e == -1 and not b:
+                 return S.ComplexInfinity
++            # Handle 0**-oo -> zoo
++            if b is S.Zero:
++                if e is S.NegativeInfinity:
++                    return S.ComplexInfinity
++                elif e is S.Infinity:
++                    return S.Zero
+             # Only perform autosimplification if exponent or base is a Symbol or number
+             elif (b.is_Symbol or b.is_number) and (e.is_Symbol or e.is_number) and\
+                 e.is_integer and _coeff_isneg(b):
+2025-10-04 04:12:55,926 - INFO - Eval script for sympy__sympy-20212 written to logs/run_evaluation/reevaluation/claude-3.5-sonnet/sympy__sympy-20212/eval.sh; copying to container...
+2025-10-04 04:13:20,028 - INFO - Test runtime: 24.06 seconds
+2025-10-04 04:13:20,028 - INFO - Test output for sympy__sympy-20212 written to logs/run_evaluation/reevaluation/claude-3.5-sonnet/sympy__sympy-20212/test_output.txt
+2025-10-04 04:13:20,072 - INFO - Git diff after:
+diff --git a/sympy/core/power.py b/sympy/core/power.py
+index 984398c760..16e98233e9 100644
+--- a/sympy/core/power.py
++++ b/sympy/core/power.py
+@@ -299,6 +299,12 @@ def __new__(cls, b, e, evaluate=None):
+                 return b
+             elif e == -1 and not b:
+                 return S.ComplexInfinity
++            # Handle 0**-oo -> zoo
++            if b is S.Zero:
++                if e is S.NegativeInfinity:
++                    return S.ComplexInfinity
++                elif e is S.Infinity:
++                    return S.Zero
+             # Only perform autosimplification if exponent or base is a Symbol or number
+             elif (b.is_Symbol or b.is_number) and (e.is_Symbol or e.is_number) and\
+                 e.is_integer and _coeff_isneg(b):
+2025-10-04 04:13:20,072 - INFO - Grading answer for sympy__sympy-20212...
+2025-10-04 04:13:20,072 - INFO - report: {'sympy__sympy-20212': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_zero'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_rational', 'test_large_rational', 'test_negative_real', 'test_expand', 'test_issue_3449', 'test_issue_3866', 'test_negative_one', 'test_issue_4362', 'test_Pow_Expr_args', 'test_Pow_signs', 'test_power_with_noncommutative_mul_as_base', 'test_power_rewrite_exp', 'test_pow_as_base_exp', 'test_nseries', 'test_issue_6100_12942_4473', 'test_issue_6208', 'test_issue_6990', 'test_issue_6068', 'test_issue_6782', 'test_issue_6653', 'test_issue_6429', 'test_issue_7638', 'test_issue_8582', 'test_issue_8650', 'test_issue_13914', 'test_better_sqrt', 'test_issue_2993', 'test_issue_17450', 'test_issue_18190', 'test_issue_14815', 'test_issue_18509', 'test_issue_18762'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-20212: resolved: True
+2025-10-04 04:13:20,073 - INFO - Attempting to stop container sweb.eval.sympy__sympy-20212.reevaluation...
+2025-10-04 04:13:35,330 - INFO - Attempting to remove container sweb.eval.sympy__sympy-20212.reevaluation...
+2025-10-04 04:13:35,344 - INFO - Container sweb.eval.sympy__sympy-20212.reevaluation removed.
+2025-10-04 04:13:35,344 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-20212:latest...
+2025-10-04 04:13:35,409 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-20212:latest removed.

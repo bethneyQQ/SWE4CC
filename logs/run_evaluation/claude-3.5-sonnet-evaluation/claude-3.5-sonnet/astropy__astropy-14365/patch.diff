@@ -1,0 +1,21 @@
+
+--- a/astropy/io/ascii/qdp.py
++++ b/astropy/io/ascii/qdp.py
+@@ -60,7 +60,7 @@
+     ValueError: Unrecognized QDP line...
+     """
+     _decimal_re = r"[+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?"
+-    _command_re = r"READ [TS]ERR(\s+[0-9]+)+"
++    _command_re = r"(?i)READ\s+[TS]ERR(\s+[0-9]+)+"
+ 
+     sep = delimiter
+     if delimiter is None:
+@@ -293,7 +293,7 @@
+             # The first time I find data, I define err_specs
+             if err_specs == {} and command_lines != "":
+                 for cline in command_lines.strip().split("\n"):
+-                    command = cline.strip().split()
++                    command = cline.strip().upper().split()
+                     # This should never happen, but just in case.
+                     if len(command) < 3:
+                         continue

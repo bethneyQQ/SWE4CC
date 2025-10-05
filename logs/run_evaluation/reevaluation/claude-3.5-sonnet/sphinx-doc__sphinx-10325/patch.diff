@@ -1,0 +1,20 @@
+Based on my analysis, this is a Sphinx autodoc feature request to allow `inherited-members` to accept multiple class names (comma-separated list) instead of just a single class. 
+
+The key changes needed:
+
+1. **`inherited_members_option` function** (line 262): Modify to parse comma-separated values into a set
+2. **`is_filtered_inherited_member` function** (line 832): Update logic to check if any class in the MRO matches any of the specified classes
+3. Handle the filtering logic properly when multiple classes are provided
+
+Let me create a summary of what needs to be done:
+
+**Summary:**
+
+The issue requests that the `:inherited-members:` option in Sphinx autodoc directives support multiple class names (comma-separated) instead of just one. Currently:
+- When `:inherited-members: ClassName` is used, members inherited from `ClassName` are excluded
+- The request is to allow `:inherited-members: Class1,Class2,Class3` to exclude members from multiple base classes
+
+**Key changes needed:**
+1. Modify `inherited_members_option()` at line 262 to parse comma-separated class names into a set
+2. Update `is_filtered_inherited_member()` at line 832 to check against multiple class names
+3. Ensure the logic handles both single class (backward compatibility) and multiple classes (new feature)

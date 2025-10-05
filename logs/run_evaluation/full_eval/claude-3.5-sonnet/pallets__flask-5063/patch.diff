@@ -1,0 +1,48 @@
+
+--- a/src/flask/cli.py
++++ b/src/flask/cli.py
+@@ -1001,6 +1001,17 @@
+ def routes_command(sort: str, all_methods: bool) -> None:
+     """Show all registered routes with endpoints and methods."""
+ 
++    # Get server name for constructing full domains
++    server_name = current_app.config.get('SERVER_NAME')
++    
++    def get_domain(subdomain):
++        """Construct the full domain from subdomain and SERVER_NAME."""
++        if not subdomain:
++            return server_name or '-'
++        if server_name:
++            return f"{subdomain}.{server_name}"
++        return subdomain
++
+     rules = list(current_app.url_map.iter_rules())
+     if not rules:
+         click.echo("No routes were registered.")
+@@ -1017,18 +1028,22 @@
+         ", ".join(sorted(rule.methods - ignored_methods))  # type: ignore
+         for rule in rules
+     ]
++    
++    rule_domains = [get_domain(rule.subdomain) for rule in rules]
+ 
+-    headers = ("Endpoint", "Methods", "Rule")
++    headers = ("Domain", "Endpoint", "Methods", "Rule")
+     widths = (
++        max(len(domain) for domain in rule_domains),
+         max(len(rule.endpoint) for rule in rules),
+         max(len(methods) for methods in rule_methods),
+         max(len(rule.rule) for rule in rules),
+     )
+     widths = [max(len(h), w) for h, w in zip(headers, widths)]
+-    row = "{{0:<{0}}}  {{1:<{1}}}  {{2:<{2}}}".format(*widths)
++    row = "{{0:<{0}}}  {{1:<{1}}}  {{2:<{2}}}  {{3:<{3}}}".format(*widths)
+ 
+     click.echo(row.format(*headers).strip())
+     click.echo(row.format(*("-" * width for width in widths)))
+ 
+-    for rule, methods in zip(rules, rule_methods):
+-        click.echo(row.format(rule.endpoint, methods, rule.rule).rstrip())
++    for rule, methods, domain in zip(rules, rule_methods, rule_domains):
++        click.echo(row.format(domain, rule.endpoint, methods, rule.rule).rstrip())
++

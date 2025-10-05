@@ -1,0 +1,13 @@
+def __setstate__(self, state):
+    version = state.pop('__mpl_version__')
+    restore_to_pylab = state.pop('_restore_to_pylab', False)
+    
+    # ... version check ...
+    
+    self.__dict__ = state  # Line 3044: Restores figure state including DPI
+    
+    # re-initialise some of the unstored state information
+    FigureCanvasBase(self)  # Line 3047: Creates new canvas
+    
+    if restore_to_pylab:
+        mgr = plt._backend_mod.new_figure_manager_given_figure(num, self)  # Line 3055

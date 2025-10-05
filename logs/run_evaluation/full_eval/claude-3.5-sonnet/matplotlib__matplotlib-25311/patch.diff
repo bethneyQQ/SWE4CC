@@ -1,0 +1,33 @@
+
+--- a/lib/matplotlib/offsetbox.py
++++ b/lib/matplotlib/offsetbox.py
+@@ -1580,6 +1580,28 @@
+     def finalize_offset(self):
+         pass
+ 
++    def __getstate__(self):
++        """
++        Return the state for pickling.
++        
++        Exclude canvas and callback IDs which cannot be pickled.
++        """
++        state = self.__dict__.copy()
++        # Remove unpicklable canvas reference and callback IDs
++        state['canvas'] = None
++        state['cids'] = []
++        # Remove the motion callback ID if it exists
++        state.pop('_c1', None)
++        state.pop('background', None)
++        return state
++
++    def __setstate__(self, state):
++        """Restore the state from pickling."""
++        self.__dict__.update(state)
++        # Reconnect callbacks if ref_artist is part of a figure with a canvas
++        if self.ref_artist.figure is not None and self.ref_artist.figure.canvas is not None:
++            self.canvas = self.ref_artist.figure.canvas
++            self.__init__(self.ref_artist, use_blit=self._use_blit)
++
+ 
+ class DraggableOffsetBox(DraggableBase):
+     def __init__(self, ref_artist, offsetbox, use_blit=False):

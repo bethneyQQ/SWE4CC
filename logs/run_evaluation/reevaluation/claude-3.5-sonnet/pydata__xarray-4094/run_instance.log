@@ -1,0 +1,3949 @@
+2025-10-04 03:58:52,936 - INFO - Creating container for pydata__xarray-4094...
+2025-10-04 03:59:37,768 - INFO - Container for pydata__xarray-4094 created: 00e45001ab7a065a74635fb92581869538b37c7377331c6d3ec3496838f6799a
+2025-10-04 03:59:37,931 - INFO - Container for pydata__xarray-4094 started: 00e45001ab7a065a74635fb92581869538b37c7377331c6d3ec3496838f6799a
+2025-10-04 03:59:37,931 - INFO - Intermediate patch for pydata__xarray-4094 written to logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/patch.diff, now applying to container...
+2025-10-04 03:59:38,017 - INFO - Failed to apply patch to container: git apply --verbose
+2025-10-04 03:59:38,053 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-10-04 03:59:38,094 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-10-04 03:59:38,094 - INFO - >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+2025-10-04 03:59:38,114 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2025-10-04 03:59:38,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,116 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,117 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,118 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,119 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,120 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,121 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,122 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,125 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,126 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,126 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,128 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,128 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,128 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,128 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,128 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,128 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,128 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,128 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,129 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,130 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,150 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,150 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,151 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,151 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,151 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,151 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,151 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,198 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,203 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,205 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,205 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,210 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,218 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,218 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,218 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,218 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,218 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,218 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,218 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,218 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,219 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,220 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,220 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,220 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,220 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,220 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,220 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,220 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,220 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,220 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,221 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,221 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,221 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,221 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,221 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,221 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,221 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,221 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,221 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,222 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,222 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,222 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,222 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,222 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,222 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,222 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,240 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,259 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,259 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,259 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,259 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,260 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,260 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,260 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,260 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,263 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,263 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,264 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,264 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,264 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,264 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,264 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,264 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,264 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,265 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,265 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,265 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,265 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,265 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,265 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,266 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,266 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,266 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,266 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,266 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,266 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,266 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,266 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,266 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,266 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,266 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,267 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,267 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,267 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,267 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,267 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,267 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,267 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,267 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,267 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,268 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,268 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,268 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,268 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,268 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,268 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,268 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,268 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,268 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,268 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,269 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,269 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,269 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,269 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,269 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,269 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,269 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,271 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,271 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,271 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,271 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,271 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,271 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,272 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,292 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2025-10-04 03:59:38,292 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,292 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,292 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,292 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,292 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,292 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,292 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,292 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,293 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,293 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,293 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,293 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,293 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,293 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,293 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,293 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,293 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,293 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,294 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,294 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,294 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,294 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,294 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,294 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,294 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,294 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,294 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,295 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,295 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,295 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,295 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,295 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,295 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,295 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,295 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,295 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,295 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,295 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,296 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,296 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,296 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,296 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,296 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,296 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,296 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,298 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,298 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,298 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,299 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,299 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,299 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,299 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,299 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,299 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,299 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,299 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,299 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,300 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,300 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,300 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,300 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,300 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,300 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,300 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,300 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,300 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,300 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,301 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,301 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,301 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,301 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,301 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,301 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,301 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,301 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,302 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,302 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,302 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,302 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,302 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,302 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,302 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,302 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,302 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,302 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,302 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,303 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,303 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,303 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,303 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,303 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,303 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,303 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,303 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,303 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,304 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,304 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,304 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,304 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,304 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,304 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,304 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,304 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,304 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,305 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,305 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,305 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,305 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,305 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,305 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,305 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,305 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,305 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,305 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,307 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,307 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,307 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,307 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,307 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,307 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,307 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,307 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,307 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,308 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,308 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,308 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,308 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,308 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,308 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,308 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,308 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,308 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,308 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,309 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,309 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,309 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,309 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,309 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,309 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,309 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,316 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,317 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,317 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,317 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,317 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,317 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,317 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,317 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,317 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,321 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,322 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,323 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,323 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,323 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,323 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,323 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,323 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,323 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,328 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,331 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,331 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,331 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,332 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,332 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,332 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,332 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,332 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,333 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,334 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,334 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,334 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,334 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,334 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,335 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,335 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,335 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,335 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,335 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,335 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,335 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,335 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,335 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,336 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,337 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 187, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: pydata__xarray-4094: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/reevaluation/claude-3.5-sonnet/pydata__xarray-4094/run_instance.log) for more information.
+
+2025-10-04 03:59:38,337 - INFO - Attempting to stop container sweb.eval.pydata__xarray-4094.reevaluation...
+2025-10-04 03:59:53,488 - INFO - Attempting to remove container sweb.eval.pydata__xarray-4094.reevaluation...
+2025-10-04 03:59:53,496 - INFO - Container sweb.eval.pydata__xarray-4094.reevaluation removed.
+2025-10-04 03:59:53,496 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.pydata_1776_xarray-4094:latest...
+2025-10-04 03:59:55,580 - INFO - Image swebench/sweb.eval.x86_64.pydata_1776_xarray-4094:latest removed.

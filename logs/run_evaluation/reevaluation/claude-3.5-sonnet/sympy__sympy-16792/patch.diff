@@ -1,0 +1,34 @@
+--- a/sympy/utilities/codegen.py
++++ b/sympy/utilities/codegen.py
+@@ -696,11 +696,28 @@
+ 
+         # setup input argument list
+         array_symbols = {}
++        
++        # Collect array symbols from expressions
+         for array in expressions.atoms(Indexed) | local_expressions.atoms(Indexed):
+             array_symbols[array.base.label] = array
+         for array in expressions.atoms(MatrixSymbol) | local_expressions.atoms(MatrixSymbol):
+             array_symbols[array] = array
+ 
++        # If argument_sequence is provided, also collect array types from there
++        # This ensures that arrays passed as arguments but not used in expressions
++        # are still treated as arrays in the generated code
++        if argument_sequence is not None:
++            for arg in argument_sequence:
++                if isinstance(arg, IndexedBase):
++                    array_symbols[arg.label] = arg
++                elif isinstance(arg, MatrixSymbol):
++                    array_symbols[arg] = arg
++                # Also check if it's a Symbol that matches an IndexedBase label
++                elif isinstance(arg, Symbol):
++                    # This symbol might represent an array; we'll add dimensions later if needed
++                    for sym in symbols:
++                        if sym == arg and isinstance(sym, (IndexedBase, MatrixSymbol)):
++                            array_symbols[arg] = sym
++
+         for symbol in sorted(symbols, key=str):
+             if symbol in array_symbols:
+                 dims = []
+ 
+ 

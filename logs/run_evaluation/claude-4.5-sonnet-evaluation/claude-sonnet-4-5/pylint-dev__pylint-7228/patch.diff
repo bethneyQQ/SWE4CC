@@ -1,0 +1,24 @@
+--- a/pylint/config/arguments_manager.py
++++ b/pylint/config/arguments_manager.py
+@@ -252,9 +252,16 @@
+ 
+     def _parse_configuration_file(self, arguments: list[str]) -> None:
+         """Parse the arguments found in a configuration file into the namespace."""
+-        self.config, parsed_args = self._arg_parser.parse_known_args(
+-            arguments, self.config
+-        )
++        try:
++            self.config, parsed_args = self._arg_parser.parse_known_args(
++                arguments, self.config
++            )
++        except re.error as e:
++            self._arg_parser.error(
++                f"Error in provided regular expression: {str(e).capitalize()} in "
++                f"pattern {e.pattern!r} at position {e.pos}"
++            )
++
+         unrecognized_options: list[str] = []
+         for opt in parsed_args:
+             if opt.startswith("--"):
+ 
+ 

@@ -1,0 +1,60 @@
+2025-10-03 22:08:18,199 - INFO - Creating container for mwaskom__seaborn-3010...
+2025-10-03 22:08:37,642 - INFO - Container for mwaskom__seaborn-3010 created: 389b4723a529a728b39c293d9118f47410ea122de878f1cfbffc028e4c182b56
+2025-10-03 22:08:37,745 - INFO - Container for mwaskom__seaborn-3010 started: 389b4723a529a728b39c293d9118f47410ea122de878f1cfbffc028e4c182b56
+2025-10-03 22:08:37,746 - INFO - Intermediate patch for mwaskom__seaborn-3010 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/mwaskom__seaborn-3010/patch.diff, now applying to container...
+2025-10-03 22:08:37,833 - INFO - >>>>> Applied Patch:
+/tmp/patch.diff:9: trailing whitespace.
+        
+/tmp/patch.diff:14: trailing whitespace.
+        
+Checking patch seaborn/_stats/regression.py...
+Applied patch seaborn/_stats/regression.py cleanly.
+warning: 2 lines add whitespace errors.
+
+2025-10-03 22:08:37,924 - INFO - Git diff before:
+diff --git a/seaborn/_stats/regression.py b/seaborn/_stats/regression.py
+index 7b7ddc8d..8989947f 100644
+--- a/seaborn/_stats/regression.py
++++ b/seaborn/_stats/regression.py
+@@ -23,6 +23,12 @@ class PolyFit(Stat):
+ 
+         x = data["x"]
+         y = data["y"]
++        
++        # Remove missing data
++        mask = pd.notna(x) & pd.notna(y)
++        x = x[mask]
++        y = y[mask]
++        
+         if x.nunique() <= self.order:
+             # TODO warn?
+             xx = yy = []
+2025-10-03 22:08:37,925 - INFO - Eval script for mwaskom__seaborn-3010 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/mwaskom__seaborn-3010/eval.sh; copying to container...
+2025-10-03 22:08:41,269 - INFO - Test runtime: 3.30 seconds
+2025-10-03 22:08:41,269 - INFO - Test output for mwaskom__seaborn-3010 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/mwaskom__seaborn-3010/test_output.txt
+2025-10-03 22:08:41,308 - INFO - Git diff after:
+diff --git a/seaborn/_stats/regression.py b/seaborn/_stats/regression.py
+index 7b7ddc8d..8989947f 100644
+--- a/seaborn/_stats/regression.py
++++ b/seaborn/_stats/regression.py
+@@ -23,6 +23,12 @@ class PolyFit(Stat):
+ 
+         x = data["x"]
+         y = data["y"]
++        
++        # Remove missing data
++        mask = pd.notna(x) & pd.notna(y)
++        x = x[mask]
++        y = y[mask]
++        
+         if x.nunique() <= self.order:
+             # TODO warn?
+             xx = yy = []
+2025-10-03 22:08:41,308 - INFO - Grading answer for mwaskom__seaborn-3010...
+2025-10-03 22:08:41,308 - INFO - report: {'mwaskom__seaborn-3010': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['tests/_stats/test_regression.py::TestPolyFit::test_missing_data'], 'failure': []}, 'PASS_TO_PASS': {'success': ['tests/_stats/test_regression.py::TestPolyFit::test_no_grouper', 'tests/_stats/test_regression.py::TestPolyFit::test_one_grouper'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for mwaskom__seaborn-3010: resolved: True
+2025-10-03 22:08:41,308 - INFO - Attempting to stop container sweb.eval.mwaskom__seaborn-3010.full_eval...
+2025-10-03 22:08:56,440 - INFO - Attempting to remove container sweb.eval.mwaskom__seaborn-3010.full_eval...
+2025-10-03 22:08:56,450 - INFO - Container sweb.eval.mwaskom__seaborn-3010.full_eval removed.
+2025-10-03 22:08:56,450 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.mwaskom_1776_seaborn-3010:latest...
+2025-10-03 22:08:57,552 - INFO - Image swebench/sweb.eval.x86_64.mwaskom_1776_seaborn-3010:latest removed.

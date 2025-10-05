@@ -1,0 +1,21 @@
+--- a/sympy/polys/polytools.py
++++ b/sympy/polys/polytools.py
+@@ -5847,7 +5847,16 @@
+             coeff, factors = f.rep.sqf_list(all)
+         except DomainError:
+             return S.One, [(f, 1)]
+-        return f.per(coeff), [(f.per(g), k) for g, k in factors]
++        
++        # Group factors by multiplicity
++        from collections import defaultdict
++        multiplicity_groups = defaultdict(list)
++        for g, k in factors:
++            multiplicity_groups[k].append(g)
++        
++        # Multiply factors with same multiplicity together
++        result = [(f.per(reduce(lambda a, b: a*b, polys)), k) for k, polys in sorted(multiplicity_groups.items())]
++        return f.per(coeff), result
+ 
+     def sqf_norm(f):
+         """
+ ```

@@ -1,0 +1,254 @@
+<frozen runpy>:128: RuntimeWarning: 'swebench.harness.run_evaluation' found in sys.modules after import of package 'swebench.harness', but prior to execution of 'swebench.harness.run_evaluation'; this may result in unpredictable behaviour
+Found 5 existing instance images. Will reuse them.
+Running 71 instances...
+Evaluation:   0%|          | 0/71 [00:00<?, ?it/s, error=0, ✓=0, ✖=0]Evaluation:   0%|          | 0/71 [00:20<?, ?it/s, ✓=0, ✖=0, error=1]Evaluation:   1%|▏         | 1/71 [00:20<23:56, 20.53s/it, ✓=0, ✖=0, error=1]Evaluation:   1%|▏         | 1/71 [00:42<23:56, 20.53s/it, ✓=1, ✖=0, error=1]Evaluation:   3%|▎         | 2/71 [00:42<24:19, 21.15s/it, ✓=1, ✖=0, error=1]Evaluation:   3%|▎         | 2/71 [00:42<24:19, 21.15s/it, ✓=2, ✖=0, error=1]Evaluation:   4%|▍         | 3/71 [00:42<13:06, 11.56s/it, ✓=2, ✖=0, error=1]Evaluation:   4%|▍         | 3/71 [00:54<13:06, 11.56s/it, ✓=2, ✖=1, error=1]Evaluation:   6%|▌         | 4/71 [00:54<13:11, 11.82s/it, ✓=2, ✖=1, error=1]Evaluation:   6%|▌         | 4/71 [00:54<13:11, 11.82s/it, ✓=2, ✖=2, error=1]Evaluation:   7%|▋         | 5/71 [00:54<08:22,  7.61s/it, ✓=2, ✖=2, error=1]Evaluation:   7%|▋         | 5/71 [01:28<08:22,  7.61s/it, ✓=3, ✖=2, error=1]Evaluation:   8%|▊         | 6/71 [01:28<18:00, 16.62s/it, ✓=3, ✖=2, error=1]Evaluation:   8%|▊         | 6/71 [01:29<18:00, 16.62s/it, ✓=4, ✖=2, error=1]Evaluation:  10%|▉         | 7/71 [01:29<12:01, 11.28s/it, ✓=4, ✖=2, error=1]Evaluation:  10%|▉         | 7/71 [01:45<12:01, 11.28s/it, ✓=4, ✖=3, error=1]Evaluation:  11%|█▏        | 8/71 [01:45<13:38, 12.99s/it, ✓=4, ✖=3, error=1]Evaluation:  11%|█▏        | 8/71 [01:47<13:38, 12.99s/it, ✓=4, ✖=4, error=1]Evaluation:  13%|█▎        | 9/71 [01:47<09:42,  9.39s/it, ✓=4, ✖=4, error=1]Evaluation:  13%|█▎        | 9/71 [01:56<09:42,  9.39s/it, ✓=4, ✖=4, error=2]Evaluation:  14%|█▍        | 10/71 [01:56<09:35,  9.43s/it, ✓=4, ✖=4, error=2]Evaluation:  14%|█▍        | 10/71 [02:04<09:35,  9.43s/it, ✓=4, ✖=5, error=2]Evaluation:  15%|█▌        | 11/71 [02:04<09:04,  9.08s/it, ✓=4, ✖=5, error=2]Evaluation:  15%|█▌        | 11/71 [02:12<09:04,  9.08s/it, ✓=4, ✖=5, error=3]Evaluation:  17%|█▋        | 12/71 [02:12<08:20,  8.48s/it, ✓=4, ✖=5, error=3]Evaluation:  17%|█▋        | 12/71 [02:19<08:20,  8.48s/it, ✓=5, ✖=5, error=3]Evaluation:  18%|█▊        | 13/71 [02:19<07:48,  8.07s/it, ✓=5, ✖=5, error=3]Evaluation:  18%|█▊        | 13/71 [02:25<07:48,  8.07s/it, ✓=6, ✖=5, error=3]Evaluation:  20%|█▉        | 14/71 [02:25<07:12,  7.60s/it, ✓=6, ✖=5, error=3]Evaluation:  20%|█▉        | 14/71 [02:28<07:12,  7.60s/it, ✓=6, ✖=5, error=4]Evaluation:  21%|██        | 15/71 [02:28<05:36,  6.01s/it, ✓=6, ✖=5, error=4]Evaluation:  21%|██        | 15/71 [02:38<05:36,  6.01s/it, ✓=7, ✖=5, error=4]Evaluation:  23%|██▎       | 16/71 [02:38<06:49,  7.44s/it, ✓=7, ✖=5, error=4]Evaluation:  23%|██▎       | 16/71 [02:46<06:49,  7.44s/it, ✓=7, ✖=6, error=4]Evaluation:  24%|██▍       | 17/71 [02:46<06:45,  7.52s/it, ✓=7, ✖=6, error=4]Evaluation:  24%|██▍       | 17/71 [03:11<06:45,  7.52s/it, ✓=7, ✖=7, error=4]Evaluation:  25%|██▌       | 18/71 [03:11<11:17, 12.79s/it, ✓=7, ✖=7, error=4]Evaluation:  25%|██▌       | 18/71 [03:11<11:17, 12.79s/it, ✓=7, ✖=8, error=4]Evaluation:  27%|██▋       | 19/71 [03:11<07:48,  9.00s/it, ✓=7, ✖=8, error=4]Evaluation:  27%|██▋       | 19/71 [03:44<07:48,  9.00s/it, ✓=8, ✖=8, error=4]Evaluation:  28%|██▊       | 20/71 [03:44<13:42, 16.13s/it, ✓=8, ✖=8, error=4]Evaluation:  28%|██▊       | 20/71 [03:44<13:42, 16.13s/it, ✓=9, ✖=8, error=4]Evaluation:  30%|██▉       | 21/71 [03:44<09:26, 11.33s/it, ✓=9, ✖=8, error=4]Evaluation:  30%|██▉       | 21/71 [04:12<09:26, 11.33s/it, ✓=9, ✖=8, error=5]Evaluation:  31%|███       | 22/71 [04:12<13:20, 16.34s/it, ✓=9, ✖=8, error=5]Evaluation:  31%|███       | 22/71 [04:13<13:20, 16.34s/it, ✓=10, ✖=8, error=5]Evaluation:  32%|███▏      | 23/71 [04:13<09:14, 11.55s/it, ✓=10, ✖=8, error=5]Evaluation:  32%|███▏      | 23/71 [04:24<09:14, 11.55s/it, ✓=10, ✖=9, error=5]Evaluation:  34%|███▍      | 24/71 [04:24<09:04, 11.58s/it, ✓=10, ✖=9, error=5]Evaluation:  34%|███▍      | 24/71 [04:24<09:04, 11.58s/it, ✓=11, ✖=9, error=5]Evaluation:  35%|███▌      | 25/71 [04:24<06:15,  8.16s/it, ✓=11, ✖=9, error=5]Evaluation:  35%|███▌      | 25/71 [04:58<06:15,  8.16s/it, ✓=11, ✖=10, error=5]Evaluation:  37%|███▋      | 26/71 [04:58<11:53, 15.86s/it, ✓=11, ✖=10, error=5]Evaluation:  37%|███▋      | 26/71 [05:22<11:53, 15.86s/it, ✓=12, ✖=10, error=5]Evaluation:  38%|███▊      | 27/71 [05:22<13:24, 18.29s/it, ✓=12, ✖=10, error=5]Evaluation:  38%|███▊      | 27/71 [05:27<13:24, 18.29s/it, ✓=13, ✖=10, error=5]Evaluation:  39%|███▉      | 28/71 [05:27<10:16, 14.34s/it, ✓=13, ✖=10, error=5]Evaluation:  39%|███▉      | 28/71 [05:28<10:16, 14.34s/it, ✓=13, ✖=11, error=5]Evaluation:  41%|████      | 29/71 [05:28<07:08, 10.21s/it, ✓=13, ✖=11, error=5]Evaluation:  41%|████      | 29/71 [06:08<07:08, 10.21s/it, ✓=13, ✖=11, error=6]Evaluation:  42%|████▏     | 30/71 [06:08<13:10, 19.28s/it, ✓=13, ✖=11, error=6]Evaluation:  42%|████▏     | 30/71 [06:08<13:10, 19.28s/it, ✓=13, ✖=12, error=6]Evaluation:  44%|████▎     | 31/71 [06:08<09:01, 13.53s/it, ✓=13, ✖=12, error=6]Evaluation:  44%|████▎     | 31/71 [06:09<09:01, 13.53s/it, ✓=14, ✖=12, error=6]Evaluation:  45%|████▌     | 32/71 [06:09<06:15,  9.63s/it, ✓=14, ✖=12, error=6]Evaluation:  45%|████▌     | 32/71 [07:51<06:15,  9.63s/it, ✓=14, ✖=13, error=6]Evaluation:  46%|████▋     | 33/71 [07:51<23:36, 37.27s/it, ✓=14, ✖=13, error=6]Evaluation:  46%|████▋     | 33/71 [08:08<23:36, 37.27s/it, ✓=14, ✖=13, error=7]Evaluation:  48%|████▊     | 34/71 [08:08<19:20, 31.38s/it, ✓=14, ✖=13, error=7]Evaluation:  48%|████▊     | 34/71 [08:08<19:20, 31.38s/it, ✓=14, ✖=13, error=8]Evaluation:  49%|████▉     | 35/71 [08:08<13:12, 22.01s/it, ✓=14, ✖=13, error=8]Evaluation:  49%|████▉     | 35/71 [08:10<13:12, 22.01s/it, ✓=14, ✖=14, error=8]Evaluation:  51%|█████     | 36/71 [08:10<09:12, 15.78s/it, ✓=14, ✖=14, error=8]Evaluation:  51%|█████     | 36/71 [08:11<09:12, 15.78s/it, ✓=15, ✖=14, error=8]Evaluation:  52%|█████▏    | 37/71 [08:11<06:24, 11.30s/it, ✓=15, ✖=14, error=8]Evaluation:  52%|█████▏    | 37/71 [09:06<06:24, 11.30s/it, ✓=15, ✖=15, error=8]Evaluation:  54%|█████▎    | 38/71 [09:06<13:31, 24.60s/it, ✓=15, ✖=15, error=8]Evaluation:  54%|█████▎    | 38/71 [09:06<13:31, 24.60s/it, ✓=16, ✖=15, error=8]Exception ignored in: <finalize object at 0x749a0371ab40; dead>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/weakref.py", line 590, in __call__
+    return info.func(*info.args, **(info.kwargs or {}))
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1174, in _close_pool_connections
+    conn = pool.get(block=False)
+  File "/home/zqq/miniconda/lib/python3.13/queue.py", line 194, in get
+    with self.not_empty:
+RecursionError: maximum recursion depth exceeded
+Exception ignored in: <finalize object at 0x749a0371a700; dead>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/weakref.py", line 590, in __call__
+    return info.func(*info.args, **(info.kwargs or {}))
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1174, in _close_pool_connections
+    conn = pool.get(block=False)
+  File "/home/zqq/miniconda/lib/python3.13/queue.py", line 194, in get
+    with self.not_empty:
+RecursionError: maximum recursion depth exceeded
+Exception ignored in: <finalize object at 0x749a0371b680; dead>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/weakref.py", line 590, in __call__
+    return info.func(*info.args, **(info.kwargs or {}))
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1174, in _close_pool_connections
+    conn = pool.get(block=False)
+  File "/home/zqq/miniconda/lib/python3.13/queue.py", line 194, in get
+    with self.not_empty:
+RecursionError: maximum recursion depth exceeded
+Exception ignored in: <finalize object at 0x749a0371b420; dead>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/weakref.py", line 590, in __call__
+    return info.func(*info.args, **(info.kwargs or {}))
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1174, in _close_pool_connections
+    conn = pool.get(block=False)
+  File "/home/zqq/miniconda/lib/python3.13/queue.py", line 194, in get
+    with self.not_empty:
+RecursionError: maximum recursion depth exceeded
+Exception ignored in: <finalize object at 0x749a12287060; dead>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/weakref.py", line 590, in __call__
+    return info.func(*info.args, **(info.kwargs or {}))
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1174, in _close_pool_connections
+    conn = pool.get(block=False)
+  File "/home/zqq/miniconda/lib/python3.13/queue.py", line 194, in get
+    with self.not_empty:
+RecursionError: maximum recursion depth exceeded
+Exception ignored in: <http.client.HTTPResponse object at 0x749a036e8f70>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 435, in close
+    self._close_conn()
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 428, in _close_conn
+    fp.close()
+  File "/home/zqq/miniconda/lib/python3.13/socket.py", line 789, in close
+    self._sock._decref_socketios()
+RecursionError: maximum recursion depth exceeded
+Exception ignored in: <http.client.HTTPResponse object at 0x749a036e3820>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 435, in close
+    self._close_conn()
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 428, in _close_conn
+    fp.close()
+  File "/home/zqq/miniconda/lib/python3.13/socket.py", line 789, in close
+    self._sock._decref_socketios()
+RecursionError: maximum recursion depth exceeded
+Exception ignored in: <http.client.HTTPResponse object at 0x749a036e38b0>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 435, in close
+    self._close_conn()
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 428, in _close_conn
+    fp.close()
+  File "/home/zqq/miniconda/lib/python3.13/socket.py", line 789, in close
+    self._sock._decref_socketios()
+RecursionError: maximum recursion depth exceeded
+Exception ignored in: <http.client.HTTPResponse object at 0x749a036ea890>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 435, in close
+    self._close_conn()
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 428, in _close_conn
+    fp.close()
+  File "/home/zqq/miniconda/lib/python3.13/socket.py", line 789, in close
+    self._sock._decref_socketios()
+RecursionError: maximum recursion depth exceeded
+Exception ignored in: <http.client.HTTPResponse object at 0x749a122bbc70>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 435, in close
+    self._close_conn()
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 428, in _close_conn
+    fp.close()
+  File "/home/zqq/miniconda/lib/python3.13/socket.py", line 789, in close
+    self._sock._decref_socketios()
+RecursionError: maximum recursion depth exceeded
+Evaluation:  55%|█████▍    | 39/71 [09:34<13:07, 24.60s/it, ✓=16, ✖=15, error=9]Evaluation:  56%|█████▋    | 40/71 [09:34<10:06, 19.58s/it, ✓=16, ✖=15, error=9]Evaluation:  56%|█████▋    | 40/71 [09:34<10:06, 19.58s/it, ✓=17, ✖=15, error=9]Evaluation:  58%|█████▊    | 41/71 [09:34<07:26, 14.90s/it, ✓=17, ✖=15, error=9]Evaluation:  58%|█████▊    | 41/71 [09:53<07:26, 14.90s/it, ✓=18, ✖=15, error=9]Evaluation:  59%|█████▉    | 42/71 [09:53<07:43, 15.99s/it, ✓=18, ✖=15, error=9]Evaluation:  59%|█████▉    | 42/71 [09:57<07:43, 15.99s/it, ✓=18, ✖=16, error=9]Evaluation:  61%|██████    | 43/71 [09:57<05:55, 12.69s/it, ✓=18, ✖=16, error=9]Evaluation:  61%|██████    | 43/71 [10:33<05:55, 12.69s/it, ✓=18, ✖=16, error=10]Evaluation:  62%|██████▏   | 44/71 [10:33<08:39, 19.23s/it, ✓=18, ✖=16, error=10]Evaluation:  62%|██████▏   | 44/71 [10:34<08:39, 19.23s/it, ✓=18, ✖=17, error=10]Evaluation:  63%|██████▎   | 45/71 [10:34<05:59, 13.83s/it, ✓=18, ✖=17, error=10]Evaluation:  63%|██████▎   | 45/71 [11:21<05:59, 13.83s/it, ✓=18, ✖=17, error=11]Evaluation:  65%|██████▍   | 46/71 [11:21<09:48, 23.53s/it, ✓=18, ✖=17, error=11]Evaluation:  65%|██████▍   | 46/71 [11:22<09:48, 23.53s/it, ✓=18, ✖=18, error=11]Evaluation:  66%|██████▌   | 47/71 [11:22<06:44, 16.87s/it, ✓=18, ✖=18, error=11]Evaluation:  66%|██████▌   | 47/71 [11:48<06:44, 16.87s/it, ✓=18, ✖=19, error=11]Evaluation:  68%|██████▊   | 48/71 [11:48<07:33, 19.72s/it, ✓=18, ✖=19, error=11]Evaluation:  68%|██████▊   | 48/71 [11:50<07:33, 19.72s/it, ✓=19, ✖=19, error=11]Evaluation:  69%|██████▉   | 49/71 [11:50<05:14, 14.30s/it, ✓=19, ✖=19, error=11]Evaluation:  69%|██████▉   | 49/71 [12:20<05:14, 14.30s/it, ✓=20, ✖=19, error=11]Evaluation:  70%|███████   | 50/71 [12:20<06:42, 19.18s/it, ✓=20, ✖=19, error=11]Evaluation:  70%|███████   | 50/71 [12:20<06:42, 19.18s/it, ✓=21, ✖=19, error=11]Exception ignored in: <urllib3.response.HTTPResponse object at 0x749a036ab6a0>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/urllib3/response.py", line 1113, in close
+    self._fp.close()
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 432, in close
+    super().close() # set "closed" flag
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 445, in flush
+    self.fp.flush()
+ValueError: I/O operation on closed file.
+Exception ignored in: <urllib3.response.HTTPResponse object at 0x749a036a9d50>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/urllib3/response.py", line 1113, in close
+    self._fp.close()
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 432, in close
+    super().close() # set "closed" flag
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 445, in flush
+    self.fp.flush()
+ValueError: I/O operation on closed file.
+Exception ignored in: <urllib3.response.HTTPResponse object at 0x749a036e0940>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/urllib3/response.py", line 1113, in close
+    self._fp.close()
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 432, in close
+    super().close() # set "closed" flag
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 445, in flush
+    self.fp.flush()
+ValueError: I/O operation on closed file.
+Exception ignored in: <urllib3.response.HTTPResponse object at 0x749a036e9b40>
+Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/urllib3/response.py", line 1113, in close
+    self._fp.close()
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 432, in close
+    super().close() # set "closed" flag
+  File "/home/zqq/miniconda/lib/python3.13/http/client.py", line 445, in flush
+    self.fp.flush()
+ValueError: I/O operation on closed file.
+Evaluation:  72%|███████▏  | 51/71 [13:12<06:23, 19.18s/it, ✓=22, ✖=19, error=11]Evaluation:  73%|███████▎  | 52/71 [13:12<07:01, 22.19s/it, ✓=22, ✖=19, error=11]Evaluation:  73%|███████▎  | 52/71 [13:12<07:01, 22.19s/it, ✓=22, ✖=20, error=11]Evaluation:  75%|███████▍  | 53/71 [13:12<05:03, 16.86s/it, ✓=22, ✖=20, error=11]Evaluation:  75%|███████▍  | 53/71 [13:43<05:03, 16.86s/it, ✓=22, ✖=20, error=12]Evaluation:  76%|███████▌  | 54/71 [13:43<05:47, 20.47s/it, ✓=22, ✖=20, error=12]Evaluation:  76%|███████▌  | 54/71 [13:44<05:47, 20.47s/it, ✓=22, ✖=20, error=13]Evaluation:  77%|███████▋  | 55/71 [13:44<04:03, 15.24s/it, ✓=22, ✖=20, error=13]Evaluation:  77%|███████▋  | 55/71 [14:04<04:03, 15.24s/it, ✓=23, ✖=20, error=13]Evaluation:  79%|███████▉  | 56/71 [14:04<04:07, 16.49s/it, ✓=23, ✖=20, error=13]Evaluation:  79%|███████▉  | 56/71 [14:05<04:07, 16.49s/it, ✓=23, ✖=21, error=13]Evaluation:  80%|████████  | 57/71 [14:05<02:46, 11.92s/it, ✓=23, ✖=21, error=13]Evaluation:  80%|████████  | 57/71 [14:21<02:46, 11.92s/it, ✓=23, ✖=22, error=13]Evaluation:  82%|████████▏ | 58/71 [14:21<02:53, 13.35s/it, ✓=23, ✖=22, error=13]Evaluation:  82%|████████▏ | 58/71 [14:23<02:53, 13.35s/it, ✓=23, ✖=23, error=13]Evaluation:  83%|████████▎ | 59/71 [14:23<01:58,  9.89s/it, ✓=23, ✖=23, error=13]Evaluation:  83%|████████▎ | 59/71 [14:40<01:58,  9.89s/it, ✓=24, ✖=23, error=13]Evaluation:  85%|████████▍ | 60/71 [14:40<02:13, 12.11s/it, ✓=24, ✖=23, error=13]Evaluation:  85%|████████▍ | 60/71 [14:41<02:13, 12.11s/it, ✓=24, ✖=24, error=13]Evaluation:  86%|████████▌ | 61/71 [14:41<01:25,  8.59s/it, ✓=24, ✖=24, error=13]Evaluation:  86%|████████▌ | 61/71 [14:46<01:25,  8.59s/it, ✓=24, ✖=24, error=14]Evaluation:  87%|████████▋ | 62/71 [14:46<01:09,  7.76s/it, ✓=24, ✖=24, error=14]Evaluation:  87%|████████▋ | 62/71 [14:47<01:09,  7.76s/it, ✓=24, ✖=25, error=14]Evaluation:  89%|████████▊ | 63/71 [14:47<00:44,  5.55s/it, ✓=24, ✖=25, error=14]Evaluation:  89%|████████▊ | 63/71 [15:07<00:44,  5.55s/it, ✓=25, ✖=25, error=14]Evaluation:  90%|█████████ | 64/71 [15:07<01:08,  9.80s/it, ✓=25, ✖=25, error=14]Evaluation:  90%|█████████ | 64/71 [15:11<01:08,  9.80s/it, ✓=25, ✖=25, error=15]Evaluation:  92%|█████████▏| 65/71 [15:11<00:48,  8.10s/it, ✓=25, ✖=25, error=15]Evaluation:  92%|█████████▏| 65/71 [15:16<00:48,  8.10s/it, ✓=25, ✖=26, error=15]Evaluation:  93%|█████████▎| 66/71 [15:16<00:37,  7.40s/it, ✓=25, ✖=26, error=15]Evaluation:  93%|█████████▎| 66/71 [15:18<00:37,  7.40s/it, ✓=26, ✖=26, error=15]Evaluation:  94%|█████████▍| 67/71 [15:18<00:22,  5.55s/it, ✓=26, ✖=26, error=15]Evaluation:  94%|█████████▍| 67/71 [15:31<00:22,  5.55s/it, ✓=26, ✖=27, error=15]Evaluation:  96%|█████████▌| 68/71 [15:31<00:23,  7.91s/it, ✓=26, ✖=27, error=15]Evaluation:  96%|█████████▌| 68/71 [15:41<00:23,  7.91s/it, ✓=27, ✖=27, error=15]Evaluation:  97%|█████████▋| 69/71 [15:41<00:17,  8.61s/it, ✓=27, ✖=27, error=15]Evaluation:  97%|█████████▋| 69/71 [15:42<00:17,  8.61s/it, ✓=27, ✖=28, error=15]Evaluation:  99%|█████████▊| 70/71 [15:42<00:06,  6.28s/it, ✓=27, ✖=28, error=15]Evaluation:  99%|█████████▊| 70/71 [15:43<00:06,  6.28s/it, ✓=28, ✖=28, error=15]Evaluation: 100%|██████████| 71/71 [15:43<00:00,  4.55s/it, ✓=28, ✖=28, error=15]Evaluation: 100%|██████████| 71/71 [15:43<00:00, 13.28s/it, ✓=28, ✖=28, error=15]
+django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #1 succeeded at 60 with fuzz 1.
+Hunk #2 FAILED at 175.
+1 out of 2 hunks FAILED -- saving rejects to file django/forms/widgets.py.rej
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/django__django-11019/run_instance.log) for more information.
+django__django-13230: >>>>> Patch Apply Failed:
+patching file django/contrib/syndication/views.py
+patch: **** malformed patch at line 9:              else:
+
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/django__django-13230/run_instance.log) for more information.
+django__django-13448: >>>>> Patch Apply Failed:
+patching file django/db/backends/base/creation.py
+Hunk #1 FAILED at 61.
+1 out of 1 hunk FAILED -- saving rejects to file django/db/backends/base/creation.py.rej
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/django__django-13448/run_instance.log) for more information.
+django__django-13933: >>>>> Patch Apply Failed:
+patching file django/forms/models.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #2 FAILED at 1284.
+1 out of 2 hunks FAILED -- saving rejects to file django/forms/models.py.rej
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/django__django-13933/run_instance.log) for more information.
+django__django-15819: >>>>> Patch Apply Failed:
+patching file django/core/management/commands/inspectdb.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #2 FAILED at 182.
+1 out of 2 hunks FAILED -- saving rejects to file django/core/management/commands/inspectdb.py.rej
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/django__django-15819/run_instance.log) for more information.
+matplotlib__matplotlib-23913: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/legend.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #1 succeeded at 285 with fuzz 1.
+Hunk #2 succeeded at 339 with fuzz 3 (offset -4 lines).
+Hunk #3 FAILED at 543.
+1 out of 3 hunks FAILED -- saving rejects to file lib/matplotlib/legend.py.rej
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/matplotlib__matplotlib-23913/run_instance.log) for more information.
+matplotlib__matplotlib-26011: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/axis.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #3 FAILED at 1236.
+1 out of 3 hunks FAILED -- saving rejects to file lib/matplotlib/axis.py.rej
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/matplotlib__matplotlib-26011/run_instance.log) for more information.
+pallets__flask-4992: >>>>> Patch Apply Failed:
+patching file src/flask/config.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #1 succeeded at 232 with fuzz 4.
+Hunk #2 succeeded at 245 with fuzz 1.
+Hunk #3 succeeded at 254 (offset -1 lines).
+Hunk #4 FAILED at 262.
+1 out of 4 hunks FAILED -- saving rejects to file src/flask/config.py.rej
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/pallets__flask-4992/run_instance.log) for more information.
+pydata__xarray-3364: >>>>> Patch Apply Failed:
+patching file xarray/core/concat.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #2 succeeded at 310 with fuzz 2.
+Hunk #3 FAILED at 359.
+1 out of 3 hunks FAILED -- saving rejects to file xarray/core/concat.py.rej
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/pydata__xarray-3364/run_instance.log) for more information.
+pytest-dev__pytest-5692: >>>>> Patch Apply Failed:
+patching file src/_pytest/junitxml.py
+Hunk #1 succeeded at 10 with fuzz 2.
+patch: **** malformed patch at line 17:          dirname = os.path.dirname(os.path.abspath(self.logfile))
+
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/pytest-dev__pytest-5692/run_instance.log) for more information.
+pytest-dev__pytest-9359: >>>>> Patch Apply Failed:
+patching file src/_pytest/_code/source.py
+patch: **** malformed patch at line 9:          if isinstance(x, (ast.stmt, ast.ExceptHandler)):
+
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/pytest-dev__pytest-9359/run_instance.log) for more information.
+scikit-learn__scikit-learn-25638: >>>>> Patch Apply Failed:
+patching file sklearn/utils/multiclass.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #3 FAILED at 307.
+1 out of 3 hunks FAILED -- saving rejects to file sklearn/utils/multiclass.py.rej
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/scikit-learn__scikit-learn-25638/run_instance.log) for more information.
+scikit-learn__scikit-learn-25500: >>>>> Patch Apply Failed:
+patching file sklearn/isotonic.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+misordered hunks! output would be garbled
+Hunk #3 FAILED at 395.
+1 out of 3 hunks FAILED -- saving rejects to file sklearn/isotonic.py.rej
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/scikit-learn__scikit-learn-25500/run_instance.log) for more information.
+sympy__sympy-15011: >>>>> Patch Apply Failed:
+patching file sympy/utilities/lambdify.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #2 FAILED at 737.
+1 out of 2 hunks FAILED -- saving rejects to file sympy/utilities/lambdify.py.rej
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/sympy__sympy-15011/run_instance.log) for more information.
+sympy__sympy-19007: >>>>> Patch Apply Failed:
+patching file sympy/matrices/expressions/blockmatrix.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #2 FAILED at 233.
+1 out of 2 hunks FAILED -- saving rejects to file sympy/matrices/expressions/blockmatrix.py.rej
+
+Check (logs/run_evaluation/malformed-hunk-fixed/claude-sonnet-4-5/sympy__sympy-19007/run_instance.log) for more information.
+All instances run.
+Cleaning cached images...
+Removed 0 images.
+Total instances: 71
+Instances submitted: 71
+Instances completed: 56
+Instances incomplete: 0
+Instances resolved: 28
+Instances unresolved: 28
+Instances with empty patches: 0
+Instances with errors: 15
+Unstopped containers: 0
+Unremoved images: 5
+Report written to claude-sonnet-4-5.malformed-hunk-fixed.json

@@ -1,0 +1,45 @@
+--- a/lib/matplotlib/axis.py
++++ b/lib/matplotlib/axis.py
+@@ -5,6 +5,7 @@
+ import datetime
+ import functools
+ import logging
++from dataclasses import dataclass
+ from numbers import Real
+ 
+ import numpy as np
+@@ -39,6 +40,11 @@ _MARKER_DICT = {
+ }
+ 
+ 
++@dataclass(frozen=True)
++class _RecursionSentinel:
++    """Sentinel to prevent infinite recursion in shared axes limit setting."""
++    event_src: object
++
++
+ class Tick(martist.Artist):
+     """
+     Abstract base class for the axis ticks, grid lines and labels.
+@@ -1237,12 +1243,17 @@ class Axis(martist.Artist):
+         if auto is not None:
+             self._set_autoscale_on(bool(auto))
+ 
+-        if emit:
++        if emit and emit != _RecursionSentinel(self.axes):
+             self.axes.callbacks.process(f"{name}lim_changed", self.axes)
+             # Call all of the other axes that are shared with this one
+             for other in self._get_shared_axes():
+                 if other is not self.axes:
++                    # Pass a sentinel to allow callbacks to fire but prevent
++                    # infinite recursion through the shared axes chain.
++                    if not isinstance(emit, _RecursionSentinel):
++                        emit = _RecursionSentinel(self.axes)
+                     other._axis_map[name]._set_lim(
+-                        v0, v1, emit=False, auto=auto)
++                        v0, v1, emit=emit, auto=auto)
+                     if other.figure != self.figure:
+                         other.figure.canvas.draw_idle()
+ 
+ 
+ 

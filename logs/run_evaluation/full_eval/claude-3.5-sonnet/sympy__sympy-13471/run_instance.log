@@ -1,0 +1,3949 @@
+2025-10-04 00:03:17,364 - INFO - Creating container for sympy__sympy-13471...
+2025-10-04 00:03:36,871 - INFO - Container for sympy__sympy-13471 created: aa66bf31dd5f2cb5470f0c76094dea21f29dbd37cf74a9d13c2a5313264a1fc3
+2025-10-04 00:03:36,977 - INFO - Container for sympy__sympy-13471 started: aa66bf31dd5f2cb5470f0c76094dea21f29dbd37cf74a9d13c2a5313264a1fc3
+2025-10-04 00:03:36,977 - INFO - Intermediate patch for sympy__sympy-13471 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/patch.diff, now applying to container...
+2025-10-04 00:03:37,063 - INFO - Failed to apply patch to container: git apply --verbose
+2025-10-04 00:03:37,100 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2025-10-04 00:03:37,140 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2025-10-04 00:03:37,141 - INFO - >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+2025-10-04 00:03:37,158 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2025-10-04 00:03:37,158 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,158 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,159 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,159 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,159 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,159 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,159 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,159 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,159 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,159 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,159 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,160 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,160 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,160 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,160 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,160 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,160 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,160 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,160 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,160 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,160 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,160 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,161 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,161 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,161 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,161 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,161 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,161 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,161 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,161 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,161 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,161 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,161 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,162 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,162 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,162 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,162 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,162 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,162 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,162 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,162 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,162 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,163 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,163 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,163 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,163 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,163 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,163 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,163 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,163 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,163 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,163 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,164 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,164 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,164 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,164 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,164 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,164 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,164 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,164 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,164 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,165 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,165 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,165 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,165 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,165 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,165 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,165 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,165 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,165 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,165 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,165 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,166 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,166 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,166 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,166 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,166 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,166 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,166 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,166 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,166 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,166 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,166 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,167 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,167 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,167 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,167 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,167 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,167 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,167 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,167 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,167 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,167 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,168 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,168 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,168 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,168 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,168 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,168 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,168 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,168 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,168 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,168 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,169 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,169 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,169 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,169 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,169 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,169 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,169 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,169 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,169 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,169 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,169 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,170 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,170 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,170 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,170 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,170 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,170 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,170 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,170 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,170 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,170 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,171 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,171 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,171 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,171 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,171 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,171 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,171 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,171 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,171 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,171 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,172 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,172 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,172 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,172 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,172 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,172 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,172 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,172 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,172 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,172 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,173 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,173 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,173 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,173 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,173 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,173 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,173 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,173 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,173 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,173 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,174 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,174 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,174 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,174 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,174 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,174 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,174 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,174 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,174 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,174 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,174 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,175 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,175 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,175 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,175 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,175 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,175 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,175 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,175 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,175 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,175 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,175 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,176 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,176 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,176 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,176 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,176 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,176 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,176 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,176 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,176 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,176 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,177 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,177 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,177 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,177 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,177 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,177 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,177 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,177 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,177 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,177 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,195 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2025-10-04 00:03:37,195 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,195 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,195 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,195 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,195 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,195 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,195 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,196 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,196 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,196 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,196 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,196 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,196 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,196 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,196 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,196 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,196 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,197 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,197 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,197 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,197 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,197 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,197 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,197 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,197 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,197 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,197 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,198 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,198 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,198 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,198 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,198 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,198 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,198 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,198 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,198 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,198 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,198 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,199 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,199 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,199 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,199 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,199 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,199 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,199 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,199 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,199 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,199 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,199 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,200 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,200 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,200 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,200 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,200 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,200 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,200 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,200 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,200 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,201 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,201 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,201 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,201 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,201 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,201 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,201 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,201 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,201 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,201 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,201 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,202 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,202 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,202 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,202 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,202 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,202 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,202 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,202 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,202 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,202 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,203 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,203 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,203 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,203 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,203 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,203 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,203 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,203 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,203 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,203 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,204 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,205 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,205 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,205 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,205 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,205 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,205 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,205 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,205 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,205 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,205 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,206 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,207 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,207 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,207 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,207 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,207 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,207 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,207 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,207 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,207 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,207 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,207 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,207 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,208 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,208 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,208 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,208 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,208 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,208 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,208 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,208 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,208 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,209 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,209 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,209 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,209 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,209 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,209 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,209 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,209 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,209 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,210 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,210 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,210 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,210 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,210 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,210 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,210 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,210 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,210 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,210 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,210 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,211 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,212 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,212 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,212 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,212 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,212 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,212 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,212 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,212 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,212 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,212 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,213 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,213 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,213 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,213 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,213 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,213 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,213 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,213 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,213 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,213 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,213 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,214 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,214 - INFO - Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+    ...<3 lines>...
+    )
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patch: **** Only garbage was found in the patch input.
+
+Check (logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-13471/run_instance.log) for more information.
+
+2025-10-04 00:03:37,214 - INFO - Attempting to stop container sweb.eval.sympy__sympy-13471.full_eval...
+2025-10-04 00:03:52,344 - INFO - Attempting to remove container sweb.eval.sympy__sympy-13471.full_eval...
+2025-10-04 00:03:52,353 - INFO - Container sweb.eval.sympy__sympy-13471.full_eval removed.
+2025-10-04 00:03:52,353 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-13471:latest...
+2025-10-04 00:03:53,310 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-13471:latest removed.

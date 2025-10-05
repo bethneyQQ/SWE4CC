@@ -1,0 +1,82 @@
+
+--- a/pylint/config/argument.py
++++ b/pylint/config/argument.py
+@@ -100,11 +100,28 @@
+ 
+ 
+ def _regexp_csv_transfomer(value: str) -> Sequence[Pattern[str]]:
+-    """Transforms a comma separated list of regular expressions."""
++    """Transforms a comma separated list of regular expressions.
++    
++    Raises:
++        argparse.ArgumentTypeError: If a pattern cannot be compiled.
++    """
+     patterns: list[Pattern[str]] = []
+     for pattern in _csv_transformer(value):
+-        patterns.append(re.compile(pattern))
++        try:
++            patterns.append(re.compile(pattern))
++        except re.error as e:
++            raise argparse.ArgumentTypeError(
++                f"Error in regular expression '{pattern}': {e}. "
++                "Note: Python's re module does not support Unicode property escapes like '\\p{{}}'. "
++                "Consider using character ranges or installing the 'regex' module as an alternative."
++            ) from e
+     return patterns
+ 
+ 
++def _regexp_transformer(value: str) -> Pattern[str]:
++    """Transforms a string into a compiled regular expression."""
++    try:
++        return re.compile(value)
++    except re.error as e:
++        raise argparse.ArgumentTypeError(
++            f"Error in regular expression '{value}': {e}. "
++            "Note: Python's re module does not support Unicode property escapes like '\\p{{}}'. "
++            "Consider using character ranges or installing the 'regex' module as an alternative."
++        ) from e
++
++
+ def _regexp_paths_csv_transfomer(value: str) -> Sequence[Pattern[str]]:
+     """Transforms a comma separated list of regular expressions paths."""
+     patterns: list[Pattern[str]] = []
+     for pattern in _csv_transformer(value):
+-        patterns.append(
+-            re.compile(
+-                str(pathlib.PureWindowsPath(pattern)).replace("\\", "\\\\")
+-                + "|"
+-                + pathlib.PureWindowsPath(pattern).as_posix()
++        try:
++            patterns.append(
++                re.compile(
++                    str(pathlib.PureWindowsPath(pattern)).replace("\\", "\\\\")
++                    + "|"
++                    + pathlib.PureWindowsPath(pattern).as_posix()
++                )
+             )
+-        )
++        except re.error as e:
++            raise argparse.ArgumentTypeError(
++                f"Error in regular expression path '{pattern}': {e}. "
++                "Note: Python's re module does not support Unicode property escapes like '\\p{{}}'. "
++                "Consider using character ranges or installing the 'regex' module as an alternative."
++            ) from e
+     return patterns
+ 
+ 
+ _TYPE_TRANSFORMERS: dict[str, Callable[[str], _ArgumentTypes]] = {
+     "choice": str,
+     "csv": _csv_transformer,
+     "float": float,
+     "int": int,
+     "confidence": _confidence_transformer,
+     "non_empty_string": _non_empty_string_transformer,
+     "path": _path_transformer,
+     "py_version": _py_version_transformer,
+-    "regexp": re.compile,
++    "regexp": _regexp_transformer,
+     "regexp_csv": _regexp_csv_transfomer,
+     "regexp_paths_csv": _regexp_paths_csv_transfomer,
+     "string": pylint_utils._unquote,
+     "yn": _yn_transformer,
+ }

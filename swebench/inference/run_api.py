@@ -39,6 +39,8 @@ MODEL_LIMITS = {
     "claude-4": 200_000,
     "claude-code": 200_000,
     "claude-3.5-sonnet": 200_000,
+    "claude-sonnet-4-5": 200_000,
+    "claude-sonnet-4-5-20250929": 200_000,
     "claude-3-opus": 200_000,
     "claude-3-sonnet": 200_000,
     "claude-3-haiku": 200_000,
@@ -564,7 +566,7 @@ def main(
         "max_cost": max_cost,
     }
     # Check for Claude Code models first (more specific match)
-    claude_code_models = ["claude-4", "claude-code", "claude-3.5-sonnet", "claude-3-opus", "claude-3-sonnet", "claude-3-haiku"]
+    claude_code_models = ["claude-4", "claude-code", "claude-3.5-sonnet", "claude-sonnet-4-5", "claude-sonnet-4-5-20250929", "claude-3-opus", "claude-3-sonnet", "claude-3-haiku"]
     if model_name_or_path in claude_code_models:
         from swebench.inference.run_claude_code import claude_code_inference
         claude_code_inference(**inference_args)

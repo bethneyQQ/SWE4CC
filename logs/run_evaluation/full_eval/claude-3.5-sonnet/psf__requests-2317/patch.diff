@@ -1,0 +1,16 @@
+
+--- a/requests/sessions.py
++++ b/requests/sessions.py
+@@ -425,7 +425,11 @@
+             If Tuple, ('cert', 'key') pair.
+         """
+ 
+-        method = builtin_str(method)
++        # Convert method to native string, handling bytes properly
++        if isinstance(method, bytes):
++            method = method.decode('utf-8')
++        else:
++            method = builtin_str(method)
+ 
+         # Create the Request.
+         req = Request(

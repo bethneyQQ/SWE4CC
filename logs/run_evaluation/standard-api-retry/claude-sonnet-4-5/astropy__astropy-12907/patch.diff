@@ -1,0 +1,41 @@
+--- a/astropy/modeling/separable.py
++++ b/astropy/modeling/separable.py
+@@ -120,10 +120,14 @@
+ def _cstack(left, right):
+     """
+     Function corresponding to '&' operation.
++    
++    Stacks the separability matrices of two models in a block diagonal form.
+     """
+-    cright = _coord_matrix(right.model, 'right', right.index)
+-    cleft = _coord_matrix(left.model, 'left', left.index)
+-    return np.hstack([cleft, cright])
++    # Use the separability matrices directly for proper handling of nested models
++    sepleft = separability_matrix(left.model)
++    sepright = separability_matrix(right.model)
++    
++    return _block_diag(sepleft, sepright)
+ 
+ 
+ def _cdot(left, right):
+@@ -286,6 +290,19 @@
+     return result
+ 
+ 
++def _block_diag(matrix1, matrix2):
++    """
++    Create a block diagonal matrix from two matrices.
++    """
++    shape1 = matrix1.shape
++    shape2 = matrix2.shape
++    result = np.zeros((shape1[0] + shape2[0], shape1[1] + shape2[1]), dtype=bool)
++    result[:shape1[0], :shape1[1]] = matrix1
++    result[shape1[0]:, shape1[1]:] = matrix2
++    
++    return result
++
++
+ def separability_matrix(transform):
+     """
+     Compute the correlation between outputs and inputs.
+ ```

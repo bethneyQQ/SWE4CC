@@ -1,0 +1,16 @@
+--- a/sympy/polys/rings.py
++++ b/sympy/polys/rings.py
+@@ -446,7 +446,10 @@ class PolyRing(DefaultPrinting, IPolys):
+ 
+     def to_field(self):
+         from sympy.polys.fields import FracField
+-        return FracField(self.symbols, self.domain, self.order)
++        domain = self.domain
++        if hasattr(domain, 'has_assoc_Field') and domain.has_assoc_Field:
++            domain = domain.get_field()
++        return FracField(self.symbols, domain, self.order)
+ 
+     @property
+     def is_univariate(self):
+ 
+ 

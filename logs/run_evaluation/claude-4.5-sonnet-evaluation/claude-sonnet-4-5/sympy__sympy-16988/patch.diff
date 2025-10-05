@@ -1,0 +1,38 @@
+Now I understand the problem! The `_handle_finite_sets` method:
+1. Separates finite sets from other sets at line 1320
+2. Sorts finite sets by length at line 1324
+3. Takes the smallest finite set `s` at line 1325
+4. For each element `x` in `s`, checks if it's contained in all other sets (line 1331-1332)
+
+When we have `Intersection({1}, {1}, {x})`:
+- `fs_args` = `[{1}, {1}]` (two copies of {1})
+- After sorting, `s = {1}` (the first one)
+- `fs_args = [{1}]` (the second one)
+- `other = [{x}]`
+- For element `1` in `s`, it checks if `1` is in `fs_args + other = [{1}, {x}]`
+- But when checking against `{x}`, the result is `None` (unknown), so `1` goes to `unk` list
+- Then the symbolic handling logic kicks in, but since `{1}` has the same symbolic elements as `s` (none), it removes `1` from `unk`
+- Result: `EmptySet()`
+
+The fix is simple: remove duplicates from `args` before passing to `_handle_finite_sets`. This should be done at the beginning of `simplify_intersection`.
+
+Let me prepare the patch:
+
+## Analysis
+
+The issue occurs in the `simplify_intersection` function. When duplicate sets are present in the intersection (e.g., `Intersection({1}, {1}, {x})`), the `_handle_finite_sets` method treats them as distinct sets and incorrectly determines containment, leading to an incorrect result of `EmptySet()`. The fix is to remove duplicates from the args early in the `simplify_intersection` function, before calling `_handle_finite_sets`.
+
+```diff
+--- a/sympy/sets/sets.py
++++ b/sympy/sets/sets.py
+@@ -1982,6 +1982,9 @@ def simplify_intersection(args):
+     # ===== Global Rules =====
+     if not args:
+         return S.UniversalSet
++    
++    # Remove duplicates to ensure canonical processing
++    args = list(ordered(set(args), Set._infimum_key))
+ 
+     for arg in args:
+         if not isinstance(arg, Set):
+ 

@@ -1,0 +1,16 @@
+--- a/sympy/ntheory/residue_ntheory.py
++++ b/sympy/ntheory/residue_ntheory.py
+@@ -769,6 +769,10 @@
+     from sympy.core.numbers import igcdex
+     a, n, p = as_int(a), as_int(n), as_int(p)
+     if n == 2:
+         return sqrt_mod(a, p, all_roots)
++    # when a % p == 0, then x = 0 is a root
++    if a % p == 0:
++        return [0] if all_roots else 0
++    
+     # see Hackman "Elementary Number Theory" (2009), page 76
+     if not is_nthpow_residue(a, n, p):
+         return None
+ 
+ 

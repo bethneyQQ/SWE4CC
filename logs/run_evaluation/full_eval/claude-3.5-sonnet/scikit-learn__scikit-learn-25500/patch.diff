@@ -1,0 +1,25 @@
+
+--- a/sklearn/isotonic.py
++++ b/sklearn/isotonic.py
+@@ -399,14 +399,19 @@
+ 
+     def predict(self, T):
+         """Predict new data by linear interpolation.
+ 
+         Parameters
+         ----------
+         T : array-like of shape (n_samples,) or (n_samples, 1)
+             Data to transform.
+ 
+         Returns
+         -------
+         y_pred : ndarray of shape (n_samples,)
+             Transformed data.
+         """
+-        return self.transform(T)
++        # Call transform but ensure we always return a numpy array
++        # to avoid issues with global config transform_output="pandas"
++        result = self.transform(T)
++        # Convert to numpy array if needed (e.g., if pandas output is enabled)
++        result = np.asarray(result).ravel()
++        return result

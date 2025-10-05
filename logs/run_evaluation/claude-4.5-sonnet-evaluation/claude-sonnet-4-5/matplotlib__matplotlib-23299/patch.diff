@@ -1,0 +1,19 @@
+--- a/lib/matplotlib/__init__.py
++++ b/lib/matplotlib/__init__.py
+@@ -1095,7 +1095,13 @@ def rc_context(rc=None, fname=None):
+             rcParams.update(rc)
+         yield
+     finally:
+-        dict.update(rcParams, orig)  # Revert to the original rcs.
++        # Revert to the original rcs, but preserve the resolved backend if it
++        # was auto-resolved during the context to avoid re-triggering backend
++        # resolution which would clear all figures.
++        orig_backend = dict.__getitem__(orig, 'backend')
++        if orig_backend is rcsetup._auto_backend_sentinel:
++            orig['backend'] = rcParams._get_backend_or_none() or orig_backend
++        dict.update(rcParams, orig)
+ 
+ 
+ def use(backend, *, force=True):
+ 
+ 

@@ -1,0 +1,71 @@
+2025-10-04 21:15:49,014 INFO Using API key: *******************************************************************************************************sOwAA
+======================================================================
+加载空patch实例...
+======================================================================
+找到 39 个空patch实例
+
+加载数据集...
+匹配到 39 个实例
+
+已处理 17 个实例，将跳过
+======================================================================
+使用标准API运行inference...
+======================================================================
+模型: claude-sonnet-4-5-20250929
+总实例数: 39
+待处理: 22
+
+Standard API Inference:   0%|          | 0/39 [00:00<?, ?it/s]2025-10-04 21:16:09,652 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:16:09,660 INFO pydata__xarray-4094: patch=✓, cost=$0.0185
+Standard API Inference:  46%|████▌     | 18/39 [00:19<00:22,  1.08s/it]2025-10-04 21:16:50,883 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:16:50,898 INFO pydata__xarray-4493: patch=✓, cost=$0.0366
+Standard API Inference:  49%|████▊     | 19/39 [01:00<01:20,  4.03s/it]2025-10-04 21:17:14,369 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:17:14,372 INFO pylint-dev__pylint-7114: patch=✓, cost=$0.0213
+Standard API Inference:  51%|█████▏    | 20/39 [01:24<01:51,  5.88s/it]2025-10-04 21:17:32,378 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:17:32,384 INFO pylint-dev__pylint-7993: patch=✓, cost=$0.0152
+Standard API Inference:  54%|█████▍    | 21/39 [01:42<02:11,  7.33s/it]2025-10-04 21:17:47,388 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:17:47,391 INFO scikit-learn__scikit-learn-13142: patch=✓, cost=$0.0149
+Standard API Inference:  56%|█████▋    | 22/39 [01:57<02:23,  8.45s/it]2025-10-04 21:18:00,390 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:18:00,394 INFO scikit-learn__scikit-learn-14087: patch=✓, cost=$0.0139
+Standard API Inference:  59%|█████▉    | 23/39 [02:10<02:27,  9.23s/it]2025-10-04 21:18:12,562 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:18:12,564 INFO scikit-learn__scikit-learn-25747: patch=✓, cost=$0.0171
+Standard API Inference:  62%|██████▏   | 24/39 [02:22<02:27,  9.81s/it]2025-10-04 21:18:35,440 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:18:35,441 INFO sphinx-doc__sphinx-10451: patch=✓, cost=$0.0208
+Standard API Inference:  64%|██████▍   | 25/39 [02:45<02:57, 12.69s/it]2025-10-04 21:18:55,911 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:18:55,912 INFO sphinx-doc__sphinx-8474: patch=✓, cost=$0.0171
+Standard API Inference:  67%|██████▋   | 26/39 [03:05<03:09, 14.55s/it]2025-10-04 21:19:16,842 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:19:16,844 INFO sphinx-doc__sphinx-8506: patch=✓, cost=$0.0177
+Standard API Inference:  69%|██████▉   | 27/39 [03:26<03:14, 16.18s/it]2025-10-04 21:19:41,881 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:19:41,883 INFO sphinx-doc__sphinx-8627: patch=✓, cost=$0.0231
+Standard API Inference:  72%|███████▏  | 28/39 [03:51<03:23, 18.54s/it]2025-10-04 21:21:08,675 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:21:08,699 INFO sympy__sympy-13647: patch=✓, cost=$0.0795
+Standard API Inference:  74%|███████▍  | 29/39 [05:18<06:13, 37.39s/it]2025-10-04 21:21:25,405 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:21:25,406 INFO sympy__sympy-14317: patch=✓, cost=$0.0163
+Standard API Inference:  77%|███████▋  | 30/39 [05:35<04:43, 31.54s/it]2025-10-04 21:21:47,079 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:21:47,083 INFO sympy__sympy-17022: patch=✓, cost=$0.0215
+Standard API Inference:  79%|███████▉  | 31/39 [05:56<03:49, 28.70s/it]2025-10-04 21:21:59,041 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:21:59,041 INFO sympy__sympy-17139: patch=✓, cost=$0.0119
+Standard API Inference:  82%|████████▏ | 32/39 [06:08<02:46, 23.82s/it]2025-10-04 21:22:10,462 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:22:10,463 INFO sympy__sympy-18698: patch=✓, cost=$0.0097
+Standard API Inference:  85%|████████▍ | 33/39 [06:20<02:01, 20.18s/it]2025-10-04 21:22:26,699 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:22:26,702 INFO sympy__sympy-20154: patch=✓, cost=$0.0113
+Standard API Inference:  87%|████████▋ | 34/39 [06:36<01:35, 19.01s/it]2025-10-04 21:22:44,468 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:22:44,469 INFO sympy__sympy-21055: patch=✓, cost=$0.0191
+Standard API Inference:  90%|████████▉ | 35/39 [06:54<01:14, 18.64s/it]2025-10-04 21:22:58,880 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:22:58,883 INFO sympy__sympy-21171: patch=✓, cost=$0.0209
+Standard API Inference:  92%|█████████▏| 36/39 [07:08<00:52, 17.38s/it]2025-10-04 21:23:16,307 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:23:16,319 INFO sympy__sympy-21627: patch=✓, cost=$0.0146
+Standard API Inference:  95%|█████████▍| 37/39 [07:26<00:34, 17.40s/it]2025-10-04 21:23:37,437 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:23:37,438 INFO sympy__sympy-22840: patch=✓, cost=$0.0245
+Standard API Inference:  97%|█████████▋| 38/39 [07:47<00:18, 18.51s/it]2025-10-04 21:23:50,486 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 21:23:50,486 INFO sympy__sympy-23262: patch=✓, cost=$0.0107
+Standard API Inference: 100%|██████████| 39/39 [08:00<00:00, 16.88s/it]Standard API Inference: 100%|██████████| 39/39 [08:00<00:00, 12.31s/it]
+
+======================================================================
+✅ 运行完成
+======================================================================
+输出文件: /home/zqq/SWE4CC/results/retry_standard_api/claude-sonnet-4-5-20250929__SWE-bench_Lite__test__standard_api.jsonl
+总实例数: 39
+成功生成patch: 22/39 (56.4%)
+总成本: $0.46
+平均成本: $0.0117 per instance

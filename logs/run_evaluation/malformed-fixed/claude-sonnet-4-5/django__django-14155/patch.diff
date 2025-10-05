@@ -1,0 +1,26 @@
+--- a/django/urls/resolvers.py
++++ b/django/urls/resolvers.py
+@@ -45,12 +45,16 @@ class ResolverMatch:
+         self.namespaces = [x for x in namespaces if x] if namespaces else []
+         self.namespace = ':'.join(self.namespaces)
+ 
+-        if not hasattr(func, '__name__'):
++        # Unwrap functools.partial objects to get the underlying function
++        unwrapped_func = func
++        while isinstance(unwrapped_func, functools.partial):
++            unwrapped_func = unwrapped_func.func
++
++        if not hasattr(unwrapped_func, '__name__'):
+             # A class-based view
+-            self._func_path = func.__class__.__module__ + '.' + func.__class__.__name__
++            self._func_path = unwrapped_func.__class__.__module__ + '.' + unwrapped_func.__class__.__name__
+         else:
+             # A function-based view
+-            self._func_path = func.__module__ + '.' + func.__name__
++            self._func_path = unwrapped_func.__module__ + '.' + unwrapped_func.__name__
+ 
+         view_path = url_name or self._func_path
+         self.view_name = ':'.join(self.namespaces + [view_path])
+ 
+ 
+ 

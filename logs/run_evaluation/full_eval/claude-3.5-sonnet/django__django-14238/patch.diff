@@ -1,0 +1,23 @@
+
+--- a/django/db/models/fields/__init__.py
++++ b/django/db/models/fields/__init__.py
+@@ -2521,10 +2521,16 @@ class AutoFieldMeta(type):
+         return (BigAutoField, SmallAutoField)
+ 
+     def __instancecheck__(self, instance):
+-        return isinstance(instance, self._subclasses) or super().__instancecheck__(instance)
++        if super().__instancecheck__(instance):
++            return True
++        return any(isinstance(instance, subclass) for subclass in self._subclasses)
+ 
+     def __subclasscheck__(self, subclass):
+-        return subclass in self._subclasses or super().__subclasscheck__(subclass)
++        if super().__subclasscheck__(subclass):
++            return True
++        try:
++            return any(issubclass(subclass, base) for base in self._subclasses)
++        except TypeError:
++            return False
+ 
+ 
+ class AutoField(AutoFieldMixin, IntegerField, metaclass=AutoFieldMeta):

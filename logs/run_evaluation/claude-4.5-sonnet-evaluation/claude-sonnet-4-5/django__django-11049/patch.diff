@@ -1,0 +1,24 @@
+--- a/django/db/models/fields/__init__.py
++++ b/django/db/models/fields/__init__.py
+@@ -1587,7 +1587,7 @@ class DurationField(Field):
+     empty_strings_allowed = False
+     default_error_messages = {
+         'invalid': _("'%(value)s' value has an invalid format. It must be in "
+-                     "[DD] [HH:[MM:]]ss[.uuuuuu] format.")
++                     "[DD] [[HH:]MM:]ss[.uuuuuu] format.")
+     }
+     description = _("Duration")
+ 
+--- a/tests/model_fields/test_durationfield.py
++++ b/tests/model_fields/test_durationfield.py
+@@ -75,7 +75,7 @@ class TestValidation(SimpleTestCase):
+         self.assertEqual(
+             cm.exception.message % cm.exception.params,
+             "'not a datetime' value has an invalid format. "
+-            "It must be in [DD] [HH:[MM:]]ss[.uuuuuu] format."
++            "It must be in [DD] [[HH:]MM:]ss[.uuuuuu] format."
+         )
+ 
+ 
+ 
+ 

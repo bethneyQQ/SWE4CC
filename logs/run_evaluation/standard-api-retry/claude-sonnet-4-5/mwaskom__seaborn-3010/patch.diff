@@ -1,0 +1,24 @@
+--- a/seaborn/_stats/regression.py
++++ b/seaborn/_stats/regression.py
+@@ -24,12 +24,19 @@
+     def _fit_predict(self, data):
+ 
+         x = data["x"]
+         y = data["y"]
+-        if len(x) <= self.order:
++        
++        # Remove missing data
++        missing = x.isna() | y.isna()
++        x = x[~missing]
++        y = y[~missing]
++        
++        if len(x) <= self.order or len(x) == 0:
+             # TODO warn?
+             xx = yy = []
+         else:
+             p = np.polyfit(x, y, self.order)
+             xx = np.linspace(x.min(), x.max(), self.gridsize)
+             yy = np.polyval(p, xx)
++        
+         return pd.DataFrame(dict(x=xx, y=yy))
+ ```

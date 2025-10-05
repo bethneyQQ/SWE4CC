@@ -1,0 +1,31 @@
+--- a/lib/matplotlib/legend.py
++++ b/lib/matplotlib/legend.py
+@@ -1207,6 +1207,24 @@ class Legend(Artist):
+     def get_draggable(self):
+         """Return ``True`` if the legend is draggable, ``False`` otherwise."""
+         return self._draggable is not None
++
++    def __getstate__(self):
++        state = self.__dict__.copy()
++        # Temporarily disconnect and save draggable state
++        if self._draggable is not None:
++            state['_draggable_state'] = (
++                self._draggable._use_blit,
++                self._draggable._update
++            )
++            state['_draggable'] = None
++        return state
++
++    def __setstate__(self, state):
++        # Restore draggable state after unpickling
++        draggable_state = state.pop('_draggable_state', None)
++        self.__dict__.update(state)
++        if draggable_state is not None:
++            use_blit, update = draggable_state
++            self.set_draggable(True, use_blit=use_blit, update=update)
+ 
+ 
+ # Helper functions to parse legend arguments for both `figure.legend` and
+ 
+ 
+ 

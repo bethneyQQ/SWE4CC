@@ -1,0 +1,39 @@
+
+--- a/django/contrib/auth/migrations/0011_update_proxy_permissions.py
++++ b/django/contrib/auth/migrations/0011_update_proxy_permissions.py
+@@ -1,5 +1,6 @@
+ from django.db import migrations
+ from django.db.models import Q
++from django.db.models import Exists, OuterRef
+ 
+ 
+ def update_proxy_model_permissions(apps, schema_editor, reverse=False):
+@@ -24,10 +25,26 @@ def update_proxy_model_permissions(apps, schema_editor, reverse=False):
+         proxy_content_type = ContentType.objects.get_for_model(Model, for_concrete_model=False)
+         old_content_type = proxy_content_type if reverse else concrete_content_type
+         new_content_type = concrete_content_type if reverse else proxy_content_type
+-        Permission.objects.filter(
++        old_permissions = Permission.objects.filter(
+             permissions_query,
+             content_type=old_content_type,
+-        ).update(content_type=new_content_type)
++        )
++        # Find all the old permissions that need to be updated
++        for old_permission in old_permissions:
++            # Check if a permission already exists with the new content type
++            new_permission_exists = Permission.objects.filter(
++                codename=old_permission.codename,
++                content_type=new_content_type,
++            ).exists()
++            if new_permission_exists:
++                # A permission already exists, so just delete the old one
++                # to avoid IntegrityError on update
++                old_permission.delete()
++            else:
++                # No conflict, so update the content type
++                old_permission.content_type = new_content_type
++                old_permission.save()
++
+ 
+ 
+ def revert_proxy_model_permissions(apps, schema_editor):

@@ -1,0 +1,39 @@
+--- a/sympy/functions/elementary/hyperbolic.py
++++ b/sympy/functions/elementary/hyperbolic.py
+@@ -200,6 +200,12 @@
+         return self.func(arg)
+ 
+     def _eval_is_zero(self):
++        # Avoid infinite recursion by checking if we can determine
++        # the result without deep evaluation
++        arg = self.args[0]
++        if arg.is_zero:
++            return False  # cosh(0) = 1
++        # For complex arguments, return None to avoid recursion
+         rest, icoeff = self.args[0].as_coeff_Mul()
+         if rest.is_zero:
+             return False
+ 
+ ```
+--- a/sympy/functions/elementary/hyperbolic.py
++++ b/sympy/functions/elementary/hyperbolic.py
+@@ -200,8 +200,15 @@
+         return self.func(arg)
+ 
+     def _eval_is_zero(self):
+-        rest, icoeff = self.args[0].as_coeff_Mul()
+-        if rest.is_zero:
++        arg = self.args[0]
++        # cosh(x) = 0 has no real solutions, only purely imaginary ones
++        # cosh(x) = 0 iff x = i*pi*(2*n+1)/2 for integer n
++        # To avoid infinite recursion with complex nested expressions,
++        # we only check simple cases
++        if arg.is_zero:
++            return False  # cosh(0) = 1
++        rest, icoeff = arg.as_coeff_Mul()
++        if rest.is_zero is True:
+             return False
+         if rest.is_Number and icoeff.is_Mul:
+             icoeff, rest = rest, icoeff
+ 
+ ```

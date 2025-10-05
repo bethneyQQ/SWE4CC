@@ -1,0 +1,52 @@
+--- a/sympy/printing/latex.py
++++ b/sympy/printing/latex.py
+@@ -2100,7 +2100,7 @@
+             expr = list(expr.as_dict().items())
+         else:
+             expr = expr.args
+-        expr = expr[0]
++        expr = expr[0].as_expr()
+ 
+         if len(expr.gens) == 1 or self._settings['fold_short_frac']:
+             tex = self._print(expr)
+ ```
+--- a/sympy/printing/latex.py
++++ b/sympy/printing/latex.py
+@@ -2095,12 +2095,12 @@
+     def _print_Poly(self, poly):
+         cls = poly.__class__.__name__
+         terms = []
+-        if hasattr(poly, 'as_dict'):
+-            expr = list(poly.as_dict().items())
+-        else:
+-            expr = poly.args
+-        expr = expr[0]
+-
++        if poly.is_Poly:
++            expr = poly.as_expr()
++        elif hasattr(poly, 'as_dict'):
++            expr = poly.as_expr()
++        else:
++            expr = poly.args[0]
++        
+         if len(poly.gens) == 1 or self._settings['fold_short_frac']:
+             tex = self._print(expr)
+         else:
+ ```
+--- a/sympy/printing/latex.py
++++ b/sympy/printing/latex.py
+@@ -2095,11 +2095,7 @@
+     def _print_Poly(self, poly):
+         cls = poly.__class__.__name__
+         terms = []
+-        if hasattr(poly, 'as_dict'):
+-            expr = list(poly.as_dict().items())
+-        else:
+-            expr = poly.args
+-        expr = expr[0]
++        expr = poly.as_expr()
+ 
+         if len(poly.gens) == 1 or self._settings['fold_short_frac']:
+             tex = self._print(expr)
+ 
+ ```

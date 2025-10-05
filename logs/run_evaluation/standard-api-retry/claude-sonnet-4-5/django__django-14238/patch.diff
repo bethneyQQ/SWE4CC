@@ -1,0 +1,15 @@
+--- a/django/db/models/fields/__init__.py
++++ b/django/db/models/fields/__init__.py
+@@ -2490,7 +2490,10 @@
+ 
+ class AutoFieldMeta(type):
+     def __subclasscheck__(cls, subclass):
+-        return subclass in cls._subclasses
++        if subclass in cls._subclasses:
++            return True
++        # Check if subclass is a subclass of any registered subclass
++        return any(issubclass(subclass, c) for c in cls._subclasses if isinstance(c, type))
+ 
+     @property
+     def _subclasses(cls):
+ ```

@@ -1,0 +1,37 @@
+
+--- a/django/core/management/commands/inspectdb.py
++++ b/django/core/management/commands/inspectdb.py
+@@ -130,9 +130,19 @@
+                 yield ""
+                 yield ""
+                 yield "class %s(models.Model):" % table2model(table_name)
+                 known_models.append(table2model(table_name))
+                 used_column_names = []  # Holds column names used in the table so far
+                 column_to_field_name = {}  # Maps column names to names of model fields
++                
++                # Track which related models are used multiple times to add related_name
++                related_models = {}
++                for row in table_description:
++                    if row.name in relations:
++                        ref_db_column, ref_db_table = relations[row.name]
++                        rel_to = 'self' if ref_db_table == table_name else table2model(ref_db_table)
++                        related_models[rel_to] = related_models.get(rel_to, 0) + 1
++                
+                 for row in table_description:
+                     comment_notes = (
+                         []
+                     )  # Holds Field notes, to be displayed in a Python comment.
+@@ -182,6 +192,14 @@
+                             if ref_db_table == table_name
+                             else table2model(ref_db_table)
+                         )
++                        
++                        # Add related_name if this related model is used multiple times
++                        # to avoid reverse accessor clashes
++                        if related_models.get(rel_to, 0) > 1:
++                            # Use the field name as related_name to make it unique
++                            extra_params['related_name'] = '%s' % att_name
++                        
+                         if rel_to in known_models:
+                             field_type = "%s(%s" % (rel_type, rel_to)
+                         else:

@@ -1,0 +1,17 @@
+
+--- a/sympy/printing/latex.py
++++ b/sympy/printing/latex.py
+@@ -1358,6 +1358,13 @@ class LatexPrinter(Printer):
+     def _deal_with_super_sub(self, string):
+         if '{' in string:
+             return string
++        
++        # Handle leading underscores to avoid double subscripts in LaTeX
++        # e.g., _i_1 should become {i_{1}} not _{i_{1}} when used in subscripts
++        if string.startswith('_'):
++            # Remove leading underscore and process the rest
++            string = string[1:]
++            return '{' + self._deal_with_super_sub(string) + '}'
+ 
+         name, supers, subs = split_super_sub(string)
+ 

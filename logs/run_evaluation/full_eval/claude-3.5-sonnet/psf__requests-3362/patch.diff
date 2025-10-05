@@ -1,0 +1,32 @@
+
+--- a/requests/models.py
++++ b/requests/models.py
+@@ -634,7 +634,7 @@
+ 
+     def iter_content(self, chunk_size=1, decode_unicode=False):
+         """Iterates over the response data.  When stream=True is set on the
+-        request, this avoids reading the content at once into memory for
++        request, this avoids reading the content at once into memory for 
+         large responses.  The chunk size is the number of bytes it should
+         read into memory.  This is not necessarily the length of each item
+         returned as decoding can take place.
+@@ -659,6 +659,9 @@
+                     chunk = chunk[penultimate:]
+ 
+                 yield chunk
++        
++        if decode_unicode:
++            reused_chunks = stream_decode_response_unicode(reused_chunks, self)
+ 
+         while True:
+             chunk = self.raw.read(chunk_size)
+@@ -670,6 +673,9 @@
+ 
+             yield chunk
+ 
++        if decode_unicode:
++            stream_chunks = stream_decode_response_unicode(stream_chunks, self)
++
+         self._content_consumed = True
+ 
+     @property

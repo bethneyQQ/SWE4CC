@@ -1,0 +1,43 @@
+--- a/lib/matplotlib/backends/backend_macosx.py
++++ b/lib/matplotlib/backends/backend_macosx.py
+@@ -27,9 +27,16 @@
+ 
+     def __init__(self, figure):
+         super().__init__(figure)
+-        width, height = self.get_width_height()
++        # Get the device pixel ratio to handle Retina displays
++        device_pixel_ratio = _macosx.FigureCanvas.get_device_pixel_ratio(self)
++        
++        # Adjust DPI if it appears to already include the device pixel ratio
++        # This can happen when unpickling a figure that was created on a Retina display
++        if device_pixel_ratio > 1 and hasattr(figure, '_original_dpi'):
++            figure.dpi = figure._original_dpi
++        
++        width, height = self.get_width_height(physical=True)
+         width, height = int(width), int(height)
+-        _macosx.FigureCanvas.__init__(self, width, height)
++        _macosx.FigureCanvas.__init__(self, width / device_pixel_ratio, height / device_pixel_ratio)
+         self._dpi_ratio = device_pixel_ratio = _macosx.FigureCanvas.get_device_pixel_ratio(self)
+         self.figure.dpi /= device_pixel_ratio
+ ```
+--- a/lib/matplotlib/backends/backend_macosx.py
++++ b/lib/matplotlib/backends/backend_macosx.py
+@@ -29,8 +29,15 @@
+         super().__init__(figure)
+         width, height = self.get_width_height()
+         width, height = int(width), int(height)
++        
++        # Store the DPI before canvas initialization to detect changes
++        dpi_before = figure.dpi
++        
+         _macosx.FigureCanvas.__init__(self, width, height)
+         self._dpi_ratio = device_pixel_ratio = _macosx.FigureCanvas.get_device_pixel_ratio(self)
++        
++        # Only adjust DPI if it hasn't been adjusted already (e.g., during unpickling)
++        if figure.dpi == dpi_before:
+-        self.figure.dpi /= device_pixel_ratio
++            self.figure.dpi /= device_pixel_ratio
+ 
+     def draw(self):
+         """Render the figure and update the macosx canvas."""
+ ```

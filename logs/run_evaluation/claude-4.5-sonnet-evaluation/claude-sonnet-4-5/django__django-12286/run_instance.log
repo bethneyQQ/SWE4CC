@@ -1,0 +1,84 @@
+2025-10-04 17:57:52,316 - INFO - Creating container for django__django-12286...
+2025-10-04 17:57:52,317 - ERROR - Error creating container for django__django-12286: 409 Client Error for http+docker://localhost/v1.51/containers/create?name=sweb.eval.django__django-12286.claude-4.5-sonnet-evaluation&platform=linux%2Fx86_64: Conflict ("Conflict. The container name "/sweb.eval.django__django-12286.claude-4.5-sonnet-evaluation" is already in use by container "ef25bd520d2cf70426112b3584c4d79c67f4b13ecd574c378a53c70b46822901". You have to remove (or rename) that container to be able to reuse that name.")
+2025-10-04 17:57:52,319 - INFO - Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: http+docker://localhost/v1.51/containers/create?name=sweb.eval.django__django-12286.claude-4.5-sonnet-evaluation&platform=linux%2Fx86_64
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/docker_build.py", line 516, in build_container
+    container = client.containers.create(
+        image=test_spec.instance_image_key,
+    ...<5 lines>...
+        cap_add=cap_add,
+    )
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+           ~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 409 Client Error for http+docker://localhost/v1.51/containers/create?name=sweb.eval.django__django-12286.claude-4.5-sonnet-evaluation&platform=linux%2Fx86_64: Conflict ("Conflict. The container name "/sweb.eval.django__django-12286.claude-4.5-sonnet-evaluation" is already in use by container "ef25bd520d2cf70426112b3584c4d79c67f4b13ecd574c378a53c70b46822901". You have to remove (or rename) that container to be able to reuse that name.")
+
+2025-10-04 17:57:52,320 - INFO - Traceback (most recent call last):
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: http+docker://localhost/v1.51/containers/create?name=sweb.eval.django__django-12286.claude-4.5-sonnet-evaluation&platform=linux%2Fx86_64
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/docker_build.py", line 516, in build_container
+    container = client.containers.create(
+        image=test_spec.instance_image_key,
+    ...<5 lines>...
+        cap_add=cap_add,
+    )
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/models/containers.py", line 935, in create
+    resp = self.client.api.create_container(**create_kwargs)
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+           ~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/zqq/miniconda/lib/python3.13/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 409 Client Error for http+docker://localhost/v1.51/containers/create?name=sweb.eval.django__django-12286.claude-4.5-sonnet-evaluation&platform=linux%2Fx86_64: Conflict ("Conflict. The container name "/sweb.eval.django__django-12286.claude-4.5-sonnet-evaluation" is already in use by container "ef25bd520d2cf70426112b3584c4d79c67f4b13ecd574c378a53c70b46822901". You have to remove (or rename) that container to be able to reuse that name.")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zqq/SWE4CC/swebench/harness/run_evaluation.py", line 152, in run_instance
+    container = build_container(
+        test_spec, client, run_id, logger, rm_image, force_rebuild
+    )
+  File "/home/zqq/SWE4CC/swebench/harness/docker_build.py", line 532, in build_container
+    raise BuildImageError(test_spec.instance_id, str(e), logger) from e
+swebench.harness.docker_build.BuildImageError: Error building image django__django-12286: 409 Client Error for http+docker://localhost/v1.51/containers/create?name=sweb.eval.django__django-12286.claude-4.5-sonnet-evaluation&platform=linux%2Fx86_64: Conflict ("Conflict. The container name "/sweb.eval.django__django-12286.claude-4.5-sonnet-evaluation" is already in use by container "ef25bd520d2cf70426112b3584c4d79c67f4b13ecd574c378a53c70b46822901". You have to remove (or rename) that container to be able to reuse that name.")
+Check (logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-12286/run_instance.log) for more information.
+

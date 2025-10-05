@@ -1,0 +1,41 @@
+--- a/sphinx/ext/napoleon/docstring.py
++++ b/sphinx/ext/napoleon/docstring.py
+@@ -238,8 +238,6 @@ class GoogleDocstring:
+                 _name = match.group(1)
+                 _type = match.group(2)
+ 
+-        _name = self._escape_args_and_kwargs(_name)
+-
+         if prefer_type and not _type:
+             _type, _name = _name, _type
+         indent = self._get_indent(line) + 1
+@@ -370,9 +368,10 @@ class GoogleDocstring:
+     def _format_docutils_params(self, fields: List[Tuple[str, str, List[str]]],
+                                 field_role: str = 'param', type_role: str = 'type'
+                                 ) -> List[str]:
+         lines = []
+         for _name, _type, _desc in fields:
+             _desc = self._strip_empty(_desc)
++            _name = self._escape_args_and_kwargs(_name)
+             if any(_desc):
+                 _desc = self._fix_field_desc(_desc)
+                 field = ':%s %s: ' % (field_role, _name)
+@@ -578,6 +577,7 @@ class GoogleDocstring:
+     def _parse_attributes_section(self, section: str) -> List[str]:
+         lines = []
+         for _name, _type, _desc in self._consume_fields():
+             if self._config.napoleon_use_ivar:
++                _name = self._escape_args_and_kwargs(_name)
+                 _name = self._qualify_name(_name, self._obj)
+                 field = ':ivar %s: ' % _name
+                 lines.extend(self._format_block(field, _desc))
+@@ -884,7 +884,6 @@ class NumpyDocstring(GoogleDocstring):
+         else:
+             _name, _type = line, ''
+         _name, _type = _name.strip(), _type.strip()
+-        _name = self._escape_args_and_kwargs(_name)
+ 
+         if prefer_type and not _type:
+             _type, _name = _name, _type
+ 
+ 

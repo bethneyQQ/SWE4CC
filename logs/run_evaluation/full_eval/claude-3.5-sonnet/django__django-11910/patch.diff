@@ -1,0 +1,23 @@
+
+--- a/django/db/migrations/autodetector.py
++++ b/django/db/migrations/autodetector.py
+@@ -923,12 +923,18 @@
+                 if rename_key in self.renamed_models:
+                     new_field.remote_field.model = old_field.remote_field.model
+                 # Handle ForeignKey which can only have a single to_field.
+                 remote_field_name = getattr(new_field.remote_field, 'field_name', None)
+                 if remote_field_name:
+                     to_field_rename_key = rename_key + (remote_field_name,)
+                     if to_field_rename_key in self.renamed_fields:
+-                        new_field.remote_field.field_name = old_field.remote_field.field_name
++                        # If the field we're pointing to has been renamed, we need to
++                        # get the old name from renamed_fields
++                        old_remote_field_name = self.renamed_fields.get(to_field_rename_key)
++                        if old_remote_field_name:
++                            new_field.remote_field.field_name = old_remote_field_name
++                        else:
++                            new_field.remote_field.field_name = old_field.remote_field.field_name
+                 # Handle ForeignObjects which can have multiple from_fields/to_fields.
+                 from_fields = getattr(new_field, 'from_fields', None)
+                 if from_fields:
+                     from_rename_key = (app_label, model_name)

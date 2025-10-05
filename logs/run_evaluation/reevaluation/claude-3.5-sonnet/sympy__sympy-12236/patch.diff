@@ -1,0 +1,38 @@
+--- a/sympy/polys/partfrac.py
++++ b/sympy/polys/partfrac.py
+@@ -31,7 +31,7 @@ def apart(f, x=None, full=False, **options):
+     """
+     allowed_flags(options, [])
+ 
+-    f = sympify(f)
++    f = sympify(f)  
+ 
+     if f.is_Atom:
+         return f
+@@ -53,11 +53,21 @@ def apart(f, x=None, full=False, **options):
+     P, Q = f.as_numer_denom()
+ 
+     _options = options.copy()
+-    options = set_defaults(options, extension=True)
++    options = set_defaults(options, extension=None)
+     try:
+-        (P, Q), opt = parallel_poly_from_expr((P, Q), x, **options)
++        (P, Q), opt = parallel_poly_from_expr((P, Q), x, **options)  
+     except PolynomialError as msg:
+-        if f.is_commutative:
++        # If we can't construct polynomial (e.g., due to symbolic parameters),
++        # try to factor out the symbolic parts first
++        s, e = f.as_independent(x, as_Add=False)
++        if s != 1 and s.has(Symbol) and not e.is_Atom:
++            # Factor out symbolic coefficients and apply apart to the rest
++            try:
++                return s * apart(e, x, full=full, **_options)
++            except PolynomialError:
++                pass
++        
++        if f.is_commutative:  
+             raise PolynomialError(msg)
+         # For noncommutative objects, just return the object itself
+         return f
+ 
+ 

@@ -1,0 +1,20 @@
+
+
+The issue description shows this is a SymPy bug. Looking at the file I just read (`/tmp/tmpqmg1pxt2.txt`), it contains:
+1. The issue statement (lines 2-42)
+2. Part of the SymPy codebase starting with README.rst and sympy/core/numbers.py
+
+The core issue is that `simplify((-a)**x * a**(-x))` produces `(-1)**x`, but this simplification is mathematically incorrect for complex exponents when `a` is a concrete positive integer like 2.
+
+The mathematical problem: 
+- `(-2)**x * 2**(-x) = ((-1)*2)**x * 2**(-x) = (-1)**x * 2**x * 2**(-x)`
+- But `2**x * 2**(-x)` is **not** always equal to 1 for complex `x` due to branch cuts
+- For `x = -10/3`, we have `2**(−10/3) * 2**(10/3)` involves choosing branches of the complex logarithm
+
+The correct value depends on how the principal branch is chosen. The inconsistency arises because:
+1. When `a` is symbolic with positive assumptions, SymPy uses one branch selection
+2. When `a=2` is concrete, the numerical evaluation uses a different branch
+
+This is a **numerical/algebraic** issue with power simplification in SymPy that requires understanding the power simplification rules in the codebase. The fix would need to be more careful about when `(-a)**x * a**(-x)` can be simplified to `(-1)**x`.
+
+**Summary**: This is a SymPy issue where the simplification `(-a)**x * a**(-x) → (-1)**x` is being applied incorrectly for concrete positive integer values of `a` when `x` is a complex number. The simplification doesn't properly account for branch cuts in complex exponentiation.

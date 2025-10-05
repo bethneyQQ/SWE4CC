@@ -1,0 +1,18 @@
+--- a/sympy/physics/units/unitsystem.py
++++ b/sympy/physics/units/unitsystem.py
+@@ -175,10 +175,11 @@
+             for addend in expr.args[1:]:
+                 addend_factor, addend_dim = \
+                     self._collect_factor_and_dimension(addend)
+-                if dim != addend_dim:
++                # Check if dimensions are equivalent by checking if their ratio is dimensionless
++                if not self.get_dimension_system().is_dimensionless(dim / addend_dim):
+                     raise ValueError(
+                         'Dimension of "{}" is {}, '
+                         'but it should be {}'.format(
+                             addend, addend_dim, dim))
+-                factor += addend_factor
++                factor += addend_factor * (addend_dim / dim).convert_to(self.get_dimension_system().derived_dims[0] if self.get_dimension_system().derived_dims else Dimension(1))
+             return factor, dim
+ 
+ 

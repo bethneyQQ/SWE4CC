@@ -1,0 +1,29 @@
+
+
+This is a SWE-bench test instance for a matplotlib bug. Based on the issue description, the problem is that when using `clf()` and `draw()` in a RangeSlider's `on_changed` callback, widgets become unresponsive, but the same pattern works fine with Button's `on_clicked` callback.
+
+The key issue is likely that the RangeSlider maintains a reference to event handlers that get invalidated when `clf()` clears the figure, while Button handles this differently.
+
+Let me provide an analysis of this bug:
+
+## Analysis of the Bug
+
+**Issue**: RangeSlider widgets become unresponsive after calling `pyplot.clf()` and `pyplot.draw()` in the `on_changed` callback.
+
+**Root Cause**: When `clf()` is called, it clears all axes including the ones containing the widgets. The new widgets created by `addElements()` are different objects, but the old RangeSlider's event handlers may still be connected to the canvas or holding references to the old, destroyed axes.
+
+**Key Differences**:
+- **RangeSlider.on_changed**: Likely maintains internal state or canvas connections that survive the `clf()` but reference destroyed axes
+- **Button.on_clicked**: Either handles cleanup better or doesn't maintain problematic state
+
+**Expected Behavior**: After recreating widgets with `addElements()`, the new widgets should be fully functional, just as they are when the same pattern is used with Button.
+
+**Likely Fix Location**: The issue is probably in how RangeSlider (or its parent Slider class) manages event connections. During the callback execution, the widget clears the figure and creates new widgets, but the event handling mechanism may still be tied to the old widget instance or axes.
+
+**Potential Solutions**:
+1. Ensure event handlers are properly disconnected when axes are cleared
+2. Make RangeSlider's event handling more robust to figure reconstruction
+3. Add proper cleanup in the widget's connection management
+4. Ensure that during callback execution, the canvas connection state is properly managed
+
+The fix would likely involve modifying the matplotlib widgets module to handle this edge case where a widget's callback clears and reconstructs the figure containing that widget.

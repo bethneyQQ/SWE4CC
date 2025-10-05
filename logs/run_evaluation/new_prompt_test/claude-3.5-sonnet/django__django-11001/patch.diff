@@ -1,0 +1,14 @@
+I can see this is a file containing instructions about patch format requirements for unified diff format. The file emphasizes critical rules for generating patches:
+
+**Key Requirements:**
+1. Context lines MUST start with a space ` `
+2. Deleted lines start with `-`
+3. Added lines start with `+`
+4. Include 3+ lines of context before/after changes
+5. Show complete code blocks (full functions preferred)
+
+The file includes a correct format example and warns that the most common error is forgetting the leading space on context lines, which results in a malformed patch.
+
+This appears to be instruction documentation for generating patches that will be automatically tested, likely in the SWE-bench context given your current working directory.
+
+Is there something specific you'd like me to help you with regarding this patch format?

@@ -1,0 +1,83 @@
+2025-10-04 20:25:41,875 INFO Using API key: *******************************************************************************************************sOwAA
+======================================================================
+加载空patch实例...
+======================================================================
+找到 39 个空patch实例
+
+加载数据集...
+Filter:   0%|          | 0/300 [00:00<?, ? examples/s]Filter: 100%|██████████| 300/300 [00:00<00:00, 32653.20 examples/s]
+匹配到 39 个实例
+
+======================================================================
+使用标准API运行inference...
+======================================================================
+模型: claude-sonnet-4-5-20250929
+实例数: 39
+
+Standard API Inference:   0%|          | 0/39 [00:00<?, ?it/s]2025-10-04 20:25:56,118 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:25:56,126 INFO astropy__astropy-12907: patch=✓, cost=$0.0122
+Standard API Inference:   3%|▎         | 1/39 [00:12<08:12, 12.97s/it]2025-10-04 20:26:09,697 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:26:09,697 INFO django__django-10914: patch=✓, cost=$0.0112
+Standard API Inference:   5%|▌         | 2/39 [00:26<08:13, 13.33s/it]2025-10-04 20:26:22,714 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:26:22,716 INFO django__django-11039: patch=✓, cost=$0.0123
+Standard API Inference:   8%|▊         | 3/39 [00:39<07:54, 13.19s/it]2025-10-04 20:26:38,220 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:26:38,221 INFO django__django-11742: patch=✓, cost=$0.0127
+Standard API Inference:  10%|█         | 4/39 [00:55<08:13, 14.10s/it]2025-10-04 20:26:54,141 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:26:54,142 INFO django__django-11964: patch=✓, cost=$0.0154
+Standard API Inference:  13%|█▎        | 5/39 [01:10<08:21, 14.76s/it]2025-10-04 20:27:09,197 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:27:09,199 INFO django__django-12700: patch=✓, cost=$0.0153
+Standard API Inference:  15%|█▌        | 6/39 [01:26<08:10, 14.86s/it]2025-10-04 20:27:43,663 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:27:43,664 INFO django__django-13033: patch=✓, cost=$0.0314
+Standard API Inference:  18%|█▊        | 7/39 [02:00<11:20, 21.27s/it]2025-10-04 20:27:58,214 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:27:58,214 INFO django__django-13315: patch=✓, cost=$0.0125
+Standard API Inference:  21%|██        | 8/39 [02:15<09:53, 19.13s/it]2025-10-04 20:28:19,014 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:28:19,015 INFO django__django-13925: patch=✓, cost=$0.0249
+Standard API Inference:  23%|██▎       | 9/39 [02:35<09:49, 19.65s/it]2025-10-04 20:28:36,324 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:28:36,324 INFO django__django-14016: patch=✓, cost=$0.0193
+Standard API Inference:  26%|██▌       | 10/39 [02:53<09:08, 18.93s/it]2025-10-04 20:28:49,042 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:28:49,042 INFO django__django-14238: patch=✓, cost=$0.0135
+Standard API Inference:  28%|██▊       | 11/39 [03:05<07:56, 17.03s/it]2025-10-04 20:29:09,576 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:29:09,576 INFO django__django-15213: patch=✓, cost=$0.0180
+Standard API Inference:  31%|███       | 12/39 [03:26<08:08, 18.09s/it]2025-10-04 20:29:19,273 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:29:19,274 INFO django__django-15498: patch=✓, cost=$0.0082
+Standard API Inference:  33%|███▎      | 13/39 [03:36<06:44, 15.55s/it]2025-10-04 20:29:33,063 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:29:33,064 INFO django__django-15996: patch=✓, cost=$0.0123
+Standard API Inference:  36%|███▌      | 14/39 [03:49<06:15, 15.02s/it]2025-10-04 20:29:58,142 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:29:58,144 INFO matplotlib__matplotlib-23476: patch=✓, cost=$0.0264
+Standard API Inference:  38%|███▊      | 15/39 [04:14<07:13, 18.05s/it]2025-10-04 20:30:19,924 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:30:19,925 INFO matplotlib__matplotlib-25079: patch=✓, cost=$0.0229
+Standard API Inference:  41%|████      | 16/39 [04:36<07:21, 19.17s/it]2025-10-04 20:30:31,412 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:30:31,413 INFO mwaskom__seaborn-3010: patch=✓, cost=$0.0143
+Standard API Inference:  44%|████▎     | 17/39 [04:48<06:10, 16.86s/it]2025-10-04 20:30:49,412 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:30:49,413 INFO pydata__xarray-4094: patch=✓, cost=$0.0171
+Standard API Inference:  46%|████▌     | 18/39 [05:06<06:01, 17.20s/it]2025-10-04 20:31:13,100 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:31:13,101 INFO pydata__xarray-4493: patch=✓, cost=$0.0244
+Standard API Inference:  49%|████▊     | 19/39 [05:29<06:23, 19.15s/it]2025-10-04 20:31:49,443 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:31:49,444 INFO pylint-dev__pylint-7114: patch=✓, cost=$0.0371
+Standard API Inference:  51%|█████▏    | 20/39 [06:06<07:41, 24.31s/it]2025-10-04 20:32:12,254 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:32:12,255 INFO pylint-dev__pylint-7993: patch=✓, cost=$0.0199
+Standard API Inference:  54%|█████▍    | 21/39 [06:29<07:09, 23.86s/it]2025-10-04 20:32:30,708 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:32:30,709 INFO scikit-learn__scikit-learn-13142: patch=✓, cost=$0.0168
+Standard API Inference:  56%|█████▋    | 22/39 [06:47<06:18, 22.24s/it]2025-10-04 20:32:43,797 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:32:43,799 INFO scikit-learn__scikit-learn-14087: patch=✓, cost=$0.0140
+Standard API Inference:  59%|█████▉    | 23/39 [07:00<05:11, 19.49s/it]2025-10-04 20:32:57,239 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:32:57,243 INFO scikit-learn__scikit-learn-25747: patch=✓, cost=$0.0164
+Standard API Inference:  62%|██████▏   | 24/39 [07:14<04:25, 17.68s/it]2025-10-04 20:33:18,363 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:33:18,364 INFO sphinx-doc__sphinx-10451: patch=✓, cost=$0.0199
+Standard API Inference:  64%|██████▍   | 25/39 [07:35<04:21, 18.71s/it]2025-10-04 20:33:31,614 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:33:31,615 INFO sphinx-doc__sphinx-8474: patch=✓, cost=$0.0089
+Standard API Inference:  67%|██████▋   | 26/39 [07:48<03:41, 17.07s/it]2025-10-04 20:33:50,609 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:33:50,610 INFO sphinx-doc__sphinx-8506: patch=✓, cost=$0.0189
+Standard API Inference:  69%|██████▉   | 27/39 [08:07<03:31, 17.65s/it]2025-10-04 20:34:10,412 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:34:10,413 INFO sphinx-doc__sphinx-8627: patch=✓, cost=$0.0185
+Standard API Inference:  72%|███████▏  | 28/39 [08:27<03:21, 18.30s/it]2025-10-04 20:34:27,585 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:34:27,586 INFO sympy__sympy-13647: patch=✓, cost=$0.0158
+Standard API Inference:  74%|███████▍  | 29/39 [08:44<02:59, 17.96s/it]2025-10-04 20:34:48,731 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:34:48,731 INFO sympy__sympy-14317: patch=✓, cost=$0.0186
+Standard API Inference:  77%|███████▋  | 30/39 [09:05<02:50, 18.91s/it]2025-10-04 20:35:09,649 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:35:09,650 INFO sympy__sympy-17022: patch=✓, cost=$0.0180
+Standard API Inference:  79%|███████▉  | 31/39 [09:26<02:36, 19.52s/it]2025-10-04 20:35:22,712 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:35:22,713 INFO sympy__sympy-17139: patch=✓, cost=$0.0120
+Standard API Inference:  82%|████████▏ | 32/39 [09:39<02:03, 17.58s/it]2025-10-04 20:35:34,501 INFO HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-04 20:35:34,502 INFO sympy__sympy-18698: patch=✓, cost=$0.0098
+Standard API Inference:  85%|████████▍ | 33/39 [09:51<01:35, 15.84s/it]

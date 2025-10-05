@@ -1,0 +1,35 @@
+
+--- a/sympy/printing/latex.py
++++ b/sympy/printing/latex.py
+@@ -356,8 +356,29 @@
+         else:
+             tex = ""
+ 
+-        from sympy.simplify import fraction
+-        numer, denom = fraction(expr, exact=True)
++        # Separate positive and negative powers to construct numerator and denominator
++        # without using fraction() which performs unwanted simplification
++        if self.order not in ('old', 'none'):
++            args = expr.as_ordered_factors()
++        else:
++            args = expr.args
++        
++        numer_args = []
++        denom_args = []
++        
++        for arg in args:
++            if arg.is_Pow and arg.exp.is_Rational and arg.exp.is_negative:
++                denom_args.append(arg.base**(-arg.exp))
++            else:
++                numer_args.append(arg)
++        
++        from sympy import Mul
++        if numer_args:
++            numer = Mul(*numer_args, evaluate=False)
++        else:
++            numer = S.One
++        
++        denom = Mul(*denom_args, evaluate=False) if denom_args else S.One
+         separator = self._settings['mul_symbol_latex']
+         numbersep = self._settings['mul_symbol_latex_numbers']
+ 

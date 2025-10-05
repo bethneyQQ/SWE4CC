@@ -1,0 +1,56 @@
+2025-10-04 19:05:57,542 - INFO - Creating container for sphinx-doc__sphinx-11445...
+2025-10-04 19:05:57,638 - INFO - Container for sphinx-doc__sphinx-11445 created: 69807a9084485161d1885a8c0945eb8573dca9e6e7b584cff10bea35f507827f
+2025-10-04 19:05:57,733 - INFO - Container for sphinx-doc__sphinx-11445 started: 69807a9084485161d1885a8c0945eb8573dca9e6e7b584cff10bea35f507827f
+2025-10-04 19:05:57,733 - INFO - Intermediate patch for sphinx-doc__sphinx-11445 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/sphinx-doc__sphinx-11445/patch.diff, now applying to container...
+2025-10-04 19:05:57,825 - INFO - >>>>> Applied Patch:
+/tmp/patch.diff:12: trailing whitespace.
+        
+Checking patch sphinx/util/rst.py...
+Applied patch sphinx/util/rst.py cleanly.
+warning: 1 line adds whitespace errors.
+
+2025-10-04 19:05:58,051 - INFO - Git diff before:
+diff --git a/sphinx/util/rst.py b/sphinx/util/rst.py
+index 7a1538325..82eb00862 100644
+--- a/sphinx/util/rst.py
++++ b/sphinx/util/rst.py
+@@ -91,9 +91,11 @@ def prepend_prolog(content: StringList, prolog: str) -> None:
+             pos += 1
+ 
+         # insert prolog (after docinfo if exists)
+-        for lineno, line in enumerate(prolog.splitlines()):
++        lineno = 0
++        for lineno, line in enumerate(prolog.splitlines(), start=0):
+             content.insert(pos + lineno, line, '<rst_prolog>', lineno)
+-
++        
++        # insert a blank line after prolog
+         content.insert(pos + lineno + 1, '', '<generated>', 0)
+2025-10-04 19:05:58,051 - INFO - Eval script for sphinx-doc__sphinx-11445 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/sphinx-doc__sphinx-11445/eval.sh; copying to container...
+2025-10-04 19:06:01,592 - INFO - Test runtime: 3.50 seconds
+2025-10-04 19:06:01,593 - INFO - Test output for sphinx-doc__sphinx-11445 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/sphinx-doc__sphinx-11445/test_output.txt
+2025-10-04 19:06:01,636 - INFO - Git diff after:
+diff --git a/sphinx/util/rst.py b/sphinx/util/rst.py
+index 7a1538325..82eb00862 100644
+--- a/sphinx/util/rst.py
++++ b/sphinx/util/rst.py
+@@ -91,9 +91,11 @@ def prepend_prolog(content: StringList, prolog: str) -> None:
+             pos += 1
+ 
+         # insert prolog (after docinfo if exists)
+-        for lineno, line in enumerate(prolog.splitlines()):
++        lineno = 0
++        for lineno, line in enumerate(prolog.splitlines(), start=0):
+             content.insert(pos + lineno, line, '<rst_prolog>', lineno)
+-
++        
++        # insert a blank line after prolog
+         content.insert(pos + lineno + 1, '', '<generated>', 0)
+2025-10-04 19:06:01,636 - INFO - Grading answer for sphinx-doc__sphinx-11445...
+2025-10-04 19:06:01,638 - INFO - report: {'sphinx-doc__sphinx-11445': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['tests/test_util_rst.py::test_prepend_prolog_with_roles_in_sections_with_newline', 'tests/test_util_rst.py::test_prepend_prolog_with_roles_in_sections_without_newline']}, 'PASS_TO_PASS': {'success': ['tests/test_util_rst.py::test_escape', 'tests/test_util_rst.py::test_append_epilog', 'tests/test_util_rst.py::test_prepend_prolog', 'tests/test_util_rst.py::test_prepend_prolog_with_CR', 'tests/test_util_rst.py::test_prepend_prolog_without_CR', 'tests/test_util_rst.py::test_prepend_prolog_with_roles_in_sections', 'tests/test_util_rst.py::test_textwidth', 'tests/test_util_rst.py::test_heading'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sphinx-doc__sphinx-11445: resolved: False
+2025-10-04 19:06:01,638 - INFO - Attempting to stop container sweb.eval.sphinx-doc__sphinx-11445.claude-4.5-sonnet-evaluation...
+2025-10-04 19:06:16,762 - INFO - Attempting to remove container sweb.eval.sphinx-doc__sphinx-11445.claude-4.5-sonnet-evaluation...
+2025-10-04 19:06:16,774 - INFO - Container sweb.eval.sphinx-doc__sphinx-11445.claude-4.5-sonnet-evaluation removed.
+2025-10-04 19:06:16,774 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-11445:latest...
+2025-10-04 19:06:17,169 - INFO - Image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-11445:latest removed.

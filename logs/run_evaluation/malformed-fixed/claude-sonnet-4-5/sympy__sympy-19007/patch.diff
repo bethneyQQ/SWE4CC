@@ -1,0 +1,63 @@
+--- a/sympy/matrices/expressions/blockmatrix.py
++++ b/sympy/matrices/expressions/blockmatrix.py
+@@ -7,7 +7,7 @@ from sympy.strategies.traverse import bottom_up
+ from sympy.utilities import sift
+ from sympy.utilities.misc import filldedent
+ 
+-from sympy.matrices.expressions.matexpr import MatrixExpr, ZeroMatrix, Identity
++from sympy.matrices.expressions.matexpr import MatrixExpr, ZeroMatrix, Identity, MatrixElement
+ from sympy.matrices.expressions.matmul import MatMul
+ from sympy.matrices.expressions.matadd import MatAdd
+ from sympy.matrices.expressions.matpow import MatPow
+@@ -233,15 +233,41 @@ class BlockMatrix(MatrixExpr):
+         return self._eval_transpose()
+ 
+     def _entry(self, i, j, **kwargs):
+-        # Find row entry
++        from sympy.core.numbers import Integer
++        
++        # Check if indices are numeric
++        if not (i.is_Integer and j.is_Integer):
++            # Symbolic indices - cannot determine block, return unevaluated
++            return MatrixElement(self, i, j)
++        
++        # Check if all block sizes are numeric
++        for size in self.rowblocksizes:
++            if not size.is_Integer:
++                # Symbolic block size - cannot determine block
++                return MatrixElement(self, i, j)
++        for size in self.colblocksizes:
++            if not size.is_Integer:
++                # Symbolic block size - cannot determine block
++                return MatrixElement(self, i, j)
++        
++        # All indices and sizes are numeric, find the correct block
++        orig_i, orig_j = i, j
+         for row_block, numrows in enumerate(self.rowblocksizes):
+-            if (i < numrows) != False:
++            if i < numrows:
+                 break
+-            else:
+-                i -= numrows
++            i -= numrows
++        else:
++            # Index out of range, return unevaluated
++            return MatrixElement(self, orig_i, orig_j)
++            
+         for col_block, numcols in enumerate(self.colblocksizes):
+-            if (j < numcols) != False:
++            if j < numcols:
+                 break
+-            else:
+-                j -= numcols
++            j -= numcols
++        else:
++            # Index out of range, return unevaluated
++            return MatrixElement(self, orig_i, orig_j)
++        
+         return self.blocks[row_block, col_block][i, j]
+ 
+     @property
+ 
+ 
+ 

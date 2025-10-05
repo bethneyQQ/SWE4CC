@@ -1,0 +1,23 @@
+--- a/sympy/parsing/latex/_parse_latex_antlr.py
++++ b/sympy/parsing/latex/_parse_latex_antlr.py
+@@ -379,7 +379,16 @@ def convert_relation(rel):
+ 
+ 
+ def convert_frac(frac):
+-    return sympy.Mul(convert_expr(frac.upper), sympy.Pow(convert_expr(frac.lower), -1, evaluate=False), evaluate=False)
++    diff_op = False
++    if hasattr(frac, 'lower'):
++        lower = convert_expr(frac.lower)
++    else:
++        lower = convert_expr(frac.lower_expr)
++    
++    if hasattr(frac, 'upper'):
++        upper = convert_expr(frac.upper)
++    else:
++        upper = convert_expr(frac.upper_expr)
++    return sympy.Mul(upper, sympy.Pow(lower, -1, evaluate=False), evaluate=False)
+ 
+ 
+ def convert_binom(binom):
+ 
+ 

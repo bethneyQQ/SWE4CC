@@ -1,0 +1,45 @@
+2025-10-03 23:37:06,239 - INFO - Creating container for sphinx-doc__sphinx-11445...
+2025-10-03 23:37:06,362 - INFO - Container for sphinx-doc__sphinx-11445 created: 840674f3a499e2ce5463e45d4b3cf07cbad5042f55dc033821aa126bc9d90449
+2025-10-03 23:37:06,452 - INFO - Container for sphinx-doc__sphinx-11445 started: 840674f3a499e2ce5463e45d4b3cf07cbad5042f55dc033821aa126bc9d90449
+2025-10-03 23:37:06,452 - INFO - Intermediate patch for sphinx-doc__sphinx-11445 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/sphinx-doc__sphinx-11445/patch.diff, now applying to container...
+2025-10-03 23:37:06,551 - INFO - >>>>> Applied Patch:
+Checking patch sphinx/util/rst.py...
+Applied patch sphinx/util/rst.py cleanly.
+
+2025-10-03 23:37:06,777 - INFO - Git diff before:
+diff --git a/sphinx/util/rst.py b/sphinx/util/rst.py
+index 7a1538325..2c044abcc 100644
+--- a/sphinx/util/rst.py
++++ b/sphinx/util/rst.py
+@@ -25,7 +25,7 @@ except ImportError:
+ 
+ logger = logging.getLogger(__name__)
+ 
+-docinfo_re = re.compile(':\\w+:.*?')
++docinfo_re = re.compile(r'^:\w+:( |$)')
+ symbols_re = re.compile(r'([!-\-/:-@\[-`{-~])')  # symbols without dot(0x2e)
+ SECTIONING_CHARS = ['=', '-', '~']
+2025-10-03 23:37:06,777 - INFO - Eval script for sphinx-doc__sphinx-11445 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/sphinx-doc__sphinx-11445/eval.sh; copying to container...
+2025-10-03 23:37:09,889 - INFO - Test runtime: 3.08 seconds
+2025-10-03 23:37:09,889 - INFO - Test output for sphinx-doc__sphinx-11445 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/sphinx-doc__sphinx-11445/test_output.txt
+2025-10-03 23:37:09,931 - INFO - Git diff after:
+diff --git a/sphinx/util/rst.py b/sphinx/util/rst.py
+index 7a1538325..2c044abcc 100644
+--- a/sphinx/util/rst.py
++++ b/sphinx/util/rst.py
+@@ -25,7 +25,7 @@ except ImportError:
+ 
+ logger = logging.getLogger(__name__)
+ 
+-docinfo_re = re.compile(':\\w+:.*?')
++docinfo_re = re.compile(r'^:\w+:( |$)')
+ symbols_re = re.compile(r'([!-\-/:-@\[-`{-~])')  # symbols without dot(0x2e)
+ SECTIONING_CHARS = ['=', '-', '~']
+2025-10-03 23:37:09,931 - INFO - Grading answer for sphinx-doc__sphinx-11445...
+2025-10-03 23:37:09,932 - INFO - report: {'sphinx-doc__sphinx-11445': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['tests/test_util_rst.py::test_prepend_prolog_with_roles_in_sections_with_newline', 'tests/test_util_rst.py::test_prepend_prolog_with_roles_in_sections_without_newline'], 'failure': []}, 'PASS_TO_PASS': {'success': ['tests/test_util_rst.py::test_escape', 'tests/test_util_rst.py::test_append_epilog', 'tests/test_util_rst.py::test_prepend_prolog', 'tests/test_util_rst.py::test_prepend_prolog_with_CR', 'tests/test_util_rst.py::test_prepend_prolog_without_CR', 'tests/test_util_rst.py::test_prepend_prolog_with_roles_in_sections', 'tests/test_util_rst.py::test_textwidth', 'tests/test_util_rst.py::test_heading'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sphinx-doc__sphinx-11445: resolved: True
+2025-10-03 23:37:09,932 - INFO - Attempting to stop container sweb.eval.sphinx-doc__sphinx-11445.full_eval...
+2025-10-03 23:37:25,044 - INFO - Attempting to remove container sweb.eval.sphinx-doc__sphinx-11445.full_eval...
+2025-10-03 23:37:25,053 - INFO - Container sweb.eval.sphinx-doc__sphinx-11445.full_eval removed.
+2025-10-03 23:37:25,053 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-11445:latest...
+2025-10-03 23:37:26,072 - INFO - Image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-11445:latest removed.

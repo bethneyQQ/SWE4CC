@@ -156,8 +156,13 @@ def run_instance(
         logger.info(f"Container for {instance_id} started: {container.id}")
 
         # Copy model prediction as patch file to container
+        # Fix patch format: add leading spaces to context lines
+        from swebench.inference.make_datasets.utils import fix_patch_context_lines
+        patch_content = pred[KEY_PREDICTION] or ""
+        patch_content = fix_patch_context_lines(patch_content)
+
         patch_file = Path(log_dir / "patch.diff")
-        patch_file.write_text(pred[KEY_PREDICTION] or "")
+        patch_file.write_text(patch_content)
         logger.info(
             f"Intermediate patch for {instance_id} written to {patch_file}, now applying to container..."
         )

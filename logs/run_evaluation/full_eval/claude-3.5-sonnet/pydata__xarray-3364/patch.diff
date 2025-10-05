@@ -1,0 +1,78 @@
+
+--- a/xarray/core/concat.py
++++ b/xarray/core/concat.py
+@@ -305,24 +305,35 @@
+     )
+ 
+     # determine which variables to merge, and then merge them according to compat
+     variables_to_merge = (coord_names | data_names) - concat_over - dim_names
+ 
+     result_vars = {}
+     if variables_to_merge:
+         to_merge = {var: [] for var in variables_to_merge}
+ 
+         for ds in datasets:
+-            absent_merge_vars = variables_to_merge - set(ds.variables)
+-            if absent_merge_vars:
+-                raise ValueError(
+-                    "variables %r are present in some datasets but not others. "
+-                    % absent_merge_vars
+-                )
+-
+             for var in variables_to_merge:
+-                to_merge[var].append(ds.variables[var])
++                if var in ds.variables:
++                    to_merge[var].append(ds.variables[var])
++                else:
++                    # Variable is absent in this dataset, so we skip it here
++                    # and handle it in the unique_variable call
++                    to_merge[var].append(None)
+ 
+         for var in variables_to_merge:
+-            result_vars[var] = unique_variable(
++            # Filter out None values (missing variables)
++            variables_list = [v for v in to_merge[var] if v is not None]
++            if variables_list:
++                result_vars[var] = unique_variable(
+                 var, to_merge[var], compat=compat, equals=equals.get(var, None)
+             )
++            # If variable is missing from all datasets, we don't include it
++            # (this shouldn't happen given how variables_to_merge is constructed,
++            # but we handle it for robustness)
+     else:
+         result_vars = {}
+     result_vars.update(dim_coords)
+@@ -357,10 +368,28 @@
+     # stack up each variable to fill-out the dataset (in order)
+     # n.b. this loop preserves variable order, needed for groupby.
+     for k in datasets[0].variables:
+         if k in concat_over:
+-            try:
+-                vars = ensure_common_dims([ds.variables[k] for ds in datasets])
+-            except KeyError:
+-                raise ValueError("%r is not present in all datasets." % k)
++            # Collect variables, creating NaN-filled variables for missing ones
++            vars_to_concat = []
++            for ds, dim_len in zip(datasets, concat_dim_lengths):
++                if k in ds.variables:
++                    vars_to_concat.append(ds.variables[k])
++                else:
++                    # Variable is missing from this dataset, create a NaN-filled variable
++                    # with the same dimensions as in the first dataset that has it
++                    first_var = None
++                    for ds_search in datasets:
++                        if k in ds_search.variables:
++                            first_var = ds_search.variables[k]
++                            break
++                    if first_var is not None:
++                        # Create shape for this dataset based on first_var's dims
++                        shape = tuple(
++                            ds.dims.get(d, dim_len) if d == dim else ds.dims.get(d, dims_sizes.get(d, 1))
++                            for d in first_var.dims
++                        )
++                        nan_var = Variable(first_var.dims, fill_value, attrs=first_var.attrs)
++                        vars_to_concat.append(nan_var.set_dims(first_var.dims, shape))
++            vars = ensure_common_dims(vars_to_concat)
+             combined = concat_vars(vars, dim, positions)
+             assert isinstance(combined, Variable)
+             result_vars[k] = combined

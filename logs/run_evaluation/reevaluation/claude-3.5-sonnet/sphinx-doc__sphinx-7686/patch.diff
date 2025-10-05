@@ -1,0 +1,35 @@
+--- a/sphinx/ext/autosummary/generate.py
++++ b/sphinx/ext/autosummary/generate.py
+@@ -246,7 +246,17 @@
+     ns.update(context)
+ 
+     if doc.objtype == 'module':
+-        ns['members'] = dir(obj)
++        scanner = ModuleScanner(app, obj)
++        ns['members'] = scanner.get_object_members(imported_members)[1]
+         ns['functions'], ns['all_functions'] = \
+             get_members(obj, {'function'}, imported=imported_members)
+         ns['classes'], ns['all_classes'] = \
+@@ -246,7 +246,18 @@
+     ns.update(context)
+ 
+     if doc.objtype == 'module':
+-        ns['members'] = dir(obj)
++        if imported_members:
++            ns['members'] = dir(obj)
++        else:
++            # Filter out imported members
++            members = []
++            for name in dir(obj):
++                try:
++                    value = safe_getattr(obj, name)
++                    if getattr(value, '__module__', None) == obj.__name__:
++                        members.append(name)
++                except AttributeError:
++                    pass
++            ns['members'] = members
+         ns['functions'], ns['all_functions'] = \
+             get_members(obj, {'function'}, imported=imported_members)
+         ns['classes'], ns['all_classes'] = \
+ 
+ 

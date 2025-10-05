@@ -1,0 +1,26 @@
+Perfect! Now I can see the exact code. The fix is to check if both `left` and `right` are bytes objects, and if so, skip the "contains more items" message. This is because bytes are sequences of integers, and showing "first extra item: 52" when comparing `b""` and `b"42"` is confusing since users see the byte string representation but get integer values.
+
+Here's my analysis and patch:
+
+## Analysis
+
+The issue occurs in `_compare_eq_sequence` function in `/tmp/swebench_repos/pytest-dev__pytest-5495/src/_pytest/assertion/util.py`. When comparing byte strings like `b""` and `b"42"`, they are treated as sequences of integers, causing the function to report "Right contains more items, first extra item: 52" (where 52 is the ASCII value of '4'). This is confusing because the byte string representation shows characters but the error shows integer values. The fix is to skip the "contains more items" message for bytes objects.
+
+```diff
+--- a/src/_pytest/assertion/util.py
++++ b/src/_pytest/assertion/util.py
+@@ -266,7 +266,10 @@ def _compare_eq_sequence(left, right, verbose=0):
+     len_diff = len_left - len_right
+ 
+     if len_diff:
+-        if len_diff > 0:
++        # For bytes, skip the "contains more items" message since it shows
++        # integer ordinals which is confusing when comparing byte strings
++        if isinstance(left, bytes) and isinstance(right, bytes):
++            pass
++        elif len_diff > 0:
+             dir_with_more = "Left"
+             extra = saferepr(left[len_right])
+         else:
+ 
+ 

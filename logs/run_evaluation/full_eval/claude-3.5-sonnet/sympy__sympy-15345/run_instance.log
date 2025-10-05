@@ -1,0 +1,45 @@
+2025-10-04 00:18:05,147 - INFO - Creating container for sympy__sympy-15345...
+2025-10-04 00:18:13,189 - INFO - Container for sympy__sympy-15345 created: 71d0847c45aacabd730938e3ea9cc20aa059ceab262bbb57fb9644cbc059d2e3
+2025-10-04 00:18:13,291 - INFO - Container for sympy__sympy-15345 started: 71d0847c45aacabd730938e3ea9cc20aa059ceab262bbb57fb9644cbc059d2e3
+2025-10-04 00:18:13,291 - INFO - Intermediate patch for sympy__sympy-15345 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-15345/patch.diff, now applying to container...
+2025-10-04 00:18:13,374 - INFO - >>>>> Applied Patch:
+Checking patch sympy/printing/mathematica.py...
+Applied patch sympy/printing/mathematica.py cleanly.
+
+2025-10-04 00:18:13,669 - INFO - Git diff before:
+diff --git a/sympy/printing/mathematica.py b/sympy/printing/mathematica.py
+index ea7e3a2d9..3318d46a2 100644
+--- a/sympy/printing/mathematica.py
++++ b/sympy/printing/mathematica.py
+@@ -31,6 +31,8 @@
+     "asech": [(lambda x: True, "ArcSech")],
+     "acsch": [(lambda x: True, "ArcCsch")],
+     "conjugate": [(lambda x: True, "Conjugate")],
++    "Max": [(lambda *x: True, "Max")],
++    "Min": [(lambda *x: True, "Min")],
+ 
+ }
+2025-10-04 00:18:13,669 - INFO - Eval script for sympy__sympy-15345 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-15345/eval.sh; copying to container...
+2025-10-04 00:18:16,586 - INFO - Test runtime: 2.88 seconds
+2025-10-04 00:18:16,587 - INFO - Test output for sympy__sympy-15345 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/sympy__sympy-15345/test_output.txt
+2025-10-04 00:18:16,625 - INFO - Git diff after:
+diff --git a/sympy/printing/mathematica.py b/sympy/printing/mathematica.py
+index ea7e3a2d9..3318d46a2 100644
+--- a/sympy/printing/mathematica.py
++++ b/sympy/printing/mathematica.py
+@@ -31,6 +31,8 @@
+     "asech": [(lambda x: True, "ArcSech")],
+     "acsch": [(lambda x: True, "ArcCsch")],
+     "conjugate": [(lambda x: True, "Conjugate")],
++    "Max": [(lambda *x: True, "Max")],
++    "Min": [(lambda *x: True, "Min")],
+ 
+ }
+2025-10-04 00:18:16,625 - INFO - Grading answer for sympy__sympy-15345...
+2025-10-04 00:18:16,625 - INFO - report: {'sympy__sympy-15345': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_Function']}, 'PASS_TO_PASS': {'success': ['test_Integer', 'test_Rational', 'test_Pow', 'test_Mul', 'test_constants', 'test_containers', 'test_Integral', 'test_Derivative'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-15345: resolved: False
+2025-10-04 00:18:16,625 - INFO - Attempting to stop container sweb.eval.sympy__sympy-15345.full_eval...
+2025-10-04 00:18:31,764 - INFO - Attempting to remove container sweb.eval.sympy__sympy-15345.full_eval...
+2025-10-04 00:18:31,778 - INFO - Container sweb.eval.sympy__sympy-15345.full_eval removed.
+2025-10-04 00:18:31,778 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-15345:latest...
+2025-10-04 00:18:32,730 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-15345:latest removed.

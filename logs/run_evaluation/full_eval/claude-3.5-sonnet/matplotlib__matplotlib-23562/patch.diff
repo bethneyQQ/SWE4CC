@@ -1,0 +1,16 @@
+
+--- a/lib/mpl_toolkits/mplot3d/art3d.py
++++ b/lib/mpl_toolkits/mplot3d/art3d.py
+@@ -759,6 +759,8 @@
+     def set_3d_properties(self):
+         # Force the collection to initialize the face and edgecolors
+         # just in case it is a scalarmappable with a colormap.
+         self.update_scalarmappable()
+         self._sort_zpos = None
+         self.set_zsort('average')
+         self._facecolor3d = PolyCollection.get_facecolor(self)
+         self._edgecolor3d = PolyCollection.get_edgecolor(self)
+         self._alpha3d = PolyCollection.get_alpha(self)
++        self._facecolors2d = self._facecolor3d
++        self._edgecolors2d = self._edgecolor3d
+         self.stale = True

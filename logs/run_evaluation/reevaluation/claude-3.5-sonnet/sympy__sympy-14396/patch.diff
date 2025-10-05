@@ -1,0 +1,91 @@
+--- a/sympy/polys/polyoptions.py
++++ b/sympy/polys/polyoptions.py
+@@ -405,9 +405,11 @@
+     _re_realfield = re.compile(r"^(R|RR)(_(\d+))?$")
+     _re_complexfield = re.compile(r"^(C|CC)(_(\d+))?$")
+     _re_finitefield = re.compile(r"^(FF|GF)\((\d+)\)$")
+-    _re_polynomial = re.compile(r"^(Z|ZZ|Q|QQ)\[(.+)\]$")
+-    _re_fraction = re.compile(r"^(Z|ZZ|Q|QQ)\((.+)\)$")
+-    _re_algebraic = re.compile(r"^(Q|QQ)\<(.+)\>$")
++    _re_polynomial = re.compile(r"^(Z|ZZ|Q|QQ|R|RR|C|CC)\[(.+)\]$")
++    _re_fraction = re.compile(r"^(Z|ZZ|Q|QQ|R|RR|C|CC)\((.+)\)$")
++    _re_algebraic = re.compile(r"^(Q|QQ)\<(.+)\>$")
++    _re_polynomial_realfield = re.compile(r"^(R|RR)(_(\d+))?\[(.+)\]$")
++    _re_polynomial_complexfield = re.compile(r"^(C|CC)(_(\d+))?\[(.+)\]$")
+ 
+     @classmethod
+     def preprocess(cls, domain):
+@@ -450,6 +452,34 @@
+             if r is not None:
+                 return sympy.polys.domains.FF(int(r.groups()[1]))
+ 
++            r = cls._re_polynomial_realfield.match(domain)
++
++            if r is not None:
++                _, _, prec, gens = r.groups()
++
++                gens = list(map(sympify, gens.split(',')))
++
++                if prec is None:
++                    return sympy.polys.domains.RR.poly_ring(*gens)
++                else:
++                    return sympy.polys.domains.RealField(int(prec)).poly_ring(*gens)
++
++            r = cls._re_polynomial_complexfield.match(domain)
++
++            if r is not None:
++                _, _, prec, gens = r.groups()
++
++                gens = list(map(sympify, gens.split(',')))
++
++                if prec is None:
++                    return sympy.polys.domains.CC.poly_ring(*gens)
++                else:
++                    return sympy.polys.domains.ComplexField(int(prec)).poly_ring(*gens)
++
++            # Handle simple RR[...] or CC[...] patterns (without precision)
++            # This is checked after the more specific patterns above
++            # Now handled by the updated _re_polynomial pattern below
++
+             r = cls._re_polynomial.match(domain)
+ 
+             if r is not None:
+@@ -460,7 +490,11 @@
+                 if ground in ['Z', 'ZZ']:
+                     return sympy.polys.domains.ZZ.poly_ring(*gens)
+                 else:
+-                    return sympy.polys.domains.QQ.poly_ring(*gens)
++                    return sympy.polys.domains.QQ.poly_ring(*gens)
++
++                if ground in ['R', 'RR']:
++                    return sympy.polys.domains.RR.poly_ring(*gens)
++                elif ground in ['C', 'CC']:
++                    return sympy.polys.domains.CC.poly_ring(*gens)
+ 
+             r = cls._re_fraction.match(domain)
+ 
+@@ -471,8 +505,12 @@
+ 
+                 if ground in ['Z', 'ZZ']:
+                     return sympy.polys.domains.ZZ.frac_field(*gens)
+-                else:
++                elif ground in ['Q', 'QQ']:
+                     return sympy.polys.domains.QQ.frac_field(*gens)
++                elif ground in ['R', 'RR']:
++                    return sympy.polys.domains.RR.frac_field(*gens)
++                elif ground in ['C', 'CC']:
++                    return sympy.polys.domains.CC.frac_field(*gens)
+ 
+             r = cls._re_algebraic.match(domain)
+ 
+@@ -480,7 +518,7 @@
+                 gens = list(map(sympify, r.groups()[1].split(',')))
+                 return sympy.polys.domains.QQ.algebraic_field(*gens)
+ 
+-        raise OptionError('expected a valid domain specification, got %s' % domain)
++        raise OptionError("'%s' is not a valid domain specification" % domain)
+ 
+     @classmethod
+     def postprocess(cls, options):
+ 
+ 

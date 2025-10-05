@@ -1,0 +1,15 @@
+--- a/django/db/models/sql/compiler.py
++++ b/django/db/models/sql/compiler.py
+@@ -330,7 +330,10 @@ class SQLCompiler:
+                     continue
+                 if sql:
+                     # Avoid duplicates by checking if this expression was already processed
+-                    without_ordering = self.ordering_parts.search(sql).group(1)
++                    # Handle multiline SQL by converting to single line for comparison
++                    # This prevents false duplicates when multiline expressions have identical final lines
++                    sql_oneline = ' '.join(sql.splitlines())
++                    without_ordering = self.ordering_parts.search(sql_oneline).group(1)
+                     if without_ordering in seen:
+                         continue
+                     seen.add(without_ordering)
+ 

@@ -1,0 +1,23 @@
+--- a/sympy/physics/units/unitsystem.py
++++ b/sympy/physics/units/unitsystem.py
+@@ -191,9 +191,16 @@ class UnitSystem(_QuantityMapper):
+             return factor, dim
+         elif isinstance(expr, Function):
+             fds = [self._collect_factor_and_dimension(
+                 arg) for arg in expr.args]
+-            return (expr.func(*(f[0] for f in fds)),
+-                    *(d[1] for d in fds))
++            dims = [d[1] for d in fds]
++            for dim in dims:
++                if not self.get_dimension_system().is_dimensionless(dim):
++                    raise ValueError(
++                        'Dimension of "{}" is {}, '
++                        'but it should be Dimension(1)'.format(
++                            expr, dim))
++            return expr.func(*(f[0] for f in fds)), Dimension(1)
+         elif isinstance(expr, Dimension):
+             return S.One, expr
+         else:
+             return expr, Dimension(1)
+ 
+ 

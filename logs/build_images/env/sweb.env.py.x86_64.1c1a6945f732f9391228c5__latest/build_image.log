@@ -1,0 +1,46 @@
+2025-10-01 05:27:51,972 - INFO - Building image sweb.env.py.x86_64.1c1a6945f732f9391228c5:latest
+Using dockerfile:
+FROM --platform=linux/x86_64 sweb.base.py.x86_64:latest
+
+COPY ./setup_env.sh /root/
+RUN sed -i -e 's/\r$//' /root/setup_env.sh
+RUN chmod +x /root/setup_env.sh
+RUN /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"
+
+WORKDIR /testbed/
+
+# Automatically activate the testbed environment
+RUN echo "source /opt/miniconda3/etc/profile.d/conda.sh && conda activate testbed" > /root/.bashrc
+
+Adding (1) setup scripts to image build repo
+2025-10-01 05:27:51,975 - INFO - [SETUP SCRIPT] setup_env.sh:
+#!/bin/bash
+set -euxo pipefail
+source /opt/miniconda3/bin/activate
+conda create -n testbed python=3.9  -y
+conda activate testbed
+python -m pip install atomicwrites==1.4.1 attrs==23.1.0 more-itertools==10.1.0 packaging==23.1 pluggy==0.13.1 py==1.11.0 wcwidth==0.2.6
+
+2025-10-01 05:27:51,978 - INFO - Building docker image sweb.env.py.x86_64.1c1a6945f732f9391228c5:latest in logs/build_images/env/sweb.env.py.x86_64.1c1a6945f732f9391228c5__latest with platform linux/x86_64
+2025-10-01 05:28:10,252 - INFO - Step 1/7 : FROM --platform=linux/x86_64 sweb.base.py.x86_64:latest
+2025-10-01 05:28:10,252 - INFO - 
+2025-10-01 05:28:13,501 - INFO - ---> 71e8b6b130a0
+2025-10-01 05:28:13,501 - INFO - Step 2/7 : COPY ./setup_env.sh /root/
+2025-10-01 05:28:13,501 - INFO - 
+2025-10-01 05:28:41,924 - INFO - ---> 850e80867d6c
+2025-10-01 05:28:42,598 - INFO - Step 3/7 : RUN sed -i -e 's/\r$//' /root/setup_env.sh
+2025-10-01 05:28:42,598 - INFO - 
+2025-10-01 05:28:46,181 - INFO - ---> Running in 030e44023e3b
+2025-10-01 05:30:36,325 - INFO - ---> Removed intermediate container 030e44023e3b
+2025-10-01 05:30:36,375 - INFO - ---> 91a5303b5260
+2025-10-01 05:30:36,381 - INFO - Step 4/7 : RUN chmod +x /root/setup_env.sh
+2025-10-01 05:30:36,388 - INFO - 
+2025-10-01 05:30:40,077 - INFO - ---> Running in d9d4c81b504d
+2025-10-01 05:31:39,119 - INFO - ---> Removed intermediate container d9d4c81b504d
+2025-10-01 05:31:39,145 - INFO - ---> 1c66c4728263
+2025-10-01 05:31:39,170 - INFO - Step 5/7 : RUN /bin/bash -c "source ~/.bashrc && /root/setup_env.sh"
+2025-10-01 05:31:39,175 - INFO - 
+2025-10-01 05:31:39,596 - INFO - ---> Running in e8132871ebf0
+2025-10-01 05:32:57,955 - INFO - ---> Removed intermediate container e8132871ebf0
+2025-10-01 05:32:58,032 - ERROR - Error: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: unable to apply cgroup configuration: unable to start unit "docker-e8132871ebf0efcc0a1526b35222ed8675293d4c0dfc13c721abfc5031a1837f.scope" (properties [{Name:Description Value:"libcontainer container e8132871ebf0efcc0a1526b35222ed8675293d4c0dfc13c721abfc5031a1837f"} {Name:Slice Value:"system.slice"} {Name:Delegate Value:true} {Name:PIDs Value:@au [742807]} {Name:MemoryAccounting Value:true} {Name:CPUAccounting Value:true} {Name:IOAccounting Value:true} {Name:TasksAccounting Value:true} {Name:DefaultDependencies Value:false}]): Timeout waiting for systemd to create docker-e8132871ebf0efcc0a1526b35222ed8675293d4c0dfc13c721abfc5031a1837f.scope: unknown
+2025-10-01 05:32:58,208 - ERROR - docker.errors.BuildError during sweb.env.py.x86_64.1c1a6945f732f9391228c5:latest: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: unable to apply cgroup configuration: unable to start unit "docker-e8132871ebf0efcc0a1526b35222ed8675293d4c0dfc13c721abfc5031a1837f.scope" (properties [{Name:Description Value:"libcontainer container e8132871ebf0efcc0a1526b35222ed8675293d4c0dfc13c721abfc5031a1837f"} {Name:Slice Value:"system.slice"} {Name:Delegate Value:true} {Name:PIDs Value:@au [742807]} {Name:MemoryAccounting Value:true} {Name:CPUAccounting Value:true} {Name:IOAccounting Value:true} {Name:TasksAccounting Value:true} {Name:DefaultDependencies Value:false}]): Timeout waiting for systemd to create docker-e8132871ebf0efcc0a1526b35222ed8675293d4c0dfc13c721abfc5031a1837f.scope: unknown

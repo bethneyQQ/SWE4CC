@@ -1,0 +1,16 @@
+--- a/sympy/printing/pycode.py
++++ b/sympy/printing/pycode.py
+@@ -445,7 +445,10 @@
+         return self._print_Function(expr)
+ 
+     def _print_Tuple(self, expr):
+-        return '({})'.format(', '.join(self._print(i) for i in expr))
++        if len(expr) == 1:
++            return '({},)'.format(self._print(expr[0]))
++        else:
++            return '({})'.format(', '.join(self._print(i) for i in expr))
+ 
+     def _print_Relational(self, expr):
+         "Relational printer for Equality and Unequality"
+ 
+ ```

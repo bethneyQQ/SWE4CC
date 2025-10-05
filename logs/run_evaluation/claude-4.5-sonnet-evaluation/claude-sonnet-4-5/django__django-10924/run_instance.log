@@ -1,0 +1,47 @@
+2025-10-04 17:47:57,961 - INFO - Creating container for django__django-10924...
+2025-10-04 17:47:59,799 - INFO - Container for django__django-10924 created: 0d0f797a908211dffe68c8d34b474ecb89f8f3a31e015e863ad3d5de8917c092
+2025-10-04 17:47:59,908 - INFO - Container for django__django-10924 started: 0d0f797a908211dffe68c8d34b474ecb89f8f3a31e015e863ad3d5de8917c092
+2025-10-04 17:47:59,908 - INFO - Intermediate patch for django__django-10924 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-10924/patch.diff, now applying to container...
+2025-10-04 17:47:59,998 - INFO - >>>>> Applied Patch:
+Checking patch django/forms/fields.py...
+Applied patch django/forms/fields.py cleanly.
+
+2025-10-04 17:48:00,572 - INFO - Git diff before:
+diff --git a/django/forms/fields.py b/django/forms/fields.py
+index a977256525..1016d461a2 100644
+--- a/django/forms/fields.py
++++ b/django/forms/fields.py
+@@ -1078,6 +1078,8 @@ class MultiValueField(Field):
+ class FilePathField(ChoiceField):
+     def __init__(self, path, *, match=None, recursive=False, allow_files=True,
+                  allow_folders=False, **kwargs):
++        if callable(path):
++            path = path()
+         self.path, self.match, self.recursive = path, match, recursive
+         self.allow_files, self.allow_folders = allow_files, allow_folders
+         super().__init__(choices=(), **kwargs)
+2025-10-04 17:48:00,572 - INFO - Eval script for django__django-10924 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-10924/eval.sh; copying to container...
+2025-10-04 17:48:09,200 - INFO - Test runtime: 8.59 seconds
+2025-10-04 17:48:09,200 - INFO - Test output for django__django-10924 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-10924/test_output.txt
+2025-10-04 17:48:09,246 - INFO - Git diff after:
+diff --git a/django/forms/fields.py b/django/forms/fields.py
+index a977256525..1016d461a2 100644
+--- a/django/forms/fields.py
++++ b/django/forms/fields.py
+@@ -1078,6 +1078,8 @@ class MultiValueField(Field):
+ class FilePathField(ChoiceField):
+     def __init__(self, path, *, match=None, recursive=False, allow_files=True,
+                  allow_folders=False, **kwargs):
++        if callable(path):
++            path = path()
+         self.path, self.match, self.recursive = path, match, recursive
+         self.allow_files, self.allow_folders = allow_files, allow_folders
+         super().__init__(choices=(), **kwargs)
+2025-10-04 17:48:09,247 - INFO - Grading answer for django__django-10924...
+2025-10-04 17:48:09,247 - INFO - report: {'django__django-10924': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_callable_path (model_fields.test_filepathfield.FilePathFieldTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_path (model_fields.test_filepathfield.FilePathFieldTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-10924: resolved: True
+2025-10-04 17:48:09,247 - INFO - Attempting to stop container sweb.eval.django__django-10924.claude-4.5-sonnet-evaluation...
+2025-10-04 17:48:24,389 - INFO - Attempting to remove container sweb.eval.django__django-10924.claude-4.5-sonnet-evaluation...
+2025-10-04 17:48:24,405 - INFO - Container sweb.eval.django__django-10924.claude-4.5-sonnet-evaluation removed.
+2025-10-04 17:48:24,405 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-10924:latest...
+2025-10-04 17:48:24,563 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-10924:latest removed.

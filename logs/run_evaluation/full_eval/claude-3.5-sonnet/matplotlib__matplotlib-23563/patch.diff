@@ -1,0 +1,19 @@
+
+--- a/lib/mpl_toolkits/mplot3d/art3d.py
++++ b/lib/mpl_toolkits/mplot3d/art3d.py
+@@ -211,7 +211,14 @@ class Line3D(lines.Line2D):
+ 
+     @artist.allow_rasterization
+     def draw(self, renderer):
+-        xs3d, ys3d, zs3d = self._verts3d
++        # Ensure _verts3d exists before attempting to draw
++        # This can happen if a Line2D is improperly converted to Line3D
++        # or if the object state is corrupted
++        if not hasattr(self, '_verts3d'):
++            # Initialize with 2D data if available, otherwise use empty arrays
++            xs, ys = self.get_xdata(), self.get_ydata()
++            self._verts3d = (xs, ys, np.zeros_like(xs))
++        xs3d, ys3d, zs3d = self._verts3d
+         xs, ys, zs = proj3d.proj_transform(xs3d, ys3d, zs3d, self.axes.M)
+         self.set_data(xs, ys)
+         super().draw(renderer)

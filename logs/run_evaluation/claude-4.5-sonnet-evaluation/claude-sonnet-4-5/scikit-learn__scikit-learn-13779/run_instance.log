@@ -1,0 +1,45 @@
+2025-10-04 19:01:37,803 - INFO - Creating container for scikit-learn__scikit-learn-13779...
+2025-10-04 19:02:09,352 - INFO - Container for scikit-learn__scikit-learn-13779 created: 34a7eebb44ff5ec4b3af878b906b18a29b3ad958a3d57cec561d7f491572a1a2
+2025-10-04 19:02:09,479 - INFO - Container for scikit-learn__scikit-learn-13779 started: 34a7eebb44ff5ec4b3af878b906b18a29b3ad958a3d57cec561d7f491572a1a2
+2025-10-04 19:02:09,479 - INFO - Intermediate patch for scikit-learn__scikit-learn-13779 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/scikit-learn__scikit-learn-13779/patch.diff, now applying to container...
+2025-10-04 19:02:09,568 - INFO - >>>>> Applied Patch:
+Checking patch sklearn/ensemble/voting.py...
+Applied patch sklearn/ensemble/voting.py cleanly.
+
+2025-10-04 19:02:09,766 - INFO - Git diff before:
+diff --git a/sklearn/ensemble/voting.py b/sklearn/ensemble/voting.py
+index 7afa7180c..13accdcec 100644
+--- a/sklearn/ensemble/voting.py
++++ b/sklearn/ensemble/voting.py
+@@ -78,7 +78,7 @@ class _BaseVoting(_BaseComposition, TransformerMixin):
+ 
+         if sample_weight is not None:
+             for name, step in self.estimators:
+-                if not has_fit_parameter(step, 'sample_weight'):
++                if step is not None and not has_fit_parameter(step, 'sample_weight'):
+                     raise ValueError('Underlying estimator \'%s\' does not'
+                                      ' support sample weights.' % name)
+2025-10-04 19:02:09,767 - INFO - Eval script for scikit-learn__scikit-learn-13779 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/scikit-learn__scikit-learn-13779/eval.sh; copying to container...
+2025-10-04 19:02:14,485 - INFO - Test runtime: 4.68 seconds
+2025-10-04 19:02:14,486 - INFO - Test output for scikit-learn__scikit-learn-13779 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/scikit-learn__scikit-learn-13779/test_output.txt
+2025-10-04 19:02:14,527 - INFO - Git diff after:
+diff --git a/sklearn/ensemble/voting.py b/sklearn/ensemble/voting.py
+index 7afa7180c..13accdcec 100644
+--- a/sklearn/ensemble/voting.py
++++ b/sklearn/ensemble/voting.py
+@@ -78,7 +78,7 @@ class _BaseVoting(_BaseComposition, TransformerMixin):
+ 
+         if sample_weight is not None:
+             for name, step in self.estimators:
+-                if not has_fit_parameter(step, 'sample_weight'):
++                if step is not None and not has_fit_parameter(step, 'sample_weight'):
+                     raise ValueError('Underlying estimator \'%s\' does not'
+                                      ' support sample weights.' % name)
+2025-10-04 19:02:14,527 - INFO - Grading answer for scikit-learn__scikit-learn-13779...
+2025-10-04 19:02:14,527 - INFO - report: {'scikit-learn__scikit-learn-13779': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['sklearn/ensemble/tests/test_voting.py::test_none_estimator_with_weights[X0-y0-voter0]', 'sklearn/ensemble/tests/test_voting.py::test_none_estimator_with_weights[X1-y1-voter1]'], 'failure': []}, 'PASS_TO_PASS': {'success': ['sklearn/ensemble/tests/test_voting.py::test_estimator_init', 'sklearn/ensemble/tests/test_voting.py::test_predictproba_hardvoting', 'sklearn/ensemble/tests/test_voting.py::test_notfitted', 'sklearn/ensemble/tests/test_voting.py::test_majority_label_iris', 'sklearn/ensemble/tests/test_voting.py::test_tie_situation', 'sklearn/ensemble/tests/test_voting.py::test_weights_iris', 'sklearn/ensemble/tests/test_voting.py::test_weights_regressor', 'sklearn/ensemble/tests/test_voting.py::test_predict_on_toy_problem', 'sklearn/ensemble/tests/test_voting.py::test_predict_proba_on_toy_problem', 'sklearn/ensemble/tests/test_voting.py::test_multilabel', 'sklearn/ensemble/tests/test_voting.py::test_gridsearch', 'sklearn/ensemble/tests/test_voting.py::test_parallel_fit', 'sklearn/ensemble/tests/test_voting.py::test_sample_weight', 'sklearn/ensemble/tests/test_voting.py::test_sample_weight_kwargs', 'sklearn/ensemble/tests/test_voting.py::test_set_params', 'sklearn/ensemble/tests/test_voting.py::test_set_estimator_none', 'sklearn/ensemble/tests/test_voting.py::test_estimator_weights_format', 'sklearn/ensemble/tests/test_voting.py::test_transform'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for scikit-learn__scikit-learn-13779: resolved: True
+2025-10-04 19:02:14,527 - INFO - Attempting to stop container sweb.eval.scikit-learn__scikit-learn-13779.claude-4.5-sonnet-evaluation...
+2025-10-04 19:02:29,662 - INFO - Attempting to remove container sweb.eval.scikit-learn__scikit-learn-13779.claude-4.5-sonnet-evaluation...
+2025-10-04 19:02:29,671 - INFO - Container sweb.eval.scikit-learn__scikit-learn-13779.claude-4.5-sonnet-evaluation removed.
+2025-10-04 19:02:29,671 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13779:latest...
+2025-10-04 19:02:30,448 - INFO - Image swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13779:latest removed.

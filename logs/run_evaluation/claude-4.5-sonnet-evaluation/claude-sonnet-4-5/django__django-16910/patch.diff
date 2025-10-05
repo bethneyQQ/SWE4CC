@@ -1,0 +1,35 @@
+--- a/django/db/models/sql/query.py
++++ b/django/db/models/sql/query.py
+@@ -778,12 +778,26 @@ class Query(BaseExpression):
+         select_mask[opts.pk] = {}
+         # Only include fields mentioned in the mask.
+         for field_name, field_mask in mask.items():
+-            field = opts.get_field(field_name)
+-            field_select_mask = select_mask.setdefault(field, {})
++            if filtered_relation := self._filtered_relations.get(field_name):
++                relation = opts.get_field(filtered_relation.relation_name)
++                field_select_mask = select_mask.setdefault((field_name, relation), {})
++                field = relation.field
++            else:
++                field = opts.get_field(field_name)
++                # Handle reverse relationships.
++                if not hasattr(field, "remote_field"):
++                    if not hasattr(field, "field"):
++                        # Skip virtual fields like many-to-many.
++                        continue
++                    # This is a reverse relation, get the actual field.
++                    field = field.field
++                    field_select_mask = select_mask.setdefault(field, {})
++                else:
++                    field_select_mask = select_mask.setdefault(field, {})
+             if field_mask:
+                 if not field.is_relation:
+                     raise FieldError(next(iter(field_mask)))
+-                related_model = field.remote_field.model._meta.concrete_model
++                # Use field.model for reverse relations, field.remote_field.model for forward.
++                related_model = field.model._meta.concrete_model
+                 self._get_only_select_mask(
+                     related_model._meta, field_mask, field_select_mask
+                 )
+ 
+ 

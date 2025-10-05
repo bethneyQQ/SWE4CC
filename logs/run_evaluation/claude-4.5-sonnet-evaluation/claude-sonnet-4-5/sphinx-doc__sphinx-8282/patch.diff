@@ -1,0 +1,23 @@
+--- a/sphinx/ext/autodoc/__init__.py
++++ b/sphinx/ext/autodoc/__init__.py
+@@ -1259,7 +1259,7 @@
+                     documenter = FunctionDocumenter(self.directive, '')
+                     documenter.object = func
+                     documenter.objpath = [None]
+-                    sigs.append(documenter.format_signature())
++                    sigs.append(documenter.format_signature(**kwargs))
+         if overloaded:
+             __globals__ = safe_getattr(self.object, '__globals__', {})
+             for overload in self.analyzer.overloads.get('.'.join(self.objpath)):
+@@ -1902,7 +1902,7 @@
+                     documenter = MethodDocumenter(self.directive, '')
+                     documenter.parent = self.parent
+                     documenter.object = func
+                     documenter.objpath = [None]
+-                    sigs.append(documenter.format_signature())
++                    sigs.append(documenter.format_signature(**kwargs))
+         if overloaded:
+             __globals__ = safe_getattr(self.object, '__globals__', {})
+             for overload in self.analyzer.overloads.get('.'.join(self.objpath)):
+ 
+ 

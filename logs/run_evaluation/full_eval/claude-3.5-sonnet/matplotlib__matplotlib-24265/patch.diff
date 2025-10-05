@@ -1,0 +1,37 @@
+
+--- a/lib/matplotlib/style/core.py
++++ b/lib/matplotlib/style/core.py
+@@ -254,8 +254,30 @@
+ def reload_library():
+     """Reload the style library."""
+     global library
+     library = update_user_library(_base_library)
+     available[:] = sorted(library.keys())
++    
++    # Add deprecated seaborn style aliases for backward compatibility
++    # so that direct access to library["seaborn-<style>"] still works
++    deprecated_seaborn_styles = [
++        "seaborn",
++        "seaborn-bright",
++        "seaborn-colorblind",
++        "seaborn-dark",
++        "seaborn-darkgrid",
++        "seaborn-dark-palette",
++        "seaborn-deep",
++        "seaborn-muted",
++        "seaborn-notebook",
++        "seaborn-paper",
++        "seaborn-pastel",
++        "seaborn-poster",
++        "seaborn-talk",
++        "seaborn-ticks",
++        "seaborn-white",
++        "seaborn-whitegrid",
++    ]
++    for style_name in deprecated_seaborn_styles:
++        new_style_name = style_name.replace("seaborn", "seaborn-v0_8")
++        if new_style_name in library:
++            library[style_name] = library[new_style_name]
+ 
+ 
+ reload_library()

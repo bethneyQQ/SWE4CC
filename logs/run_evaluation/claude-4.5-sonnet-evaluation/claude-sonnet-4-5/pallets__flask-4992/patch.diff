@@ -1,0 +1,42 @@
+--- a/src/flask/config.py
++++ b/src/flask/config.py
+@@ -232,6 +232,7 @@ class Config(dict):
+     def from_file(
+         self,
+         filename: str,
+         load: t.Callable[[t.IO[t.Any]], t.Mapping],
+         silent: bool = False,
++        text: bool = True,
+     ) -> bool:
+@@ -245,6 +246,10 @@ class Config(dict):
+             app.config.from_file("config.json", load=json.load)
+ 
+             import toml
+             app.config.from_file("config.toml", load=toml.load)
++
++            import tomllib
++            app.config.from_file("config.toml", load=tomllib.load, text=False)
+ 
+         :param filename: The path to the data file. This can be an
+             absolute path or relative to the config root path.
+@@ -254,6 +259,8 @@ class Config(dict):
+         :type load: ``Callable[[Reader], Mapping]`` where ``Reader``
+             implements a ``read`` method.
+         :param silent: Ignore the file if it doesn't exist.
++        :param text: If set to ``False``, open the file in binary mode.
++            The default is ``True`` (open in text mode).
+         :return: ``True`` if the file was loaded successfully.
+ 
+         .. versionadded:: 2.0
+@@ -261,7 +268,8 @@ class Config(dict):
+         filename = os.path.join(self.root_path, filename)
+ 
+         try:
+-            with open(filename) as f:
++            mode = "r" if text else "rb"
++            with open(filename, mode) as f:
+                 obj = load(f)
+         except OSError as e:
+             if silent and e.errno in (errno.ENOENT, errno.EISDIR):
+ 
+ 

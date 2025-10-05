@@ -1,0 +1,14 @@
+
+--- a/django/contrib/auth/management/__init__.py
++++ b/django/contrib/auth/management/__init__.py
+@@ -76,7 +76,7 @@
+     for klass in app_config.get_models():
+         # Force looking up the content types in the current database
+         # before creating foreign keys to them.
+-        ctype = ContentType.objects.db_manager(using).get_for_model(
+-            klass, for_concrete_model=False
++        ctype = ContentType.objects.get_for_model(
++            klass, for_concrete_model=False, using=using
+         )
+ 
+         ctypes.add(ctype)

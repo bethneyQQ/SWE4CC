@@ -1,0 +1,12 @@
+--- a/file.py
++++ b/file.py
+@@ -10,7 +10,8 @@
+ def function(value):
+     # Context line (note the leading space!)
+     if value is None:
+-        return False
++        return None
++    if not value:
++        return False
+     return True
+ 

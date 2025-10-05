@@ -1,0 +1,296 @@
+找到 39 个标准API实例需要评估
+
+加载原始数据集...
+Filter:   0%|          | 0/300 [00:00<?, ? examples/s]Filter: 100%|██████████| 300/300 [00:00<00:00, 32477.06 examples/s]
+匹配到 39 个实例
+Saving the dataset (0/1 shards):   0%|          | 0/39 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 39/39 [00:00<00:00, 8820.59 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 39/39 [00:00<00:00, 8510.81 examples/s]
+<frozen runpy>:128: RuntimeWarning: 'swebench.harness.run_evaluation' found in sys.modules after import of package 'swebench.harness', but prior to execution of 'swebench.harness.run_evaluation'; this may result in unpredictable behaviour
+Found 2 existing instance images. Will reuse them.
+Running 39 instances...
+Evaluation:   0%|          | 0/39 [00:00<?, ?it/s, error=0, ✓=0, ✖=0]Evaluation:   0%|          | 0/39 [00:19<?, ?it/s, ✓=0, ✖=0, error=1]Evaluation:   3%|▎         | 1/39 [00:19<12:03, 19.03s/it, ✓=0, ✖=0, error=1]Evaluation:   3%|▎         | 1/39 [00:21<12:03, 19.03s/it, ✓=0, ✖=0, error=2]Evaluation:   5%|▌         | 2/39 [00:21<05:35,  9.06s/it, ✓=0, ✖=0, error=2]Evaluation:   5%|▌         | 2/39 [00:44<05:35,  9.06s/it, ✓=0, ✖=0, error=3]Evaluation:   8%|▊         | 3/39 [00:44<09:29, 15.82s/it, ✓=0, ✖=0, error=3]Evaluation:   8%|▊         | 3/39 [00:54<09:29, 15.82s/it, ✓=1, ✖=0, error=3]Evaluation:  10%|█         | 4/39 [00:54<07:40, 13.15s/it, ✓=1, ✖=0, error=3]Evaluation:  10%|█         | 4/39 [01:04<07:40, 13.15s/it, ✓=1, ✖=0, error=4]Evaluation:  13%|█▎        | 5/39 [01:04<06:49, 12.03s/it, ✓=1, ✖=0, error=4]Evaluation:  13%|█▎        | 5/39 [01:16<06:49, 12.03s/it, ✓=1, ✖=0, error=5]Evaluation:  15%|█▌        | 6/39 [01:16<06:44, 12.27s/it, ✓=1, ✖=0, error=5]Evaluation:  15%|█▌        | 6/39 [01:23<06:44, 12.27s/it, ✓=1, ✖=0, error=6]Evaluation:  18%|█▊        | 7/39 [01:23<05:32, 10.40s/it, ✓=1, ✖=0, error=6]Evaluation:  18%|█▊        | 7/39 [01:36<05:32, 10.40s/it, ✓=1, ✖=0, error=7]Evaluation:  21%|██        | 8/39 [01:36<05:45, 11.14s/it, ✓=1, ✖=0, error=7]Evaluation:  21%|██        | 8/39 [01:38<05:45, 11.14s/it, ✓=1, ✖=0, error=8]Evaluation:  23%|██▎       | 9/39 [01:38<04:16,  8.54s/it, ✓=1, ✖=0, error=8]Evaluation:  23%|██▎       | 9/39 [01:51<04:16,  8.54s/it, ✓=1, ✖=0, error=9]Evaluation:  26%|██▌       | 10/39 [01:51<04:44,  9.82s/it, ✓=1, ✖=0, error=9]Evaluation:  26%|██▌       | 10/39 [02:14<04:44,  9.82s/it, ✓=1, ✖=0, error=10]Evaluation:  28%|██▊       | 11/39 [02:14<06:24, 13.73s/it, ✓=1, ✖=0, error=10]Evaluation:  28%|██▊       | 11/39 [02:29<06:24, 13.73s/it, ✓=1, ✖=0, error=11]Evaluation:  31%|███       | 12/39 [02:29<06:26, 14.30s/it, ✓=1, ✖=0, error=11]Evaluation:  31%|███       | 12/39 [02:53<06:26, 14.30s/it, ✓=1, ✖=0, error=12]Evaluation:  33%|███▎      | 13/39 [02:53<07:27, 17.21s/it, ✓=1, ✖=0, error=12]Evaluation:  33%|███▎      | 13/39 [03:37<07:27, 17.21s/it, ✓=1, ✖=0, error=13]Evaluation:  36%|███▌      | 14/39 [03:37<10:34, 25.37s/it, ✓=1, ✖=0, error=13]Evaluation:  36%|███▌      | 14/39 [04:18<10:34, 25.37s/it, ✓=1, ✖=0, error=14]Evaluation:  38%|███▊      | 15/39 [04:18<12:00, 30.00s/it, ✓=1, ✖=0, error=14]Evaluation:  38%|███▊      | 15/39 [04:43<12:00, 30.00s/it, ✓=1, ✖=0, error=15]Evaluation:  41%|████      | 16/39 [04:43<10:53, 28.41s/it, ✓=1, ✖=0, error=15]Evaluation:  41%|████      | 16/39 [05:29<10:53, 28.41s/it, ✓=1, ✖=0, error=16]Evaluation:  44%|████▎     | 17/39 [05:29<12:19, 33.63s/it, ✓=1, ✖=0, error=16]Evaluation:  44%|████▎     | 17/39 [06:28<12:19, 33.63s/it, ✓=1, ✖=0, error=17]Evaluation:  46%|████▌     | 18/39 [06:28<14:28, 41.35s/it, ✓=1, ✖=0, error=17]Evaluation:  46%|████▌     | 18/39 [06:43<14:28, 41.35s/it, ✓=1, ✖=0, error=18]Evaluation:  49%|████▊     | 19/39 [06:43<11:07, 33.35s/it, ✓=1, ✖=0, error=18]Evaluation:  49%|████▊     | 19/39 [07:01<11:07, 33.35s/it, ✓=1, ✖=0, error=19]Evaluation:  51%|█████▏    | 20/39 [07:01<09:05, 28.70s/it, ✓=1, ✖=0, error=19]Evaluation:  51%|█████▏    | 20/39 [07:30<09:05, 28.70s/it, ✓=1, ✖=1, error=19]Evaluation:  54%|█████▍    | 21/39 [07:30<08:39, 28.88s/it, ✓=1, ✖=1, error=19]Evaluation:  54%|█████▍    | 21/39 [08:07<08:39, 28.88s/it, ✓=1, ✖=1, error=20]Evaluation:  56%|█████▋    | 22/39 [08:07<08:53, 31.38s/it, ✓=1, ✖=1, error=20]Evaluation:  56%|█████▋    | 22/39 [08:49<08:53, 31.38s/it, ✓=1, ✖=2, error=20]Evaluation:  59%|█████▉    | 23/39 [08:49<09:11, 34.48s/it, ✓=1, ✖=2, error=20]Evaluation:  59%|█████▉    | 23/39 [09:12<09:11, 34.48s/it, ✓=1, ✖=3, error=20]Evaluation:  62%|██████▏   | 24/39 [09:12<07:47, 31.17s/it, ✓=1, ✖=3, error=20]Evaluation:  62%|██████▏   | 24/39 [09:23<07:47, 31.17s/it, ✓=1, ✖=3, error=21]Evaluation:  64%|██████▍   | 25/39 [09:23<05:48, 24.91s/it, ✓=1, ✖=3, error=21]astropy__astropy-12907: >>>>> Patch Apply Failed:
+patching file astropy/modeling/separable.py
+Hunk #1 FAILED at 120.
+Hunk #2 succeeded at 63 with fuzz 1 (offset -223 lines).
+1 out of 2 hunks FAILED -- saving rejects to file astropy/modeling/separable.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/astropy__astropy-12907/run_instance.log) for more information.
+django__django-10914: >>>>> Patch Apply Failed:
+patching file django/conf/global_settings.py
+patch: **** malformed patch at line 10:  # (i.e. "/tmp" on *nix systems).
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/django__django-10914/run_instance.log) for more information.
+django__django-11742: >>>>> Patch Apply Failed:
+patching file django/db/models/fields/__init__.py
+patch: **** malformed patch at line 44:      def _check_db_index(cls):
+
+Hunk #1 succeeded at 240 with fuzz 3.
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/django__django-11742/run_instance.log) for more information.
+django__django-11964: >>>>> Patch Apply Failed:
+patching file django/db/models/fields/__init__.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #2 FAILED at 1013.
+Hunk #3 FAILED at 1776.
+Hunk #4 succeeded at 1768 (offset -59 lines).
+2 out of 4 hunks FAILED -- saving rejects to file django/db/models/fields/__init__.py.rej
+patching file django/db/models/fields/__init__.py
+Hunk #2 succeeded at 1014 with fuzz 1.
+Hunk #3 succeeded at 1777 with fuzz 3.
+Hunk #4 succeeded at 1828 with fuzz 4.
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/django__django-11964/run_instance.log) for more information.
+django__django-12700: >>>>> Patch Apply Failed:
+patching file django/views/debug.py
+Hunk #1 succeeded at 90 with fuzz 3.
+Hunk #2 FAILED at 521.
+1 out of 2 hunks FAILED -- saving rejects to file django/views/debug.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/django__django-12700/run_instance.log) for more information.
+django__django-13033: >>>>> Patch Apply Failed:
+patching file django/db/models/sql/query.py
+patch: **** malformed patch at line 18:              # Check if we need to traverse a relation
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/django__django-13033/run_instance.log) for more information.
+django__django-13315: >>>>> Patch Apply Failed:
+patching file django/db/models/fields/related.py
+Hunk #1 FAILED at 1045.
+1 out of 1 hunk FAILED -- saving rejects to file django/db/models/fields/related.py.rej
+patching file django/db/models/fields/related.py
+Hunk #1 FAILED at 1042.
+1 out of 1 hunk FAILED -- saving rejects to file django/db/models/fields/related.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/django__django-13315/run_instance.log) for more information.
+django__django-13925: >>>>> Patch Apply Failed:
+patching file django/core/checks/model_checks.py
+patch: **** malformed patch at line 27:                  model._meta.app_config
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/django__django-13925/run_instance.log) for more information.
+django__django-14016: >>>>> Patch Apply Failed:
+patching file django/db/models/query_utils.py
+patch: **** malformed patch at line 27:          if not isinstance(other, Q):
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/django__django-14016/run_instance.log) for more information.
+django__django-14238: >>>>> Patch Apply Failed:
+patching file django/db/models/fields/__init__.py
+Hunk #1 FAILED at 2490.
+1 out of 1 hunk FAILED -- saving rejects to file django/db/models/fields/__init__.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/django__django-14238/run_instance.log) for more information.
+django__django-15213: >>>>> Patch Apply Failed:
+patching file django/db/models/sql/where.py
+patch: **** malformed patch at line 19:              # All children are full, so return TRUE (1 = 1).
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/django__django-15213/run_instance.log) for more information.
+django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/decorators/http.py
+Hunk #1 FAILED at 85.
+1 out of 1 hunk FAILED -- saving rejects to file django/views/decorators/http.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/django__django-15498/run_instance.log) for more information.
+django__django-15996: >>>>> Patch Apply Failed:
+patching file django/db/migrations/serializer.py
+Hunk #1 succeeded at 1 with fuzz 2.
+Hunk #2 FAILED at 129.
+1 out of 2 hunks FAILED -- saving rejects to file django/db/migrations/serializer.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/django__django-15996/run_instance.log) for more information.
+matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/backends/backend_macosx.py
+patch: **** malformed patch at line 22:  ```
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/matplotlib__matplotlib-23476/run_instance.log) for more information.
+matplotlib__matplotlib-25079: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/colorbar.py
+Hunk #1 succeeded at 345 with fuzz 1 (offset -111 lines).
+Hunk #2 succeeded at 496 (offset -124 lines).
+Hunk #3 succeeded at 508 with fuzz 3 (offset -124 lines).
+patching file lib/matplotlib/colorbar.py
+patch: **** malformed patch at line 52:          if isinstance(self.mappable, contour.ContourSet):
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/matplotlib__matplotlib-25079/run_instance.log) for more information.
+mwaskom__seaborn-3010: >>>>> Patch Apply Failed:
+patching file seaborn/_stats/regression.py
+Hunk #1 FAILED at 24.
+1 out of 1 hunk FAILED -- saving rejects to file seaborn/_stats/regression.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/mwaskom__seaborn-3010/run_instance.log) for more information.
+pydata__xarray-4094: >>>>> Patch Apply Failed:
+patching file xarray/core/dataarray.py
+Hunk #1 FAILED at 2180.
+Hunk #2 FAILED at 2188.
+2 out of 2 hunks FAILED -- saving rejects to file xarray/core/dataarray.py.rej
+patching file xarray/core/dataarray.py
+Hunk #1 FAILED at 2172.
+1 out of 1 hunk FAILED -- saving rejects to file xarray/core/dataarray.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/pydata__xarray-4094/run_instance.log) for more information.
+pydata__xarray-4493: >>>>> Patch Apply Failed:
+patching file xarray/core/variable.py
+patch: **** malformed patch at line 12: @@ -140,6 +148,16 @@
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/pydata__xarray-4493/run_instance.log) for more information.
+pylint-dev__pylint-7114: >>>>> Patch Apply Failed:
+patching file pylint/lint/expand_modules.py
+Hunk #1 succeeded at 55 with fuzz 3.
+Hunk #2 FAILED at 90.
+1 out of 2 hunks FAILED -- saving rejects to file pylint/lint/expand_modules.py.rej
+patching file pylint/lint/expand_modules.py
+Hunk #1 FAILED at 89.
+1 out of 1 hunk FAILED -- saving rejects to file pylint/lint/expand_modules.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/pylint-dev__pylint-7114/run_instance.log) for more information.
+scikit-learn__scikit-learn-13142: >>>>> Patch Apply Failed:
+patching file sklearn/mixture/base.py
+Hunk #1 FAILED at 175.
+1 out of 1 hunk FAILED -- saving rejects to file sklearn/mixture/base.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/scikit-learn__scikit-learn-13142/run_instance.log) for more information.
+sphinx-doc__sphinx-10451: >>>>> Patch Apply Failed:
+patching file sphinx/ext/autodoc/typehints.py
+patch: **** malformed patch at line 22: +    return ''
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sphinx-doc__sphinx-10451/run_instance.log) for more information.
+sphinx-doc__sphinx-8474: >>>>> Patch Apply Failed:
+patching file sphinx/domains/std.py
+patch: **** malformed patch at line 18:                  try:
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sphinx-doc__sphinx-8474/run_instance.log) for more information.
+sphinx-doc__sphinx-8506: >>>>> Patch Apply Failed:
+patching file sphinx/domains/std.py
+patch: **** malformed patch at line 10:          """Transform an option description into RST nodes."""
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sphinx-doc__sphinx-8506/run_instance.log) for more information.Evaluation:  64%|██████▍   | 25/39 [09:33<05:48, 24.91s/it, ✓=1, ✖=3, error=22]Evaluation:  67%|██████▋   | 26/39 [09:33<04:27, 20.55s/it, ✓=1, ✖=3, error=22]Evaluation:  67%|██████▋   | 26/39 [09:43<04:27, 20.55s/it, ✓=1, ✖=3, error=23]Evaluation:  69%|██████▉   | 27/39 [09:43<03:27, 17.28s/it, ✓=1, ✖=3, error=23]Evaluation:  69%|██████▉   | 27/39 [09:59<03:27, 17.28s/it, ✓=1, ✖=3, error=24]Evaluation:  72%|███████▏  | 28/39 [09:59<03:08, 17.16s/it, ✓=1, ✖=3, error=24]Evaluation:  72%|███████▏  | 28/39 [10:17<03:08, 17.16s/it, ✓=1, ✖=3, error=25]Evaluation:  74%|███████▍  | 29/39 [10:17<02:52, 17.23s/it, ✓=1, ✖=3, error=25]Evaluation:  74%|███████▍  | 29/39 [10:32<02:52, 17.23s/it, ✓=1, ✖=3, error=26]Evaluation:  77%|███████▋  | 30/39 [10:32<02:29, 16.66s/it, ✓=1, ✖=3, error=26]Evaluation:  77%|███████▋  | 30/39 [10:47<02:29, 16.66s/it, ✓=1, ✖=3, error=27]Evaluation:  79%|███████▉  | 31/39 [10:47<02:09, 16.15s/it, ✓=1, ✖=3, error=27]Evaluation:  79%|███████▉  | 31/39 [11:03<02:09, 16.15s/it, ✓=1, ✖=3, error=28]Evaluation:  82%|████████▏ | 32/39 [11:03<01:52, 16.10s/it, ✓=1, ✖=3, error=28]Evaluation:  82%|████████▏ | 32/39 [11:05<01:52, 16.10s/it, ✓=1, ✖=3, error=29]Evaluation:  85%|████████▍ | 33/39 [11:05<01:11, 11.99s/it, ✓=1, ✖=3, error=29]Evaluation:  85%|████████▍ | 33/39 [11:22<01:11, 11.99s/it, ✓=1, ✖=3, error=30]Evaluation:  87%|████████▋ | 34/39 [11:22<01:07, 13.48s/it, ✓=1, ✖=3, error=30]Evaluation:  87%|████████▋ | 34/39 [11:38<01:07, 13.48s/it, ✓=1, ✖=3, error=31]Evaluation:  90%|████████▉ | 35/39 [11:38<00:56, 14.04s/it, ✓=1, ✖=3, error=31]Evaluation:  90%|████████▉ | 35/39 [11:50<00:56, 14.04s/it, ✓=1, ✖=4, error=31]Evaluation:  92%|█████████▏| 36/39 [11:50<00:40, 13.37s/it, ✓=1, ✖=4, error=31]Evaluation:  92%|█████████▏| 36/39 [11:58<00:40, 13.37s/it, ✓=1, ✖=4, error=32]Evaluation:  95%|█████████▍| 37/39 [11:58<00:23, 11.81s/it, ✓=1, ✖=4, error=32]Evaluation:  95%|█████████▍| 37/39 [12:15<00:23, 11.81s/it, ✓=1, ✖=4, error=33]Evaluation:  97%|█████████▋| 38/39 [12:15<00:13, 13.47s/it, ✓=1, ✖=4, error=33]Evaluation:  97%|█████████▋| 38/39 [12:31<00:13, 13.47s/it, ✓=1, ✖=4, error=34]Evaluation: 100%|██████████| 39/39 [12:31<00:00, 14.08s/it, ✓=1, ✖=4, error=34]Evaluation: 100%|██████████| 39/39 [12:31<00:00, 19.26s/it, ✓=1, ✖=4, error=34]
+
+sphinx-doc__sphinx-8627: >>>>> Patch Apply Failed:
+patching file sphinx/ext/autodoc/typehints.py
+patch: **** malformed patch at line 18:      """Record type hints to env object."""
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sphinx-doc__sphinx-8627/run_instance.log) for more information.
+sympy__sympy-13647: >>>>> Patch Apply Failed:
+patching file sympy/matrices/common.py
+Hunk #1 FAILED at 1285.
+1 out of 1 hunk FAILED -- saving rejects to file sympy/matrices/common.py.rej
+patching file sympy/matrices/common.py
+patch: **** malformed patch at line 47:          ========
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sympy__sympy-13647/run_instance.log) for more information.
+sympy__sympy-14317: >>>>> Patch Apply Failed:
+patching file sympy/printing/latex.py
+Hunk #1 FAILED at 2100.
+1 out of 1 hunk FAILED -- saving rejects to file sympy/printing/latex.py.rej
+patch: **** malformed patch at line 34:          else:
+
+patching file sympy/printing/latex.py
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sympy__sympy-14317/run_instance.log) for more information.
+sympy__sympy-17022: >>>>> Patch Apply Failed:
+can't find file to patch at input line 3
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|--- a/sympy/printing/numpy.py
+|+++ b/sympy/printing/numpy.py
+--------------------------
+No file to patch.  Skipping patch.
+patch: **** malformed patch at line 10: @@ -158,6 +159,14 @@
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sympy__sympy-17022/run_instance.log) for more information.
+sympy__sympy-17139: >>>>> Patch Apply Failed:
+patching file sympy/simplify/fu.py
+Hunk #1 FAILED at 501.
+1 out of 1 hunk FAILED -- saving rejects to file sympy/simplify/fu.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sympy__sympy-17139/run_instance.log) for more information.
+sympy__sympy-18698: >>>>> Patch Apply Failed:
+patching file sympy/polys/polytools.py
+Hunk #1 FAILED at 5847.
+1 out of 1 hunk FAILED -- saving rejects to file sympy/polys/polytools.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sympy__sympy-18698/run_instance.log) for more information.
+sympy__sympy-20154: >>>>> Patch Apply Failed:
+patching file sympy/utilities/iterables.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #1 succeeded at 1741 with fuzz 3 (offset -1 lines).
+Hunk #2 succeeded at 1745 (offset -6 lines).
+Hunk #3 FAILED at 1820.
+Hunk #4 FAILED at 1833.
+Hunk #5 FAILED at 1843.
+3 out of 5 hunks FAILED -- saving rejects to file sympy/utilities/iterables.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sympy__sympy-20154/run_instance.log) for more information.
+sympy__sympy-21055: >>>>> Patch Apply Failed:
+patching file sympy/assumptions/refine.py
+Hunk #1 FAILED at 1.
+patch: **** malformed patch at line 37: +
+
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sympy__sympy-21055/run_instance.log) for more information.
+sympy__sympy-21627: >>>>> Patch Apply Failed:
+patching file sympy/functions/elementary/hyperbolic.py
+Hunk #1 succeeded at 200 with fuzz 3.
+patching file sympy/functions/elementary/hyperbolic.py
+Hunk #1 FAILED at 200.
+1 out of 1 hunk FAILED -- saving rejects to file sympy/functions/elementary/hyperbolic.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sympy__sympy-21627/run_instance.log) for more information.
+sympy__sympy-22840: >>>>> Patch Apply Failed:
+patching file sympy/simplify/cse_main.py
+Hunk #1 succeeded at 7 with fuzz 3.
+Hunk #2 FAILED at 452.
+Hunk #3 FAILED at 674.
+2 out of 3 hunks FAILED -- saving rejects to file sympy/simplify/cse_main.py.rej
+patching file sympy/simplify/cse_main.py
+Hunk #1 succeeded at 7 with fuzz 3.
+Hunk #2 succeeded at 630 with fuzz 2 (offset 139 lines).
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sympy__sympy-22840/run_instance.log) for more information.
+sympy__sympy-23262: >>>>> Patch Apply Failed:
+patching file sympy/printing/pycode.py
+Hunk #1 FAILED at 445.
+1 out of 1 hunk FAILED -- saving rejects to file sympy/printing/pycode.py.rej
+
+Check (logs/run_evaluation/standard-api-retry/claude-sonnet-4-5/sympy__sympy-23262/run_instance.log) for more information.
+All instances run.
+Cleaning cached images...
+Removed 0 images.
+Total instances: 39
+Instances submitted: 39
+Instances completed: 5
+Instances incomplete: 0
+Instances resolved: 1
+Instances unresolved: 4
+Instances with empty patches: 0
+Instances with errors: 34
+Unstopped containers: 0
+Unremoved images: 2
+Report written to claude-sonnet-4-5.standard-api-retry.json
+临时数据集保存到: /tmp/swebench_standard_api_eval
+
+临时predictions文件: /tmp/swebench_standard_api_predictions.jsonl
+
+======================================================================
+运行SWE-bench evaluation (仅39个标准API实例)...
+======================================================================
+
+命令: python -m swebench.harness.run_evaluation --dataset_name /tmp/swebench_standard_api_eval --predictions_path /tmp/swebench_standard_api_predictions.jsonl --max_workers 2 --run_id standard-api-retry --report_dir /home/zqq/SWE4CC/reports
+
+
+======================================================================
+✅ Evaluation完成!
+======================================================================
+
+报告目录: /home/zqq/SWE4CC/reports/standard-api-retry/

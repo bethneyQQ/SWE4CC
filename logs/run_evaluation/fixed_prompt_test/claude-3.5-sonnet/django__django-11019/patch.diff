@@ -1,0 +1,75 @@
+--- a/django/forms/widgets.py
++++ b/django/forms/widgets.py
+@@ -75,8 +75,43 @@ class Media:
+             return merged
+         return merged_list
+ 
++    @staticmethod
++    def _merge_lists_with_dependency_tracking(*lists):
++        """
++        Merge multiple lists while respecting actual dependencies, not false constraints.
++        Uses topological sort based on explicit ordering within each input list.
++        """
++        if len(lists) == 0:
++            return []
++        if len(lists) == 1:
++            return list(lists[0])
++        
++        # Build dependency graph from explicit orderings in input lists
++        # Only add edges for items that directly follow each other
++        from collections import defaultdict, OrderedDict
++        
++        all_items = OrderedDict()
++        for lst in lists:
++            for item in lst:
++                all_items[item] = None
++        
++        # Track which items must come before which (direct dependencies only)
++        must_precede = defaultdict(set)
++        for lst in lists:
++            for i in range(len(lst) - 1):
++                # Only track immediate predecessors from each list
++                must_precede[lst[i + 1]].add(lst[i])
++        
++        # Topological sort using Kahn's algorithm
++        result = []
++        available = [item for item in all_items if item not in must_precede or not must_precede[item]]
++        
++        while available:
++            # Pick first available to maintain stability
++            current = available.pop(0)
++            if current not in result:
++                result.append(current)
++            
++            # Check if any items are now available
++            for item in all_items:
++                if item not in result and item in must_precede:
++                    if must_precede[item].issubset(set(result)):
++                        if item not in available:
++                            available.append(item)
++        
++        return result
++
+     def __add__(self, other):
+         combined = Media()
+         combined._css_lists = self._css_lists + other._css_lists
+@@ -90,7 +125,7 @@ class Media:
+     def _css(self):
+         css = defaultdict(list)
+         for css_dict in self._css_lists:
+             for medium, sublist in css_dict.items():
+-                css[medium].append(sublist)
++                css[medium] = self._merge_lists_with_dependency_tracking(css[medium], sublist)
+         return {medium: self.merge(*lists) for medium, lists in css.items()}
+     css = property(_css)
+ 
+@@ -98,7 +133,7 @@ class Media:
+     def _js(self):
+         js = []
+         for js_list in self._js_lists:
+-            js.append(js_list)
+-        return self.merge(*js)
++            js.extend(js_list) if not js else None
++        return self._merge_lists_with_dependency_tracking(*self._js_lists)
+     js = property(_js)
+ 

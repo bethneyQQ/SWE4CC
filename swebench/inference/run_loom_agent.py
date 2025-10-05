@@ -262,13 +262,10 @@ def loom_agent_inference(
             logger.info(f"Processing instance: {instance_id}")
 
             # Prepare messages in OpenAI format
-            system_message = datum["text"].split("\n", 1)[0] if "\n" in datum["text"] else ""
-            user_message = datum["text"].split("\n", 1)[1] if "\n" in datum["text"] else datum["text"]
+            # Use problem_statement field for SWE-bench, or text field for other datasets
+            problem_text = datum.get("problem_statement") or datum.get("text", "")
 
-            messages = []
-            if system_message:
-                messages.append({"role": "system", "content": system_message})
-            messages.append({"role": "user", "content": user_message})
+            messages = [{"role": "user", "content": problem_text}]
 
             # Call Loom Agent API
             try:
@@ -304,7 +301,6 @@ def loom_agent_inference(
                     output_dict = {
                         "instance_id": instance_id,
                         "model_name_or_path": model_name_or_path,
-                        "text": datum["text"],
                         "full_output": full_output,
                         "model_patch": model_patch,
                         "cost": cost,

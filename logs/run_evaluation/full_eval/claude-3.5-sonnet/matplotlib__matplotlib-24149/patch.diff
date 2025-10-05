@@ -1,0 +1,4 @@
+try:
+    x0 = cbook._safe_first_finite(x0)
+except (TypeError, IndexError, KeyError):
+    pass

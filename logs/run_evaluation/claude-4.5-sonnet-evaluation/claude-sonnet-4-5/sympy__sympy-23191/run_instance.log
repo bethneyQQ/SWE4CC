@@ -1,0 +1,47 @@
+2025-10-04 19:34:23,027 - INFO - Creating container for sympy__sympy-23191...
+2025-10-04 19:34:23,985 - INFO - Container for sympy__sympy-23191 created: 8737d28731297d31b38e8e24d11f8565e40259633a2d728287ff610a074c3ba6
+2025-10-04 19:34:24,087 - INFO - Container for sympy__sympy-23191 started: 8737d28731297d31b38e8e24d11f8565e40259633a2d728287ff610a074c3ba6
+2025-10-04 19:34:24,087 - INFO - Intermediate patch for sympy__sympy-23191 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/sympy__sympy-23191/patch.diff, now applying to container...
+2025-10-04 19:34:24,178 - INFO - >>>>> Applied Patch:
+Checking patch sympy/printing/pretty/pretty.py...
+Applied patch sympy/printing/pretty/pretty.py cleanly.
+
+2025-10-04 19:34:24,546 - INFO - Git diff before:
+diff --git a/sympy/printing/pretty/pretty.py b/sympy/printing/pretty/pretty.py
+index 66461181d0..a25585c477 100644
+--- a/sympy/printing/pretty/pretty.py
++++ b/sympy/printing/pretty/pretty.py
+@@ -1108,7 +1108,7 @@ def _print_BasisDependent(self, expr):
+             items = [(0, expr)]
+         for system, vect in items:
+             inneritems = list(vect.components.items())
+-            inneritems.sort(key = lambda x: x[0].__str__())
++            inneritems.sort(key = lambda x: default_sort_key(x[0]))
+             for k, v in inneritems:
+                 #if the coef of the basis vector is 1
+                 #we skip the 1
+2025-10-04 19:34:24,546 - INFO - Eval script for sympy__sympy-23191 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/sympy__sympy-23191/eval.sh; copying to container...
+2025-10-04 19:34:28,031 - INFO - Test runtime: 3.44 seconds
+2025-10-04 19:34:28,031 - INFO - Test output for sympy__sympy-23191 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/sympy__sympy-23191/test_output.txt
+2025-10-04 19:34:28,076 - INFO - Git diff after:
+diff --git a/sympy/printing/pretty/pretty.py b/sympy/printing/pretty/pretty.py
+index 66461181d0..a25585c477 100644
+--- a/sympy/printing/pretty/pretty.py
++++ b/sympy/printing/pretty/pretty.py
+@@ -1108,7 +1108,7 @@ def _print_BasisDependent(self, expr):
+             items = [(0, expr)]
+         for system, vect in items:
+             inneritems = list(vect.components.items())
+-            inneritems.sort(key = lambda x: x[0].__str__())
++            inneritems.sort(key = lambda x: default_sort_key(x[0]))
+             for k, v in inneritems:
+                 #if the coef of the basis vector is 1
+                 #we skip the 1
+2025-10-04 19:34:28,077 - INFO - Grading answer for sympy__sympy-23191...
+2025-10-04 19:34:28,077 - INFO - report: {'sympy__sympy-23191': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_issue_23058']}, 'PASS_TO_PASS': {'success': ['test_str_printing', 'test_pretty_print_unicode_v', 'test_latex_printing'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-23191: resolved: False
+2025-10-04 19:34:28,077 - INFO - Attempting to stop container sweb.eval.sympy__sympy-23191.claude-4.5-sonnet-evaluation...
+2025-10-04 19:34:49,042 - INFO - Attempting to remove container sweb.eval.sympy__sympy-23191.claude-4.5-sonnet-evaluation...
+2025-10-04 19:34:49,069 - INFO - Container sweb.eval.sympy__sympy-23191.claude-4.5-sonnet-evaluation removed.
+2025-10-04 19:34:49,069 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-23191:latest...
+2025-10-04 19:34:49,421 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-23191:latest removed.

@@ -1,0 +1,24 @@
+--- a/sympy/physics/vector/point.py
++++ b/sympy/physics/vector/point.py
+@@ -519,8 +519,17 @@ class Point(object):
+ 
+         _check_frame(frame)
+         if not (frame in self._vel_dict):
+-            raise ValueError('Velocity of point ' + self.name + ' has not been'
+-                             ' defined in ReferenceFrame ' + frame.name)
++            # Try to calculate velocity from position information
++            # Search for a point in the position tree that has velocity defined
++            for point in self._pos_dict.keys():
++                if frame in point._vel_dict:
++                    # Found a point with known velocity in this frame
++                    # Calculate velocity using v_self = v_point + d/dt(r_self - r_point)
++                    relative_position = self.pos_from(point)
++                    self.set_vel(frame, point.vel(frame) + relative_position.dt(frame))
++                    return self._vel_dict[frame]
++            raise ValueError('Velocity of point ' + self.name + ' has not been'
++                             ' defined in ReferenceFrame ' + frame.name)
+         return self._vel_dict[frame]
+ 
+     def partial_velocity(self, frame, *gen_speeds):
+ 
+ 

@@ -1,0 +1,23 @@
+
+--- a/src/_pytest/pathlib.py
++++ b/src/_pytest/pathlib.py
+@@ -523,6 +523,19 @@ def import_path(
+ 
+     if mode is ImportMode.importlib:
+         module_name = module_name_from_path(path, root)
++        
++        # Check if this module is already imported under a different name
++        # to avoid having the same module imported twice in sys.modules.
++        # This can happen when a module is imported both normally and via import_path,
++        # or when the same file is imported from different test locations.
++        for existing_name, existing_mod in sys.modules.items():
++            if existing_mod is not None and hasattr(existing_mod, "__file__"):
++                if existing_mod.__file__ and Path(existing_mod.__file__).resolve() == path.resolve():
++                    # Reuse the existing module
++                    if existing_name != module_name:
++                        sys.modules[module_name] = existing_mod
++                        insert_missing_modules(sys.modules, module_name)
++                    return existing_mod
+ 
+         for meta_importer in sys.meta_path:
+             spec = meta_importer.find_spec(module_name, [str(path.parent)])

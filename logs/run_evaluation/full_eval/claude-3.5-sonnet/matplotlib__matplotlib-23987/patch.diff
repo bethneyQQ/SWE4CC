@@ -1,0 +1,7 @@
+if (self.get_layout_engine() is not None and
+        not self.get_layout_engine().adjust_compatible):
+    _api.warn_external(
+        "This figure was using a layout engine that is "
+        "incompatible with subplots_adjust and/or tight_layout; "
+        "not calling subplots_adjust.")
+    return

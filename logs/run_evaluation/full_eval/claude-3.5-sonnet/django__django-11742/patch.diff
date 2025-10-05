@@ -1,0 +1,56 @@
+
+--- a/django/db/models/fields/__init__.py
++++ b/django/db/models/fields/__init__.py
+@@ -201,6 +201,7 @@
+     def check(self, **kwargs):
+         return [
+             *self._check_field_name(),
+             *self._check_choices(),
++            *self._check_choices_max_length(),
+             *self._check_db_index(),
+             *self._check_null_allowed_for_primary_keys(),
+             *self._check_backend_specific_checks(**kwargs),
+@@ -291,6 +292,39 @@
+             )
+         ]
+ 
++    def _check_choices_max_length(self):
++        if not self.choices or self.max_length is None:
++            return []
++
++        choice_values = []
++        for choice_group in self.choices:
++            try:
++                group_name, group_choices = choice_group
++                # Check if this is a grouped choice
++                if isinstance(group_choices, (list, tuple)):
++                    # This is a group of choices
++                    for value, _ in group_choices:
++                        choice_values.append(value)
++                else:
++                    # This is a flat choice (value, display)
++                    choice_values.append(group_name)
++            except (TypeError, ValueError):
++                # Single flat choice
++                choice_values.append(choice_group[0] if isinstance(choice_group, tuple) else choice_group)
++
++        # Find the maximum length among string choice values
++        max_choice_length = 0
++        for value in choice_values:
++            if isinstance(value, str):
++                max_choice_length = max(max_choice_length, len(value))
++
++        if max_choice_length > self.max_length:
++            return [
++                checks.Error(
++                    "'max_length' is too small to fit the longest choice value.",
++                    hint=f"Field max_length is {self.max_length}, but the longest choice value has {max_choice_length} characters.",
++                    obj=self,
++                    id='fields.E009',
++                )
++            ]
++        return []
++
+     def _check_db_index(self):
+         if self.db_index not in (None, True, False):
+             return [

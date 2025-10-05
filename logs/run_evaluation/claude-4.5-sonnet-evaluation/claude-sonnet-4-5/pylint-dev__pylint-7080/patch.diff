@@ -1,0 +1,14 @@
+--- a/pylint/lint/pylinter.py
++++ b/pylint/lint/pylinter.py
+@@ -597,7 +597,7 @@
+                         # Skip subtree of already discovered package.
+                         continue
+ 
+                     if _is_ignored_file(
+-                        root,
++                        os.path.normpath(root),
+                         self.config.ignore,
+                         self.config.ignore_patterns,
+                         self.config.ignore_paths,
+ 
+ 

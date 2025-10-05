@@ -1,0 +1,47 @@
+--- a/seaborn/axisgrid.py
++++ b/seaborn/axisgrid.py
+@@ -1487,9 +1487,9 @@ class PairGrid(Grid):
+             else:
+                 plt.sca(ax)
+ 
+-            vector = self.data[var]
++            vector = self.data.loc[:, var]
+             if self._hue_var is not None:
+-                hue = self.data[self._hue_var]
++                hue = self.data.loc[:, self._hue_var]
+             else:
+                 hue = None
+ 
+@@ -1516,7 +1516,7 @@ class PairGrid(Grid):
+         fixed_color = kwargs.pop("color", None)
+ 
+         for var, ax in zip(self.diag_vars, self.diag_axes):
+-            hue_grouped = self.data[var].groupby(self.hue_vals)
++            hue_grouped = self.data.loc[:, var].groupby(self.hue_vals)
+ 
+             plot_kwargs = kwargs.copy()
+             if str(func.__module__).startswith("seaborn"):
+@@ -1595,8 +1595,8 @@ class PairGrid(Grid):
+         if self._dropna:
+             data = data.dropna()
+ 
+-        x = data[x_var]
+-        y = data[y_var]
++        x = data.loc[:, x_var]
++        y = data.loc[:, y_var]
+         if self._hue_var is None:
+             hue = None
+         else:
+@@ -1638,8 +1638,8 @@ class PairGrid(Grid):
+             if self._dropna:
+                 data_k = data_k[axes_vars].dropna()
+ 
+-            x = data_k[x_var]
+-            y = data_k[y_var]
++            x = data_k.loc[:, x_var]
++            y = data_k.loc[:, y_var]
+ 
+             # Only label the data when we have more than one hue level
+             if len(self._hue_order) > 1:
+ 
+ 

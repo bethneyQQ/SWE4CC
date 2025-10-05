@@ -1,0 +1,29 @@
+
+--- a/sympy/core/mul.py
++++ b/sympy/core/mul.py
+@@ -590,8 +590,12 @@
+         # 0
+         elif coeff is S.Zero:
+             # we know for sure the result will be 0 except the multiplicand
+-            # is infinity
+-            if any(c.is_finite == False for c in c_part):
++            # is infinity or if we have any undefined expressions (NaN)
++            if any(c is S.NaN for c in c_part):
++                return [S.NaN], [], order_symbols
++            if any(c is S.ComplexInfinity for c in c_part):
++                return [S.NaN], [], order_symbols
++            if any(c.is_finite == False for c in c_part):
+                 return [S.NaN], [], order_symbols
+             return [coeff], [], order_symbols
+ 
+@@ -598,6 +602,10 @@
+         # check for straggling Numbers that were produced
+         _new = []
+         for i in c_part:
++            if i is S.NaN:
++                return [S.NaN], [], order_symbols
++            if i is S.ComplexInfinity and coeff.is_zero:
++                return [S.NaN], [], order_symbols
+             if i.is_Number:
+                 coeff *= i
+             else:

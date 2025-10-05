@@ -1,0 +1,24 @@
+
+--- a/django/db/models/sql/query.py
++++ b/django/db/models/sql/query.py
+@@ -2086,7 +2086,18 @@ class Query(BaseExpression):
+             self.deferred_loading = existing.union(field_names), True
+         else:
+             # Remove names from the set of any existing "immediate load" names.
+-            self.deferred_loading = existing.difference(field_names), False
++            remaining = existing.difference(field_names)
++            if not remaining:
++                # If all immediate load fields are deferred, switch to defer mode
++                # with all fields except pk deferred.
++                # This handles cases like .only('name').defer('name') which should
++                # load only the primary key.
++                opts = self.get_meta()
++                all_fields = frozenset(
++                    f.name for f in opts.concrete_fields if f != opts.pk
++                )
++                self.deferred_loading = all_fields, True
++            else:
++                self.deferred_loading = remaining, False
+ 
+     def add_immediate_loading(self, field_names):
+         """

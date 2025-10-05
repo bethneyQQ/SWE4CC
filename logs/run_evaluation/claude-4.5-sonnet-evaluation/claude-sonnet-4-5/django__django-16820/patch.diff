@@ -1,0 +1,16 @@
+--- a/django/db/migrations/operations/models.py
++++ b/django/db/migrations/operations/models.py
+@@ -647,6 +647,11 @@ class AlterIndexTogether(AlterTogetherOptionOperation):
+     def __init__(self, name, index_together):
+         super().__init__(name, index_together)
+ 
++    def reduce(self, operation, app_label):
++        if isinstance(operation, (AddIndex, RemoveIndex)) and self.name_lower == operation.model_name_lower:
++            return [operation]
++        return super().reduce(operation, app_label)
++
+ 
+ class AlterOrderWithRespectTo(ModelOptionOperation):
+     """Represent a change with the order_with_respect_to option."""
+ 
+ 

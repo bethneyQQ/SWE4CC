@@ -1,0 +1,24 @@
+--- a/django/utils/http.py
++++ b/django/utils/http.py
+@@ -175,10 +175,16 @@
+         raise ValueError("%r is not in a valid HTTP date format" % date)
+     try:
+         year = int(m.group('year'))
++        # RFC 7231 Section 7.1.1.1: two-digit years should be interpreted
++        # relative to the current year. If the year appears to be more than
++        # 50 years in the future, interpret it as being in the past century.
+         if year < 100:
+-            if year < 70:
+-                year += 2000
+-            else:
++            current_year = datetime.datetime.utcnow().year
++            current_century = current_year - (current_year % 100)
++            year += current_century
++            # If the year is more than 50 years in the future, roll back 100 years
++            if year - current_year > 50:
+                 year += 1900
+         month = MONTHS.index(m.group('mon').lower()) + 1
+         day = int(m.group('day'))
+ 
+ 
+ 

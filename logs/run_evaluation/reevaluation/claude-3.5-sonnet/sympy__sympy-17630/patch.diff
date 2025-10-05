@@ -1,0 +1,49 @@
+--- a/sympy/matrices/expressions/blockmatrix.py
++++ b/sympy/matrices/expressions/blockmatrix.py
+@@ -77,10 +77,18 @@ class BlockMatrix(MatrixExpr):
+ 
+     @property
+     def colblocksizes(self):
+-        return [self.blocks[0, i].cols for i in range(self.blockshape[1])]
++        from sympy.core.numbers import Zero
++        return [self.blocks[0, i].cols if not isinstance(self.blocks[0, i], Zero) 
++                else self.blocks[j, i].cols 
++                for i in range(self.blockshape[1]) 
++                for j in range(self.blockshape[0]) if not isinstance(self.blocks[j, i], Zero)][:self.blockshape[1]]
+ 
+     @property
+     def rowblocksizes(self):
+-        return [self.blocks[i, 0].rows for i in range(self.blockshape[0])]
++        from sympy.core.numbers import Zero
++        return [self.blocks[i, 0].rows if not isinstance(self.blocks[i, 0], Zero)
++                else self.blocks[i, j].rows
++                for i in range(self.blockshape[0])
++                for j in range(self.blockshape[1]) if not isinstance(self.blocks[i, j], Zero)][:self.blockshape[0]]
+ 
+     def structurally_equal(self, other):
+         return (isinstance(other, BlockMatrix)
+@@ -105,6 +113,7 @@ class BlockMatrix(MatrixExpr):
+         from sympy.matrices.matrices import MatrixBase
+         from sympy.matrices import Matrix
+         from sympy.matrices.expressions.matmul import MatMul
++        from sympy.core.numbers import Zero
+ 
+         other = sympify(other)
+         if (structurally_equal(self, other) and
+@@ -120,7 +129,12 @@ class BlockMatrix(MatrixExpr):
+                         for k in range(self.blockshape[1])]
+                        for i in range(self.blockshape[0])]
+             blocks = Matrix(i_blocks)
+-            return BlockMatrix(blocks)
++            # Convert scalar zeros to ZeroMatrix with proper dimensions
++            from sympy import ZeroMatrix
++            for i in range(blocks.rows):
++                for j in range(blocks.cols):
++                    if isinstance(blocks[i, j], Zero):
++                        blocks[i, j] = ZeroMatrix(self.rowblocksizes[i], other.colblocksizes[j])
++            return BlockMatrix(blocks.as_immutable())
+ 
+     def _blockmul(self, other):
+         if (isinstance(other, BlockMatrix) and
+ 
+ 

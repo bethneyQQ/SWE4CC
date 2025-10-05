@@ -1,0 +1,46 @@
+
+--- a/sympy/utilities/lambdify.py
++++ b/sympy/utilities/lambdify.py
+@@ -703,12 +703,13 @@
+ 
+     def _preprocess(self, args, expr):
+         """Preprocess args, expr to replace arguments that do not map
+         to valid Python identifiers.
+ 
+         Returns string form of args, and updated expr.
+         """
+         from sympy import Dummy, Symbol, Function, flatten
+         from sympy.matrices import DeferredVector
++        from sympy.matrices.expressions import MatrixSymbol
+ 
+         dummify = self._dummify
+ 
+@@ -726,16 +727,24 @@
+             elif isinstance(arg, DeferredVector):
+                 argstrs.append(str(arg))
+             elif isinstance(arg, Symbol):
+                 argrep = self._argrepr(arg)
+ 
+                 if dummify or not self._is_safe_ident(argrep):
+                     dummy = Dummy()
+                     argstrs.append(self._argrepr(dummy))
+                     expr = self._subexpr(expr, {arg: dummy})
+                 else:
+                     argstrs.append(argrep)
++            elif isinstance(arg, MatrixSymbol):
++                argrep = self._argrepr(arg)
++
++                if dummify or not self._is_safe_ident(argrep):
++                    dummy = Dummy()
++                    argstrs.append(self._argrepr(dummy))
++                    expr = self._subexpr(expr, {arg: dummy})
++                else:
++                    argstrs.append(argrep)
+             elif isinstance(arg, Function):
+                 dummy = Dummy()
+                 argstrs.append(self._argrepr(dummy))
+                 expr = self._subexpr(expr, {arg: dummy})
+             else:
+                 argstrs.append(str(arg))
+ 
+         return argstrs, expr

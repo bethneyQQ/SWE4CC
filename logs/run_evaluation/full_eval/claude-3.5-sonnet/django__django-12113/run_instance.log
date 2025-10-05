@@ -1,0 +1,61 @@
+2025-10-03 19:37:29,211 - INFO - Creating container for django__django-12113...
+2025-10-03 19:37:42,832 - INFO - Container for django__django-12113 created: 3a17268dc169b8bc1a290007b5513d8c8f080ba184c2b1ab014cddf7be8a3d71
+2025-10-03 19:37:42,943 - INFO - Container for django__django-12113 started: 3a17268dc169b8bc1a290007b5513d8c8f080ba184c2b1ab014cddf7be8a3d71
+2025-10-03 19:37:42,943 - INFO - Intermediate patch for django__django-12113 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/django__django-12113/patch.diff, now applying to container...
+2025-10-03 19:37:43,045 - INFO - >>>>> Applied Patch:
+Checking patch django/db/backends/sqlite3/creation.py...
+Applied patch django/db/backends/sqlite3/creation.py cleanly.
+
+2025-10-03 19:37:43,615 - INFO - Git diff before:
+diff --git a/django/db/backends/sqlite3/creation.py b/django/db/backends/sqlite3/creation.py
+index d97052f52d..53ed42ff83 100644
+--- a/django/db/backends/sqlite3/creation.py
++++ b/django/db/backends/sqlite3/creation.py
+@@ -23,6 +23,15 @@ class DatabaseCreation(BaseDatabaseCreation):
+     def _create_test_db(self, verbosity, autoclobber, keepdb=False):
+         test_database_name = self._get_test_db_name()
+ 
++        # Set a higher timeout to avoid "database is locked" errors when using
++        # multiple persistent test databases. The default timeout (5 seconds)
++        # may not be sufficient during test setup when multiple databases are
++        # being accessed simultaneously.
++        if not self.is_in_memory_db(test_database_name):
++            test_db_params = self.connection.settings_dict.get('TEST', {})
++            if 'timeout' not in test_db_params:
++                self.connection.settings_dict.setdefault('TEST', {})['timeout'] = 30
++
+         if keepdb:
+             return test_database_name
+         if not self.is_in_memory_db(test_database_name):
+2025-10-03 19:37:43,615 - INFO - Eval script for django__django-12113 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/django__django-12113/eval.sh; copying to container...
+2025-10-03 19:37:50,333 - INFO - Test runtime: 6.68 seconds
+2025-10-03 19:37:50,333 - INFO - Test output for django__django-12113 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/django__django-12113/test_output.txt
+2025-10-03 19:37:50,388 - INFO - Git diff after:
+diff --git a/django/db/backends/sqlite3/creation.py b/django/db/backends/sqlite3/creation.py
+index d97052f52d..53ed42ff83 100644
+--- a/django/db/backends/sqlite3/creation.py
++++ b/django/db/backends/sqlite3/creation.py
+@@ -23,6 +23,15 @@ class DatabaseCreation(BaseDatabaseCreation):
+     def _create_test_db(self, verbosity, autoclobber, keepdb=False):
+         test_database_name = self._get_test_db_name()
+ 
++        # Set a higher timeout to avoid "database is locked" errors when using
++        # multiple persistent test databases. The default timeout (5 seconds)
++        # may not be sufficient during test setup when multiple databases are
++        # being accessed simultaneously.
++        if not self.is_in_memory_db(test_database_name):
++            test_db_params = self.connection.settings_dict.get('TEST', {})
++            if 'timeout' not in test_db_params:
++                self.connection.settings_dict.setdefault('TEST', {})['timeout'] = 30
++
+         if keepdb:
+             return test_database_name
+         if not self.is_in_memory_db(test_database_name):
+2025-10-03 19:37:50,388 - INFO - Grading answer for django__django-12113...
+2025-10-03 19:37:50,389 - INFO - report: {'django__django-12113': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_custom_test_name (backends.sqlite.test_creation.TestDbSignatureTests)']}, 'PASS_TO_PASS': {'success': [], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-12113: resolved: False
+2025-10-03 19:37:50,389 - INFO - Attempting to stop container sweb.eval.django__django-12113.full_eval...
+2025-10-03 19:38:05,526 - INFO - Attempting to remove container sweb.eval.django__django-12113.full_eval...
+2025-10-03 19:38:05,542 - INFO - Container sweb.eval.django__django-12113.full_eval removed.
+2025-10-03 19:38:05,542 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-12113:latest...
+2025-10-03 19:38:06,552 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-12113:latest removed.

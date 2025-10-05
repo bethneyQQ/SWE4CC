@@ -1,0 +1,9 @@
+# Current buggy code (lines 1413-1415):
+return all(self[i, j].is_zero
+           for i in range(1, self.rows)
+           for j in range(i))
+
+# Should be:
+return all(self[i, j].is_zero
+           for i in range(1, self.rows)
+           for j in range(min(i, self.cols)))

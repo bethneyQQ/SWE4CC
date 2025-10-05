@@ -1,0 +1,15 @@
+--- a/sympy/core/mul.py
++++ b/sympy/core/mul.py
+@@ -422,6 +422,9 @@ class Mul(Expr, AssocOp):
+             new_c_powers = []
+             changed = False
+             for b, e in c_powers:
+                 if e.is_zero:
++                    # If base contains infinity, (base)**0 should return nan
++                    if b.has(S.Infinity, S.NegativeInfinity, S.ComplexInfinity):
++                        return [S.NaN], [], order_symbols
+                     continue
+                 if e is S.One:
+                     if b.is_Number:
+ 
+ 

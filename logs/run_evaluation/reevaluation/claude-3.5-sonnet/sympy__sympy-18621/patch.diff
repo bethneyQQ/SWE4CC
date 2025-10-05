@@ -1,0 +1,26 @@
+--- a/sympy/matrices/expressions/blockmatrix.py
++++ b/sympy/matrices/expressions/blockmatrix.py
+@@ -343,6 +343,20 @@
+         else:
+             return BlockMatrix._blockadd(self, other)
+ 
++    def _entry(self, i, j, **kwargs):
++        # Find which block row i belongs to
++        for row_block, numrows in enumerate(self.rowblocksizes):
++            if (i < numrows) != False:
++                break
++            else:
++                i -= numrows
++        # Find which block col j belongs to
++        for col_block, numcols in enumerate(self.colblocksizes):
++            if (j < numcols) != False:
++                break
++            else:
++                j -= numcols
++        return self.args[row_block][i, j] if row_block == col_block else 0
++
+ 
+ def block_collapse(expr):
+     """Evaluates a block matrix expression
+ 
+ 

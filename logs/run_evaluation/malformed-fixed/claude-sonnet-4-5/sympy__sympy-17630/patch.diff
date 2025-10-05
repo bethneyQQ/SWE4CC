@@ -1,0 +1,23 @@
+--- a/sympy/matrices/expressions/blockmatrix.py
++++ b/sympy/matrices/expressions/blockmatrix.py
+@@ -164,7 +164,16 @@ class BlockMatrix(MatrixExpr):
+     def _blockmul(self, other):
+         if (isinstance(other, BlockMatrix) and
+                 self.colblocksizes == other.rowblocksizes):
+-            return BlockMatrix(self.blocks*other.blocks)
++            from sympy.core.numbers import Zero as NumberZero
++            result = self.blocks*other.blocks
++            # Convert any scalar Zero to ZeroMatrix with proper dimensions
++            new_blocks = []
++            for i in range(result.rows):
++                for j in range(result.cols):
++                    if isinstance(result[i, j], NumberZero):
++                        new_blocks.append(ZeroMatrix(self.rowblocksizes[i], other.colblocksizes[j]))
++                    else:
++                        new_blocks.append(result[i, j])
++            return BlockMatrix(Matrix(result.rows, result.cols, new_blocks))
+ 
+         return self * other
+ 
+ 
+ 

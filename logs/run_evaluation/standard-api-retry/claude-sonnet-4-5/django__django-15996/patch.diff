@@ -1,0 +1,38 @@
+--- a/django/db/migrations/serializer.py
++++ b/django/db/migrations/serializer.py
+@@ -1,6 +1,7 @@
+ import builtins
+ import collections.abc
+ import datetime
++import enum
+ import decimal
+ import functools
+ import math
+@@ -128,7 +129,24 @@
+ 
+ class EnumSerializer(BaseSerializer):
+     def serialize(self):
+-        enum_class = self.value.__class__
+-        module = enum_class.__module__
+-        return "%s.%s[%r]" % (module, enum_class.__qualname__, self.value.name), {"import %s" % module}
++        enum_class = self.value.__class__
++        module = enum_class.__module__
++        
++        # Handle combination of flags (when name is None)
++        if self.value.name is None:
++            # Decompose the combined flags into individual members
++            if hasattr(enum, '_decompose'):
++                # Python 3.11+
++                decomposed = enum._decompose(enum_class, self.value.value)[0]
++            else:
++                # Fallback for older Python versions
++                decomposed = [member for member in enum_class if member.value & self.value.value == member.value and member.value != 0]
++            
++            if decomposed:
++                members_str = " | ".join(["%s.%s.%s" % (module, enum_class.__qualname__, member.name) for member in decomposed])
++                return members_str, {"import %s" % module}
++        
++        # Handle single enum value
++        return "%s.%s[%r]" % (module, enum_class.__qualname__, self.value.name), {"import %s" % module}
++
+ ```

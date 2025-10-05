@@ -1,0 +1,14 @@
+/home/zqq/miniconda/bin/python3: No module named swebench.harness.run_api
+加载了 39 个失败实例
+======================================================================
+🧪 SMOKE TEST MODE
+======================================================================
+只测试第一个实例: django__django-11039
+
+命令:
+python3 -m swebench.harness.run_api --dataset_name princeton-nlp/SWE-bench_Lite --model_name claude-sonnet-4-5 --output_file /home/zqq/SWE4CC/results/retry_failed_instances.jsonl --instance_ids django__django-11039
+
+======================================================================
+
+
+❌ 运行失败: Command '['python3', '-m', 'swebench.harness.run_api', '--dataset_name', 'princeton-nlp/SWE-bench_Lite', '--model_name', 'claude-sonnet-4-5', '--output_file', '/home/zqq/SWE4CC/results/retry_failed_instances.jsonl', '--instance_ids', 'django__django-11039']' returned non-zero exit status 1.

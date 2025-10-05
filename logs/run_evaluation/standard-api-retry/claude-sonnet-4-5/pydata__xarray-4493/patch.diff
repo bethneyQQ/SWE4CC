@@ -1,0 +1,135 @@
+--- a/xarray/core/variable.py
++++ b/xarray/core/variable.py
+@@ -130,6 +130,14 @@
+ def as_compatible_data(data, fastpath=False):
+     """Prepare and wrap data to put in a Variable.
+ 
++    - If data is already a dask array, return it as-is
++    - If data is a DataArray with dask backing, extract the dask array
+     - If data does not have the necessary attributes, convert it to ndarray.
+     - If data has dtype=datetime64, ensure that it has ns precision. If it's a
+       pandas.Timestamp, convert it to datetime64.
+@@ -140,6 +148,16 @@
+     if fastpath and getattr(data, "ndim", 0) > 0:
+         # can't use fastpath with 0-dimensional objects because they don't
+         # have `shape` and `dtype` attributes
+         return data
++
++    if isinstance(data, DataArray):
++        # Extract the underlying data from DataArray to preserve dask arrays
++        data = data.data
++
++    # Check if data is a dask array and preserve it
++    if is_duck_dask_array(data):
++        return data
+ 
+     if isinstance(data, NON_NUMPY_SUPPORTED_ARRAY_TYPES):
+         return data
+ ```
+--- a/xarray/core/dataset.py
++++ b/xarray/core/dataset.py
+@@ -4538,10 +4538,15 @@
+                 if isinstance(value, tuple):
+                     if isinstance(value[1], DataArray):
+-                        # Unpack tuple and use DataArray's data
+-                        dims, data = value
+-                        value = DataArray(data.values, dims=dims)
++                        # Unpack tuple but preserve underlying data (including dask arrays)
++                        dims, data_array = value
++                        # Use .data instead of .values to avoid triggering computation
++                        value = DataArray(data_array.data, dims=dims, attrs=data_array.attrs)
+                     else:
+                         value = DataArray(*value)
+                 variables[name] = value
+ ```
+--- a/xarray/core/dataset.py
++++ b/xarray/core/dataset.py
+@@ -1583,7 +1583,12 @@
+             dims, data = value
+         else:
+             dims, data, attrs = value
+-        data = np.asarray(data)
++        # Preserve dask arrays and other duck arrays instead of converting to numpy
++        if isinstance(data, DataArray):
++            data = data.data
++        elif not isinstance(data, (np.ndarray, pd.Index)) and not hasattr(data, '__array_function__'):
++            data = np.asarray(data)
++        # If data is already an array-like (including dask), keep it as-is
+         var = Variable(dims, data, attrs)
+         return var
+ ```
+--- a/xarray/core/dataset.py
++++ b/xarray/core/dataset.py
+@@ -1872,11 +1872,16 @@
+         for k, v in variables.items():
+             if isinstance(v, tuple):
+-                if isinstance(v[1], DataArray):
+-                    v = v[1].variable.to_index_variable()
+-                else:
+-                    v = Variable(*v)
++                if len(v) >= 2:
++                    dims, data = v[0], v[1]
++                    attrs = v[2] if len(v) > 2 else None
++                    if isinstance(data, DataArray):
++                        # Use .data to preserve dask arrays instead of .values
++                        data = data.data
++                    v = Variable(dims, data, attrs=attrs)
++                else:
++                    v = Variable(*v)
+             variables[k] = v
+ 
+         return cls._construct_direct(variables, coord_names, dims, attrs, indexes, encoding)
+ ```
+--- a/xarray/core/dataset.py
++++ b/xarray/core/dataset.py
+@@ -4534,7 +4534,13 @@
+     def update(self, other: "CoercibleMapping") -> "Dataset":
+         """Update this dataset's variables with those from another dataset.
+ 
+         Parameters
+         ----------
+         other : Dataset or mapping
+             Variables with which to update this dataset. One of:
+@@ -4565,8 +4571,14 @@
+         """
+         merge_result = dataset_update_method(self, other)
+         return self._replace(inplace=True, **merge_result._asdict())
+ 
++
++def _convert_value_for_dataset(value):
++    """Convert a value to a Variable, preserving dask arrays."""
++    if isinstance(value, tuple) and len(value) >= 2:
++        dims, data = value[0], value[1]
++        attrs = value[2] if len(value) > 2 else {}
++        if isinstance(data, DataArray):
++            # Use .data instead of .values to preserve dask arrays
++            data = data.data
++        return Variable(dims, data, attrs=attrs)
++    return value
++
+--- a/xarray/core/merge.py
++++ b/xarray/core/merge.py
+@@ -891,7 +891,10 @@
+ def dataset_update_method(
+     dataset: "Dataset", other: "CoercibleMapping"
+ ) -> "DatasetUpdateResult":
+     """Guts of the Dataset.update method.
+ 
+     This drops a duplicated coordinates from `other` if `other` is not an
+     `xarray.Dataset`, e.g., if it's a dict with DataArray values (GH2068,
+@@ -902,7 +905,12 @@
+         other_vars = other
+     else:
+         other_vars = {}
+         for k, v in other.items():
+-            if isinstance(v, DataArray):
++            if isinstance(v, tuple) and len(v) >= 2 and isinstance(v[1], DataArray):
++                # Handle tuple format (dims, DataArray) - preserve dask arrays
++                dims, data_array = v[0], v[1]
++                attrs = v[2] if len(v) > 2 else {}
++                other_vars[k] = Variable(dims, data_array.data, attrs=attrs)
++            elif isinstance(v, DataArray):
+                 other_vars[k] = v.variable
+             else:
+                 other_vars[k] = v
+ ```

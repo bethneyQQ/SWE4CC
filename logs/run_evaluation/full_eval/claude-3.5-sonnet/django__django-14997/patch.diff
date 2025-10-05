@@ -1,0 +1,18 @@
+
+--- a/django/db/backends/ddl_references.py
++++ b/django/db/backends/ddl_references.py
+@@ -232,6 +232,14 @@
+ 
+     def __str__(self):
+         sql, params = self.compiler.compile(self.expressions)
++        # Remove table aliases from the SQL to avoid SQLite's "." operator
++        # prohibition in index expressions. Replace "table"."column" with
++        # just "column".
++        for col in self.compiler.query._gen_cols([self.expressions]):
++            if col.alias:
++                quoted_table = self.compiler.quote_name_unless_alias(col.alias)
++                quoted_col = self.compiler.quote_name_unless_alias(col.target.column)
++                sql = sql.replace(f'{quoted_table}.{quoted_col}', quoted_col)
+         params = map(self.quote_value, params)
+         return sql % tuple(params)
+ 

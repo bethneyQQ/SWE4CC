@@ -1,0 +1,25 @@
+
+--- a/sphinx/environment/adapters/indexentries.py
++++ b/sphinx/environment/adapters/indexentries.py
+@@ -108,8 +108,8 @@
+             lckey = unicodedata.normalize('NFD', key.lower())
+             if lckey.startswith('\N{RIGHT-TO-LEFT MARK}'):
+                 lckey = lckey[1:]
+-            if lckey[0:1].isalpha() or lckey.startswith('_'):
+-                lckey = chr(127) + lckey
++            if not (lckey[0:1].isalpha() or lckey.startswith('_')):
++                lckey = chr(1) + lckey
+             # ensure a determinstic order *within* letters by also sorting on
+             # the entry itself
+             return (lckey, entry[0])
+@@ -150,8 +150,8 @@
+             key = unicodedata.normalize('NFD', entry[0].lower())
+             if key.startswith('\N{RIGHT-TO-LEFT MARK}'):
+                 key = key[1:]
+-            if key[0:1].isalpha() or key.startswith('_'):
+-                key = chr(127) + key
++            if not (key[0:1].isalpha() or key.startswith('_')):
++                key = chr(1) + key
+             return key
+ 
+         # group the entries by letter

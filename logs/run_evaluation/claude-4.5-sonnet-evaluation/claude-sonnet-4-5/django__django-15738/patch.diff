@@ -1,0 +1,16 @@
+--- a/django/db/migrations/autodetector.py
++++ b/django/db/migrations/autodetector.py
+@@ -1033,6 +1033,11 @@ class MigrationAutodetector:
+                     self.to_state,
+                 )
+             )
++        # Depend on the removal of a field with the same name (if any).
++        if (app_label, model_name, field_name) in self.old_field_keys:
++            dependencies.append(
++                (app_label, model_name, field_name, False)
++            )
+         # You can't just add NOT NULL fields with no default or fields
+         # which don't allow empty strings as default.
+         time_fields = (models.DateField, models.DateTimeField, models.TimeField)
+ 
+ 

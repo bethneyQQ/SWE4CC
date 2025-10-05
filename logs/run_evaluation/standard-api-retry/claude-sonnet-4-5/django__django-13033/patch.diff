@@ -1,0 +1,93 @@
+--- a/django/db/models/sql/query.py
++++ b/django/db/models/sql/query.py
+@@ -1850,6 +1850,16 @@
+                 field = opts.get_field(name)
+             except FieldDoesNotExist:
+                 if name == "pk":
+                     field = opts.pk
+                 else:
+                     raise
++            # Check if this is a direct foreign key _id field reference
++            # If so, don't traverse the relation or apply related model ordering
++            if field.many_to_one and name.endswith('_id'):
++                # This is a direct reference to the FK column, not a relation traversal
++                targets = (field,)
++                opts = field.model._meta
++                break
++            
+             # Check if we need to traverse a relation
+             if field.is_relation and not field.many_to_many:
+                 # If the field is a relation, we need to continue processing
+@@ -1990,7 +2000,12 @@
+         for item in ordering:
+             if hasattr(item, "resolve_expression"):
+                 if not item.contains_aggregate and not self.allow_aliases:
+                     order_by.append(item)
+                     continue
++            # Check if this is a direct _id field reference on a foreign key
++            if isinstance(item, str):
++                item = item.lstrip('-')
++                if '__' in item and item.endswith('_id'):
++                    # This is a direct FK field reference, handle it specially
++                    pass
+             if isinstance(item, str):
+                 if item == "?":
+                     order_by.append(OrderBy(Random()))
+ ```
+--- a/django/db/models/sql/query.py
++++ b/django/db/models/sql/query.py
+@@ -1095,6 +1095,19 @@
+             if name == "pk":
+                 name = opts.pk.name
+ 
++            # Special handling for _id suffix on foreign keys
++            # When accessing foreign_key_id, we want the column directly,
++            # not a join to the related model
++            if name.endswith('_id'):
++                field_name = name[:-3]
++                try:
++                    field = opts.get_field(field_name)
++                    if field.many_to_one and field.column == name:
++                        # This is a direct FK _id reference, use it directly
++                        targets = (field,)
++                        break
++                except FieldDoesNotExist:
++                    pass
++
+             try:
+                 field = opts.get_field(name)
+             except FieldDoesNotExist:
+@@ -1118,7 +1131,8 @@
+                     break
+                 # For relations, we need to join to the related model
+                 # unless this is a direct foreign key _id access
+-                if field.is_relation and not field.many_to_many:
++                # Check if next part is trying to access the pk/id of the relation
++                if field.is_relation and not field.many_to_many and parts:
+                     if not field.remote_field:
+                         break
+                     opts = field.remote_field.model._meta
+ ```
+--- a/django/db/models/sql/query.py
++++ b/django/db/models/sql/query.py
+@@ -1575,6 +1575,20 @@
+                 if name == "pk":
+                     name = opts.pk.name
+ 
++                # Check if this is a direct foreign key _id field reference
++                # e.g., "root_id" where "root" is a ForeignKey
++                if name.endswith('_id') and len(name) > 3:
++                    potential_fk_name = name[:-3]
++                    try:
++                        potential_field = opts.get_field(potential_fk_name)
++                        if potential_field.many_to_one:
++                            # This is a direct _id column reference
++                            # Use the actual field and don't traverse further
++                            field = potential_field
++                            break
++                    except FieldDoesNotExist:
++                        pass
++
+                 try:
+                     field = opts.get_field(name)
+                 except FieldDoesNotExist:

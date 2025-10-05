@@ -1,0 +1,38 @@
+
+--- a/seaborn/_core/scales.py
++++ b/seaborn/_core/scales.py
+@@ -343,6 +343,12 @@
+         normalize: Optional[Callable[[ArrayLike], ArrayLike]]
+         if prop.normed:
+             if new.norm is None:
++                # Convert boolean data to numeric to avoid numpy boolean arithmetic errors
++                if data.dtype == bool:
++                    data = data.astype(int)
++                # Also handle object dtype that might contain booleans
++                elif data.dtype == object and len(data) > 0 and isinstance(data.iloc[0], (bool, np.bool_)):
++                    data = data.astype(int)
+                 vmin, vmax = data.min(), data.max()
+             else:
+                 vmin, vmax = new.norm
+@@ -363,6 +369,12 @@
+             prop.get_mapping(new, data)
+         ]
+ 
++        # Ensure boolean conversion happens in the pipeline too
++        def convert_bool_to_numeric(x):
++            if hasattr(x, 'dtype') and (x.dtype == bool or (x.dtype == object and len(x) > 0 and isinstance(x.iloc[0] if hasattr(x, 'iloc') else x[0], (bool, np.bool_)))):
++                return x.astype(int)
++            return x
++
+         def spacer(x):
+             x = x.dropna().unique()
+             if len(x) < 2:
+@@ -376,7 +388,7 @@
+         # besides allowing Scale.legend(False)?
+         if prop.legend:
+             axis.set_view_interval(vmin, vmax)
+-            locs = axis.major.locator()
++            locs = np.asarray(axis.major.locator())
+             locs = locs[(vmin <= locs) & (locs <= vmax)]
+             # Avoid having an offset / scientific notation in a legend
+             # as we don't represent that anywhere so it ends up incorrect.

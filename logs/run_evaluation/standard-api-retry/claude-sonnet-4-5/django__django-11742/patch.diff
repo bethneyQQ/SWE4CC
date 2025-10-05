@@ -1,0 +1,46 @@
+--- a/django/db/models/fields/__init__.py
++++ b/django/db/models/fields/__init__.py
+@@ -240,6 +240,7 @@
+         return [
+             *cls._check_field_name(),
+             *cls._check_choices(),
++            *cls._check_max_length_fits_choices(),
+             *cls._check_db_index(),
+             *cls._check_null_allowed_for_primary_keys(),
+             *cls._check_backend_specific_checks(**kwargs),
+@@ -290,6 +291,32 @@
+         else:
+             return []
+ 
++    @classmethod
++    def _check_max_length_fits_choices(cls):
++        """
++        Check that max_length is sufficient for the longest choice value.
++        """
++        if not cls.choices or not hasattr(cls, 'max_length') or cls.max_length is None:
++            return []
++        
++        choice_max_length = 0
++        for choice in cls.choices:
++            # Handle optgroups (nested choices)
++            if isinstance(choice[1], (list, tuple)):
++                for sub_choice in choice[1]:
++                    choice_max_length = max(choice_max_length, len(str(sub_choice[0])))
++            else:
++                choice_max_length = max(choice_max_length, len(str(choice[0])))
++        
++        if choice_max_length > cls.max_length:
++            return [
++                checks.Error(
++                    "'max_length' is too small to fit the longest choice value.",
++                    hint=f"Longest choice value has {choice_max_length} characters, but max_length is {cls.max_length}.",
++                    obj=cls,
++                    id='fields.E009',
++                )
++            ]
++        return []
++
+     @classmethod
+     def _check_db_index(cls):
+         if cls.db_index not in (None, True, False):
+ ```

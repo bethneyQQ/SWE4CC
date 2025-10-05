@@ -1,0 +1,65 @@
+2025-10-04 18:13:35,295 - INFO - Creating container for django__django-15790...
+2025-10-04 18:13:36,749 - INFO - Container for django__django-15790 created: 29de915b337fd5ca3ea04ffee72ceefbed6ae5a35a05d751899cb4ca120458f6
+2025-10-04 18:13:36,894 - INFO - Container for django__django-15790 started: 29de915b337fd5ca3ea04ffee72ceefbed6ae5a35a05d751899cb4ca120458f6
+2025-10-04 18:13:36,894 - INFO - Intermediate patch for django__django-15790 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-15790/patch.diff, now applying to container...
+2025-10-04 18:13:36,989 - INFO - >>>>> Applied Patch:
+Checking patch django/core/checks/templates.py...
+Applied patch django/core/checks/templates.py cleanly.
+
+2025-10-04 18:13:37,553 - INFO - Git diff before:
+diff --git a/django/core/checks/templates.py b/django/core/checks/templates.py
+index 5214276987..53933f6d0c 100644
+--- a/django/core/checks/templates.py
++++ b/django/core/checks/templates.py
+@@ -50,7 +50,7 @@ def check_string_if_invalid_is_string(app_configs, **kwargs):
+ @register(Tags.templates)
+ def check_for_template_tags_with_the_same_name(app_configs, **kwargs):
+     errors = []
+-    libraries = defaultdict(list)
++    libraries = defaultdict(set)
+ 
+     for conf in settings.TEMPLATES:
+         custom_libraries = conf.get("OPTIONS", {}).get("libraries", {})
+@@ -58,7 +58,7 @@ def check_for_template_tags_with_the_same_name(app_configs, **kwargs):
+             libraries[module_name].append(module_path)
+ 
+     for module_name, module_path in get_template_tag_modules():
+-        libraries[module_name].append(module_path)
++        libraries[module_name].add(module_path)
+ 
+     for library_name, items in libraries.items():
+         if len(items) > 1:
+2025-10-04 18:13:37,553 - INFO - Eval script for django__django-15790 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-15790/eval.sh; copying to container...
+2025-10-04 18:13:43,215 - INFO - Test runtime: 5.62 seconds
+2025-10-04 18:13:43,215 - INFO - Test output for django__django-15790 written to logs/run_evaluation/claude-4.5-sonnet-evaluation/claude-sonnet-4-5/django__django-15790/test_output.txt
+2025-10-04 18:13:43,261 - INFO - Git diff after:
+diff --git a/django/core/checks/templates.py b/django/core/checks/templates.py
+index 5214276987..53933f6d0c 100644
+--- a/django/core/checks/templates.py
++++ b/django/core/checks/templates.py
+@@ -50,7 +50,7 @@ def check_string_if_invalid_is_string(app_configs, **kwargs):
+ @register(Tags.templates)
+ def check_for_template_tags_with_the_same_name(app_configs, **kwargs):
+     errors = []
+-    libraries = defaultdict(list)
++    libraries = defaultdict(set)
+ 
+     for conf in settings.TEMPLATES:
+         custom_libraries = conf.get("OPTIONS", {}).get("libraries", {})
+@@ -58,7 +58,7 @@ def check_for_template_tags_with_the_same_name(app_configs, **kwargs):
+             libraries[module_name].append(module_path)
+ 
+     for module_name, module_path in get_template_tag_modules():
+-        libraries[module_name].append(module_path)
++        libraries[module_name].add(module_path)
+ 
+     for library_name, items in libraries.items():
+         if len(items) > 1:
+2025-10-04 18:13:43,261 - INFO - Grading answer for django__django-15790...
+2025-10-04 18:13:43,262 - INFO - report: {'django__django-15790': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_template_tags_same_library_in_installed_apps_libraries (check_framework.test_templates.CheckTemplateTagLibrariesWithSameName)']}, 'PASS_TO_PASS': {'success': ['Error if template loaders are specified and APP_DIRS is True.', 'test_app_dirs_removed (check_framework.test_templates.CheckTemplateSettingsAppDirsTest)', 'test_loaders_removed (check_framework.test_templates.CheckTemplateSettingsAppDirsTest)', 'test_string_if_invalid_both_are_strings (check_framework.test_templates.CheckTemplateStringIfInvalidTest)', 'test_string_if_invalid_first_is_string (check_framework.test_templates.CheckTemplateStringIfInvalidTest)', 'test_string_if_invalid_not_specified (check_framework.test_templates.CheckTemplateStringIfInvalidTest)', 'test_string_if_invalid_not_string (check_framework.test_templates.CheckTemplateStringIfInvalidTest)', 'test_template_tags_with_different_name (check_framework.test_templates.CheckTemplateTagLibrariesWithSameName)', 'test_template_tags_with_same_name (check_framework.test_templates.CheckTemplateTagLibrariesWithSameName)'], 'failure': ['test_template_tags_with_different_library_name (check_framework.test_templates.CheckTemplateTagLibrariesWithSameName)', 'test_template_tags_with_same_library_name (check_framework.test_templates.CheckTemplateTagLibrariesWithSameName)', 'test_template_tags_with_same_library_name_and_module_name (check_framework.test_templates.CheckTemplateTagLibrariesWithSameName)']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-15790: resolved: False
+2025-10-04 18:13:43,262 - INFO - Attempting to stop container sweb.eval.django__django-15790.claude-4.5-sonnet-evaluation...
+2025-10-04 18:14:00,787 - INFO - Attempting to remove container sweb.eval.django__django-15790.claude-4.5-sonnet-evaluation...
+2025-10-04 18:14:00,813 - INFO - Container sweb.eval.django__django-15790.claude-4.5-sonnet-evaluation removed.
+2025-10-04 18:14:00,813 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-15790:latest...
+2025-10-04 18:14:01,392 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-15790:latest removed.

@@ -1,0 +1,17 @@
+
+--- a/django/db/models/lookups.py
++++ b/django/db/models/lookups.py
+@@ -263,8 +263,13 @@ class Exact(FieldGetDbPrepValueMixin, BuiltinLookup):
+         if isinstance(self.rhs, Query):
+             if self.rhs.has_limit_one():
+                 # The subquery must select only the pk.
++                # Preserve the group_by clause if it exists, as clearing
++                # select_clause will also clear group_by when values() was used.
++                group_by = self.rhs.group_by
+                 self.rhs.clear_select_clause()
+                 self.rhs.add_fields(['pk'])
++                if group_by:
++                    self.rhs.group_by = group_by
+             else:
+                 raise ValueError(
+                     'The QuerySet value for an exact lookup must be limited to '

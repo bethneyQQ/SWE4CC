@@ -111,6 +111,69 @@ def extract_minimal_patch(model_patch):
     return new_patch
 
 
+def fix_patch_context_lines(patch_content):
+    """
+    Fix patch format by ensuring context lines have leading spaces.
+
+    In unified diff format:
+    - Lines starting with '-' are deletions
+    - Lines starting with '+' are additions
+    - Context lines should start with a space ' '
+    - Special lines start with '---', '+++', '@@', 'diff ', or '\\'
+
+    This function adds missing leading spaces to context lines.
+    """
+    if not patch_content:
+        return patch_content
+
+    lines = patch_content.split('\n')
+    fixed_lines = []
+    in_hunk = False
+
+    for line in lines:
+        # File headers and diff command - don't change in_hunk state
+        if line.startswith('---') or line.startswith('+++') or line.startswith('diff '):
+            fixed_lines.append(line)
+            continue
+
+        # Hunk header - start tracking context lines
+        if line.startswith('@@'):
+            in_hunk = True
+            fixed_lines.append(line)
+            continue
+
+        # Backslash lines (e.g., "\ No newline at end of file")
+        if line.startswith('\\'):
+            fixed_lines.append(line)
+            continue
+
+        # Empty lines are context lines in hunks
+        if not line:
+            if in_hunk:
+                fixed_lines.append(' ')
+            else:
+                fixed_lines.append(line)
+            continue
+
+        # If we're in a hunk and the line doesn't start with +, -, or space
+        # then it's a context line missing the leading space
+        if in_hunk:
+            first_char = line[0]
+            if first_char not in ['+', '-', ' ']:
+                # This is a context line missing the leading space
+                fixed_lines.append(' ' + line)
+            else:
+                fixed_lines.append(line)
+        else:
+            fixed_lines.append(line)
+
+    # Ensure patch ends with newline (required by unified diff format)
+    result = '\n'.join(fixed_lines)
+    if result and not result.endswith('\n'):
+        result += '\n'
+    return result
+
+
 def extract_diff(response):
     """
     Extracts the diff from a response formatted in different ways
@@ -131,11 +194,18 @@ def extract_diff(response):
             diff_matches.append(match)
         else:
             other_matches.append(match)
+
+    # Extract the raw diff
+    raw_diff = None
     if diff_matches:
-        return diff_matches[0]
-    if other_matches:
-        return other_matches[0]
-    return response.split("</s>")[0]
+        raw_diff = diff_matches[0]
+    elif other_matches:
+        raw_diff = other_matches[0]
+    else:
+        raw_diff = response.split("</s>")[0]
+
+    # Fix patch format by adding missing leading spaces to context lines
+    return fix_patch_context_lines(raw_diff)
 
 
 def is_test(name, test_phrases=None):

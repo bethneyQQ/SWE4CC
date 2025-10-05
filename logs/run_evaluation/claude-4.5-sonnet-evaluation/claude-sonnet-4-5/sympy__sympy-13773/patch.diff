@@ -1,0 +1,64 @@
+--- a/sympy/matrices/common.py
++++ b/sympy/matrices/common.py
+@@ -1973,7 +1973,14 @@ class MatrixArithmetic(MatrixRequired):
+ 
+     @call_highest_priority('__rmatmul__')
+     def __matmul__(self, other):
+-        return self.__mul__(other)
++        other = _matrixify(other)
++        # Matrix multiplication operator @ should only work with matrix-like objects
++        if not (getattr(other, 'is_Matrix', False) or 
++                getattr(other, 'is_MatrixLike', False) or
++                (hasattr(other, 'shape') and len(other.shape) == 2)):
++            return NotImplemented
++        # Delegate to __mul__ for actual matrix multiplication
++        return self.__mul__(other)
+ 
+     @call_highest_priority('__rmul__')
+     def __mul__(self, other):
+@@ -2068,7 +2075,14 @@ class MatrixArithmetic(MatrixRequired):
+ 
+     @call_highest_priority('__matmul__')
+     def __rmatmul__(self, other):
+-        return self.__rmul__(other)
++        other = _matrixify(other)
++        # Matrix multiplication operator @ should only work with matrix-like objects
++        if not (getattr(other, 'is_Matrix', False) or 
++                getattr(other, 'is_MatrixLike', False) or
++                (hasattr(other, 'shape') and len(other.shape) == 2)):
++            return NotImplemented
++        # Delegate to __rmul__ for actual matrix multiplication
++        return self.__rmul__(other)
+ 
+     @call_highest_priority('__mul__')
+     def __rmul__(self, other):
+--- a/sympy/matrices/expressions/matexpr.py
++++ b/sympy/matrices/expressions/matexpr.py
+@@ -112,7 +112,11 @@ class MatrixExpr(Expr):
+     @_sympifyit('other', NotImplemented)
+     @call_highest_priority('__rmul__')
+     def __matmul__(self, other):
+-        return MatMul(self, other).doit()
++        # Matrix multiplication operator @ should only work with matrix-like objects
++        if not isinstance(other, MatrixExpr):
++            return NotImplemented
++        # Delegate to MatMul for actual matrix multiplication
++        return MatMul(self, other).doit()
+ 
+     @_sympifyit('other', NotImplemented)
+     @call_highest_priority('__mul__')
+@@ -122,7 +126,11 @@ class MatrixExpr(Expr):
+     @_sympifyit('other', NotImplemented)
+     @call_highest_priority('__mul__')
+     def __rmatmul__(self, other):
+-        return MatMul(other, self).doit()
++        # Matrix multiplication operator @ should only work with matrix-like objects
++        if not isinstance(other, MatrixExpr):
++            return NotImplemented
++        # Delegate to MatMul for actual matrix multiplication
++        return MatMul(other, self).doit()
+ 
+     @_sympifyit('other', NotImplemented)
+     @call_highest_priority('__rpow__')
+ 
+ 

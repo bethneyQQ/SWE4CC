@@ -1,0 +1,51 @@
+--- a/sympy/printing/mathml.py
++++ b/sympy/printing/mathml.py
+@@ -473,6 +473,17 @@
+         return dom_element
+ 
+     def _print_int(self, p):
+         dom_element = self.dom.createElement(self.mathml_tag(p))
+         dom_element.appendChild(self.dom.createTextNode(str(p)))
+         return dom_element
++
++    def _print_Indexed(self, e):
++        dom_element = self.dom.createElement('indexed')
++        dom_element.appendChild(self._print(e.base))
++        for index in e.indices:
++            dom_element.appendChild(self._print(index))
++        return dom_element
++
++    def _print_IndexedBase(self, e):
++        dom_element = self.dom.createElement('indexedbase')
++        dom_element.appendChild(self._print(e.label))
++        return dom_element
+ 
+ 
+ class MathMLPresentationPrinter(MathMLPrinterBase):
+@@ -1024,6 +1035,23 @@
+             x.appendChild(self._print(arg))
+         mrow.appendChild(x)
+         return mrow
++
++    def _print_Indexed(self, e):
++        if len(e.indices) == 1:
++            msub = self.dom.createElement('msub')
++            msub.appendChild(self._print(e.base))
++            msub.appendChild(self._print(e.indices[0]))
++            return msub
++        else:
++            msub = self.dom.createElement('msub')
++            msub.appendChild(self._print(e.base))
++            mrow = self.dom.createElement('mrow')
++            for index in e.indices:
++                mrow.appendChild(self._print(index))
++            msub.appendChild(mrow)
++            return msub
++
++    def _print_IndexedBase(self, e):
++        return self._print(e.label)
+ 
+     def _print_Interval(self, i):
+         mrow = self.dom.createElement('mrow')
+ 
+ 

@@ -1,0 +1,17 @@
+--- a/sympy/simplify/fu.py
++++ b/sympy/simplify/fu.py
+@@ -501,7 +501,10 @@
+         if not (rv.is_Pow and rv.base.func == f):
+             return rv
+ 
+-        if (rv.exp < 0) == True:
++        # Skip if exponent is negative (only check for real exponents)
++        # Complex exponents like I cannot be compared with <
++        if rv.exp.is_extended_real and rv.exp.is_negative:
++            return rv
++        if rv.exp.is_extended_real is False:
+             return rv
+         if (rv.exp > max) == True:
+             return rv
+ 
+ 

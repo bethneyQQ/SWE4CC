@@ -1,0 +1,14 @@
+--- a/django/db/models/sql/compiler.py
++++ b/django/db/models/sql/compiler.py
+@@ -312,7 +312,8 @@ class SQLCompiler:
+                 if sql:
+                     # Track uniqueness of the ORDER BY clause to avoid duplicates
+                     # Remove newlines from multiline SQL to properly identify duplicates
+-                    without_ordering = self.ordering_parts.search(sql).group(1)
++                    sql_oneline = ' '.join(sql.splitlines())
++                    without_ordering = self.ordering_parts.search(sql_oneline).group(1)
+                     if without_ordering not in seen:
+                         seen.add(without_ordering)
+                         result.append((resolved, (sql, params, is_ref)))
+ 
+ 

@@ -1,0 +1,91 @@
+--- a/sympy/assumptions/refine.py
++++ b/sympy/assumptions/refine.py
+@@ -1,7 +1,7 @@
+ """Module for mathematical refinement based on assumptions."""
+ 
+ from sympy.core import S, Add, Expr, Basic, Mul
+-from sympy.functions import Abs, sign
++from sympy.functions import Abs, sign, arg
+ from sympy.logic.boolalg import And, Not, Or
+ from sympy.assumptions import Q, ask
+ 
+@@ -203,6 +203,24 @@
+     return expr
+ 
+ 
++def refine_arg(expr, assumptions):
++    """
++    Handler for arg function.
++    
++    Examples
++    ========
++    
++    >>> from sympy import Q, arg, refine
++    >>> from sympy.abc import a
++    >>> refine(arg(a), Q.positive(a))
++    0
++    >>> refine(arg(a), Q.negative(a))
++    pi
++    """
++    arg_arg = expr.args[0]
++    if ask(Q.positive(arg_arg), assumptions):
++        return S.Zero
++    if ask(Q.negative(arg_arg), assumptions):
++        return S.Pi
++    return expr
++
++
+ handlers_dict = {
+     'Abs': refine_Abs,
+     'Pow': refine_Pow,
+     'atan2': refine_atan2,
+-    'sign': refine_sign
++    'sign': refine_sign,
++    'arg': refine_arg
+ }
+ ```
+--- a/sympy/assumptions/refine.py
++++ b/sympy/assumptions/refine.py
+@@ -1,6 +1,6 @@
+ from sympy.core import S, Add, Expr, Basic, Mul
+-from sympy.functions import Abs, sign
+-from sympy.assumptions import Q, ask
++from sympy.functions import Abs, sign, arg
++from sympy.assumptions import Q, ask, refine as refine_func
+ 
+ 
+ def refine(expr, assumptions=True):
+@@ -203,9 +203,27 @@
+         return expr
+     return expr
+ 
++def refine_arg(expr, assumptions):
++    """
++    Handler for the argument function.
++    
++    Examples
++    ========
++    
++    >>> from sympy import Q, arg, refine, Symbol
++    >>> a = Symbol('a')
++    >>> refine(arg(a), Q.positive(a))
++    0
++    >>> refine(arg(a), Q.negative(a))
++    pi
++    """
++    arg_arg = expr.args[0]
++    if ask(Q.positive(arg_arg), assumptions):
++        return S.Zero
++    if ask(Q.negative(arg_arg), assumptions):
++        return S.Pi
++    return expr
+ 
+ handlers_dict = {
+     'Abs': refine_Abs,
+     'Pow': refine_Pow,
+     'atan2': refine_atan2,
+-    'sign': refine_sign
++    'sign': refine_sign,
++    'arg': refine_arg
+ }
+ ```

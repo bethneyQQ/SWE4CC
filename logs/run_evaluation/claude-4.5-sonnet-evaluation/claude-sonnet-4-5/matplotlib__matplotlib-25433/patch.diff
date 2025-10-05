@@ -1,0 +1,15 @@
+--- a/lib/matplotlib/widgets.py
++++ b/lib/matplotlib/widgets.py
+@@ -880,7 +880,9 @@ class RangeSlider(SliderBase):
+             event.name == "button_press_event" and event.inaxes != self.ax
+         ):
+             self.drag_active = False
+-            event.canvas.release_mouse(self.ax)
++            # Only release if this slider still owns the mouse grab
++            if event.canvas.mouse_grabber == self.ax:
++                event.canvas.release_mouse(self.ax)
+             self._active_handle = None
+             return
+ 
+ 
+ 

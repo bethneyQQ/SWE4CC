@@ -1,0 +1,65 @@
+2025-10-01 18:04:57,721 - INFO - Creating container for astropy__astropy-14365...
+2025-10-01 18:05:00,139 - INFO - Container for astropy__astropy-14365 created: be4cc6cea99118383c20c39291e37282eb0d5b7a01e62a1a9b089faf22de3b21
+2025-10-01 18:05:00,466 - INFO - Container for astropy__astropy-14365 started: be4cc6cea99118383c20c39291e37282eb0d5b7a01e62a1a9b089faf22de3b21
+2025-10-01 18:05:00,467 - INFO - Intermediate patch for astropy__astropy-14365 written to logs/run_evaluation/claude-3.5-sonnet-evaluation/claude-3.5-sonnet/astropy__astropy-14365/patch.diff, now applying to container...
+2025-10-01 18:05:00,795 - INFO - >>>>> Applied Patch:
+Checking patch astropy/io/ascii/qdp.py...
+Applied patch astropy/io/ascii/qdp.py cleanly.
+
+2025-10-01 18:05:01,595 - INFO - Git diff before:
+diff --git a/astropy/io/ascii/qdp.py b/astropy/io/ascii/qdp.py
+index 83a4f004a..6e0bda3da 100644
+--- a/astropy/io/ascii/qdp.py
++++ b/astropy/io/ascii/qdp.py
+@@ -60,7 +60,7 @@ def _line_type(line, delimiter=None):
+     ValueError: Unrecognized QDP line...
+     """
+     _decimal_re = r"[+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?"
+-    _command_re = r"READ [TS]ERR(\s+[0-9]+)+"
++    _command_re = r"(?i)READ\s+[TS]ERR(\s+[0-9]+)+"
+ 
+     sep = delimiter
+     if delimiter is None:
+@@ -293,7 +293,7 @@ def _get_tables_from_qdp_file(qdp_file, input_colnames=None, delimiter=None):
+             # The first time I find data, I define err_specs
+             if err_specs == {} and command_lines != "":
+                 for cline in command_lines.strip().split("\n"):
+-                    command = cline.strip().split()
++                    command = cline.strip().upper().split()
+                     # This should never happen, but just in case.
+                     if len(command) < 3:
+                         continue
+2025-10-01 18:05:01,596 - INFO - Eval script for astropy__astropy-14365 written to logs/run_evaluation/claude-3.5-sonnet-evaluation/claude-3.5-sonnet/astropy__astropy-14365/eval.sh; copying to container...
+2025-10-01 18:05:43,879 - INFO - Test runtime: 42.19 seconds
+2025-10-01 18:05:43,879 - INFO - Test output for astropy__astropy-14365 written to logs/run_evaluation/claude-3.5-sonnet-evaluation/claude-3.5-sonnet/astropy__astropy-14365/test_output.txt
+2025-10-01 18:05:44,194 - INFO - Git diff after:
+diff --git a/astropy/io/ascii/qdp.py b/astropy/io/ascii/qdp.py
+index 83a4f004a..6e0bda3da 100644
+--- a/astropy/io/ascii/qdp.py
++++ b/astropy/io/ascii/qdp.py
+@@ -60,7 +60,7 @@ def _line_type(line, delimiter=None):
+     ValueError: Unrecognized QDP line...
+     """
+     _decimal_re = r"[+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?"
+-    _command_re = r"READ [TS]ERR(\s+[0-9]+)+"
++    _command_re = r"(?i)READ\s+[TS]ERR(\s+[0-9]+)+"
+ 
+     sep = delimiter
+     if delimiter is None:
+@@ -293,7 +293,7 @@ def _get_tables_from_qdp_file(qdp_file, input_colnames=None, delimiter=None):
+             # The first time I find data, I define err_specs
+             if err_specs == {} and command_lines != "":
+                 for cline in command_lines.strip().split("\n"):
+-                    command = cline.strip().split()
++                    command = cline.strip().upper().split()
+                     # This should never happen, but just in case.
+                     if len(command) < 3:
+                         continue
+2025-10-01 18:05:44,195 - INFO - Grading answer for astropy__astropy-14365...
+2025-10-01 18:05:44,213 - INFO - report: {'astropy__astropy-14365': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]']}, 'PASS_TO_PASS': {'success': ['astropy/io/ascii/tests/test_qdp.py::test_roundtrip[False]', 'astropy/io/ascii/tests/test_qdp.py::test_read_example', 'astropy/io/ascii/tests/test_qdp.py::test_roundtrip_example', 'astropy/io/ascii/tests/test_qdp.py::test_read_write_simple', 'astropy/io/ascii/tests/test_qdp.py::test_read_write_simple_specify_name', 'astropy/io/ascii/tests/test_qdp.py::test_get_lines_from_qdp'], 'failure': ['astropy/io/ascii/tests/test_qdp.py::test_get_tables_from_qdp_file', 'astropy/io/ascii/tests/test_qdp.py::test_roundtrip_example_comma']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for astropy__astropy-14365: resolved: False
+2025-10-01 18:05:44,213 - INFO - Attempting to stop container sweb.eval.astropy__astropy-14365.claude-3.5-sonnet-evaluation...
+2025-10-01 18:06:03,343 - INFO - Attempting to remove container sweb.eval.astropy__astropy-14365.claude-3.5-sonnet-evaluation...
+2025-10-01 18:06:03,368 - INFO - Container sweb.eval.astropy__astropy-14365.claude-3.5-sonnet-evaluation removed.
+2025-10-01 18:06:03,369 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.astropy_1776_astropy-14365:latest...
+2025-10-01 18:06:03,476 - INFO - Image swebench/sweb.eval.x86_64.astropy_1776_astropy-14365:latest removed.

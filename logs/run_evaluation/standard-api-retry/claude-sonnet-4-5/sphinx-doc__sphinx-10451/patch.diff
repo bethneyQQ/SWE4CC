@@ -1,0 +1,65 @@
+--- a/sphinx/ext/autodoc/typehints.py
++++ b/sphinx/ext/autodoc/typehints.py
+@@ -76,6 +76,18 @@ def merge_typehints(app: Sphinx, domain: str, objtype: str, contentnode: Elemen
+                     _inject_types_to_docstring(field, info)
+ 
+ 
++def _normalize_param_name(name: str) -> str:
++    """Normalize parameter name by removing asterisks from *args and **kwargs."""
++    if name.startswith('**'):
++        return name[2:]
++    elif name.startswith('*'):
++        return name[1:]
++    return name
++
++
++def _get_asterisks(name: str) -> str:
++    """Get the asterisk prefix from a parameter name."""
++    if name.startswith('**'):
++        return '**'
++    elif name.startswith('*'):
++        return '*'
++    return ''
++
++
+ def _inject_types_to_docstring(field: nodes.field, info: Dict[str, str]) -> None:
+     """Inject type hints into a field node's parameter descriptions."""
+     for name, node in _get_parameters(field):
+-        if name in info:
++        normalized_name = _normalize_param_name(name)
++        if normalized_name in info:
++            asterisks = _get_asterisks(name)
+             # If the parameter already has a type annotation in the docstring,
+             # don't override it
+             if not _has_type_annotation(node):
+-                _add_type_annotation(node, info[name])
++                _add_type_annotation(node, info[normalized_name])
++        # Check if this is a duplicate entry for *args or **kwargs without asterisks
++        elif name in info and (name == 'args' or name == 'kwargs'):
++            # This is a duplicate created by type hint injection, skip it
++            pass
+ 
+ 
+ def _get_parameters(field: nodes.field) -> Generator[Tuple[str, nodes.paragraph], None, None]:
+@@ -120,10 +132,14 @@ def augment_descriptions_with_types(
+         for name, type_annotation in annotations.items():
+             if name not in param_names:
+                 # Add a new parameter entry for type hints not in docstring
+-                param_names.add(name)
+-                param = nodes.field_name('', name)
+-                body = nodes.paragraph('', '', nodes.Text(type_annotation, type_annotation))
+-                field = nodes.field('', param, nodes.field_body('', body))
+-                field_list.append(field)
++                # Skip if this is args/kwargs and *args/**kwargs already exists
++                if not ((name == 'args' and '*args' in param_names) or
++                        (name == 'kwargs' and '**kwargs' in param_names)):
++                    param_names.add(name)
++                    asterisks = '**' if name == 'kwargs' else ('*' if name == 'args' else '')
++                    display_name = asterisks + name
++                    param = nodes.field_name('', display_name)
++                    body = nodes.paragraph('', '', nodes.Text(type_annotation, type_annotation))
++                    field = nodes.field('', param, nodes.field_body('', body))
++                    field_list.append(field)
+ 
+ 
+ ```

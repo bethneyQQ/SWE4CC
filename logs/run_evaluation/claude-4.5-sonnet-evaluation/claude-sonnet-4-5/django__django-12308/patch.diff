@@ -1,0 +1,16 @@
+--- a/django/contrib/admin/utils.py
++++ b/django/contrib/admin/utils.py
+@@ -380,6 +380,11 @@ def label_for_field(name, model, model_admin=None, return_attr=False, form=None
+ def display_for_field(value, field, empty_value_display):
+     from django.contrib.admin.templatetags.admin_list import _boolean_icon
+ 
++    if getattr(field, 'get_internal_type', None) == 'JSONField':
++        # Use the field's formfield to properly format JSON for display
++        form_field = field.formfield()
++        if form_field is not None:
++            return form_field.prepare_value(value)
+     if getattr(field, 'flatchoices', None):
+         return dict(field.flatchoices).get(value, empty_value_display)
+     # BooleanField needs special-case null-handling, so it comes before the
+ 
+ 

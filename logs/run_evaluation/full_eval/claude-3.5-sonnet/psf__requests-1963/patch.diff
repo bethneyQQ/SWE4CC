@@ -1,0 +1,26 @@
+
+--- a/requests/sessions.py
++++ b/requests/sessions.py
+@@ -86,11 +86,11 @@
+         """Receives a Response. Returns a generator of Responses."""
+ 
+         i = 0
++        prepared_request = req.copy()
+ 
+         while resp.is_redirect:
+-            prepared_request = req.copy()
+-
+             resp.content  # Consume socket so it can be released
++            
+ 
+             if i >= self.max_redirects:
+                 raise TooManyRedirects('Exceeded %s redirects.' % self.max_redirects)
+@@ -99,7 +99,7 @@
+             resp.close()
+ 
+             url = resp.headers['location']
+-            method = req.method
++            method = prepared_request.method
+ 
+             # Handle redirection without scheme (see: RFC 1808 Section 4)
+             if url.startswith('//'):

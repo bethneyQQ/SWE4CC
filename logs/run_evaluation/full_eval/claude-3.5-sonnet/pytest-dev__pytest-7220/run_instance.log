@@ -1,0 +1,61 @@
+2025-10-03 22:59:02,025 - INFO - Creating container for pytest-dev__pytest-7220...
+2025-10-03 22:59:20,167 - INFO - Container for pytest-dev__pytest-7220 created: 97b32b9a051e4275432613249c9e900eff2ef8e3b77d5320f24d4df72b137ea6
+2025-10-03 22:59:20,271 - INFO - Container for pytest-dev__pytest-7220 started: 97b32b9a051e4275432613249c9e900eff2ef8e3b77d5320f24d4df72b137ea6
+2025-10-03 22:59:20,272 - INFO - Intermediate patch for pytest-dev__pytest-7220 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/pytest-dev__pytest-7220/patch.diff, now applying to container...
+2025-10-03 22:59:20,362 - INFO - >>>>> Applied Patch:
+Checking patch src/_pytest/nodes.py...
+Applied patch src/_pytest/nodes.py cleanly.
+
+2025-10-03 22:59:20,461 - INFO - Git diff before:
+diff --git a/src/_pytest/nodes.py b/src/_pytest/nodes.py
+index 4a79bc861..7ed8dd984 100644
+--- a/src/_pytest/nodes.py
++++ b/src/_pytest/nodes.py
+@@ -362,8 +362,14 @@ class Node(metaclass=NodeMeta):
+             truncate_locals = True
+ 
+         try:
+-            os.getcwd()
+-            abspath = False
++            cwd = os.getcwd()
++            # Check if the current working directory is the same as when pytest started.
++            # If a fixture changed the directory, we should use absolute paths to ensure
++            # file locations are displayed correctly relative to the original root.
++            if Path(cwd) == Path(str(self.config.rootdir)):
++                abspath = False
++            else:
++                abspath = True
+         except OSError:
+             abspath = True
+2025-10-03 22:59:20,461 - INFO - Eval script for pytest-dev__pytest-7220 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/pytest-dev__pytest-7220/eval.sh; copying to container...
+2025-10-03 22:59:24,360 - INFO - Test runtime: 3.85 seconds
+2025-10-03 22:59:24,360 - INFO - Test output for pytest-dev__pytest-7220 written to logs/run_evaluation/full_eval/claude-3.5-sonnet/pytest-dev__pytest-7220/test_output.txt
+2025-10-03 22:59:24,401 - INFO - Git diff after:
+diff --git a/src/_pytest/nodes.py b/src/_pytest/nodes.py
+index 4a79bc861..7ed8dd984 100644
+--- a/src/_pytest/nodes.py
++++ b/src/_pytest/nodes.py
+@@ -362,8 +362,14 @@ class Node(metaclass=NodeMeta):
+             truncate_locals = True
+ 
+         try:
+-            os.getcwd()
+-            abspath = False
++            cwd = os.getcwd()
++            # Check if the current working directory is the same as when pytest started.
++            # If a fixture changed the directory, we should use absolute paths to ensure
++            # file locations are displayed correctly relative to the original root.
++            if Path(cwd) == Path(str(self.config.rootdir)):
++                abspath = False
++            else:
++                abspath = True
+         except OSError:
+             abspath = True
+2025-10-03 22:59:24,401 - INFO - Grading answer for pytest-dev__pytest-7220...
+2025-10-03 22:59:24,402 - INFO - report: {'pytest-dev__pytest-7220': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['testing/test_nodes.py::test_failure_with_changed_cwd']}, 'PASS_TO_PASS': {'success': [], 'failure': ['testing/test_nodes.py::test_ischildnode[--True]', 'testing/test_nodes.py::test_ischildnode[-foo-True]', 'testing/test_nodes.py::test_ischildnode[-foo/bar-True]', 'testing/test_nodes.py::test_ischildnode[-foo/bar::TestBaz-True]', 'testing/test_nodes.py::test_ischildnode[foo-food-False]', 'testing/test_nodes.py::test_ischildnode[foo/bar::TestBaz-foo/bar-False]', 'testing/test_nodes.py::test_ischildnode[foo/bar::TestBaz-foo/bar::TestBop-False]', 'testing/test_nodes.py::test_ischildnode[foo/bar-foo/bar::TestBop-True]', 'testing/test_nodes.py::test_node_from_parent_disallowed_arguments', 'testing/test_nodes.py::test__check_initialpaths_for_relpath', 'testing/test_nodes.py::test_std_warn_not_pytestwarning']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for pytest-dev__pytest-7220: resolved: False
+2025-10-03 22:59:24,402 - INFO - Attempting to stop container sweb.eval.pytest-dev__pytest-7220.full_eval...
+2025-10-03 22:59:39,538 - INFO - Attempting to remove container sweb.eval.pytest-dev__pytest-7220.full_eval...
+2025-10-03 22:59:39,550 - INFO - Container sweb.eval.pytest-dev__pytest-7220.full_eval removed.
+2025-10-03 22:59:39,550 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-7220:latest...
+2025-10-03 22:59:40,453 - INFO - Image swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-7220:latest removed.

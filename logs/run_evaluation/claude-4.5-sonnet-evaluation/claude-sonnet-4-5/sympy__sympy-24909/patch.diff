@@ -1,0 +1,17 @@
+--- a/sympy/physics/units/prefixes.py
++++ b/sympy/physics/units/prefixes.py
+@@ -33,11 +33,10 @@ class Prefix(Expr):
+     def __new__(cls, name, abbrev, exponent, base=sympify(10), latex_repr=None):
+ 
+         name = sympify(name)
+-        abbrev = sympify(abbrev)
+         exponent = sympify(exponent)
+         base = sympify(base)
+ 
+-        obj = Expr.__new__(cls, name, abbrev, exponent, base)
++        obj = Expr.__new__(cls, name, exponent, base)
+         obj._name = name
+         obj._abbrev = abbrev
+         obj._scale_factor = base**exponent
+ 
+ 

@@ -1,0 +1,29 @@
+--- a/sympy/utilities/iterables.py
++++ b/sympy/utilities/iterables.py
+@@ -2088,6 +2088,8 @@ def has_variety(seq):
+ def uniq(seq, result=None):
+     """
+     Yield unique elements from ``seq`` as an iterator. The second
+     parameter ``result``  is used internally; it is not necessary to pass
+     anything for this.
+ 
+@@ -2107,10 +2109,17 @@ def uniq(seq, result=None):
+     [[1], [2, 1]]
+     """
+     try:
+         seen = set()
+         result = result or []
++        # Record initial size to detect modifications during iteration
++        try:
++            initial_size = len(seq)
++        except TypeError:
++            initial_size = None
+         for i, s in enumerate(seq):
++            if initial_size is not None and len(seq) != initial_size:
++                raise RuntimeError('sequence changed size during iteration')
+             if not (s in seen or seen.add(s)):
+                 yield s
+     except TypeError:
+         if s not in result:
+ 
+ 

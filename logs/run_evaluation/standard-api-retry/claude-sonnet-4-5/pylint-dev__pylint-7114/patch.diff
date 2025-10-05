@@ -1,0 +1,75 @@
+--- a/pylint/lint/expand_modules.py
++++ b/pylint/lint/expand_modules.py
+@@ -55,6 +55,7 @@
+ def expand_modules(
+     files_or_modules: Sequence[str],
+     ignore_list: list[str],
++    ignore_list_paths: list[Pattern[str]],
+ ) -> tuple[list[ModuleDescriptionDict], list[ErrorDescriptionDict]]:
+     """Take a list of files/modules/packages and return the list of tuple
+     (file, module name) which have to be actually checked.
+@@ -89,17 +90,24 @@
+                     "name": something,
+                     "basepath": filepath,
+                     "path": filepath,
+                 }
+             )
+         elif os.path.isdir(something):
+-            filepath = os.path.join(something, "__init__.py")
++            # Check if this is a package with __init__.py or a namespace package
++            init_path = os.path.join(something, "__init__.py")
++            if os.path.exists(init_path):
++                filepath = init_path
++            else:
++                # It's a namespace package, use the directory itself
++                filepath = something
++            
+             if not os.path.exists(filepath):
+-                errors.append(
+-                    {
+-                        "key": "fatal",
+-                        "mod": something,
+-                        "ex": f"No module named {something}",
+-                    }
+-                )
+-                continue
++                # For namespace packages, we don't need __init__.py
++                # Just verify it's a valid directory
++                if not os.path.isdir(something):
++                    errors.append(
++                        {"key": "fatal", "mod": something, "ex": f"No module named {something}"}
++                    )
++                    continue
++                filepath = something
+             result.append(
+                 {
+                     "type": "module",
+ ```
+--- a/pylint/lint/expand_modules.py
++++ b/pylint/lint/expand_modules.py
+@@ -89,11 +89,18 @@
+                     "path": filepath,
+                 }
+             )
+         elif os.path.isdir(something):
+-            filepath = os.path.join(something, "__init__.py")
+-            if not os.path.exists(filepath):
+-                errors.append({"key": "fatal", "mod": something, "ex": f"No module named {something}"})
+-                continue
++            # Check if this is a regular package or a namespace package (PEP 420)
++            init_path = os.path.join(something, "__init__.py")
++            if os.path.exists(init_path):
++                # Regular package with __init__.py
++                filepath = init_path
++            else:
++                # Namespace package without __init__.py (PEP 420)
++                # This is valid in Python 3.3+, so don't treat it as an error
++                # We'll discover the modules inside via the directory walk below
++                filepath = something
++            
+             result.append(
+                 {
+                     "type": "module",
+                     "name": something,
+ 
+ ```
